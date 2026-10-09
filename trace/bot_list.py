@@ -4,14 +4,19 @@ a name and the reason a line:
     percentile, > 5 s >= 0.2 %);
   taeb: "taeb" in the name -- TAEB, a NetHack bot framework; its accounts play at a person's pace (it thinks slowly), so
     only the name (with 0 ascensions and play around the clock, bot_accounts.py) tells them;
-  manual: MANUAL, accounts excluded by judgement rather than a rule.
+  manual: --manual, accounts excluded by judgement rather than a rule ("name reason" a line; not published).
   python bot_list.py ../results/ttyrec_pace_14d.txt ../results/ttyrec_pace_14d_val.txt ../results/ttyrec_pace_14d_test.txt \
       --out nao/bot_players.txt
 """
 import argparse
 from pathlib import Path
 
-MANUAL = {}  # name -> reason (none listed here)
+
+def manual(path):
+    if not Path(path).exists():
+        return {}
+    rows = (line.split(maxsplit=1) for line in open(path, encoding="utf-8") if line.strip() and line[0] != "#")
+    return {r[0].lower(): r[1].strip() if len(r) > 1 else "manual" for r in rows}
 
 
 def main():
@@ -19,8 +24,9 @@ def main():
     ap.add_argument("pace", nargs="+")
     ap.add_argument("--out", required=True)
     ap.add_argument("--data", nargs="*", default=[], help="jsonl files whose players are checked for 'taeb' by name")
+    ap.add_argument("--manual", default="nao/manual_bots.txt", help="accounts excluded by hand (if the file exists)")
     a = ap.parse_args()
-    why, games = dict(MANUAL), {}
+    why, games = manual(a.manual), {}
     for path in a.pace:
         for line in open(path, encoding="utf-8"):
             f = line.split()

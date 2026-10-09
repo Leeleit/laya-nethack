@@ -35,7 +35,11 @@ import sys
 import time
 
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")  # tokenizer workers are forked
-REPO = os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "repo")  # a clone of the laya repository
+# a clone of the laya repository: $LAYA_REPO, else repo/ beside trace/'s parent or one level higher
+_HERE = os.path.dirname(os.path.abspath(__file__))
+REPO = os.environ.get("LAYA_REPO") or next(
+    (p for p in (os.path.join(_HERE, "..", "repo"), os.path.join(_HERE, "..", "..", "repo")) if os.path.isdir(p)),
+    os.path.join(_HERE, "..", "repo"))
 sys.path[:0] = [REPO, os.path.join(REPO, "research", "scripts")]
 
 import numpy as np  # noqa: E402
