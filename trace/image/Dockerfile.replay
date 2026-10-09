@@ -1,0 +1,7 @@
+# laya-replay: the pinned NetHackers arena image + zstandard (reading .jsonl.zst traces in the box) + faketime.
+# Rebuilt from `docker history laya-replay`. Base = the arena image the NetHackers CLI resolves (pinned by digest).
+#   docker build -t laya-replay -f Dockerfile.replay .   then laya-frozen: Dockerfile.frozen
+FROM ghcr.io/dunnolab/nethackers-arena@sha256:0d0b0e779ebda4a05b5a22b39cfafcd2d2d9ef739ea60d9aae79052d55c767ae
+USER root
+RUN uv pip install --python /opt/nethackers/.venv/bin/python zstandard \
+ && (apt-get update -qq && apt-get install -y -qq faketime > /dev/null) && rm -rf /var/lib/apt/lists/*

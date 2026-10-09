@@ -1,0 +1,111 @@
+4779 held-out states (val + test), 664 players; models: all=c16(82188 train rows), gbm=gbm16(82188 train rows)
+
+== ttd: 4741 rows, 18 options
+  all       raw 2.5762 [2.5507, 2.6010]  with T 2.5766 [2.5513, 2.6014] (T 1.00)  acc 0.146  RPS 0.1261 [0.1228, 0.1297]
+  gbm       raw 2.5925 [2.5670, 2.6158]  with T 2.5926 [2.5681, 2.6146] (T 1.05)  acc 0.143  RPS 0.1267 [0.1233, 0.1299]
+  gbm       minus all: raw 0.0163 [0.0074, 0.0248]  with T 0.0160 [0.0070, 0.0243]
+
+== depth: 4779 rows, 12 options
+  all       raw 1.8943 [1.8635, 1.9263]  with T 1.8948 [1.8638, 1.9269] (T 1.00)  acc 0.301  RPS 0.1057 [0.1015, 0.1099]
+  gbm       raw 1.8610 [1.8297, 1.8955]  with T 1.8593 [1.8302, 1.8920] (T 1.08)  acc 0.315  RPS 0.1059 [0.1017, 0.1100]
+  gbm       minus all: raw -0.0334 [-0.0441, -0.0239]  with T -0.0355 [-0.0455, -0.0262]
+
+== end: 4779 rows, 39 options
+  all       raw 3.1207 [3.0785, 3.1638]  with T 3.1200 [3.0791, 3.1623] (T 1.05)  acc 0.144
+  gbm       raw 3.2319 [3.1795, 3.2872]  with T 3.1770 [3.1365, 3.2176] (T 1.44)  acc 0.141
+  gbm       minus all: raw 0.1113 [0.0907, 0.1340]  with T 0.0570 [0.0434, 0.0703]
+
+== ascends: 4779 rows, 2 options
+  all       raw 0.0692 [0.0517, 0.0863]  with T 0.0664 [0.0512, 0.0812] (T 1.27)  acc 0.973
+  gbm       raw 0.0678 [0.0521, 0.0832]  with T 0.0678 [0.0526, 0.0827] (T 1.06)  acc 0.973
+  gbm       minus all: raw -0.0014 [-0.0055, +0.0025]  with T +0.0014 [-0.0017, +0.0046]
+
+== slices, mean loss with T
+  ttd: all | gbm
+    all rows        n  4741  2.5766  2.5926
+    no history      n   269  2.4682  2.5041
+    experience 1    n  1378  2.5321  2.5506
+    experience 2    n  1379  2.5999  2.6156
+    experience 3    n   818  2.6209  2.6295
+    experience 4    n   633  2.6463  2.6525
+    experience 5    n   264  2.4930  2.5238
+    result 1        n   262  2.5488  2.5864
+    result 2        n   638  2.6543  2.6365
+    result 3        n  1018  2.6531  2.6583
+    result 4        n  1326  2.5509  2.5739
+    result 5        n  1228  2.5302  2.5561
+    ascended games  n   215  2.0153  2.1716
+    XL 8-14         n   628  2.5983  2.6445
+    Dlvl 5-10       n  1477  2.5737  2.6029
+    Dlvl 1-2        n  1315  2.5803  2.5873
+    Dlvl 3-4        n  1558  2.6275  2.6355
+    Dlvl 5-7        n  1146  2.5815  2.6064
+    Dlvl 8-12       n   409  2.5457  2.5926
+    Dlvl 13-20      n   153  2.4338  2.4518
+    Dlvl 21-99      n   160  2.2312  2.2530
+  depth: all | gbm
+    all rows        n  4779  1.8948  1.8593
+    no history      n   271  1.8096  1.7817
+    experience 1    n  1386  1.8161  1.7834
+    experience 2    n  1401  1.9051  1.8737
+    experience 3    n   824  1.9283  1.8818
+    experience 4    n   633  2.0031  1.9677
+    experience 5    n   264  1.9762  1.9311
+    result 1        n   262  1.9680  1.9193
+    result 2        n   638  1.9459  1.8998
+    result 3        n  1020  1.9278  1.9056
+    result 4        n  1353  1.9148  1.8756
+    result 5        n  1235  1.8223  1.7866
+    ascended games  n   221  1.5943  1.4879
+    XL 8-14         n   630  2.0780  2.0680
+    Dlvl 5-10       n  1490  1.8419  1.8462
+    Dlvl 1-2        n  1324  1.9210  1.8409
+    Dlvl 3-4        n  1569  1.9288  1.8954
+    Dlvl 5-7        n  1156  1.8383  1.8342
+    Dlvl 8-12       n   412  1.8411  1.8593
+    Dlvl 13-20      n   154  2.0585  2.1236
+    Dlvl 21-99      n   164  1.7367  1.5912
+  end: all | gbm
+    all rows        n  4779  3.1200  3.1770
+    no history      n   271  3.1290  3.1730
+    experience 1    n  1386  3.1580  3.2325
+    experience 2    n  1401  3.1532  3.2171
+    experience 3    n   824  3.0459  3.0834
+    experience 4    n   633  3.0640  3.0948
+    experience 5    n   264  3.1006  3.1655
+    result 1        n   262  3.2929  3.3186
+    result 2        n   638  3.1730  3.2072
+    result 3        n  1020  3.1741  3.2370
+    result 4        n  1353  3.1988  3.2461
+    result 5        n  1235  2.9230  3.0069
+    ascended games  n   221  1.1350  1.2201
+    XL 8-14         n   630  2.6959  2.7945
+    Dlvl 5-10       n  1490  3.1560  3.2271
+    Dlvl 1-2        n  1324  3.2487  3.2991
+    Dlvl 3-4        n  1569  3.2487  3.2908
+    Dlvl 5-7        n  1156  3.1549  3.2112
+    Dlvl 8-12       n   412  3.1246  3.2360
+    Dlvl 13-20      n   154  2.1899  2.3129
+    Dlvl 21-99      n   164  1.4653  1.5235
+  ascends: all | gbm
+    all rows        n  4779  0.0664  0.0678
+    no history      n   271  0.1422  0.1368
+    experience 1    n  1386  0.0334  0.0354
+    experience 2    n  1401  0.0403  0.0406
+    experience 3    n   824  0.0795  0.0824
+    experience 4    n   633  0.1264  0.1287
+    experience 5    n   264  0.1162  0.1209
+    result 1        n   262  0.0066  0.0076
+    result 2        n   638  0.0421  0.0453
+    result 3        n  1020  0.0190  0.0196
+    result 4        n  1353  0.0245  0.0229
+    result 5        n  1235  0.1601  0.1662
+    ascended games  n   221  0.9899  1.0141
+    XL 8-14         n   630  0.2892  0.2853
+    Dlvl 5-10       n  1490  0.0687  0.0659
+    Dlvl 1-2        n  1324  0.0269  0.0293
+    Dlvl 3-4        n  1569  0.0193  0.0224
+    Dlvl 5-7        n  1156  0.0571  0.0565
+    Dlvl 8-12       n   412  0.1258  0.1202
+    Dlvl 13-20      n   154  0.4372  0.4781
+    Dlvl 21-99      n   164  0.4047  0.3766

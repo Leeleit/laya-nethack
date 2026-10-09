@@ -1,0 +1,49 @@
+64166 outcomes at 1634 points; dropped children {'unavailable': 40408, 'timeout': 1, 'crash': 1}
+horizon 25: continue alive 0.889 on 1634 points
+  pray           1634 points: alive 0.841 vs 0.889, effect -0.0485 ± 0.0092; better at 0.11 of points, worse at 0.25; signal share of the spread 0.79 (1634 points)
+  elbereth       1572 points: alive 0.890 vs 0.888, effect +0.0024 ± 0.0061; better at 0.12 of points, worse at 0.12; signal share of the spread 0.55 (1572 points)
+  quaff_heal      105 points: alive 0.888 vs 0.880, effect +0.0083 ± 0.0291; better at 0.19 of points, worse at 0.14; signal share of the spread 0.68 (105 points)
+  stairs           26 points: alive 0.913 vs 0.947, effect -0.0337 ± 0.0420; better at 0.04 of points, worse at 0.15; signal share of the spread 0.50 (26 points)
+  elbereth_rest  1572 points: alive 0.891 vs 0.888, effect +0.0033 ± 0.0063; better at 0.12 of points, worse at 0.12; signal share of the spread 0.58 (1572 points)
+  upstairs        703 points: alive 0.845 vs 0.880, effect -0.0341 ± 0.0156; better at 0.12 of points, worse at 0.17; signal share of the spread 0.84 (703 points)
+  dig_down        775 points: alive 0.864 vs 0.869, effect -0.0045 ± 0.0065; better at 0.07 of points, worse at 0.08; signal share of the spread 0.05 (775 points)
+  oracle over rep means: +0.0449 (an upper bound: rep noise inflates it)
+horizon 50: continue alive 0.797 on 1634 points
+  pray           1634 points: alive 0.743 vs 0.797, effect -0.0544 ± 0.0104; better at 0.16 of points, worse at 0.32; signal share of the spread 0.74 (1634 points)
+  elbereth       1572 points: alive 0.794 vs 0.793, effect +0.0011 ± 0.0070; better at 0.16 of points, worse at 0.17; signal share of the spread 0.41 (1572 points)
+  quaff_heal      105 points: alive 0.755 vs 0.769, effect -0.0143 ± 0.0335; better at 0.23 of points, worse at 0.25; signal share of the spread 0.57 (105 points)
+  stairs           26 points: alive 0.817 vs 0.885, effect -0.0673 ± 0.0851; better at 0.12 of points, worse at 0.27; signal share of the spread 0.80 (26 points)
+  elbereth_rest  1572 points: alive 0.794 vs 0.793, effect +0.0014 ± 0.0071; better at 0.16 of points, worse at 0.17; signal share of the spread 0.43 (1572 points)
+  upstairs        703 points: alive 0.776 vs 0.820, effect -0.0434 ± 0.0179; better at 0.15 of points, worse at 0.22; signal share of the spread 0.82 (703 points)
+  dig_down        775 points: alive 0.705 vs 0.708, effect -0.0029 ± 0.0082; better at 0.10 of points, worse at 0.12; signal share of the spread -0.19 (775 points)
+  oracle over rep means: +0.0664 (an upper bound: rep noise inflates it)
+horizon 100: continue alive 0.679 on 1634 points
+  pray           1634 points: alive 0.625 vs 0.679, effect -0.0542 ± 0.0104; better at 0.19 of points, worse at 0.36; signal share of the spread 0.70 (1634 points)
+  elbereth       1572 points: alive 0.671 vs 0.672, effect -0.0010 ± 0.0076; better at 0.19 of points, worse at 0.20; signal share of the spread 0.43 (1572 points)
+  quaff_heal      105 points: alive 0.626 vs 0.626, effect +0.0000 ± 0.0343; better at 0.28 of points, worse at 0.25; signal share of the spread 0.51 (105 points)
+  stairs           26 points: alive 0.688 vs 0.740, effect -0.0529 ± 0.1072; better at 0.23 of points, worse at 0.31; signal share of the spread 0.83 (26 points)
+  elbereth_rest  1572 points: alive 0.671 vs 0.672, effect -0.0006 ± 0.0076; better at 0.19 of points, worse at 0.20; signal share of the spread 0.42 (1572 points)
+  upstairs        703 points: alive 0.704 vs 0.756, effect -0.0526 ± 0.0182; better at 0.15 of points, worse at 0.26; signal share of the spread 0.82 (703 points)
+  dig_down        775 points: alive 0.499 vs 0.498, effect +0.0011 ± 0.0090; better at 0.13 of points, worse at 0.12; signal share of the spread -0.10 (775 points)
+  oracle over rep means: +0.0752 (an upper bound: rep noise inflates it)
+horizon 200: continue alive 0.592 on 1634 points
+  pray           1634 points: alive 0.533 vs 0.592, effect -0.0591 ± 0.0102; better at 0.19 of points, worse at 0.38; signal share of the spread 0.69 (1634 points)
+  elbereth       1572 points: alive 0.581 vs 0.584, effect -0.0024 ± 0.0075; better at 0.20 of points, worse at 0.21; signal share of the spread 0.42 (1572 points)
+  quaff_heal      105 points: alive 0.531 vs 0.518, effect +0.0131 ± 0.0323; better at 0.26 of points, worse at 0.24; signal share of the spread 0.48 (105 points)
+  stairs           26 points: alive 0.591 vs 0.654, effect -0.0625 ± 0.1072; better at 0.23 of points, worse at 0.35; signal share of the spread 0.79 (26 points)
+  elbereth_rest  1572 points: alive 0.582 vs 0.584, effect -0.0021 ± 0.0075; better at 0.21 of points, worse at 0.21; signal share of the spread 0.42 (1572 points)
+  upstairs        703 points: alive 0.646 vs 0.700, effect -0.0532 ± 0.0180; better at 0.15 of points, worse at 0.26; signal share of the spread 0.80 (703 points)
+  dig_down        775 points: alive 0.368 vs 0.364, effect +0.0034 ± 0.0088; better at 0.13 of points, worse at 0.12; signal share of the spread -0.11 (775 points)
+  oracle over rep means: +0.0756 (an upper bound: rep noise inflates it)
+horizon 300: continue alive 0.548 on 1634 points
+  pray           1634 points: alive 0.484 vs 0.548, effect -0.0636 ± 0.0102; better at 0.17 of points, worse at 0.38; signal share of the spread 0.70 (1634 points)
+  elbereth       1572 points: alive 0.535 vs 0.540, effect -0.0044 ± 0.0074; better at 0.20 of points, worse at 0.21; signal share of the spread 0.41 (1572 points)
+  quaff_heal      105 points: alive 0.487 vs 0.463, effect +0.0238 ± 0.0357; better at 0.34 of points, worse at 0.22; signal share of the spread 0.58 (105 points)
+  stairs           26 points: alive 0.543 vs 0.577, effect -0.0337 ± 0.1307; better at 0.27 of points, worse at 0.35; signal share of the spread 0.84 (26 points)
+  elbereth_rest  1572 points: alive 0.535 vs 0.540, effect -0.0051 ± 0.0073; better at 0.20 of points, worse at 0.22; signal share of the spread 0.40 (1572 points)
+  upstairs        703 points: alive 0.615 vs 0.664, effect -0.0500 ± 0.0177; better at 0.18 of points, worse at 0.26; signal share of the spread 0.80 (703 points)
+  dig_down        775 points: alive 0.301 vs 0.301, effect +0.0005 ± 0.0085; better at 0.12 of points, worse at 0.13; signal share of the spread -0.07 (775 points)
+  oracle over rep means: +0.0734 (an upper bound: rep noise inflates it)
+bootstrap bound for alive@300 (within-point noise):
+  cut 100: tail noise 0.0495 of 0.0923 (54%); a perfect V is worth at most x2.15 reps
+  cut 200: tail noise 0.0229 of 0.0923 (25%); a perfect V is worth at most x1.33 reps

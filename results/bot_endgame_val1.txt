@@ -1,0 +1,41 @@
+bot from Medusa down: 1000 games (/data/laya/nethack/nethackers/runs/val1/val-dwa-law-fem-100000-1000); progress mean 0.412
+
+Medusa level: Dlvl {21.0: 22, 22.0: 51, 23.0: 85, 24.0: 109, 25.0: 91, 26.0: 70, 27.0: 41, 28.0: 21}; castle: Dlvl {25.0: 93, 26.0: 68, 27.0: 79, 28.0: 94, 29.0: 100}; mazes between: {0.0: 59, 1.0: 72, 2.0: 72, 3.0: 68}
+
+reached Medusa 65.3%; passed it 50.5% (77% of those reaching)
+reached the castle 43.4% (86% of those past Medusa); crossed it into the Valley 1.0% (2% of those reaching)
+Gehennom 2.6%: by level teleport 1.6% (from Dlvl {1.0: 5, 2.0: 1, 3.0: 5, 4.0: 1, 8.0: 1, 18.0: 1, 25.0: 1, 29.0: 1}), other 1.0% (from Dlvl {25.0: 1, 26.0: 3, 27.0: 1, 28.0: 3, 29.0: 2})
+visited Sokoban 0.2% (all 4 levels 0.0%); of those: reached the castle 0.0%, crossed it 0.0%, Gehennom 0.0%
+
+where games end: castle 42.2%; before Medusa 27.7%; Medusa 14.9%; mazes 7.2%; Dlvl 21+, unclear 5.8%; Gehennom 2.0%; Medusa or mazes? 0.2%
+turns spent (median of those reaching): Medusa 9, mazes 4, castle 98
+
+== Medusa: 149 games end here (14.9%), died 149; Dlvl 24, turns on the level median 40 [p75 72], HP at end 11/76
+  causes:   drowned in deep water 46%; raven 28%; cobra 5%; pit viper 2%; snake 2%; giant eel 2%; petrified by Medusa 1%; drowned in a pool of water b 1%; python 1%; Grey-elf 1%
+  strategy at the end: DiveLogic.dig_first 51%; — 18%; Agent.emergency_strategy 11%; strategy.f 7%; Agent.fight2 6%; deep_poly_escape_strategy.f 1%; GlobalLogic.wait_out_unexpected_state_st 1%; DiveLogic.retreat_upstairs 1%
+  cause x strategy: drowned in deep water / DiveLogic.dig_first 44; drowned in deep water / — 23; raven / DiveLogic.dig_first 20; raven / Agent.emergency_strategy 10; raven / strategy.f 6; cobra / DiveLogic.dig_first 3; raven / Agent.fight2 3; petrified by Medusa / Agent.fight2 2; raven / GlobalLogic.wait_out_unexpected_state_st 2; pit viper / DiveLogic.dig_first 2
+
+== mazes: 72 games end here (7.2%), died 72; Dlvl 26, turns on the level median 5 [p75 9], HP at end 0/78
+  causes:   minotaur 62%; xorn 4%; invisible minotaur 4%; elf-lord 4%; squished under a boulder 3%; warhorse 3%; air elemental 3%; touch of death 3%; fire giant 1%; invisible plains centaur 1%
+  strategy at the end: Agent.fight2 36%; strategy.f 24%; DiveLogic.gehennom_scare 14%; Agent.emergency_strategy 10%; DiveLogic.dig_first 6%; rush_strategy.f 6%; — 3%; Agent.engulfed_fight 1%
+  cause x strategy: minotaur / Agent.fight2 22; minotaur / strategy.f 12; minotaur / DiveLogic.gehennom_scare 6; minotaur / Agent.emergency_strategy 3; squished under a boulder / DiveLogic.gehennom_scare 1; fire giant / strategy.f 1; xorn / DiveLogic.dig_first 1; invisible minotaur / DiveLogic.gehennom_scare 1; invisible plains centaur / — 1; squished under a boulder / Agent.fight2 1
+
+== castle: 422 games end here (42.2%), died 422; Dlvl 27, turns on the level median 98 [p75 1810], HP at end 0/81
+  causes:   minotaur 18%; shark 10%; died of starvation 6%; xorn 6%; drowned in a moat 2%; drowned in a moat by a giant 2%; touch of death 2%; captain 2%; Olog-hai 1%; Aleax 1%
+  strategy at the end: Agent.fight2 31%; Agent.emergency_strategy 16%; — 16%; strategy.f 10%; crossing_strategy.f 7%; DiveLogic.elbereth_rest 6%; rush_strategy.f 5%; DiveLogic.gehennom_scare 4%
+  cause x strategy: minotaur / Agent.fight2 41; died of starvation / — 23; minotaur / strategy.f 15; shark / Agent.emergency_strategy 14; xorn / crossing_strategy.f 10; shark / crossing_strategy.f 9; drowned in a moat / crossing_strategy.f 7; minotaur / rush_strategy.f 7; xorn / Agent.fight2 6; captain / Agent.fight2 6
+
+== Gehennom: 20 games end here (2.0%), died 20; Dlvl 45, turns on the level median 20 [p75 36], HP at end 0/66
+  causes:   xorn 20%; minotaur 15%; vampire lord 10%; giant mummy 5%; horse 5%; mastodon 5%; ettin zombie 5%; gargoyle 5%; vampire bat 5%; Grey-elf 5%
+  strategy at the end: Agent.fight2 40%; Agent.emergency_strategy 30%; strategy.f 15%; teleport_route_strategy.f 5%; — 5%; lottery_strategy.f 5%
+  cause x strategy: vampire lord / Agent.fight2 2; xorn / Agent.fight2 2; minotaur / strategy.f 2; giant mummy / Agent.emergency_strategy 1; xorn / Agent.emergency_strategy 1; horse / Agent.fight2 1; mastodon / teleport_route_strategy.f 1; ettin zombie / Agent.emergency_strategy 1; gargoyle / Agent.emergency_strategy 1; vampire bat / Agent.fight2 1
+
+== Medusa or mazes?: 2 games end here (0.2%), died 2; Dlvl 27, turns on the level median 4160 [p75 6086], HP at end 2/86
+  causes:   minotaur 50%; raven 50%
+  strategy at the end: Agent.fight2 50%; DiveLogic.dig_first 50%
+  cause x strategy: minotaur / Agent.fight2 1; raven / DiveLogic.dig_first 1
+
+== Dlvl 21+, unclear: 58 games end here (5.8%), died 58; Dlvl 25, turns on the level median 6 [p75 14], HP at end 0/79
+  causes:   minotaur 21%; drowned in a pool of water 7%; captain 7%; bolt of fire 5%; touch of death 5%; gremlin 5%; lieutenant 3%; elf-lord 3%; Grey-elf 3%; baluchitherium 3%
+  strategy at the end: Agent.fight2 24%; strategy.f 19%; — 14%; DiveLogic.dig_first 12%; DiveLogic.gehennom_scare 12%; Agent.emergency_strategy 10%; rush_strategy.f 3%; ExplorationLogic.search_neighbors_for_tr 2%
+  cause x strategy: minotaur / strategy.f 5; captain / Agent.fight2 3; minotaur / Agent.fight2 3; bolt of fire / DiveLogic.gehennom_scare 2; drowned in a pool of water / DiveLogic.dig_first 2; drowned in a pool of water / — 2; gremlin / Agent.fight2 2; lieutenant / DiveLogic.dig_first 1; elf-lord / Agent.fight2 1; Grey-elf / Agent.fight2 1

@@ -1,0 +1,8 @@
+# laya-frozen: the arena image + zstandard + faketime (laya-replay), the wall clock frozen (NetHack reads the
+# real hour in play), single-threaded math libs, and image/patch_arena.py (per-game results, seed-named traces).
+#   docker build -t laya-frozen -f Dockerfile.frozen .   (context: this directory, FROM laya-replay)
+FROM laya-replay
+COPY patch_arena.py /tmp/patch_arena.py
+RUN /opt/nethackers/.venv/bin/python /tmp/patch_arena.py && rm /tmp/patch_arena.py
+ENV LD_PRELOAD=/usr/lib/x86_64-linux-gnu/faketime/libfaketimeMT.so.1 FAKETIME="2026-10-01 21:52:10" FAKETIME_DONT_FAKE_MONOTONIC=1 \
+    OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMBA_NUM_THREADS=1

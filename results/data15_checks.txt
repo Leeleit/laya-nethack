@@ -1,0 +1,73 @@
+######## drop_check 14d -> 15d
+train: old 92766, bots' rows 10578, new 82188; ids = old minus bots: True; states equal: False; labels moved: end 0.87%, ttd 31.33%
+val: old 2465, bots' rows 10, new 2455; ids = old minus bots: True; states equal: True; labels moved: end 0.94%, ttd 29.61%
+test: old 2344, bots' rows 20, new 2324; ids = old minus bots: True; states equal: False; labels moved: end 0.77%, ttd 29.95%
+MISMATCH
+######## left_out
+{'excluded': 38, 'duplicate': 2, 'bot_games_train': 5416, 'bot_rows_train': 10578, 'bot_games_val': 5, 'bot_rows_val': 10, 'bot_games_test': 17, 'bot_rows_test': 20}
+######## human_data15d/val.jsonl
+2455 states of human_data15d/val.jsonl
+  msg_in_inv     0.1 %   e - magenta potion; g - killer slime mold. It explodes!
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.9 %   a - the blessed rustproof +1 Excalibur (wielded); b - uncursed bag called holding; c - egg; d - ring called 15
+######## human_data15d/train.jsonl
+50000 states of human_data15d/train.jsonl
+  msg_in_inv     0.0 %   a - the blessed rustproof +1 Excalibur (wielded); b - +0 dagger; c - blessed +3 small shield (worn); d - wand 
+  glued_items    0.0 %   
+  cut_item       0.0 %   a - the blessed rustproo; b - uncursed +0 elven; c - uncursed +4 small; d - 4 tripe rations; e - amulet of ref
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   unknown
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.3 %   a - 2 uncursed food rations; b - 3 uncursed killer bee corpses; c - 5 cursed food rations; d - 2 cursed Chines
+######## player_share
+== train: 5951 players, 41477 games, 82188 rows
+  games per player: median 2, p90 14, p99 82, max 1387
+  rows from the top 1 / 10 / 50 / 100 / 1% (59) players: 3.4% / 10.6% / 24.3% / 33.0% / 26.1%
+  effective number of players 1/sum(p^2): 372
+  rows of players with >= 10 / 100 / 1000 games: 71.0% / 22.0% / 3.4%
+  ascends labels, all: {'false': 79955, 'true': 2233}
+== val: 320 players, 1471 games, 2455 rows
+  games per player: median 2, p90 14, p99 19, max 19
+  rows from the top 1 / 10 / 50 / 100 / 1% (3) players: 0.8% / 8.1% / 40.7% / 67.6% / 2.4%
+  effective number of players 1/sum(p^2): 183
+  rows of players with >= 10 / 100 / 1000 games: 41.5% / 0.0% / 0.0%
+  ascends labels, all: {'false': 2323, 'true': 132}
+== test: 344 players, 1362 games, 2324 rows
+  games per player: median 2, p90 11, p99 19, max 20
+  rows from the top 1 / 10 / 50 / 100 / 1% (3) players: 0.9% / 8.6% / 42.3% / 67.0% / 2.6%
+  effective number of players 1/sum(p^2): 184
+  rows of players with >= 10 / 100 / 1000 games: 37.7% / 0.0% / 0.0%
+  ascends labels, all: {'false': 2235, 'true': 89}
+

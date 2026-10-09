@@ -1,0 +1,29 @@
+100 games; label: share of each outcome (turns)
+  move        523238  moved that way 94.70%, stayed 5.23%, moved elsewhere 0.07%
+  search      142627  did not move 99.95%, moved 0.05%
+  search5     127013  did not move 99.81%, moved 0.19%
+  pickup       26120  got an item 57.63%, other 34.80%, nothing 7.57%
+  throw        16642  thrown 98.89%, other 1.11%
+  apply         7593  - 100.00%
+  eat           2851  - 100.00%
+  elbereth      2523  - 100.00%
+  item          1246  - 100.00%
+  pray           732  - 100.00%
+  down           420  Dlvl +1 99.05%, Dlvl +0 0.95%
+  kick           412  - 100.00%
+  up             176  Dlvl -1 100.00%
+random parsed turns (14 of 64):
+  item      -                keys '/M␣Da⏎␣w⏎'                    msgs 'You drop a beartrap.'
+  item      -                keys ':WC'                          msgs 'What do you want to wear? [C or ?*] | You are now wearing a dwarvish cloak.'
+  item      -                keys 'Da⏎f⏎'                        msgs 'You drop a +0 orcish helm.'
+  item      -                keys 'M-e␣␣wa'                      msgs 'What do you want to wield? [- aN or ?*] | a - a rusty +1 long sword (weapon in hand).  The shark bites!'
+  item      -                keys 'Pr'                           msgs 'What do you want to put on? [r or ?*] | r - a circular amulet (being worn).'
+  item      -                keys 'WcWg'                         msgs 'What do you want to wear? [cgmGLQ or ?*] | You are now wearing a small shield. | What do you want to wear? [gm'
+  item      -                keys ':␣rM␣'                        msgs 'What do you want to read? [jkmtxBMW or ?*] | As you read the scroll, it disappears. | A mysterious force preve'
+  item      -                keys 'WF'                           msgs 'What do you want to wear? [F or ?*] | You are now wearing a dwarvish cloak.'
+  item      -                keys ':Wp'                          msgs 'What do you want to wear? [p or ?*] | You are now wearing a dwarvish cloak.'
+  item      -                keys ':␣zrn␣'                       msgs 'What do you want to zap? [r or ?*] | In what direction? | The frost giant hits!'
+  item      -                keys 'Wg'                           msgs 'What do you want to wear? [gLQ or ?*] | You finish your dressing maneuver.'
+  item      -                keys ':Wk'                          msgs 'What do you want to wear? [k or ?*] | You finish your dressing maneuver.'
+  item      -                keys ':PflR'                        msgs 'What do you want to put on? [fim or ?*] | Which ring-finger, Right or Left? [rl] | f - an uncursed bronze ring'
+  item      -                keys ':␣:␣qK'                       msgs 'What do you want to drink? [K or ?*] | Huh, What?  Where am I?'

@@ -1,0 +1,18 @@
+== train: 5995 players, 46893 games, 92766 rows
+  games per player: median 2, p90 14, p99 92, max 1387
+  rows from the top 1 / 10 / 50 / 100 / 1% (59) players: 3.0% / 13.7% / 29.2% / 37.7% / 31.0%
+  effective number of players 1/sum(p^2): 297
+  rows of players with >= 10 / 100 / 1000 games: 74.2% / 29.6% / 3.0%
+  ascends labels, all: {'false': 90503, 'true': 2263}
+== val: 322 players, 1476 games, 2465 rows
+  games per player: median 2, p90 14, p99 19, max 19
+  rows from the top 1 / 10 / 50 / 100 / 1% (3) players: 0.8% / 8.1% / 40.6% / 67.3% / 2.4%
+  effective number of players 1/sum(p^2): 184
+  rows of players with >= 10 / 100 / 1000 games: 41.3% / 0.0% / 0.0%
+  ascends labels, all: {'false': 2333, 'true': 132}
+== test: 345 players, 1379 games, 2344 rows
+  games per player: median 2, p90 12, p99 19, max 20
+  rows from the top 1 / 10 / 50 / 100 / 1% (3) players: 0.9% / 8.5% / 42.1% / 66.9% / 2.6%
+  effective number of players 1/sum(p^2): 184
+  rows of players with >= 10 / 100 / 1000 games: 38.2% / 0.0% / 0.0%
+  ascends labels, all: {'false': 2255, 'true': 89}

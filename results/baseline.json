@@ -1,0 +1,553 @@
+[
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "random",
+  "episodes": 30,
+  "success": 0.833,
+  "ends": {
+   "TASK_SUCCESSFUL": 25,
+   "ABORTED": 5
+  },
+  "steps_on_success": 31.9,
+  "good_move_rate": 0.251,
+  "ms_p50": 0.0,
+  "picks": {
+   "southeast": 185,
+   "southwest": 167,
+   "northeast": 164,
+   "northwest": 164,
+   "west": 163,
+   "south": 157,
+   "north": 156,
+   "east": 142
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "greedy-oracle",
+  "episodes": 30,
+  "success": 1.0,
+  "ends": {
+   "TASK_SUCCESSFUL": 30
+  },
+  "steps_on_success": 2.6,
+  "good_move_rate": 1.0,
+  "ms_p50": 0.01,
+  "picks": {
+   "southwest": 21,
+   "southeast": 15,
+   "northeast": 13,
+   "northwest": 11,
+   "west": 7,
+   "south": 5,
+   "east": 5,
+   "north": 1
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "random",
+  "episodes": 30,
+  "success": 0.367,
+  "ends": {
+   "MAX_STEPS": 19,
+   "TASK_SUCCESSFUL": 11
+  },
+  "steps_on_success": 49.6,
+  "good_move_rate": 0.339,
+  "ms_p50": 0.0,
+  "picks": {
+   "southeast": 323,
+   "west": 318,
+   "northwest": 310,
+   "north": 304,
+   "northeast": 303,
+   "east": 299,
+   "southwest": 296,
+   "south": 293
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "greedy-oracle",
+  "episodes": 30,
+  "success": 1.0,
+  "ends": {
+   "TASK_SUCCESSFUL": 30
+  },
+  "steps_on_success": 6.9,
+  "good_move_rate": 1.0,
+  "ms_p50": 0.01,
+  "picks": {
+   "southwest": 73,
+   "northwest": 34,
+   "northeast": 28,
+   "southeast": 26,
+   "south": 18,
+   "north": 13,
+   "west": 11,
+   "east": 3
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "random",
+  "episodes": 30,
+  "success": 0.067,
+  "ends": {
+   "DEATH": 20,
+   "MAX_STEPS": 8,
+   "TASK_SUCCESSFUL": 2
+  },
+  "steps_on_success": 14,
+  "good_move_rate": 0.319,
+  "ms_p50": 0.0,
+  "picks": {
+   "south": 178,
+   "west": 175,
+   "northwest": 161,
+   "north": 160,
+   "northeast": 155,
+   "southeast": 155,
+   "southwest": 153,
+   "east": 143
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "greedy-oracle",
+  "episodes": 30,
+  "success": 1.0,
+  "ends": {
+   "TASK_SUCCESSFUL": 30
+  },
+  "steps_on_success": 8.0,
+  "good_move_rate": 1.0,
+  "ms_p50": 0.01,
+  "picks": {
+   "northeast": 55,
+   "northwest": 48,
+   "southeast": 43,
+   "southwest": 28,
+   "east": 26,
+   "west": 15,
+   "north": 14,
+   "south": 12
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "laya/text",
+  "episodes": 30,
+  "success": 0.467,
+  "ends": {
+   "TASK_SUCCESSFUL": 14,
+   "ABORTED": 16
+  },
+  "steps_on_success": 1.9,
+  "good_move_rate": 0.483,
+  "ms_p50": 9.18,
+  "picks": {
+   "southwest": 353,
+   "northeast": 347,
+   "southeast": 250,
+   "northwest": 248,
+   "east": 164,
+   "west": 161,
+   "north": 53,
+   "south": 51
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "laya/text",
+  "episodes": 30,
+  "success": 0.2,
+  "ends": {
+   "MAX_STEPS": 24,
+   "TASK_SUCCESSFUL": 6
+  },
+  "steps_on_success": 6.7,
+  "good_move_rate": 0.484,
+  "ms_p50": 9.19,
+  "picks": {
+   "southwest": 454,
+   "northeast": 451,
+   "east": 361,
+   "west": 355,
+   "northwest": 355,
+   "southeast": 349,
+   "south": 63,
+   "north": 52
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "laya/text",
+  "episodes": 30,
+  "success": 0.367,
+  "ends": {
+   "DEATH": 9,
+   "MAX_STEPS": 10,
+   "TASK_SUCCESSFUL": 11
+  },
+  "steps_on_success": 9.5,
+  "good_move_rate": 0.387,
+  "ms_p50": 9.38,
+  "picks": {
+   "southwest": 344,
+   "east": 263,
+   "west": 155,
+   "north": 136,
+   "northeast": 116,
+   "south": 91,
+   "northwest": 78,
+   "southeast": 75
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "laya/cands",
+  "episodes": 30,
+  "success": 0.433,
+  "ends": {
+   "ABORTED": 17,
+   "TASK_SUCCESSFUL": 13
+  },
+  "steps_on_success": 2.2,
+  "good_move_rate": 0.304,
+  "ms_p50": 9.21,
+  "picks": {
+   "east": 704,
+   "west": 401,
+   "north": 307,
+   "south": 303,
+   "northeast": 9,
+   "southeast": 3,
+   "northwest": 1
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "laya/cands",
+  "episodes": 30,
+  "success": 0.5,
+  "ends": {
+   "MAX_STEPS": 15,
+   "TASK_SUCCESSFUL": 15
+  },
+  "steps_on_success": 8.3,
+  "good_move_rate": 0.386,
+  "ms_p50": 9.26,
+  "picks": {
+   "east": 600,
+   "west": 350,
+   "north": 332,
+   "south": 296,
+   "southeast": 26,
+   "northeast": 21
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "laya/cands",
+  "episodes": 30,
+  "success": 0.367,
+  "ends": {
+   "MAX_STEPS": 16,
+   "DEATH": 3,
+   "TASK_SUCCESSFUL": 11
+  },
+  "steps_on_success": 10.7,
+  "good_move_rate": 0.312,
+  "ms_p50": 9.39,
+  "picks": {
+   "north": 668,
+   "south": 635,
+   "east": 256,
+   "west": 132,
+   "northeast": 25,
+   "northwest": 21,
+   "southeast": 21,
+   "southwest": 13
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "laya-multilingual/text",
+  "episodes": 30,
+  "success": 0.467,
+  "ends": {
+   "ABORTED": 16,
+   "TASK_SUCCESSFUL": 14
+  },
+  "steps_on_success": 1.4,
+  "good_move_rate": 0.343,
+  "ms_p50": 7.55,
+  "picks": {
+   "southeast": 598,
+   "northwest": 303,
+   "northeast": 256,
+   "north": 165,
+   "southwest": 152,
+   "east": 56,
+   "west": 54,
+   "south": 35
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "laya-multilingual/text",
+  "episodes": 30,
+  "success": 0.1,
+  "ends": {
+   "MAX_STEPS": 27,
+   "TASK_SUCCESSFUL": 3
+  },
+  "steps_on_success": 3.7,
+  "good_move_rate": 0.387,
+  "ms_p50": 7.47,
+  "picks": {
+   "west": 584,
+   "east": 553,
+   "northwest": 398,
+   "southeast": 396,
+   "northeast": 341,
+   "north": 202,
+   "south": 136,
+   "southwest": 101
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "laya-multilingual/text",
+  "episodes": 30,
+  "success": 0.2,
+  "ends": {
+   "DEATH": 5,
+   "MAX_STEPS": 19,
+   "TASK_SUCCESSFUL": 6
+  },
+  "steps_on_success": 34.5,
+  "good_move_rate": 0.317,
+  "ms_p50": 7.31,
+  "picks": {
+   "northeast": 375,
+   "west": 356,
+   "southeast": 333,
+   "north": 332,
+   "east": 270,
+   "southwest": 253,
+   "northwest": 125,
+   "south": 115
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "laya-multilingual/cands",
+  "episodes": 30,
+  "success": 0.6,
+  "ends": {
+   "TASK_SUCCESSFUL": 18,
+   "ABORTED": 12
+  },
+  "steps_on_success": 1.8,
+  "good_move_rate": 0.149,
+  "ms_p50": 7.35,
+  "picks": {
+   "northeast": 903,
+   "southeast": 159,
+   "northwest": 152,
+   "north": 10,
+   "south": 4,
+   "west": 3,
+   "east": 1
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "laya-multilingual/cands",
+  "episodes": 30,
+  "success": 0.333,
+  "ends": {
+   "MAX_STEPS": 20,
+   "TASK_SUCCESSFUL": 10
+  },
+  "steps_on_success": 7.2,
+  "good_move_rate": 0.373,
+  "ms_p50": 7.04,
+  "picks": {
+   "northeast": 674,
+   "southeast": 361,
+   "southwest": 344,
+   "northwest": 342,
+   "north": 336,
+   "west": 7,
+   "south": 4,
+   "east": 4
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "laya-multilingual/cands",
+  "episodes": 30,
+  "success": 0.233,
+  "ends": {
+   "MAX_STEPS": 21,
+   "TASK_SUCCESSFUL": 7,
+   "DEATH": 2
+  },
+  "steps_on_success": 8,
+  "good_move_rate": 0.146,
+  "ms_p50": 6.88,
+  "picks": {
+   "northeast": 754,
+   "southeast": 645,
+   "north": 528,
+   "northwest": 169,
+   "southwest": 26,
+   "south": 19,
+   "west": 17,
+   "east": 15
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "laya-typed-decisions/text",
+  "episodes": 30,
+  "success": 0.667,
+  "ends": {
+   "TASK_SUCCESSFUL": 20,
+   "ABORTED": 10
+  },
+  "steps_on_success": 1.4,
+  "good_move_rate": 0.52,
+  "ms_p50": 8.22,
+  "picks": {
+   "northeast": 251,
+   "southwest": 248,
+   "northwest": 203,
+   "southeast": 200,
+   "south": 54,
+   "north": 52,
+   "east": 12,
+   "west": 9
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "laya-typed-decisions/text",
+  "episodes": 30,
+  "success": 0.433,
+  "ends": {
+   "MAX_STEPS": 17,
+   "TASK_SUCCESSFUL": 13
+  },
+  "steps_on_success": 7.1,
+  "good_move_rate": 0.409,
+  "ms_p50": 8.52,
+  "picks": {
+   "west": 444,
+   "east": 373,
+   "southeast": 326,
+   "northwest": 303,
+   "northeast": 106,
+   "southwest": 91,
+   "south": 79,
+   "north": 70
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "laya-typed-decisions/text",
+  "episodes": 30,
+  "success": 0.2,
+  "ends": {
+   "MAX_STEPS": 11,
+   "TASK_SUCCESSFUL": 6,
+   "DEATH": 13
+  },
+  "steps_on_success": 14.7,
+  "good_move_rate": 0.452,
+  "ms_p50": 9.05,
+  "picks": {
+   "southwest": 282,
+   "northeast": 214,
+   "west": 200,
+   "southeast": 182,
+   "south": 142,
+   "east": 138,
+   "northwest": 125,
+   "north": 117
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-5x5-v0",
+  "agent": "laya-typed-decisions/cands",
+  "episodes": 30,
+  "success": 0.633,
+  "ends": {
+   "TASK_SUCCESSFUL": 19,
+   "ABORTED": 11
+  },
+  "steps_on_success": 1.7,
+  "good_move_rate": 0.291,
+  "ms_p50": 9.13,
+  "picks": {
+   "east": 392,
+   "west": 351,
+   "south": 190,
+   "north": 153,
+   "northwest": 33,
+   "northeast": 6,
+   "southwest": 4,
+   "southeast": 4
+  }
+ },
+ {
+  "env": "MiniHack-Room-Random-15x15-v0",
+  "agent": "laya-typed-decisions/cands",
+  "episodes": 30,
+  "success": 0.333,
+  "ends": {
+   "MAX_STEPS": 20,
+   "TASK_SUCCESSFUL": 10
+  },
+  "steps_on_success": 9.9,
+  "good_move_rate": 0.4,
+  "ms_p50": 9.0,
+  "picks": {
+   "east": 1007,
+   "west": 942,
+   "south": 67,
+   "north": 50,
+   "northeast": 26,
+   "southeast": 5,
+   "southwest": 2
+  }
+ },
+ {
+  "env": "MiniHack-Room-Monster-15x15-v0",
+  "agent": "laya-typed-decisions/cands",
+  "episodes": 30,
+  "success": 0.533,
+  "ends": {
+   "TASK_SUCCESSFUL": 16,
+   "MAX_STEPS": 9,
+   "DEATH": 5
+  },
+  "steps_on_success": 11.4,
+  "good_move_rate": 0.387,
+  "ms_p50": 9.25,
+  "picks": {
+   "east": 254,
+   "south": 244,
+   "north": 241,
+   "northeast": 174,
+   "west": 124,
+   "southwest": 49,
+   "southeast": 20,
+   "northwest": 18
+  }
+ }
+]

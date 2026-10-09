@@ -1,0 +1,22 @@
+human questions: train 92862 states, val  2471 states (324 players); features: hp, maxhp, hp_frac, dlvl, deepest, xl, ac, turn, turn_known, v34, chaotic, male, inv_known, n_items, gold, wand, ring, amulet, potion, scroll, spellbook, bag, worn, blessed, cursed, unihorn, reflection, mr, lifesave, speed, excalibur, dragon, mithril, marker, digging
+
+== fate: 2471 test rows, labels [743, 1167, 424, 137] (gains vs gbm / vs the first laya model: positive = better)
+  prior                  log loss 1.1947 [1.1372, 1.2740]  accuracy 0.472 [0.446, 0.493]  RPS 0.1472 [0.1371, 0.1608]
+  logit                  log loss 0.9664 [0.9296, 1.0126]  accuracy 0.581 [0.556, 0.599]  RPS 0.1148 [0.1083, 0.1219]
+  gbm                    log loss 0.8831 [0.8470, 0.9239]  accuracy 0.592 [0.566, 0.612]  RPS 0.1053 [0.0998, 0.1114]
+  eff-a-human_data5d-val log loss 0.9005 [0.8645, 0.9527]  accuracy 0.597 [0.574, 0.614]  RPS 0.1064 [0.1009, 0.1137]  vs gbm -0.0174 [-0.0297, -0.0085]
+  eff-c-human_data5d-val log loss 0.9143 [0.8743, 0.9643]  accuracy 0.591 [0.563, 0.611]  RPS 0.1072 [0.1019, 0.1137]  vs gbm -0.0312 [-0.0477, -0.0187]  vs eff-a-human_data5d-val: log loss -0.0138 [-0.0234, -0.0020], RPS -0.0008 [-0.0019, +0.0007]
+  eff-c-human_data5d-val-single log loss 0.9046 [0.8694, 0.9468]  accuracy 0.590 [0.562, 0.611]  RPS 0.1068 [0.1014, 0.1129]  vs gbm -0.0215 [-0.0372, -0.0067]  vs eff-a-human_data5d-val: log loss -0.0041 [-0.0182, +0.0102], RPS -0.0003 [-0.0021, +0.0017]
+  eff-c2-human_data5d-val-multi log loss 0.8983 [0.8599, 0.9481]  accuracy 0.600 [0.575, 0.618]  RPS 0.1055 [0.1003, 0.1123]  vs gbm -0.0152 [-0.0294, -0.0038]  vs eff-a-human_data5d-val: log loss +0.0022 [-0.0051, +0.0099], RPS +0.0009 [-0.0000, +0.0020]
+  eff-c2-human_data5d-val-single log loss 0.8894 [0.8566, 0.9279]  accuracy 0.594 [0.573, 0.612]  RPS 0.1053 [0.1004, 0.1112]  vs gbm -0.0064 [-0.0242, +0.0106]  vs eff-a-human_data5d-val: log loss +0.0110 [-0.0053, +0.0285], RPS +0.0011 [-0.0010, +0.0033]
+
+== ttd: 2445 test rows, labels [773, 1199, 473] (gains vs gbm / vs the first laya model: positive = better)
+  prior                  log loss 1.0345 [1.0082, 1.0624]  accuracy 0.490 [0.465, 0.514]  RPS 0.1866 [0.1795, 0.1951]
+  logit                  log loss 0.8638 [0.8361, 0.8978]  accuracy 0.591 [0.570, 0.612]  RPS 0.1492 [0.1431, 0.1571]
+  gbm                    log loss 0.8423 [0.8145, 0.8797]  accuracy 0.605 [0.582, 0.625]  RPS 0.1442 [0.1380, 0.1519]
+  eff-a-human_data5d-val log loss 0.8495 [0.8176, 0.8924]  accuracy 0.612 [0.589, 0.633]  RPS 0.1445 [0.1380, 0.1535]  vs gbm -0.0071 [-0.0185, +0.0032]
+  eff-c-human_data5d-val log loss 0.8755 [0.8368, 0.9264]  accuracy 0.612 [0.589, 0.635]  RPS 0.1469 [0.1397, 0.1565]  vs gbm -0.0332 [-0.0481, -0.0171]  vs eff-a-human_data5d-val: log loss -0.0260 [-0.0357, -0.0155], RPS -0.0025 [-0.0037, -0.0006]
+  eff-c-human_data5d-val-single log loss 0.8691 [0.8306, 0.9156]  accuracy 0.610 [0.586, 0.632]  RPS 0.1466 [0.1395, 0.1556]  vs gbm -0.0268 [-0.0395, -0.0129]  vs eff-a-human_data5d-val: log loss -0.0196 [-0.0279, -0.0098], RPS -0.0022 [-0.0034, -0.0002]
+  eff-c2-human_data5d-val-multi log loss 0.8610 [0.8224, 0.9118]  accuracy 0.613 [0.589, 0.634]  RPS 0.1454 [0.1385, 0.1552]  vs gbm -0.0187 [-0.0329, -0.0051]  vs eff-a-human_data5d-val: log loss -0.0115 [-0.0215, -0.0023], RPS -0.0009 [-0.0022, +0.0005]
+  eff-c2-human_data5d-val-single log loss 0.8583 [0.8264, 0.9020]  accuracy 0.607 [0.583, 0.629]  RPS 0.1461 [0.1395, 0.1552]  vs gbm -0.0160 [-0.0288, -0.0037]  vs eff-a-human_data5d-val: log loss -0.0089 [-0.0184, +0.0025], RPS -0.0016 [-0.0031, +0.0002]
+eff-c2: saved ckpt/eff-c2 after 46432 steps, 2499s

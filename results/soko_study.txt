@@ -1,0 +1,38 @@
+A. flag games: 5000; entered Sokoban 25.0%, all 4 levels 8.6%, prize level 8.6%, left it back to the Dungeons 18.5%
+  at entry (median): turn 16797, Xp 9, AC -3, HP 87/88, deepest Dlvl 8; turns inside median 2102 [p75 3378]; weak with hunger inside 65.8%
+  levels reached: 1: 430, 2: 264, 3: 129, 4: 428
+  loot gained inside (top): F - a granite ring 6; f - a sapphire ring 6; g - a wand of digging 6; u - a sapphire ring 5; m - a clay ring 5; i - an emerald ring 5; t - a gold ring 5; F - a silver ring 5; s - a wand of digging 5; Q - a wand of light 5; E - a wire ring 5; H - an opal ring 5
+
+where the flag games end, with the paired base game (progress arm vs base, base reached the castle):
+  after Sokoban, Medusa or deeper          809 (16.2%)  progress 0.531 vs base 0.486; castle 60.3% vs base 52.3%
+      causes: minotaur 182; drowned in deep water 101; raven 55; died of starvation 47; shark 38; xorn 30; drowned in a moat by a giant 14; elf-lord 13
+  after Sokoban, before Medusa             106 (2.1%)  progress 0.227 vs base 0.476; castle 2.8% vs base 49.1%
+      causes: died of starvation 16; elf-lord 7; blast of fire 5; leocrotta 3; mumak 3; soldier ant 3; Elvenking 3; drowned in a pool of water 2
+  died before reaching Sokoban            2182 (43.6%)  progress 0.089 vs base 0.311; castle 0.1% vs base 31.7%
+      causes: soldier ant 148; rothe 85; hill orc 71; giant ant 57; bolt of fire 48; died of starvation 46; fire ant 42; Woodland-elf 40
+  ended inside Sokoban                     336 (6.7%)  progress 0.134 vs base 0.455; castle 0.0% vs base 45.8%
+      causes: died of starvation 27; troll 13; mumak 13; death ray 12; Grey-elf 11; soldier ant 10; pyrolisk 10; leocrotta 10
+  never entered Sokoban (game went on)    1567 (31.3%)  progress 0.541 vs base 0.491; castle 60.1% vs base 51.9%
+      causes: minotaur 303; drowned in deep water 178; raven 92; died of starvation 91; shark 84; xorn 58; touch of death 28; drowned in a moat by a giant 27
+
+finished Sokoban (prize level, came back; selected: survived the trip) 309: progress 0.490 vs their base games 0.486; castle 51.1% vs 53.4%; crossed 0.6% vs 1.3%; levitation ('float') after Sokoban in 19.1% of them
+starvation: flag games 227, of them weak inside Sokoban 67, ended inside 27; base games 164
+
+B. branch points 4150: the flag better (progress) 21.9%, worse 50.6%; state there median: Dlvl 2, XL 7, AC -1, HP 75/77, turn 12096
+  mean progress gain over never, 5-fold cross-fitted, 95% bootstrap over points:
+    never (the bot as is)              +0.0000 [+0.0000, +0.0000]
+    always (the flag)                  -0.1212 [-0.1285, -0.1137]
+    model: flag where predicted > 0    -0.0017 [-0.0034, +0.0003]  (flag at 6.0% of points)
+    oracle                             +0.0397 [+0.0368, +0.0430]
+  by xl: (6.999, 8.0]: -0.121 (n 4150)
+  by ac: (-11.001, -3.0]: -0.094 (n 1260); (-3.0, -1.0]: -0.106 (n 860); (-1.0, 3.0]: -0.146 (n 1442); (3.0, 10.0]: -0.142 (n 588)
+  by maxhp: (1.999, 70.0]: -0.159 (n 1149); (70.0, 77.0]: -0.127 (n 1039); (77.0, 83.0]: -0.120 (n 927); (83.0, 108.0]: -0.075 (n 1035)
+  by dlvl: (0.999, 2.0]: -0.086 (n 2404); (2.0, 3.0]: -0.170 (n 1712); (3.0, 47.0]: -0.140 (n 34)
+  by turn: (4324.999, 10290.5]: -0.169 (n 1038); (10290.5, 12095.5]: -0.150 (n 1037); (12095.5, 14072.0]: -0.101 (n 1038); (14072.0, 56920.0]: -0.065 (n 1037)
+
+C. humans, NLD-NAO Valkyries with an achieve field: 296438 games
+  ascended             3287  Sokoban prize 89.5%  Medusa killed 98.0%  (Dwa 89.2%, Hum 89.8%)
+  died, Dlvl 10-24    31424  Sokoban prize 26.9%  Medusa killed 0.6%  (Dwa 28.5%, Hum 25.9%)
+  died, Dlvl 25+       5788  Sokoban prize 79.8%  Medusa killed 68.8%  (Dwa 81.1%, Hum 78.7%)
+  died, Dlvl < 10    255939  Sokoban prize 1.2%  Medusa killed 0.0%  (Dwa 1.2%, Hum 1.2%)
+  reached Dlvl 25+: with the prize ascended 38.9% (n 7562), without 22.9% (n 1513)

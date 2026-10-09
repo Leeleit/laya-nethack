@@ -1,0 +1,12 @@
+NAO games with turns: 6006069
+  turns <=     1: 67.13%   maxlvl 1 100.0%   top ends: quit 63%, escaped 37%, slipped while mounting a 0%
+  turns <=     2: 68.26%   maxlvl 1 100.0%   top ends: quit 63%, escaped 37%, slipped while mounting a 0%
+  turns <=     5: 69.64%   maxlvl 1 100.0%   top ends: quit 63%, escaped 37%, slipped while mounting a 0%
+  turns <=    10: 70.64%   maxlvl 1 100.0%   top ends: quit 63%, escaped 36%, slipped while mounting a 0%
+  turns <=    20: 71.41%   maxlvl 1  99.9%   top ends: quit 63%, escaped 36%, slipped while mounting a 0%
+  turns <=    50: 72.38%   maxlvl 1  99.8%   top ends: quit 62%, escaped 36%, slipped while mounting a 0%
+  turns <=   100: 73.39%   maxlvl 1  99.6%   top ends: quit 62%, escaped 36%, slipped while mounting a 0%
+  turns <=   200: 74.81%   maxlvl 1  99.0%   top ends: quit 61%, escaped 35%, slipped while mounting a 0%
+  turns <=   500: 77.89%   maxlvl 1  96.5%   top ends: quit 59%, escaped 34%, killed by a jackal 1%
+  turns <=  1000: 82.09%   maxlvl 1  91.9%   top ends: quit 57%, escaped 32%, killed by a jackal 1%
+histogram of log10(turns): 0.0:67.1%  0.2:1.1%  0.4:0.6%  0.6:1.0%  0.8:0.6%  1.0:0.6%  1.2:0.5%  1.4:0.5%  1.6:0.6%  1.8:0.7%  2.0:0.9%  2.2:1.2%  2.4:1.5%  2.6:2.1%  2.8:3.0%  3.0:4.2%  3.2:4.6%  3.4:3.8%  3.6:2.3%  3.8:1.2%  4.0:0.7%  4.2:0.4%  4.4:0.3%  4.6:0.3%  4.8:0.1%  5.0:0.0%  5.2:0.0%

@@ -1,0 +1,10 @@
+== snapshot step 13277 (2026-10-03 15:21:52)
+fate: 9807 common cases; labels [2791, 4731, 1890, 395]
+  nh-v2            log loss 0.9032  accuracy 0.572  mean predicted [0.266, 0.541, 0.16, 0.033]
+ttd: 9719 common cases; labels [2985, 4937, 1797]
+  nh-v2            log loss 0.8785  accuracy 0.583  mean predicted [0.31, 0.497, 0.193]
+== snapshot step 27014 (2026-10-03 15:52:02)
+fate: 9807 common cases; labels [2791, 4731, 1890, 395]
+  nh-v2            log loss 0.9192  accuracy 0.581  mean predicted [0.3, 0.531, 0.145, 0.023]
+ttd: 9719 common cases; labels [2985, 4937, 1797]
+  nh-v2            log loss 0.8725  accuracy 0.603  mean predicted [0.299, 0.553, 0.148]

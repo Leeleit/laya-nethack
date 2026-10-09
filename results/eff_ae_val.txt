@@ -1,0 +1,24 @@
+2471 states of val in both; v5 preds/eff-a-human_data5d-val.parquet, v6 preds/eff-e-human_data6d-val.parquet
+
+== ttd (v5 classes): 2310 rows, labels [773, 1199, 338]
+  v5 log loss 0.8681 [0.8289, 0.9026]  accuracy 0.599  RPS 0.1472 [0.1394, 0.1541]
+  v6 log loss 0.8667 [0.8303, 0.8986]  accuracy 0.592  RPS 0.1474 [0.1401, 0.1540]
+  gain v6 over v5: log loss 0.0013 [-0.0062, 0.0091], RPS -0.0002 [-0.0015, 0.0012]
+
+== fate 0-2 (games not ascended; v5 renormalised, v6 depth folded): 2334 rows, labels [743, 1167, 424]
+  v5 log loss 0.8228 [0.7880, 0.8536]  accuracy 0.607  RPS 0.1452 [0.1376, 0.1524]
+  v6 log loss 0.8287 [0.7959, 0.8585]  accuracy 0.618  RPS 0.1444 [0.1372, 0.1518]
+  gain v6 over v5: log loss -0.0059 [-0.0133, 0.0018], RPS 0.0008 [-0.0006, 0.0023]
+
+== ascends (binary): 2471 rows, labels [2334, 137]
+  v5 log loss 0.1233 [0.0851, 0.1767]  accuracy 0.961  RPS 0.0289 [0.0194, 0.0408]
+  v6 log loss 0.1260 [0.0853, 0.1827]  accuracy 0.963  RPS 0.0279 [0.0185, 0.0389]
+  gain v6 over v5: log loss -0.0026 [-0.0098, 0.0042], RPS 0.0010 [-0.0007, 0.0027]
+  AUC v5 0.932  v6 0.932
+
+== v6 questions on their own targets (hard label; RPS for the ordinal ones)
+  ttd    2445 rows, 19 options: log loss 2.6688 [2.6334, 2.7001] (held-out prior 2.9005), accuracy 0.135, RPS 0.1321 [0.1272, 0.1362]
+  depth  2471 rows, 12 options: log loss 1.9236 [1.8893, 1.9681] (held-out prior 2.2707), accuracy 0.293, RPS 0.1093 [0.1038, 0.1153]
+  end    2471 rows, 21 options: log loss 2.4000 [2.3398, 2.4582] (held-out prior 2.5728), accuracy 0.334
+eff-a: saved ckpt/eff-a after 23130 steps, 2693s | predict: 4916 cases in 14s -> preds/eff-a-human_data5d-val.parquet
+eff-e: saved ckpt/eff-e after 46346 steps, 6374s | predict: 9858 cases in 31s -> preds/eff-e-human_data6d-val.parquet

@@ -1,0 +1,52 @@
+######## human_data9d/val.jsonl
+2471 states of human_data9d/val.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+######## human_data9d/train.jsonl
+50000 states of human_data9d/train.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+######## tokens human_data5d
+2471 states: tokens mean 375, median 306, p90 691
+######## tokens human_data8d
+2471 states: tokens mean 273, median 232, p90 490
+######## tokens human_data9d
+2471 states: tokens mean 217, median 186, p90 373

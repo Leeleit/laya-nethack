@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.parquet
+*.npz
+*.jsonl
+*.jsonl.zst
+*.log
+*.pt
+*.safetensors
+ckpt/
+preds/
+.venv/

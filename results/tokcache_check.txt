@@ -1,0 +1,5 @@
+small multi=False: 11983 items; off/miss/hit/sub hit; miss equal, hit equal, subset hit equal
+small multi=True: 3000 items; off/miss/hit/sub hit; miss equal, hit equal, subset hit equal
+cache keys 2 (single, multi), shards in the first 1
+full human_data14d/train.jsonl: 370381 items; fresh 109s, miss 108s, hit 3.3s; miss equal, hit equal
+subset human_data14d/train_g4.jsonl: 93366 items; fresh 32s, hit 2.2s; equal

@@ -1,0 +1,19 @@
+dropped before the threshold: {'version': 24374, 'quit/escaped': 4620295, 'no ttyrec dir / times': 387088, 'turns <= 50': 61674, 'bot accounts': 7716, 'no ttyrec': 128018}
+
+Val-Dwa: 68122 games (> 50 turns, known fate, ttyrec, no bots)
+  maxlvl < 4 (cut):  15001 games = 22.0%, ascended 0; turns: median 731, p90 1801, share of all turns 3.65%
+  maxlvl >= 4 (kept): 53121 games, ascended 1524; turns median 2952
+  the cut games end on Dlvl: 1: 4000, 2: 5609, 3: 5392
+  the cut games by turns: 51-100: 753, 101-200: 1201, 201-500: 3267, 501-1000: 4592, 1001-2000: 4071, 2001-5000: 1068, > 5000: 49
+
+Val-Hum: 113777 games (> 50 turns, known fate, ttyrec, no bots)
+  maxlvl < 4 (cut):  27570 games = 24.2%, ascended 0; turns: median 715, p90 1758, share of all turns 4.57%
+  maxlvl >= 4 (kept): 86207 games, ascended 1478; turns median 3000
+  the cut games end on Dlvl: 1: 6809, 2: 9255, 3: 11506
+  the cut games by turns: 51-100: 1298, 101-200: 2322, 201-500: 6110, 501-1000: 8947, 1001-2000: 6912, 2001-5000: 1604, > 5000: 377
+
+other roles: 1123594 games (> 50 turns, known fate, ttyrec, no bots)
+  maxlvl < 4 (cut):  385683 games = 34.3%, ascended 0; turns: median 558, p90 1490, share of all turns 8.99%
+  maxlvl >= 4 (kept): 737911 games, ascended 18994; turns median 2498
+  the cut games end on Dlvl: 0: 1, 1: 123501, 2: 132567, 3: 129612, 4: 1, 6: 1
+  the cut games by turns: 51-100: 28467, 101-200: 44879, 201-500: 102455, 501-1000: 117458, 1001-2000: 73818, 2001-5000: 15353, > 5000: 3253

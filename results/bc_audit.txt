@@ -1,0 +1,15 @@
+100 games; label: share of each outcome (turns)
+  move        531755  moved that way 94.75%, stayed 5.18%, moved elsewhere 0.07%
+  search      144515  did not move 99.95%, moved 0.05%
+  search5     128175  did not move 99.82%, moved 0.18%
+  throw        17515  thrown 98.88%, other 1.12%
+  pickup       15040  got an item 99.34%, other 0.66%
+  eat           4614  - 100.00%
+  apply         3763  - 100.00%
+  elbereth      2648  - 100.00%
+  item          1422  - 100.00%
+  pray           752  - 100.00%
+  down           420  Dlvl +1 99.05%, Dlvl +0 0.95%
+  kick           412  - 100.00%
+  up             176  Dlvl -1 100.00%
+random parsed turns (0 of 1714):

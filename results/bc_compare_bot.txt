@@ -1,0 +1,6 @@
+laya: no games in /nonexistent
+bot (/data/laya/nethack/nethackers/runs/val1/val-dwa-law-fem-100000-1000/results.json): 1000 games
+  turns       p25 / median / p75  10561 / 13178 / 16865
+  max depth   p25 / median / p75  12 / 25 / 27;  reached Dlvl >= 5: 82%, >= 10: 78%
+  progress    mean 0.412, median 0.466
+  causes: killed by a minotaur 14%; drowned in deep water 7%; killed by a raven 5%; killed by a shark 4%; died of starvation 4%; killed by a xorn 3%

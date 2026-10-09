@@ -1,0 +1,11 @@
+W1002 03:31:03.435000 4050872 torch/utils/_pytree.py:630] <enum 'KernelPreference'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+W1002 03:31:03.455000 4050872 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+8192x8192x8192: bf16 234  fp8 689  nvfp4 73 TFLOPS
+8192x1024x5248: bf16 224  fp8 566  nvfp4 102 TFLOPS
+8192x2624x1024: bf16 201  fp8 508  nvfp4 26 TFLOPS
+== base
+W1002 03:31:11.866000 4051020 torch/utils/_pytree.py:630] <enum 'ScaleCalculationMode'> is an Enum subclass and is now natively supported by torch.compile as an opaque value type. Calling register_constant() on Enum subclasses is deprecated and will be an error in a future release.
+epoch 1 step 200/600 loss 0.2777 | 5.42 steps/s 43152 tok/s | 16.3 GiB
+epoch 1 step 400/600 loss 0.2058 | 5.67 steps/s 45425 tok/s | 16.3 GiB
+epoch 1 step 600/600 loss 0.2008 | 5.78 steps/s 46134 tok/s | 16.3 GiB
+== compile

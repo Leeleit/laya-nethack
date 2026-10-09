@@ -1,0 +1,6 @@
+test: 475 games, 138353 states; deaths with states in their last 100 turns: 468
+alarm budget on safe states (HP rule): 0.0162 -> laya tau P(die<=7) > 0.0288
+hp_rule  alarm in last 7 turns: 0.374  last 30: 0.440  first alarm, turns before death: median 7 (deaths never alarmed: 0.515)
+laya     alarm in last 7 turns: 0.712  last 30: 0.797  first alarm, turns before death: median 27 (deaths never alarmed: 0.162)
+deaths where laya alarmed in the last 30 turns and the HP rule did not: 0.389
+laya first alarm earlier than HP rule's: 0.673, later: 0.064, median lead (turns, both fired): 20

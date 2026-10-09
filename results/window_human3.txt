@@ -1,0 +1,11 @@
+
+1500 states: tokens median 650, mean 678, p90 1102, p99 1298, max 1586
+  over: 768 39.0 %, 1024 16.7 %, 1152 6.3 %, 1536 0.1 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Inventory                          (100 %)     325    304    597
+    Level map                          (100 %)     207    208    382
+    Map around the hero                (100 %)      52     50     85
+    Character                          (100 %)      52     52     53
+    Status                             (100 %)      39     40     44
+    <name> the Swashbuckler       St   (  0 %)      11     11     11
+    Message                            (100 %)       5      4      4

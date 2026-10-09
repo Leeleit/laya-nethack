@@ -1,0 +1,97 @@
+calibration {'risk-v2': {'T': 2.9393, 'bias': [0.0, 0.256, 1.064, 1.301, 3.929], 'val_nll': 0.11731, 'val_nll_weights_only': 0.42791}} rows {'train': 570731, 'val': 61675, 'test': 138353}
+== h=2 all: 138353 states, 244 positives
+  logit            AUC [0.973, 0.9613, 0.9832]  dAUC -  AP 0.2458  BSS 0.137  mean_p 0.00181 rate 0.00176
+  gbm              AUC [0.9792, 0.9713, 0.987]  dAUC [0.0062, 0.0014, 0.0124]  AP 0.2101  BSS 0.0758  mean_p 0.00232 rate 0.00176
+  risk-v2          AUC [0.9762, 0.9657, 0.9853]  dAUC [0.0032, -0.0068, 0.0132]  AP 0.3439  BSS 0.1282  mean_p 0.00179 rate 0.00176
+  logit(recal)     AUC [0.973, 0.9613, 0.9832]  dAUC [-0.0, 0.0, 0.0]  AP 0.2458  BSS 0.1391  mean_p 0.0017 rate 0.00176
+  logit+risk-v2    AUC [0.9825, 0.9727, 0.9903]  dAUC [0.0095, 0.0049, 0.0149]  AP 0.3486  BSS 0.226  mean_p 0.00175 rate 0.00176
+== h=2 depth>4: 28905 states, 186 positives
+  logit            AUC [0.9398, 0.9226, 0.9577]  dAUC -  AP 0.2269  BSS 0.1053  mean_p 0.0062 rate 0.00643
+  gbm              AUC [0.9466, 0.9289, 0.9639]  dAUC [0.0068, -0.0028, 0.0176]  AP 0.1776  BSS 0.0328  mean_p 0.00917 rate 0.00643
+  risk-v2          AUC [0.9534, 0.9356, 0.9678]  dAUC [0.0136, -0.0027, 0.0297]  AP 0.3474  BSS 0.126  mean_p 0.00493 rate 0.00643
+  logit(recal)     AUC [0.9398, 0.9226, 0.9577]  dAUC [0.0, 0.0, 0.0]  AP 0.2269  BSS 0.1088  mean_p 0.00584 rate 0.00643
+  logit+risk-v2    AUC [0.9612, 0.9469, 0.9721]  dAUC [0.0214, 0.0115, 0.0324]  AP 0.3341  BSS 0.2151  mean_p 0.0065 rate 0.00643
+== h=2 fight2: 77447 states, 86 positives
+  logit            AUC [0.9736, 0.943, 0.9945]  dAUC -  AP 0.3382  BSS 0.2028  mean_p 0.00107 rate 0.00111
+  gbm              AUC [0.9818, 0.9659, 0.9952]  dAUC [0.0082, -0.0012, 0.0229]  AP 0.3314  BSS 0.2103  mean_p 0.00109 rate 0.00111
+  risk-v2          AUC [0.9749, 0.9483, 0.9922]  dAUC [0.0013, -0.0225, 0.0256]  AP 0.4042  BSS 0.1356  mean_p 0.00117 rate 0.00111
+  logit(recal)     AUC [0.9736, 0.943, 0.9945]  dAUC [-0.0, 0.0, 0.0]  AP 0.3382  BSS 0.2006  mean_p 0.00101 rate 0.00111
+  logit+risk-v2    AUC [0.9787, 0.9524, 0.9958]  dAUC [0.0051, -0.0001, 0.0126]  AP 0.4045  BSS 0.2567  mean_p 0.00097 rate 0.00111
+== h=2 hp<0.5: 5517 states, 158 positives
+  logit            AUC [0.9329, 0.913, 0.9504]  dAUC -  AP 0.348  BSS 0.1829  mean_p 0.03138 rate 0.02864
+  gbm              AUC [0.9383, 0.9222, 0.955]  dAUC [0.0054, -0.0022, 0.0129]  AP 0.3668  BSS 0.2152  mean_p 0.02964 rate 0.02864
+  risk-v2          AUC [0.9374, 0.9199, 0.9556]  dAUC [0.0045, -0.01, 0.0201]  AP 0.4136  BSS 0.1334  mean_p 0.01129 rate 0.02864
+  logit(recal)     AUC [0.9329, 0.913, 0.9504]  dAUC [0.0, 0.0, 0.0]  AP 0.348  BSS 0.1861  mean_p 0.02967 rate 0.02864
+  logit+risk-v2    AUC [0.9465, 0.9307, 0.963]  dAUC [0.0136, 0.0054, 0.0224]  AP 0.4443  BSS 0.2813  mean_p 0.02933 rate 0.02864
+== h=7 all: 138353 states, 564 positives
+  logit            AUC [0.9566, 0.9458, 0.9656]  dAUC -  AP 0.24  BSS 0.1221  mean_p 0.00429 rate 0.00408
+  gbm              AUC [0.9669, 0.9572, 0.9736]  dAUC [0.0103, 0.0059, 0.0157]  AP 0.2641  BSS 0.1464  mean_p 0.00485 rate 0.00408
+  risk-v2          AUC [0.9584, 0.9466, 0.9681]  dAUC [0.0018, -0.0067, 0.0086]  AP 0.3175  BSS 0.1273  mean_p 0.00416 rate 0.00408
+  logit(recal)     AUC [0.9566, 0.9458, 0.9656]  dAUC [-0.0, 0.0, 0.0]  AP 0.24  BSS 0.1253  mean_p 0.00416 rate 0.00408
+  logit+risk-v2    AUC [0.9664, 0.9567, 0.9735]  dAUC [0.0098, 0.0059, 0.0137]  AP 0.3206  BSS 0.1998  mean_p 0.0043 rate 0.00408
+== h=7 depth>4: 28905 states, 429 positives
+  logit            AUC [0.9018, 0.879, 0.9219]  dAUC -  AP 0.2433  BSS 0.1037  mean_p 0.01481 rate 0.01484
+  gbm              AUC [0.9117, 0.8917, 0.9317]  dAUC [0.0099, 0.001, 0.0189]  AP 0.2557  BSS 0.1287  mean_p 0.0184 rate 0.01484
+  risk-v2          AUC [0.9157, 0.8975, 0.9318]  dAUC [0.0139, -0.001, 0.026]  AP 0.3235  BSS 0.1228  mean_p 0.01154 rate 0.01484
+  logit(recal)     AUC [0.9018, 0.879, 0.9219]  dAUC [-0.0, 0.0, 0.0]  AP 0.2433  BSS 0.1082  mean_p 0.0143 rate 0.01484
+  logit+risk-v2    AUC [0.9223, 0.905, 0.9379]  dAUC [0.0205, 0.0116, 0.0285]  AP 0.3229  BSS 0.1895  mean_p 0.01615 rate 0.01484
+== h=7 fight2: 77447 states, 189 positives
+  logit            AUC [0.9609, 0.942, 0.9778]  dAUC -  AP 0.3136  BSS 0.1886  mean_p 0.00235 rate 0.00244
+  gbm              AUC [0.9767, 0.9657, 0.9856]  dAUC [0.0158, 0.0053, 0.0272]  AP 0.3546  BSS 0.2253  mean_p 0.00241 rate 0.00244
+  risk-v2          AUC [0.966, 0.9459, 0.9806]  dAUC [0.0051, -0.0071, 0.0185]  AP 0.35  BSS 0.1327  mean_p 0.00265 rate 0.00244
+  logit(recal)     AUC [0.9609, 0.942, 0.9778]  dAUC [-0.0, 0.0, 0.0]  AP 0.3136  BSS 0.1873  mean_p 0.00229 rate 0.00244
+  logit+risk-v2    AUC [0.9683, 0.9493, 0.9834]  dAUC [0.0074, 0.0022, 0.0135]  AP 0.3769  BSS 0.2405  mean_p 0.00213 rate 0.00244
+== h=7 hp<0.5: 5517 states, 288 positives
+  logit            AUC [0.9033, 0.8788, 0.9231]  dAUC -  AP 0.3983  BSS 0.1996  mean_p 0.05503 rate 0.0522
+  gbm              AUC [0.905, 0.8832, 0.9235]  dAUC [0.0017, -0.0066, 0.0108]  AP 0.4201  BSS 0.2357  mean_p 0.05163 rate 0.0522
+  risk-v2          AUC [0.913, 0.8926, 0.9301]  dAUC [0.0097, -0.0062, 0.0247]  AP 0.4679  BSS 0.1438  mean_p 0.02164 rate 0.0522
+  logit(recal)     AUC [0.9033, 0.8788, 0.9231]  dAUC [-0.0, 0.0, 0.0]  AP 0.3983  BSS 0.2027  mean_p 0.05317 rate 0.0522
+  logit+risk-v2    AUC [0.9203, 0.9001, 0.9381]  dAUC [0.017, 0.008, 0.0258]  AP 0.4767  BSS 0.2903  mean_p 0.053 rate 0.0522
+== h=30 all: 138353 states, 1643 positives
+  logit            AUC [0.9327, 0.9186, 0.9453]  dAUC -  AP 0.2748  BSS 0.1339  mean_p 0.01193 rate 0.01188
+  gbm              AUC [0.9403, 0.9259, 0.9519]  dAUC [0.0076, 0.0007, 0.0142]  AP 0.2948  BSS 0.1565  mean_p 0.0142 rate 0.01188
+  risk-v2          AUC [0.9288, 0.9135, 0.9424]  dAUC [-0.0039, -0.0144, 0.0046]  AP 0.2768  BSS 0.1453  mean_p 0.01211 rate 0.01188
+  logit(recal)     AUC [0.9327, 0.9186, 0.9453]  dAUC [-0.0, 0.0, 0.0]  AP 0.2748  BSS 0.1268  mean_p 0.01265 rate 0.01188
+  logit+risk-v2    AUC [0.9434, 0.9301, 0.9547]  dAUC [0.0107, 0.0072, 0.0145]  AP 0.3062  BSS 0.1653  mean_p 0.01296 rate 0.01188
+== h=30 depth>4: 28905 states, 1246 positives
+  logit            AUC [0.8584, 0.834, 0.8854]  dAUC -  AP 0.304  BSS 0.1193  mean_p 0.04126 rate 0.04311
+  gbm              AUC [0.8691, 0.84, 0.8972]  dAUC [0.0107, -0.0019, 0.0212]  AP 0.3225  BSS 0.1422  mean_p 0.05466 rate 0.04311
+  risk-v2          AUC [0.8732, 0.8477, 0.8944]  dAUC [0.0148, -0.0037, 0.0289]  AP 0.3122  BSS 0.142  mean_p 0.03604 rate 0.04311
+  logit(recal)     AUC [0.8584, 0.834, 0.8854]  dAUC [-0.0, 0.0, 0.0]  AP 0.304  BSS 0.1094  mean_p 0.04395 rate 0.04311
+  logit+risk-v2    AUC [0.8804, 0.8567, 0.9038]  dAUC [0.022, 0.0128, 0.0302]  AP 0.3387  BSS 0.1539  mean_p 0.04832 rate 0.04311
+== h=30 fight2: 77447 states, 457 positives
+  logit            AUC [0.9311, 0.9018, 0.953]  dAUC -  AP 0.2587  BSS 0.1422  mean_p 0.00545 rate 0.0059
+  gbm              AUC [0.9489, 0.9206, 0.9693]  dAUC [0.0178, 0.0045, 0.0352]  AP 0.2949  BSS 0.1525  mean_p 0.00581 rate 0.0059
+  risk-v2          AUC [0.9335, 0.9052, 0.9538]  dAUC [0.0024, -0.0157, 0.0225]  AP 0.2477  BSS 0.128  mean_p 0.0069 rate 0.0059
+  logit(recal)     AUC [0.9311, 0.9018, 0.953]  dAUC [0.0, 0.0, 0.0]  AP 0.2587  BSS 0.1424  mean_p 0.00574 rate 0.0059
+  logit+risk-v2    AUC [0.9462, 0.9179, 0.9656]  dAUC [0.0151, 0.0075, 0.0232]  AP 0.2933  BSS 0.1677  mean_p 0.00544 rate 0.0059
+== h=30 hp<0.5: 5517 states, 562 positives
+  logit            AUC [0.8676, 0.838, 0.8988]  dAUC -  AP 0.489  BSS 0.2588  mean_p 0.10114 rate 0.10187
+  gbm              AUC [0.8677, 0.838, 0.8964]  dAUC [0.0001, -0.0128, 0.0103]  AP 0.4999  BSS 0.2747  mean_p 0.09652 rate 0.10187
+  risk-v2          AUC [0.8616, 0.8294, 0.8917]  dAUC [-0.006, -0.022, 0.0076]  AP 0.4946  BSS 0.1527  mean_p 0.04946 rate 0.10187
+  logit(recal)     AUC [0.8676, 0.838, 0.8988]  dAUC [0.0, 0.0, 0.0]  AP 0.489  BSS 0.254  mean_p 0.10729 rate 0.10187
+  logit+risk-v2    AUC [0.8766, 0.846, 0.9084]  dAUC [0.009, 0.0017, 0.0149]  AP 0.5218  BSS 0.2931  mean_p 0.10271 rate 0.10187
+== h=100 all: 138353 states, 4104 positives
+  logit            AUC [0.909, 0.8913, 0.9247]  dAUC -  AP 0.3426  BSS 0.183  mean_p 0.02774 rate 0.02966
+  gbm              AUC [0.9197, 0.9021, 0.9339]  dAUC [0.0107, 0.0026, 0.0186]  AP 0.3966  BSS 0.2139  mean_p 0.03397 rate 0.02966
+  risk-v2          AUC [0.8982, 0.8771, 0.9151]  dAUC [-0.0108, -0.0247, -0.0007]  AP 0.3004  BSS 0.1781  mean_p 0.02781 rate 0.02966
+  logit(recal)     AUC [0.909, 0.8913, 0.9247]  dAUC [0.0, 0.0, 0.0]  AP 0.3426  BSS 0.1814  mean_p 0.02913 rate 0.02966
+  logit+risk-v2    AUC [0.9198, 0.9025, 0.9346]  dAUC [0.0108, 0.0072, 0.0143]  AP 0.3732  BSS 0.2124  mean_p 0.02903 rate 0.02966
+== h=100 depth>4: 28905 states, 3158 positives
+  logit            AUC [0.8023, 0.7647, 0.8387]  dAUC -  AP 0.3872  BSS 0.142  mean_p 0.09319 rate 0.10925
+  gbm              AUC [0.8251, 0.7772, 0.8586]  dAUC [0.0228, -0.0033, 0.0461]  AP 0.4495  BSS 0.1797  mean_p 0.13207 rate 0.10925
+  risk-v2          AUC [0.8191, 0.7829, 0.8508]  dAUC [0.0168, -0.0202, 0.0423]  AP 0.359  BSS 0.1511  mean_p 0.08812 rate 0.10925
+  logit(recal)     AUC [0.8023, 0.7647, 0.8387]  dAUC [0.0, 0.0, 0.0]  AP 0.3872  BSS 0.1393  mean_p 0.09833 rate 0.10925
+  logit+risk-v2    AUC [0.8261, 0.7916, 0.8585]  dAUC [0.0238, 0.0112, 0.0342]  AP 0.4207  BSS 0.1807  mean_p 0.10239 rate 0.10925
+== h=100 fight2: 77447 states, 974 positives
+  logit            AUC [0.9044, 0.8658, 0.9388]  dAUC -  AP 0.3168  BSS 0.1691  mean_p 0.01074 rate 0.01258
+  gbm              AUC [0.9168, 0.8704, 0.9503]  dAUC [0.0124, -0.0079, 0.0392]  AP 0.3354  BSS 0.1996  mean_p 0.01098 rate 0.01258
+  risk-v2          AUC [0.8918, 0.8506, 0.9275]  dAUC [-0.0126, -0.0429, 0.021]  AP 0.2031  BSS 0.1252  mean_p 0.01346 rate 0.01258
+  logit(recal)     AUC [0.9044, 0.8658, 0.9388]  dAUC [-0.0, 0.0, 0.0]  AP 0.3168  BSS 0.1737  mean_p 0.01117 rate 0.01258
+  logit+risk-v2    AUC [0.9162, 0.8799, 0.9485]  dAUC [0.0118, 0.0046, 0.0203]  AP 0.324  BSS 0.1787  mean_p 0.01082 rate 0.01258
+== h=100 hp<0.5: 5517 states, 892 positives
+  logit            AUC [0.8424, 0.8104, 0.8742]  dAUC -  AP 0.5571  BSS 0.2552  mean_p 0.1615 rate 0.16168
+  gbm              AUC [0.8487, 0.8121, 0.8782]  dAUC [0.0063, -0.01, 0.02]  AP 0.5988  BSS 0.3037  mean_p 0.15455 rate 0.16168
+  risk-v2          AUC [0.8115, 0.7695, 0.8477]  dAUC [-0.0309, -0.0533, -0.008]  AP 0.4653  BSS 0.1394  mean_p 0.08786 rate 0.16168
+  logit(recal)     AUC [0.8424, 0.8104, 0.8742]  dAUC [0.0, 0.0, 0.0]  AP 0.5571  BSS 0.2511  mean_p 0.16957 rate 0.16168
+  logit+risk-v2    AUC [0.847, 0.816, 0.8806]  dAUC [0.0046, -0.0036, 0.0119]  AP 0.5706  BSS 0.2724  mean_p 0.15737 rate 0.16168

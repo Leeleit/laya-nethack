@@ -1,0 +1,23 @@
+600 states of val in both; v5 preds/eff-a16-human_data5d-val.parquet, v6 preds/t14-human_data14d-val.parquet
+
+== ttd (v5 classes): 576 rows, labels [240, 292, 44]
+  v5 log loss 0.8376 [0.7641, 0.9156]  accuracy 0.604  RPS 0.1427 [0.1263, 0.1603]
+  v6 log loss 0.8297 [0.7647, 0.9040]  accuracy 0.608  RPS 0.1419 [0.1268, 0.1583]
+  gain v6 over v5: log loss 0.0080 [-0.0113, 0.0302], RPS 0.0008 [-0.0032, 0.0051]
+
+== fate 0-2 (games not ascended; v5 renormalised, v6 depth folded): 591 rows, labels [224, 301, 66]
+  v5 log loss 0.7325 [0.6941, 0.7722]  accuracy 0.648  RPS 0.1279 [0.1180, 0.1377]
+  v6 log loss 0.7400 [0.6967, 0.7842]  accuracy 0.650  RPS 0.1264 [0.1156, 0.1371]
+  gain v6 over v5: log loss -0.0075 [-0.0235, 0.0054], RPS 0.0015 [-0.0013, 0.0043]
+
+== ascends (binary): 600 rows, labels [591, 9]
+  v5 log loss 0.0401 [0.0101, 0.0889]  accuracy 0.985  RPS 0.0104 [0.0019, 0.0234]
+  v6 log loss 0.0321 [0.0086, 0.0694]  accuracy 0.988  RPS 0.0084 [0.0017, 0.0189]
+  gain v6 over v5: log loss 0.0081 [-0.0025, 0.0210], RPS 0.0020 [-0.0010, 0.0053]
+  AUC v5 0.972  v6 0.983
+
+== v6 questions on their own targets (hard label; RPS for the ordinal ones)
+  ttd    585 rows, 18 options: log loss 2.6005 [2.5443, 2.6479] (held-out prior 2.7309), accuracy 0.132, RPS 0.1312 [0.1198, 0.1396]
+  depth  600 rows, 12 options: log loss 1.7534 [1.6818, 1.8132] (held-out prior 2.0959), accuracy 0.328, RPS 0.0913 [0.0822, 0.1009]
+  end    600 rows, 39 options: log loss 3.1992 [3.1196, 3.2805] (held-out prior 3.3057), accuracy 0.118
+t14: saved ckpt/t14 after 23149 steps, 2451s

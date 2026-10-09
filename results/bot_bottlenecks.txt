@@ -1,0 +1,47 @@
+bot: where its 5000 games end (/data/laya/nethack/nethackers/runs/val1/val-dwa-law-fem-100000-1000, /data/laya/nethack/nethackers/runs/val2/val-dwa-law-fem-101000-4000); progress mean 0.409
+gain = progress of one more level (BALROG table) - the end level's; 'mass' = games x gain: where saving
+a game is worth most
+
+band                    games  share progress   gain   mass  turns on level   HP 20 turns before
+Dlvl 1-4 (grind)          769  15.4%    0.041  0.005    3.8     3429 [5840]       79%
+Dlvl 5-12                 507  10.1%    0.116  0.027   13.7      596 [2918]       82%
+Dlvl 13-20                115   2.3%    0.333  0.018    2.1       15 [184]       86%
+Dlvl 21-24 (Medusa)       554  11.1%    0.427  0.019   10.7       31 [60]       87%
+Dlvl 25-29 (castle)      2994  59.9%    0.545  0.045  134.4       45 [365]       89%
+Dlvl 30+ (Gehennom)        61   1.2%    0.771 -0.126   -7.7       34 [134]      100%
+
+== Dlvl 1-4 (grind): 769 games, end Dlvl 3, Xp 6, AC 5, max HP 62, turn 9457
+  causes:     rothe 8%; hill orc 7%; giant ant 5%; jackal 4%; died of starvation 4%; pony 4%; water demon 3%; wand 3%
+  strategy:   Agent.fight2 43%; Agent.emergency_strategy 25%; DiveLogic.faint_guard 7%; DiveLogic.elbereth_rest 6%; — 5%; GlobalLogic.wait_out_unexpected_state_st 3%
+  cause x strategy: rothe / Agent.fight2 24; hill orc / Agent.fight2 22; hill orc / Agent.emergency_strategy 20; giant ant / Agent.fight2 18; water demon / Agent.emergency_strategy 18; jackal / Agent.fight2 16
+  unknown items carried (mean / share with any): potion 3.0 / 82%, scroll 2.9 / 85%, ring 0.7 / 45%, wand 0.5 / 39%
+
+== Dlvl 5-12: 507 games, end Dlvl 8, Xp 8, AC 1, max HP 81, turn 16370
+  causes:     soldier ant 5%; fire ant 5%; leocrotta 3%; Grey-elf 3%; Woodland-elf 3%; mumak 3%; owlbear 3%; poisoned by an orcish arrow 3%
+  strategy:   Agent.fight2 39%; Agent.emergency_strategy 23%; — 10%; strategy.f 8%; DiveLogic.elbereth_rest 7%; DiveLogic.dig_first 5%
+  cause x strategy: Grey-elf / Agent.emergency_strategy 9; poisoned by an orcish arrow / Agent.fight2 9; died of starvation / — 8; hill orc / Agent.fight2 7; leocrotta / Agent.emergency_strategy 7; fire ant / Agent.fight2 7
+  unknown items carried (mean / share with any): potion 4.0 / 87%, scroll 3.6 / 89%, ring 1.3 / 65%, wand 1.0 / 56%
+
+== Dlvl 13-20: 115 games, end Dlvl 17, Xp 7, AC 2, max HP 77, turn 12314
+  causes:     Elvenking 10%; elf-lord 7%; bolt of fire 4%; drowned in a pool of water 4%; air elemental 4%; lieutenant 4%; rock troll 3%; fire ant 3%
+  strategy:   Agent.fight2 34%; Agent.emergency_strategy 20%; DiveLogic.dig_first 16%; — 10%; Agent.engulfed_fight 10%; strategy.f 7%
+  cause x strategy: drowned in a pool of water / DiveLogic.dig_first 5; elf-lord / Agent.fight2 5; air elemental / Agent.engulfed_fight 5; Elvenking / Agent.fight2 5; Elvenking / Agent.emergency_strategy 4; lieutenant / Agent.fight2 3
+  unknown items carried (mean / share with any): potion 3.4 / 79%, scroll 2.7 / 76%, ring 1.0 / 57%, wand 1.0 / 48%
+
+== Dlvl 21-24 (Medusa): 554 games, end Dlvl 23, Xp 7, AC 3, max HP 78, turn 12649
+  causes:     drowned in deep water 36%; raven 23%; minotaur 5%; cobra 4%; pit viper 2%; elf-lord 2%; captain 2%; drowned in a pool of water 1%
+  strategy:   DiveLogic.dig_first 41%; — 17%; Agent.emergency_strategy 13%; strategy.f 13%; Agent.fight2 12%; Agent.engulfed_fight 1%
+  cause x strategy: drowned in deep water / DiveLogic.dig_first 126; drowned in deep water / — 72; raven / DiveLogic.dig_first 50; raven / Agent.emergency_strategy 39; raven / strategy.f 28; minotaur / strategy.f 17
+  unknown items carried (mean / share with any): potion 4.1 / 90%, scroll 1.2 / 32%, ring 1.0 / 61%, wand 0.9 / 52%
+
+== Dlvl 25-29 (castle): 2994 games, end Dlvl 27, Xp 7, AC 1, max HP 79, turn 13224
+  causes:     minotaur 23%; shark 8%; drowned in deep water 6%; raven 5%; xorn 5%; died of starvation 4%; touch of death 2%; captain 1%
+  strategy:   Agent.fight2 29%; Agent.emergency_strategy 16%; strategy.f 12%; — 12%; DiveLogic.dig_first 8%; DiveLogic.gehennom_scare 6%
+  cause x strategy: minotaur / Agent.fight2 334; minotaur / strategy.f 142; drowned in deep water / DiveLogic.dig_first 120; died of starvation / — 106; shark / Agent.emergency_strategy 65; minotaur / DiveLogic.gehennom_scare 63
+  unknown items carried (mean / share with any): potion 2.4 / 70%, scroll 0.6 / 20%, ring 0.9 / 55%, wand 0.8 / 50%
+
+== Dlvl 30+ (Gehennom): 61 games, end Dlvl 47, Xp 6, AC 2, max HP 65, turn 8823
+  causes:     xorn 18%; minotaur 16%; lieutenant 3%; warhorse 3%; soldier 3%; fire vortex 3%; vampire lord 3%; earth elemental 3%
+  strategy:   Agent.fight2 36%; Agent.emergency_strategy 34%; strategy.f 15%; — 7%; Agent.engulfed_fight 3%; teleport_route_strategy.f 2%
+  cause x strategy: minotaur / Agent.fight2 6; xorn / Agent.emergency_strategy 6; minotaur / strategy.f 4; xorn / Agent.fight2 3; vampire lord / Agent.emergency_strategy 2; leocrotta / strategy.f 2
+  unknown items carried (mean / share with any): potion 2.1 / 64%, scroll 1.8 / 64%, ring 1.7 / 95%, wand 0.7 / 39%

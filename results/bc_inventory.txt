@@ -1,0 +1,59 @@
+1000 games, 22,005,297 bot actions, 8,866,333 game turns (2.48 actions a turn), 8,866,333 actions with a screen (40%)
+distinct actions: 84; top 30 (all / at a turn start / inside a turn):
+  32                           15.13%   1.11%  24.59%
+  115                          13.23%  13.21%  13.24%
+  108                           6.29%  10.71%   3.30%
+  53                            6.26%  13.26%   1.54%
+  104                           6.15%  10.49%   3.22%
+  98                            4.96%   4.64%   5.18%
+  58                            4.38%   6.31%   3.08%
+  77                            3.75%   0.00%   6.28%
+  47                            3.73%   6.12%   2.12%
+  27                            3.37%   0.82%   5.09%
+  106                           3.32%   6.06%   1.47%
+  107                           3.23%   5.80%   1.49%
+  121                           2.96%   4.76%   1.75%
+  116                           2.93%   1.23%   4.08%
+  110                           2.74%   4.76%   1.39%
+  117                           2.62%   4.54%   1.31%
+  101                           2.53%   0.40%   3.98%
+  13                            2.48%   0.00%   4.15%
+  35                            2.03%   2.60%   1.64%
+  44                            1.93%   0.00%   3.23%
+  229                           1.14%   0.20%   1.77%
+  92                            0.98%   0.50%   1.31%
+  46                            0.84%   1.43%   0.44%
+  97                            0.66%   0.53%   0.75%
+  69                            0.33%   0.05%   0.52%
+  62                            0.19%   0.05%   0.29%
+  114                           0.18%   0.01%   0.30%
+  45                            0.15%   0.00%   0.25%
+  65                            0.10%   0.00%   0.17%
+  82                            0.09%   0.00%   0.15%
+actions covering 99% of steps: 36
+strategy at the top of the bot's stack (50 distinct), top 25:
+  -                                        47.33%
+  Agent.fight2                             15.68%
+  Inventory.pickup_and_drop_items          12.58%
+  GlobalLogic.tour_strategy.<locals>.exploration_strategy.<locals>.<lambda>  6.70%
+  ExplorationLogic.search_neighbors_for_traps  5.29%
+  Agent.eat_corpses_from_ground             2.50%
+  DiveLogic.faint_guard                     2.35%
+  ExplorationLogic.untrap_traps             1.29%
+  DiveLogic.dig_first                       1.13%
+  GlobalLogic.wait_out_unexpected_state_strategy  0.90%
+  ExplorationLogic.go_to_strategy           0.85%
+  DiveLogic.elbereth_rest                   0.74%
+  ExplorationLogic.explore_stairs           0.71%
+  DiveLogic.hunt_strategy                   0.28%
+  rush_strategy.<locals>.f                  0.26%
+  GlobalLogic.dip_for_excalibur             0.21%
+  Agent.emergency_strategy                  0.21%
+  levelport_strategy.<locals>.f             0.19%
+  Agent.eat_from_inventory                  0.16%
+  GlobalLogic.offer_corpses                 0.14%
+  DiveLogic.gehennom_scare                  0.12%
+  Inventory.wand_text_retest                0.06%
+  Inventory.buy_food                        0.06%
+  DiveLogic.water_demon_vigil               0.06%
+  DiveLogic.wipe_hold_elbereth              0.04%

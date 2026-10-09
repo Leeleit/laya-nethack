@@ -1,0 +1,56 @@
+== training loss (mean over questions, by tenth of the run)
+  A16: first window 0.9952; tenths 0.9137 0.8859 0.8670 0.8672 0.8506 0.8519 0.8542 0.8436 0.8430 0.8387
+  A8: first window 1.0007; tenths 0.9121 0.8830 0.8629 0.8661 0.8490 0.8487 0.8517 0.8410 0.8416 0.8379
+  A9: first window 0.9911; tenths 0.9115 0.8862 0.8798 0.8711 0.8530 0.8538 0.8556 0.8463 0.8453 0.8422
+
+== fate: 2471 rows, 324 players
+  A16  log loss 0.8864 -> T on other players 0.8810 (T on all 1.22); mean entropy 0.817, mean max p 0.616, accuracy 0.602
+  A8   log loss 0.8843 -> T on other players 0.8786 (T on all 1.22); mean entropy 0.815, mean max p 0.619, accuracy 0.599
+  A9   log loss 0.8939 -> T on other players 0.8862 (T on all 1.26); mean entropy 0.812, mean max p 0.620, accuracy 0.593
+  gbm  log loss 0.8831 -> T on other players 0.8828 (T on all 1.10); mean entropy 0.848, mean max p 0.606, accuracy 0.592
+  A8-A16 raw -0.0021 [-0.0077, +0.0031]  (+ = A8 worse)
+  A8-A16 T   -0.0023 [-0.0069, +0.0019]  (+ = A8 worse)
+  A9-A16 raw +0.0075 [-0.0004, +0.0158]  (+ = A9 worse)
+  A9-A16 T   +0.0052 [-0.0007, +0.0114]  (+ = A9 worse)
+  A16-gbm raw +0.0033 [-0.0059, +0.0135]  (+ = A16 worse)
+  A16-gbm T   -0.0018 [-0.0100, +0.0067]  (+ = A16 worse)
+  A8-gbm raw +0.0012 [-0.0087, +0.0114]  (+ = A8 worse)
+  A8-gbm T   -0.0042 [-0.0133, +0.0045]  (+ = A8 worse)
+  A9-gbm raw +0.0108 [-0.0007, +0.0230]  (+ = A9 worse)
+  A9-gbm T   +0.0034 [-0.0067, +0.0127]  (+ = A9 worse)
+  A16 vs A8: total variation 0.036, same argmax 0.946
+  A16 vs A9: total variation 0.039, same argmax 0.930
+  A8-A16 by Dlvl: (0, 4]: n 1455, raw -0.001, T -0.002; (4, 10]: n 788, raw -0.016, T -0.012; (10, 20]: n 138, raw +0.055, T +0.042; (20, 99]: n 90, raw +0.008, T +0.016
+  A8-A16 by turn: (-2, 0]: n 26, raw -0.002, T -0.005; (0, 5000]: n 2078, raw -0.001, T -0.002; (5000, 15000]: n 214, raw -0.028, T -0.024; (15000, 30000]: n 97, raw +0.041, T +0.032; (30000, 10000000]: n 56, raw -0.005, T +0.012
+  A8-A16 by XL: (0, 8]: n 2147, raw -0.003, T -0.003; (8, 14]: n 261, raw +0.007, T +0.005; (14, 30]: n 63, raw -0.026, T -0.008
+  A8-A16 by label: 0: n 743, raw -0.000, T -0.001; 1: n 1167, raw -0.008, T -0.008; 2: n 424, raw +0.013, T +0.011; 3: n 137, raw -0.010, T -0.000
+  A9-A16 by Dlvl: (0, 4]: n 1455, raw +0.003, T +0.001; (4, 10]: n 788, raw +0.010, T +0.006; (10, 20]: n 138, raw +0.040, T +0.038; (20, 99]: n 90, raw +0.001, T +0.013
+  A9-A16 by turn: (-2, 0]: n 26, raw +0.038, T +0.023; (0, 5000]: n 2078, raw +0.006, T +0.003; (5000, 15000]: n 214, raw +0.005, T +0.003; (15000, 30000]: n 97, raw +0.039, T +0.039; (30000, 10000000]: n 56, raw -0.002, T +0.015
+  A9-A16 by XL: (0, 8]: n 2147, raw +0.006, T +0.003; (8, 14]: n 261, raw +0.039, T +0.035; (14, 30]: n 63, raw -0.060, T -0.036
+  A9-A16 by label: 0: n 743, raw -0.014, T -0.005; 1: n 1167, raw -0.002, T +0.002; 2: n 424, raw +0.034, T +0.006; 3: n 137, raw +0.122, T +0.083
+
+== ttd: 2445 rows, 323 players
+  A16  log loss 0.8456 -> T on other players 0.8437 (T on all 1.12); mean entropy 0.801, mean max p 0.632, accuracy 0.606
+  A8   log loss 0.8422 -> T on other players 0.8405 (T on all 1.12); mean entropy 0.800, mean max p 0.633, accuracy 0.604
+  A9   log loss 0.8431 -> T on other players 0.8413 (T on all 1.12); mean entropy 0.799, mean max p 0.635, accuracy 0.616
+  gbm  log loss 0.8423 -> T on other players 0.8427 (T on all 1.03); mean entropy 0.832, mean max p 0.620, accuracy 0.605
+  A8-A16 raw -0.0034 [-0.0090, +0.0024]  (+ = A8 worse)
+  A8-A16 T   -0.0031 [-0.0080, +0.0019]  (+ = A8 worse)
+  A9-A16 raw -0.0025 [-0.0079, +0.0033]  (+ = A9 worse)
+  A9-A16 T   -0.0024 [-0.0072, +0.0028]  (+ = A9 worse)
+  A16-gbm raw +0.0033 [-0.0058, +0.0125]  (+ = A16 worse)
+  A16-gbm T   +0.0010 [-0.0069, +0.0090]  (+ = A16 worse)
+  A8-gbm raw -0.0001 [-0.0087, +0.0080]  (+ = A8 worse)
+  A8-gbm T   -0.0022 [-0.0097, +0.0053]  (+ = A8 worse)
+  A9-gbm raw +0.0008 [-0.0079, +0.0094]  (+ = A9 worse)
+  A9-gbm T   -0.0014 [-0.0090, +0.0061]  (+ = A9 worse)
+  A16 vs A8: total variation 0.037, same argmax 0.939
+  A16 vs A9: total variation 0.036, same argmax 0.935
+  A8-A16 by Dlvl: (0, 4]: n 1441, raw -0.003, T -0.003; (4, 10]: n 777, raw -0.006, T -0.005; (10, 20]: n 137, raw +0.003, T +0.003; (20, 99]: n 90, raw -0.005, T -0.004
+  A8-A16 by turn: (0, 5000]: n 2078, raw -0.002, T -0.002; (5000, 15000]: n 214, raw -0.033, T -0.029; (15000, 30000]: n 97, raw +0.027, T +0.024; (30000, 10000000]: n 56, raw +0.002, T +0.003
+  A8-A16 by XL: (0, 8]: n 2122, raw -0.003, T -0.003; (8, 14]: n 260, raw -0.005, T -0.003; (14, 30]: n 63, raw -0.011, T -0.010
+  A8-A16 by label: 0: n 773, raw -0.007, T -0.006; 1: n 1199, raw -0.002, T -0.005; 2: n 473, raw +0.000, T +0.006
+  A9-A16 by Dlvl: (0, 4]: n 1441, raw +0.000, T -0.000; (4, 10]: n 777, raw -0.002, T -0.002; (10, 20]: n 137, raw -0.020, T -0.014; (20, 99]: n 90, raw -0.023, T -0.020
+  A9-A16 by turn: (0, 5000]: n 2078, raw +0.002, T +0.001; (5000, 15000]: n 214, raw -0.039, T -0.033; (15000, 30000]: n 97, raw +0.003, T +0.005; (30000, 10000000]: n 56, raw -0.021, T -0.019
+  A9-A16 by XL: (0, 8]: n 2122, raw +0.000, T -0.000; (8, 14]: n 260, raw -0.018, T -0.013; (14, 30]: n 63, raw -0.032, T -0.028
+  A9-A16 by label: 0: n 773, raw -0.014, T -0.013; 1: n 1199, raw -0.004, T -0.005; 2: n 473, raw +0.020, T +0.021

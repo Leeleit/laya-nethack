@@ -1,0 +1,17 @@
+horizon 300; test points 297; reps per option: median 8; options ran: continue 297, pray 297, elbereth 281, quaff_heal 15, stairs 1, elbereth_rest 281, upstairs 146, dig_down 123
+continue               0.5892  diff +0.0000 [+0.0000, +0.0000]
+oracle (in-sample)     0.6582  diff +0.0690 [+0.0550, +0.0840]
+oracle (split reps)    0.5884  diff -0.0008 [-0.0173, +0.0152]  (vs continue on the same odd reps: -0.0051)
+always pray            0.5130  diff -0.0762 [-0.0968, -0.0543]  picks {'pray': 297}
+always elbereth        0.5816  diff -0.0076 [-0.0238, +0.0078]  picks {'elbereth': 281, 'continue': 16}
+always quaff_heal      0.5880  diff -0.0013 [-0.0053, +0.0029]  picks {'continue': 282, 'quaff_heal': 15}
+always stairs          0.5892  diff +0.0000 [+0.0000, +0.0000]  picks {'continue': 296, 'stairs': 1}
+always elbereth_rest   0.5812  diff -0.0080 [-0.0243, +0.0073]  picks {'elbereth_rest': 281, 'continue': 16}
+always upstairs        0.5652  diff -0.0240 [-0.0431, -0.0040]  picks {'continue': 151, 'upstairs': 146}
+always dig_down        0.5926  diff +0.0034 [-0.0035, +0.0111]  picks {'continue': 174, 'dig_down': 123}
+logit                  0.5867  diff -0.0025 [-0.0196, +0.0119]  picks {'continue': 143, 'upstairs': 81, 'elbereth_rest': 29, 'elbereth': 25, 'pray': 12, 'quaff_heal': 5, 'dig_down': 2}
+gbm                    0.5918  diff +0.0025 [-0.0124, +0.0163]  picks {'continue': 87, 'elbereth': 56, 'upstairs': 50, 'elbereth_rest': 43, 'pray': 30, 'dig_down': 25, 'quaff_heal': 5, 'stairs': 1}
+noul                   0.5829  diff -0.0063 [-0.0189, +0.0061]  picks {'continue': 131, 'elbereth_rest': 66, 'elbereth': 43, 'dig_down': 35, 'upstairs': 11, 'pray': 6, 'quaff_heal': 4, 'stairs': 1}
+choice                 0.5825  diff -0.0067 [-0.0187, +0.0050]  picks {'continue': 104, 'elbereth_rest': 47, 'elbereth': 43, 'pray': 34, 'upstairs': 30, 'dig_down': 25, 'quaff_heal': 14}
+snap-noul              0.5930  diff +0.0038 [-0.0087, +0.0156]  picks {'elbereth_rest': 131, 'continue': 69, 'elbereth': 68, 'dig_down': 16, 'upstairs': 9, 'quaff_heal': 3, 'pray': 1}
+snap-choice            0.5758  diff -0.0135 [-0.0266, -0.0009]  picks {'continue': 120, 'upstairs': 49, 'dig_down': 42, 'elbereth': 36, 'elbereth_rest': 33, 'pray': 16, 'quaff_heal': 1}

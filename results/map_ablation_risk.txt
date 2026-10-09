@@ -1,0 +1,4 @@
+20000 common cases; labels [49, 54, 173, 418, 19306]
+  full       log loss 0.2440  accuracy 0.927  AUC P(dies <= 30 turns) 0.9342
+  nolevel    log loss 0.2569  accuracy 0.919  AUC P(dies <= 30 turns) 0.9344
+  nomaps     log loss 0.3181  accuracy 0.892  AUC P(dies <= 30 turns) 0.9204

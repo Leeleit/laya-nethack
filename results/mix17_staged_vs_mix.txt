@@ -1,0 +1,123 @@
+3955 held-out states (val + test), 654 players; models: mix=m17(261576 train rows), staged=s17(261576 train rows)
+
+== ttd: 3918 rows, 17 options
+  mix       raw 2.4958 [2.4689, 2.5227]  with T 2.4963 [2.4691, 2.5236] (T 1.00)  acc 0.154  RPS 0.1219 [0.1183, 0.1256]
+  staged    raw 2.4971 [2.4676, 2.5281]  with T 2.4973 [2.4696, 2.5269] (T 1.06)  acc 0.153  RPS 0.1217 [0.1178, 0.1256]
+  staged    minus mix: raw +0.0013 [-0.0063, +0.0086]  with T +0.0010 [-0.0063, +0.0076]
+
+== depth: 3955 rows, 12 options
+  mix       raw 1.8049 [1.7741, 1.8410]  with T 1.8012 [1.7676, 1.8407] (T 0.89)  acc 0.349  RPS 0.1045 [0.1004, 0.1089]
+  staged    raw 1.8082 [1.7748, 1.8469]  with T 1.8078 [1.7728, 1.8487] (T 0.94)  acc 0.348  RPS 0.1047 [0.1003, 0.1094]
+  staged    minus mix: raw +0.0032 [-0.0046, +0.0113]  with T +0.0065 [-0.0014, +0.0150]
+
+== end: 3955 rows, 39 options
+  mix       raw 3.0385 [2.9783, 3.0910]  with T 3.0386 [2.9790, 3.0901] (T 1.02)  acc 0.170
+  staged    raw 3.0425 [2.9809, 3.0952]  with T 3.0417 [2.9818, 3.0937] (T 1.06)  acc 0.169
+  staged    minus mix: raw +0.0040 [-0.0046, +0.0129]  with T +0.0031 [-0.0053, +0.0120]
+
+== ascends: 3955 rows, 2 options
+  mix       raw 0.1125 [0.0880, 0.1414]  with T 0.1098 [0.0880, 0.1360] (T 1.23)  acc 0.952
+  staged    raw 0.1145 [0.0890, 0.1444]  with T 0.1098 [0.0880, 0.1351] (T 1.28)  acc 0.954
+  staged    minus mix: raw +0.0021 [-0.0043, +0.0084]  with T -0.0000 [-0.0052, +0.0049]
+
+== slices, mean loss with T
+  ttd: mix | staged
+    all rows        n  3918  2.4963  2.4973
+    no history      n   289  2.3496  2.3534
+    experience 1    n  1783  2.5125  2.5104
+    experience 2    n  1126  2.5290  2.5300
+    experience 3    n   500  2.4777  2.4899
+    experience 4    n   177  2.4079  2.4036
+    experience 5    n    43  2.5362  2.5391
+    result 1        n   146  2.5770  2.5761
+    result 2        n   611  2.5258  2.5152
+    result 3        n  1214  2.5319  2.5348
+    result 4        n  1245  2.4947  2.4889
+    result 5        n   413  2.4275  2.4591
+    ascended games  n   282  1.7602  1.7889
+    XL 8-14         n   701  2.4324  2.4325
+    Dlvl 5-10       n  1473  2.4996  2.5009
+    Dlvl 1-2        n   854  2.4640  2.4687
+    Dlvl 3-4        n  1006  2.6260  2.6279
+    Dlvl 5-7        n  1225  2.4877  2.4882
+    Dlvl 8-12       n   327  2.4998  2.5027
+    Dlvl 13-20      n   208  2.4152  2.4271
+    Dlvl 21-99      n   298  2.2399  2.2191
+    Dlvl 21-24      n   130  2.4005  2.3763
+    Dlvl 25-29      n   108  2.2503  2.2316
+    Dlvl 30-99      n    60  1.8729  1.8558
+  depth: mix | staged
+    all rows        n  3955  1.8012  1.8078
+    no history      n   291  1.6625  1.6881
+    experience 1    n  1812  1.7698  1.7729
+    experience 2    n  1132  1.8394  1.8402
+    experience 3    n   500  1.8903  1.9057
+    experience 4    n   177  1.8818  1.8945
+    experience 5    n    43  1.6950  1.7339
+    result 1        n   146  1.9500  1.9553
+    result 2        n   611  1.8822  1.8666
+    result 3        n  1234  1.8248  1.8271
+    result 4        n  1256  1.7465  1.7471
+    result 5        n   417  1.8223  1.8790
+    ascended games  n   291  1.4829  1.4581
+    XL 8-14         n   703  1.9453  1.9467
+    Dlvl 5-10       n  1485  1.5522  1.5576
+    Dlvl 1-2        n   861  1.9482  1.9477
+    Dlvl 3-4        n  1017  2.0520  2.0639
+    Dlvl 5-7        n  1234  1.5124  1.5225
+    Dlvl 8-12       n   330  1.7707  1.7449
+    Dlvl 13-20      n   209  1.8657  1.9109
+    Dlvl 21-99      n   304  1.7075  1.7099
+    Dlvl 21-24      n   132  1.9985  1.9653
+    Dlvl 25-29      n   110  1.5358  1.5702
+    Dlvl 30-99      n    62  1.3927  1.4139
+  end: mix | staged
+    all rows        n  3955  3.0386  3.0417
+    no history      n   291  2.7720  2.7692
+    experience 1    n  1812  3.1154  3.1208
+    experience 2    n  1132  3.0288  3.0304
+    experience 3    n   500  3.0036  2.9975
+    experience 4    n   177  2.8472  2.8670
+    experience 5    n    43  3.0554  3.0858
+    result 1        n   146  3.2810  3.2734
+    result 2        n   611  3.1178  3.0990
+    result 3        n  1234  3.1184  3.1279
+    result 4        n  1256  3.0820  3.0863
+    result 5        n   417  2.6566  2.6775
+    ascended games  n   291  1.0379  1.0088
+    XL 8-14         n   703  2.5816  2.5775
+    Dlvl 5-10       n  1485  3.1174  3.1237
+    Dlvl 1-2        n   861  3.3024  3.3017
+    Dlvl 3-4        n  1017  3.2353  3.2393
+    Dlvl 5-7        n  1234  3.1256  3.1392
+    Dlvl 8-12       n   330  2.9959  2.9595
+    Dlvl 13-20      n   209  2.4428  2.4669
+    Dlvl 21-99      n   304  1.7358  1.7331
+    Dlvl 21-24      n   132  2.1201  2.1230
+    Dlvl 25-29      n   110  1.7473  1.7424
+    Dlvl 30-99      n    62  0.8971  0.8862
+  ascends: mix | staged
+    all rows        n  3955  0.1098  0.1098
+    no history      n   291  0.2268  0.2333
+    experience 1    n  1812  0.0715  0.0673
+    experience 2    n  1132  0.1030  0.1076
+    experience 3    n   500  0.1825  0.1782
+    experience 4    n   177  0.1584  0.1728
+    experience 5    n    43  0.0655  0.0628
+    result 1        n   146  0.0128  0.0117
+    result 2        n   611  0.1193  0.1092
+    result 3        n  1234  0.0522  0.0560
+    result 4        n  1256  0.0737  0.0703
+    result 5        n   417  0.3274  0.3366
+    ascended games  n   291  0.9906  0.9624
+    XL 8-14         n   703  0.3159  0.3038
+    Dlvl 5-10       n  1485  0.0556  0.0526
+    Dlvl 1-2        n   861  0.0712  0.0729
+    Dlvl 3-4        n  1017  0.0607  0.0621
+    Dlvl 5-7        n  1234  0.0428  0.0432
+    Dlvl 8-12       n   330  0.1742  0.1572
+    Dlvl 13-20      n   209  0.3189  0.3407
+    Dlvl 21-99      n   304  0.4415  0.4335
+    Dlvl 21-24      n   132  0.4403  0.4137
+    Dlvl 25-29      n   110  0.4518  0.4782
+    Dlvl 30-99      n    62  0.4261  0.3965

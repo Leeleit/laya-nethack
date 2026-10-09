@@ -1,0 +1,36 @@
+######## human_data5d/test.jsonl
+
+1500 states: tokens median 305, mean 372, p90 683, p99 958, max 1288
+  over: 768 5.8 %, 1024 0.9 %, 1152 0.4 %, 1536 0.0 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Inventory                          (100 %)     148    119    333
+    Level map                          (100 %)      96     34    277
+    Character                          (100 %)      52     52     53
+    Status                             (100 %)      36     37     38
+    Map around the hero                (100 %)      33     13     77
+    Message                            (100 %)       7      4     18
+    G@                                 (  0 %)       6      6      6
+######## human_data5d/val.jsonl
+
+1500 states: tokens median 297, mean 370, p90 680, p99 1003, max 1294
+  over: 768 6.3 %, 1024 0.9 %, 1152 0.5 %, 1536 0.0 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Inventory                          (100 %)     152    116    353
+    Level map                          (100 %)      92     33    274
+    Character                          (100 %)      52     52     53
+    Status                             (100 %)      36     37     38
+    Map around the hero                (100 %)      31     13     75
+    Message                            (100 %)       7      4     19
+    F@                                 (  0 %)       7      7      7
+    G@                                 (  0 %)       6      6      6
+######## human_data5d/train.jsonl
+
+1500 states: tokens median 310, mean 372, p90 678, p99 1010, max 1249
+  over: 768 5.7 %, 1024 0.9 %, 1152 0.2 %, 1536 0.0 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Inventory                          (100 %)     151    120    339
+    Level map                          (100 %)      94     34    266
+    Character                          (100 %)      52     52     53
+    Status                             (100 %)      36     37     38
+    Map around the hero                (100 %)      32     13     76
+    Message                            (100 %)       7      4     17

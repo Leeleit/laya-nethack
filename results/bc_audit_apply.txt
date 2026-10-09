@@ -1,0 +1,29 @@
+100 games; label: share of each outcome (turns)
+  move        523238  moved that way 94.70%, stayed 5.23%, moved elsewhere 0.07%
+  search      142627  did not move 99.95%, moved 0.05%
+  search5     127013  did not move 99.81%, moved 0.19%
+  pickup       26120  got an item 57.63%, other 34.80%, nothing 7.57%
+  throw        16642  thrown 98.89%, other 1.11%
+  apply         7593  - 100.00%
+  eat           2851  - 100.00%
+  elbereth      2523  - 100.00%
+  item          1246  - 100.00%
+  pray           732  - 100.00%
+  down           420  Dlvl +1 99.05%, Dlvl +0 0.95%
+  kick           412  - 100.00%
+  up             176  Dlvl -1 100.00%
+random parsed turns (14 of 371):
+  apply     -                keys 'aA:␣␣:h␣'                     msgs 'What do you want to use or apply? [eftA or ?*] | The bag is empty. | You see no objects here.'
+  apply     -                keys 'aH:␣␣ak:␣␣l'                  msgs 'What do you want to use or apply? [hkzH or ?*] | The bag is empty. | What do you want to use or apply? [hkzH o'
+  apply     -                keys 'af:␣␣:u'                      msgs 'What do you want to use or apply? [fr or ?*] | The bag is empty. | You see no objects here.'
+  apply     -                keys ':␣:␣/M␣aI>'                   msgs 'What do you want to use or apply? [rtDI or ?*] | In what direction do you want to dig? [>] | You start digging'
+  apply     -                keys 'aH␣>'                         msgs 'What do you want to use or apply? [mszH or ?*] | You now wield a pick-axe. | In what direction do you want to '
+  apply     -                keys '\\␣␣␣aH:␣␣ak:␣␣:␣,␣␣:␣,␣␣,bo⏎' msgs 'What do you want to use or apply? [hkH or ?*] | The bag is empty. | What do you want to use or apply? [hkH or '
+  apply     -                keys 'af:␣␣j'                       msgs 'What do you want to use or apply? [fr or ?*] | The bag is empty.'
+  apply     -                keys 'af:␣␣:␣,␣y'                   msgs 'What do you want to use or apply? [fr or ?*] | The bag is empty.'
+  apply     -                keys '⎋⎋#te⏎b⎋\\␣␣␣:aj:␣␣/M␣j'      msgs 'What do you want to use or apply? [j or ?*] | The bag is empty.'
+  apply     -                keys 'aH:␣␣ak:␣␣:l'                 msgs 'What do you want to use or apply? [hkzH or ?*] | The bag is empty. | What do you want to use or apply? [hkzH o'
+  apply     -                keys 'aW>'                          msgs 'What do you want to use or apply? [kGHJQRW or ?*] | In what direction do you want to dig? [>] | You start digg'
+  apply     -                keys ':␣\\␣␣␣␣:␣aN>'                msgs 'What do you want to use or apply? [finuAEN or ?*] | In what direction do you want to dig? [>] | You start digg'
+  apply     -                keys '\\␣␣␣ao>'                     msgs 'What do you want to use or apply? [koH or ?*] | In what direction do you want to dig? [>] | You start digging '
+  apply     -                keys 'ap>'                          msgs 'What do you want to use or apply? [mptv or ?*] | In what direction do you want to dig? [>] | You start digging'

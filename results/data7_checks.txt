@@ -1,0 +1,80 @@
+######## human_data7d/val.jsonl
+2471 states of human_data7d/val.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+######## human_data7d/test.jsonl
+2344 states of human_data7d/test.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+######## human_data7d/train.jsonl
+50000 states of human_data7d/train.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+human_data5d/meta.json: "rows": {
+human_data5d/meta.json-  "train": 92862,
+human_data5d/meta.json-  "val": 2471,
+human_data5d/meta.json-  "test": 2344
+human_data5d/meta.json- },
+--
+human_data7d/meta.json: "rows": {
+human_data7d/meta.json-  "train": 92862,
+human_data7d/meta.json-  "val": 2471,
+human_data7d/meta.json-  "test": 2344
+human_data7d/meta.json- },

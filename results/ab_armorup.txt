@@ -1,0 +1,37 @@
+A/B /data/laya/nethack/nethackers/runs/val1/val-dwa-law-fem-100000-1000 -> /data/laya/nethack/nethackers/runs/armorup/val-dwa-law-fem-100000-1000: 1000 paired seeds, 277 games changed
+
+progress 0.4118 -> 0.4158, paired diff +0.0040 (se 0.0025, t +1.60)
+changed games only: 0.4559 -> 0.4704; better 69, worse 71, same 137
+max depth median 25 -> 25; reached Dlvl 25+ 59.8% -> 60.6%; ended on Dlvl 21-24 (Medusa's band) 119 -> 124
+
+end causes in changed games (base -> arm counts)
+  minotaur                           35 ->   41
+  drowned in deep water              20 ->   27
+  raven                              20 ->   21
+  shark                              11 ->   21
+  xorn                               13 ->    5
+  died of starvation                 11 ->    5
+  Grey-elf                            7 ->    3
+  troll                               5 ->    3
+  cobra                               2 ->    6
+  leocrotta                           5 ->    2
+  Olog-hai                            4 ->    3
+  drowned in a moat by a giant        4 ->    3
+  soldier ant                         1 ->    5
+  drowned in a moat                   4 ->    2
+  air elemental                       3 ->    2
+
+first arrival at Dlvl d, seeds that reached it in both runs: AC median base -> arm, paired mean AC diff (negative = better), share of games with better AC
+  Dlvl  4  n  834  AC   0 ->   0  diff -0.1631 (se 0.0336, t -4.85)  better 9%
+  Dlvl  6  n  806  AC   0 ->   0  diff -0.2072 (se 0.0386, t -5.37)  better 13%
+  Dlvl  8  n  780  AC   0 ->   0  diff -0.2128 (se 0.0468, t -4.54)  better 14%
+  Dlvl 10  n  758  AC   0 ->   0  diff -0.2361 (se 0.0465, t -5.08)  better 14%
+  Dlvl 12  n  734  AC   0 ->   0  diff -0.2343 (se 0.0463, t -5.06)  better 14%
+  Dlvl 15  n  712  AC   0 ->   0  diff -0.2331 (se 0.0472, t -4.94)  better 14%
+  Dlvl 18  n  706  AC   0 ->   0  diff -0.2351 (se 0.0473, t -4.97)  better 14%
+  Dlvl 20  n  699  AC   0 ->   0  diff -0.2289 (se 0.0474, t -4.83)  better 14%
+  Dlvl 22  n  683  AC   0 ->   0  diff -0.2211 (se 0.0470, t -4.70)  better 14%
+  Dlvl 24  n  616  AC   0 ->   0  diff -0.2127 (se 0.0494, t -4.30)  better 13%
+  Dlvl 25  n  567  AC   0 ->   0  diff -0.1905 (se 0.0516, t -3.69)  better 12%
+  Dlvl 26  n  421  AC   0 ->   0  diff -0.1663 (se 0.0551, t -3.02)  better 11%
+  Dlvl 27  n  310  AC   0 ->   0  diff -0.1258 (se 0.0623, t -2.02)  better 9%

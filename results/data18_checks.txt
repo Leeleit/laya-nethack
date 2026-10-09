@@ -1,0 +1,46 @@
+######## human_all18v
+50000 states of human_all18v/train.jsonl
+  msg_in_inv     0.0 %   a - the blessed rustproof +2 Excalibur; b - uncursed +0 dagger; c - uncursed +3 small shield (worn); e - food 
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.3 %   a - the blessed rustproof +1 Excalibur (wielded); b - +0 dagger (alternate weapon; not wielded); c - uncursed 
+######## human_all18o
+50000 states of human_all18o/train.jsonl
+  msg_in_inv     0.0 %   q - slime mold. You die; r - pair of riding boots
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   3.9 %   a - uncursed +0 scalpel (wielded); b - blessed +1 pair of leather gloves (worn); d - 4 uncursed potions of hea

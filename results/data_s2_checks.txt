@@ -1,0 +1,90 @@
+######## human_data4/test.jsonl
+
+1500 states: tokens median 439, mean 493, p90 860, p99 1164, max 1929
+  over: 768 14.4 %, 1024 3.4 %, 1152 1.1 %, 1536 0.1 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Level map                          (100 %)     176    166    323
+    Inventory                          (100 %)     175    120    452
+    Character                          (100 %)      51     51     53
+    Map around the hero                (100 %)      48     47     78
+    Status                             (100 %)      38     38     41
+    Message                            (100 %)       5      4      7
+4680 states of human_data4/test.jsonl
+  msg_in_inv     0.1 %   a - an uncursed rusty +1 long sword (wielded in other hand); b - a blessed bag named Ya' dun goofed! You are c
+  glued_items    0.0 %   
+  cut_item       0.6 %   a - a +1 lon; b - a +0 dag; c - an uncur; d - an uncur; e - an uncur
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.5 %   
+  bot_ui_msg     0.0 %   
+######## human_data4/train.jsonl
+
+1500 states: tokens median 444, mean 498, p90 889, p99 1163, max 1884
+  over: 768 14.8 %, 1024 3.8 %, 1152 1.1 %, 1536 0.1 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Inventory                          (100 %)     187    124    498
+    Level map                          (100 %)     171    156    308
+    You miss the jackal                (  0 %)     119    119    119
+    There are a few objects here       (  0 %)      95     95     95
+    Pick an object                     (  0 %)      66     66     66
+    You see here a giant beetle corpse (  0 %)      57     57     57
+    Character                          (100 %)      51     51     53
+    Map around the hero                (100 %)      47     46     76
+    Status                             (100 %)      38     38     42
+    Message                            (100 %)       5      4      8
+20000 states of human_data4/train.jsonl
+  msg_in_inv     0.0 %   $ - 4 gold pieces; j - 2 tripe rations; l - 2 pancakes; p - a jeweled wand; q - a yellowish brown gem; r - a s
+  glued_items    0.0 %   
+  cut_item       0.4 %   $ - 26 gold pieces; a - a blessed +1 lon; b - a +0 dagger; c - an uncursed +3 s; d - an uncursed food; f - a r
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.6 %   
+  bot_ui_msg     0.0 %   
+######## v2_data_s2/test.jsonl
+
+1500 states: tokens median 718, mean 707, p90 881, p99 1005, max 1223
+  over: 768 35.5 %, 1024 0.8 %, 1152 0.1 %, 1536 0.0 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Level map                          (100 %)     239    272    337
+    Inventory                          (100 %)     221    219    332
+    Recent messages                    (100 %)      71     69     90
+    Map around the hero                (100 %)      64     65     91
+    Character                          (100 %)      58     56     66
+    Status                             (100 %)      39     39     41
+    Monsters in view                   (100 %)      15     13     24
+    A@                                 (  0 %)       6      6      6
+20000 states of v2_data_s2/test.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.1 %   
+  bot_ui_msg     0.0 %   
+######## choice_fork_h300_all_s2/test.jsonl
+
+297 states: tokens median 602, mean 637, p90 915, p99 1141, max 1227
+  over: 768 29.0 %, 1024 3.7 %, 1152 1.0 %, 1536 0.0 %, 2048 0.0 %
+  section (share of states with it): mean / median / p90 tokens
+    Inventory                          (100 %)     224    225    337
+    Level map                          (100 %)     162    130    351
+    Recent messages                    (100 %)      83     81    103
+    Character                          (100 %)      59     57     62
+    Map around the hero                (100 %)      46     46     88
+    Status                             (100 %)      40     40     42
+    Monsters in view                   (100 %)      24     15     55
+    I@                                 (  0 %)       6      6      6
+    X-                                 (  0 %)       3      3      3
+297 states of choice_fork_h300_all_s2/test.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+ "rows": {
+  "train": 237356,
+  "val": 4666,
+  "test": 4680
+ },

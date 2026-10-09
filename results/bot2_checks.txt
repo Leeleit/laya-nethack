@@ -1,0 +1,388 @@
+######## bot_data2/val.jsonl
+50000 states of bot_data2/val.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+######## bot_data2/train.jsonl
+50000 states of bot_data2/train.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   a - thoroughly rusty +1 long sword (wielded); b - 6 uncursed unlabeled scrolls; c - uncursed +3 small shield (
+######## tokens bot_data2
+310170 examples; state 366 tokens an example
+  'Inventory'                         192.7
+  'You'                                36.2
+  'HP'                                 31.4
+  'St'                                 30.6
+  'Around'                             20.6
+  'Val-Dwa-Law-Fem'                    14.0
+  'The'                                 9.5
+  'Bot'                                 8.5
+  'There'                               3.6
+  'Something'                           2.9
+  'This'                                1.6
+  'A'                                   1.0
+  'Your'                                0.7
+  'You read'                            0.6
+  'b'                                   0.6
+  'Valkyrie'                            0.5
+  'Blecch!'                             0.3
+  '$'                                   0.2
+  'It'                                  0.2
+  'Someone'                             0.2
+  '"Velkommen,'                         0.1
+  'As'                                  0.1
+  'l'                                   0.1
+  'k'                                   0.1
+  'm'                                   0.1
+  'n'                                   0.1
+  'o'                                   0.1
+  'p'                                   0.1
+  'i'                                   0.1
+  'j'                                   0.1
+  'Use'                                 0.1
+  'g'                                   0.1
+  'h'                                   0.1
+  'e'                                   0.1
+  'q'                                   0.1
+  "There's"                             0.1
+  'r'                                   0.1
+  't'                                   0.1
+  'f'                                   0.1
+  'w'                                   0.1
+  'u'                                   0.1
+  'C'                                   0.1
+  'An'                                  0.1
+  'z'                                   0.1
+  'H'                                   0.1
+  'G'                                   0.1
+  'x'                                   0.1
+  'I'                                   0.1
+  'D'                                   0.1
+  'y'                                   0.1
+  'B'                                   0.0
+  'v'                                   0.0
+  'E'                                   0.0
+  'K'                                   0.0
+  'U'                                   0.0
+  'N'                                   0.0
+  'F'                                   0.0
+  'WHAMMM!!!'                           0.0
+  's'                                   0.0
+  'J'                                   0.0
+  'L'                                   0.0
+  'Q'                                   0.0
+  'd'                                   0.0
+  'V'                                   0.0
+  'Y'                                   0.0
+  'Hmmm,'                               0.0
+  'Suddenly,'                           0.0
+  'P'                                   0.0
+  'M'                                   0.0
+  'a'                                   0.0
+  'Whoops...'                           0.0
+  'My,'                                 0.0
+  'S'                                   0.0
+  'Z'                                   0.0
+  'c'                                   0.0
+  'T'                                   0.0
+  'R'                                   0.0
+  'Fortunately,'                        0.0
+  'O'                                   0.0
+  'Yak'                                 0.0
+  'Nothing'                             0.0
+  'W'                                   0.0
+  'X'                                   0.0
+  'Wait!'                               0.0
+  'Look'                                0.0
+  '"For'                                0.0
+  'Click!'                              0.0
+  'Its'                                 0.0
+  'From'                                0.0
+  '"Thank'                              0.0
+  'Core'                                0.0
+  'For'                                 0.0
+  'Ugh.'                                0.0
+  'They'                                0.0
+  'That'                                0.0
+  "You're"                              0.0
+  'Eating'                              0.0
+  'Kaablamm!'                           0.0
+  '"Hello'                              0.0
+  '"I'                                  0.0
+  'Rukuakhu'                            0.0
+  "It's"                                0.0
+  'One'                                 0.0
+  'Othog-z'                             0.0
+  'To'                                  0.0
+  'compensation.'                       0.0
+  'Water'                               0.0
+  'She'                                 0.0
+  'Suddenly'                            0.0
+  'Pheew!'                              0.0
+  'With'                                0.0
+  'Some'                                0.0
+  '"Verily,'                            0.0
+  'Everything'                          0.0
+  'Welcome'                             0.0
+  'Kabalebo'                            0.0
+  'Wiped'                               0.0
+  'it.".'                               0.0
+  'If'                                  0.0
+  '"Pilgrim,'                           0.0
+  'The priest of Tyr intones'           0.0
+  't?rns'                               0.0
+  '"Thou'                               0.0
+  'Rukaiakh'                            0.0
+  'KAABLAMM!!!'                         0.0
+  'Pakka'                               0.0
+  '|ill.".'                             0.0
+  '"Why'                                0.0
+  'Ogothog'                             0.0
+  'Yecch!'                              0.0
+  '"Most'                               0.0
+  '3'                                   0.0
+  'Far'                                 0.0
+  'Aiakhai'                             0.0
+  "Can't"                               0.0
+  'Using'                               0.0
+  'Oh'                                  0.0
+  '"Please'                             0.0
+  'Valkyrie,'                           0.0
+  '"Twixt'                              0.0
+  'Haiazai'                             0.0
+  'Time'                                0.0
+  'Magical'                             0.0
+  'Ecch'                                0.0
+  '"Go'                                 0.0
+  'All'                                 0.0
+  'Eat'                                 0.0
+  '"Take'                               0.0
+  'Aiunogruk'                           0.0
+  'Perhaps'                             0.0
+  'Imbyze'                              0.0
+  'The priest of Loki intones'          0.0
+  'p|a?e".'                             0.0
+  'Elan'                                0.0
+  'accessories!"'                       0.0
+  'bac|.".'                             0.0
+  'Gee!'                                0.0
+  'The priestess of Odin intones'       0.0
+  'U-haiuoth'                           0.0
+  'Haiogbaneai'                         0.0
+  'No'                                  0.0
+  'Ouiatchouane'                        0.0
+  '(For'                                0.0
+  '2'                                   0.0
+  'Aiotha'                              0.0
+  'The voice of Tyr booms'              0.0
+  'F - a wand of cancellation (0'       0.0
+  'What'                                0.0
+  'Be'                                  0.0
+  'Kinnegad'                            0.0
+  'Ulogul'                              0.0
+  'Being'                               0.0
+  'Konosja'                             0.0
+  '"Move'                               0.0
+  'Both'                                0.0
+  'Ogothu'                              0.0
+  'shicld.".'                           0.0
+  'The priest of Odin intones'          0.0
+  'tne'                                 0.0
+  '5'                                   0.0
+  'su?cess.".'                          0.0
+  'The priestess of Tyr intones'        0.0
+  'The voice of Tyr rings out'          0.0
+  'Chemistry 101'                       0.0
+  '"Shall'                              0.0
+  'h?l?".'                              0.0
+  'The voice of Tyr booms out'          0.0
+  'Aiula'                               0.0
+  'Agrisu'                              0.0
+  'Door\'.".'                           0.0
+  '"I\'ve'                              0.0
+  'han|ed!".'                           0.0
+  'Ooph!'                               0.0
+  'amp.".'                              0.0
+  '"This'                               0.0
+  'Put'                                 0.0
+  'Bob'                                 0.0
+  '"Gasp!"'                             0.0
+  'ble?sirgs".'                         0.0
+  '"Will'                               0.0
+  'as'                                  0.0
+  "Don't"                               0.0
+  '?tuf?.".'                            0.0
+  '"Run'                                0.0
+  'Akhaula'                             0.0
+  "Angmagssalik's"                      0.0
+  '|lessi?g?.".'                        0.0
+  'crvstals.".'                         0.0
+  'dang?r".'                            0.0
+  'Akharuk'                             0.0
+  'Ulaulog'                             0.0
+  'Zoghaiai'                            0.0
+  'AlliWar'                             0.0
+  'El'                                  0.0
+  'A-ulaoth'                            0.0
+  "it's"                                0.0
+  'Zoggoru'                             0.0
+  '?tc?e.".'                            0.0
+  'Aiunaiun'                            0.0
+  "Trahnil's"                           0.0
+  'Uzog'                                0.0
+  'Aigorog'                             0.0
+  'Grisuakh-ai'                         0.0
+  'Akhalataki'                          0.0
+  'Othaigrisog'                         0.0
+  'Athosaun'                            0.0
+  'ic??ox.".'                           0.0
+  'Zaiakh'                              0.0
+  'Annootok'                            0.0
+  'toucn.".'                            0.0
+  "Sperc's"                             0.0
+  'Gorubane'                            0.0
+  'Athosog'                             0.0
+  'are'                                 0.0
+  'Akhaigorog'                          0.0
+  'Uulai'                               0.0
+  '?t?re!".'                            0.0
+  'Uothog'                              0.0
+  'Aihaiogun'                           0.0
+  'Parbalingga'                         0.0
+  'Barney'                              0.0
+  'Monsters'                            0.0
+  '(But'                                0.0
+  'Unaiun'                              0.0
+  "Wonotobo's"                          0.0
+  'The voice of Tyr thunders'           0.0
+  'Warning'                             0.0
+  'But'                                 0.0
+  'Brzeg'                               0.0
+  'Oggorog'                             0.0
+  'Bashing'                             0.0
+  'Aigrisaihai'                         0.0
+  'Regien'                              0.0
+  'Aigrisa'                             0.0
+  'Akhaz'                               0.0
+  'Changing'                            0.0
+  '"Out'                                0.0
+  'Wow!'                                0.0
+  'Izchak'                              0.0
+  'Uakhu'                               0.0
+  'Angmagssalik'                        0.0
+  'Gloorx'                              0.0
+  'Ogthosu'                             0.0
+  '"Be'                                 0.0
+  'Farvel'                              0.0
+  'Unspeakable'                         0.0
+  'war??".'                             0.0
+  'The engraving now reads'             0.0
+  'Crash!'                              0.0
+  'Sorry...'                            0.0
+  "|zch?|'?"                            0.0
+  '?uar|ed.".'                          0.0
+  'Never'                               0.0
+  'Unfortunately,'                      0.0
+  'Rukugor'                             0.0
+  'd!".'                                0.0
+  "You've"                              0.0
+  'mazes.".'                            0.0
+  'Haiabane'                            0.0
+  't?rn?'                               0.0
+  'lev?t?tion.".'                       0.0
+  'Fortunately'                         0.0
+  'Warlo?d!".'                          0.0
+  'Store!".'                            0.0
+  'bou?l?a|aisse.".'                    0.0
+  '"Wait!'                              0.0
+  'Afraid'                              0.0
+  'wan??".'                             0.0
+  'Ogothai'                             0.0
+  'large'                               0.0
+  'luck.".'                             0.0
+  'Elbe?cth".'                          0.0
+  'rec.g?mes.roguelike.netha?k.".'      0.0
+  'Gods'                                0.0
+  'bad'                                 0.0
+  'pr?b?b|?'                            0.0
+  'turns'                               0.0
+  'Getting'                             0.0
+  'Excalibur'                           0.0
+  'sh?vs'                               0.0
+  'ne?t'                                0.0
+  'Invalid'                             0.0
+  'Obviously'                           0.0
+  'onslau??t.".'                        0.0
+  'gl?mpse'                             0.0
+  'camc.".'                             0.0
+  'Morgoth'                             0.0
+  'amu|et.".'                           0.0
+  'erat?on.".'                          0.0
+  'up".'                                0.0
+  'ocze".'                              0.0
+  'n?l".'                               0.0
+  'Resident".'                          0.0
+  'rc.".'                               0.0
+  'scen?ry.".'                          0.0
+  'p??ses?ior'                          0.0
+  'snop.".'                             0.0
+  'succe?s.".'                          0.0
+  'aga?r.".'                            0.0
+  'shop.".'                             0.0
+  'Rodents'                             0.0
+  'the'                                 0.0
+  'foo|.".'                             0.0
+  'hcalthy".'                           0.0
+  'and'                                 0.0
+  ''                                    0.0
+  '?eeling.".'                          0.0
+  '?'                                   0.0
+  '?torc!".'                            0.0
+  'h?l".'                               0.0
+  'your'                                0.0
+  'hand)'                               0.0
+  'if'                                  0.0
+  'I.".'                                0.0
+question ttd (310170 rows): instructions 11, options 14 + markers 5
+      3  at most 2
+      3  3-7
+      3  8-30
+      3  31-100
+      2  over 100

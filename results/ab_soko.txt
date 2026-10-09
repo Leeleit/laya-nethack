@@ -1,0 +1,46 @@
+A/B /data/laya/nethack/nethackers/runs/val1/val-dwa-law-fem-100000-1000 -> /data/laya/nethack/nethackers/runs/soko/val-dwa-law-fem-100000-1000: 1000 paired seeds, 834 games changed
+
+progress 0.4118 -> 0.3191, paired diff -0.0927 (se 0.0071, t -13.01)
+changed games only: 0.4747 -> 0.3636; better 175, worse 401, same 258
+max depth median 25 -> 19; reached Dlvl 25+ 59.8% -> 39.9%; ended on Dlvl 21-24 (Medusa's band) 119 -> 88
+
+end causes in changed games (base -> arm counts)
+  minotaur                          133 ->   95
+  drowned in deep water              68 ->   52
+  raven                              45 ->   34
+  died of starvation                 29 ->   46
+  shark                              43 ->   29
+  xorn                               31 ->   17
+  soldier ant                         8 ->   28
+  elf-lord                           13 ->   13
+  bolt of fire                       10 ->   12
+  touch of death                     14 ->    8
+  Grey-elf                           10 ->   10
+  drowned in a moat by a giant        9 ->    9
+  winged gargoyle                     6 ->   11
+  cobra                               8 ->    8
+  captain                            12 ->    4
+
+first arrival at Dlvl d, seeds that reached it in both runs: AC median base -> arm, paired mean AC diff (negative = better), share of games with better AC
+  Dlvl  4  n  811  AC   0 ->  -1  diff -1.0654 (se 0.0817, t -13.04)  better 30%
+  Dlvl  6  n  707  AC   0 ->  -2  diff -1.7058 (se 0.1130, t -15.10)  better 49%
+  Dlvl  8  n  619  AC   0 ->  -2  diff -1.9467 (se 0.1302, t -14.96)  better 57%
+  Dlvl 10  n  534  AC   0 ->  -2  diff -1.8820 (se 0.1463, t -12.87)  better 60%
+  Dlvl 12  n  463  AC   0 ->  -2  diff -1.7711 (se 0.1606, t -11.03)  better 59%
+  Dlvl 15  n  436  AC   0 ->  -1  diff -1.5757 (se 0.1633, t -9.65)  better 58%
+  Dlvl 18  n  431  AC   0 ->  -1  diff -1.6125 (se 0.1648, t -9.78)  better 58%
+  Dlvl 20  n  424  AC   0 ->  -1  diff -1.6533 (se 0.1662, t -9.95)  better 59%
+  Dlvl 22  n  409  AC   0 ->  -1  diff -1.7090 (se 0.1690, t -10.11)  better 60%
+  Dlvl 24  n  349  AC   0 ->  -1  diff -1.5731 (se 0.1756, t -8.96)  better 59%
+  Dlvl 25  n  316  AC   0 ->  -1  diff -1.4715 (se 0.1846, t -7.97)  better 58%
+  Dlvl 26  n  225  AC   1 ->  -1  diff -1.4667 (se 0.2278, t -6.44)  better 60%
+  Dlvl 27  n  163  AC   1 ->  -1  diff -1.3620 (se 0.2828, t -4.82)  better 59%
+
+milestones (1000 paired games): share base -> arm, paired diff
+  reached_medusa        65.3% ->  43.7%  -0.2160 (se 0.0182, t -11.90)
+  passed_medusa         50.5% ->  33.0%  -0.1750 (se 0.0192, t -9.14)
+  reached_castle        43.4% ->  29.8%  -0.1360 (se 0.0191, t -7.11)
+  crossed_castle         1.0% ->   0.4%  -0.0060 (se 0.0037, t -1.60)
+  gehennom               2.6% ->   3.0%  +0.0040 (se 0.0055, t +0.73)
+  gehennom_levelport     1.6% ->   2.6%  +0.0100 (se 0.0042, t +2.36)
+  where games end (base -> arm): castle 422 -> 278; before Medusa 277 -> 508; Medusa 149 -> 110; mazes 72 -> 35; Dlvl 21+, unclear 58 -> 36; Gehennom 20 -> 29; Medusa or mazes? 2 -> 4

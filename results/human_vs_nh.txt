@@ -1,0 +1,13 @@
+human questions: train 382748 states, test 23455 states (341 players); features: hp, maxhp, hp_frac, dlvl, deepest, xl, ac, turn, turn_known, v34, chaotic, male, inv_known, n_items, gold, wand, ring, amulet, potion, scroll, spellbook, bag, worn, blessed, cursed, unihorn, reflection, mr, lifesave, speed, excalibur, dragon, mithril, marker, digging
+
+== fate: 23455 test rows, labels [4972, 8515, 8182, 1786] (log loss gain vs gbm: positive = better than gbm)
+  prior                  log loss 1.2827 [1.2594, 1.3362]  accuracy 0.363 [0.345, 0.394]
+  logit                  log loss 1.0903 [1.0328, 1.1193]  accuracy 0.485 [0.466, 0.525]
+  gbm                    log loss 1.0090 [0.9522, 1.0403]  accuracy 0.515 [0.491, 0.559]
+  nh-v1-human-test       log loss 1.6514 [1.5489, 1.8846]  accuracy 0.468 [0.452, 0.490]  vs gbm -0.6425 [-0.8924, -0.5321]
+
+== ttd: 23394 test rows, labels [3586, 8512, 11296] (log loss gain vs gbm: positive = better than gbm)
+  prior                  log loss 1.0079 [0.9700, 1.0789]  accuracy 0.483 [0.365, 0.547]
+  logit                  log loss 0.8520 [0.8123, 0.9222]  accuracy 0.608 [0.564, 0.633]
+  gbm                    log loss 0.8278 [0.7890, 0.8935]  accuracy 0.618 [0.578, 0.640]
+  nh-v1-human-test       log loss 1.4437 [1.3318, 1.4980]  accuracy 0.494 [0.479, 0.521]  vs gbm -0.6159 [-0.6813, -0.4631]

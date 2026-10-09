@@ -1,0 +1,149 @@
+######## human_data5/test.jsonl
+4725 states of human_data5/test.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.3 %   b - a blessed rusty +0 dagger (weapon in hand); c - an uncursed +3 small shield (being worn); d - an uncursed 
+######## human_data5/val.jsonl
+4711 states of human_data5/val.jsonl
+  msg_in_inv     0.0 %   a - a +1 long sword (weapon in hand); b - a +0 dagger; c - an uncursed +3 small shield (being worn); d - 2 unc
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   3.0 %   a - a key; b - a brass lantern; c - an uncursed +3 small shield (being worn); d - 9 elven daggers (in quiver);
+######## human_data5/train.jsonl
+50000 states of human_data5/train.jsonl
+  msg_in_inv     0.0 %   a - an uncursed ring of teleport control named <name>; b - an uncursed ring of slow digestion (on left hand); 
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   3.7 %   a - a +1 long sword (weapon in hand); b - a +0 dagger; c - an uncursed +3 small shield (being worn); d - 2 unc
+######## human_data5d/train.jsonl
+50000 states of human_data5d/train.jsonl
+  msg_in_inv     0.0 %   a - the blessed rustproof +3 Excalibur; b - an uncursed +0 dagger (weapon in hand); c - an uncursed +3 small s
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   a - a rusty +1 long sword (weapon in hand); b - a +0 dagger (alternate weapon; not wielded); c - an uncursed +
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.3 %   a - a +1 long sword (weapon in hand); b - an uncursed sack; c - an uncursed +3 small shield (being worn); g - 
+######## v2_data_s2/test.jsonl
+50000 states of v2_data_s2/test.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   $ - 111 gold pieces; a - a +0 two-handed sword (weapon in hands); e - a blessed scroll of gold detection; h - 
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+######## choice_fork_h300_all_s2/test.jsonl
+297 states of choice_fork_h300_all_s2/test.jsonl
+  msg_in_inv     0.0 %   
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   0.0 %   
+human_data5d/meta.json: "rows": {
+human_data5d/meta.json-  "train": 92862,
+human_data5d/meta.json-  "val": 2471,
+human_data5d/meta.json-  "test": 2344
+human_data5d/meta.json- },
+--
+human_data5/meta.json: "rows": {
+human_data5/meta.json-  "train": 240796,
+human_data5/meta.json-  "val": 4711,
+human_data5/meta.json-  "test": 4725
+human_data5/meta.json- },

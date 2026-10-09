@@ -1,0 +1,380 @@
+######## human_data14d/val.jsonl
+2465 states of human_data14d/val.jsonl
+  msg_in_inv     0.1 %   a - fortune cookie; b - +0 dagger; c - uncursed +3 small shield (worn); d - 2 uncursed food rations; e - white
+  glued_items    0.0 %   
+  cut_item       0.0 %   
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.8 %   a - the blessed rustproof +1 Excalibur (wielded); b - uncursed bag called holding; c - egg; d - ring called 15
+######## human_data14d/train.jsonl
+50000 states of human_data14d/train.jsonl
+  msg_in_inv     0.0 %   a - the blessed rustproof +3 Excalibur; b - uncursed +0 dagger (wielded); c - uncursed +3 small shield (worn);
+  glued_items    0.0 %   
+  cut_item       0.0 %   a - the blessed rustproo; b - uncursed +0 elven; c - uncursed +4 small; d - 4 tripe rations; e - amulet of ref
+  dup_letter     0.0 %   
+  class_sym      0.0 %   
+  dec_walls      0.0 %   
+  bot_ui_msg     0.0 %   
+  status_bad     0.0 %   
+  map_text       0.0 %   
+  odd_syms       0.0 %   
+  no_hero        0.0 %   
+  more_prompt    0.0 %   
+  hp_bad         0.0 %   
+  deepest_bad    0.0 %   
+  score          0.0 %   
+  gold_in_inv    0.0 %   
+  player_name    0.0 %   
+  door7          0.0 %   
+  non_ascii      0.0 %   
+  align_mismatch   0.0 %   
+  unknown_item   2.3 %   b - blessed +0 dagger (wielded); e - long wand; f - scroll labeled FOOBIE BLETCH; g - scroll labeled DAIYEN FO
+######## tokens human_data13d
+9858 examples; state 213 tokens an example
+  'Inventory'                         135.8
+  'St'                                 30.4
+  'HP'                                 16.8
+  'Val-Dwa-Law-Fem'                    13.7
+  'Around'                             10.1
+  'You'                                 0.8
+  'The'                                 0.5
+  'Val-Dwa-Law-Mal'                     0.3
+  'There'                               0.1
+  'Be'                                  0.1
+  'Pick'                                0.1
+  'Your'                                0.1
+  'Please'                              0.0
+  'This'                                0.0
+  'Pay'                                 0.0
+  'Val-Dwa-Cha-Fem'                     0.0
+  'With'                                0.0
+  'Click!'                              0.0
+  'But'                                 0.0
+  'A'                                   0.0
+  'Puddles'                             0.0
+  '"Velkommen,'                         0.0
+  'Asmodean'                            0.0
+  'Wakizashi'                           0.0
+  'Nightblood'                          0.0
+  'Where'                               0.0
+  'floor'                               0.0
+  'Something'                           0.0
+  '"Thank'                              0.0
+  'Unknown'                             0.0
+  'Watch'                               0.0
+  'Unknown direction'                   0.0
+  'What'                                0.0
+  'Val-Dwa-Cha-Mal'                     0.0
+  '"Will'                               0.0
+  'In'                                  0.0
+  "You're"                              0.0
+  'Sir'                                 0.0
+  'a'                                   0.0
+  'Cauchy'                              0.0
+  'Gollum'                              0.0
+  'Welcome'                             0.0
+  'UpDog'                               0.0
+  'tame'                                0.0
+  'Platinum'                            0.0
+  'Never'                               0.0
+  'carnivorous'                         0.0
+  'Suddenly'                            0.0
+  'peaceful'                            0.0
+  'dark'                                0.0
+  'Grey-elf'                            0.0
+  '39'                                  0.0
+  'WHAMMM!!!'                           0.0
+  '66'                                  0.0
+  'wererat'                             0.0
+  'corridor'                            0.0
+  'doorway'                             0.0
+question ttd (2445 rows): instructions 11, options 79 + markers 19
+      3  at most 170
+      3  171-360
+      3  361-550
+      3  551-740
+      4  741-1000
+      3  1001-1200
+      5  1201-1400
+      4  1401-1600
+      4  1601-1900
+      5  1901-2300
+      5  2301-2700
+      5  2701-3400
+      5  3401-4300
+      4  4301-5000
+      5  5001-6300
+      5  6301-11000
+      5  11001-20000
+      5  20001-40000
+      3  over 40000
+question depth (2471 rows): instructions 14, options 22 + markers 12
+      2  no deeper
+      1  6
+      1  7
+      1  8
+      1  9
+      1  10
+      1  11
+      3  12-14
+      3  15-19
+      3  20-25
+      3  26-35
+      2  36+
+question end (2471 rows): instructions 10, options 343 + markers 39
+     11  ant or other insect, e.g. soldier ant
+     10  human or elf, e.g. watch captain
+     10  dog or other canine, e.g. wolf
+     10  quadruped, e.g. rothe
+     12  cat or other feline, e.g. kitten
+      9  orc, e.g. hill orc
+     10  unicorn or horse, e.g. pony
+     10  bat or bird, e.g. giant bat
+     10  rodent, e.g. rabid rat
+     12  snake, e.g. water moccasin
+      9  major demon, e.g. water demon
+     10  humanoid, e.g. mind flayer
+     10  zombie, e.g. elf zombie
+     11  apelike creature, e.g. owlbear
+     10  lizard, e.g. iguana
+     12  imp or minor demon, e.g. homunculus
+     15  arachnid or centipede, e.g. giant spider
+     11  golem, e.g. rope golem
+     11  mummy, e.g. ettin mummy
+      8  troll, e.g. troll
+     10  mimic, e.g. small mimic
+     12  giant humanoid, e.g. minotaur
+     10  centaur, e.g. plains centaur
+     10  gremlin, e.g. gargoyle
+      9  elemental, e.g. air elemental
+     12  kobold, e.g. kobold lord
+     14  pudding or ooze, e.g. black pudding
+      9  jelly, e.g. spotted jelly
+      9  ogre, e.g. ogre
+      8  gnome, e.g. gnome lord
+      6  a wand, ray or spell
+      2  poison
+      3  turned to stone
+      5  starvation or choking
+      2  drowning
+      5  a trap or a fall
+      2  another monster
+      2  something else
+      2  ascension
+question ascends (2471 rows): instructions 10, options 2 + markers 2
+      1  no
+      1  yes
+######## tokens human_data14d
+9832 examples; state 281 tokens an example
+  'Inventory'                         136.1
+  'You'                                32.1
+  'St'                                 30.4
+  'HP'                                 28.9
+  'Val-Dwa-Law-Fem'                    13.7
+  'Around'                             13.6
+  'The'                                 9.7
+  'There'                               1.6
+  'This'                                1.5
+  'Your'                                0.9
+  'With'                                0.8
+  'That'                                0.7
+  'As'                                  0.6
+  'A'                                   0.5
+  'WHAMMM!!!'                           0.4
+  'Something'                           0.4
+  'Val-Dwa-Law-Mal'                     0.3
+  'Hmmm,'                               0.2
+  "There's"                             0.2
+  'Be'                                  0.1
+  '"For'                                0.1
+  'Ouch!'                               0.1
+  'Everything'                          0.1
+  'You read'                            0.1
+  'Blecch!'                             0.1
+  'Click!'                              0.1
+  'THUD!'                               0.1
+  '"Velkommen,'                         0.1
+  'It'                                  0.1
+  "Can't"                               0.1
+  'Restoring'                           0.1
+  'Nothing'                             0.1
+  'Such'                                0.1
+  'Status'                              0.1
+  'She'                                 0.1
+  'Fortunately,'                        0.1
+  'Suddenly,'                           0.1
+  'Please'                              0.1
+  'Perhaps'                             0.0
+  'Anecdote'                            0.0
+  '"Thank'                              0.0
+  'But'                                 0.0
+  'Awesomedog'                          0.0
+  '13'                                  0.0
+  'Welcome'                             0.0
+  'The priest of Loki intones'          0.0
+  'Valkyrie'                            0.0
+  '33'                                  0.0
+  '43'                                  0.0
+  'Pardon'                              0.0
+  'Whoops...'                           0.0
+  'The priest of Tyr intones'           0.0
+  'An'                                  0.0
+  'Oops!'                               0.0
+  'The priestess of Tyr intones'        0.0
+  '"Yes" or "No"'                       0.0
+  'My,'                                 0.0
+  'Klunk!'                              0.0
+  'Val-Dwa-Cha-Fem'                     0.0
+  'x'                                   0.0
+  'Knotty'                              0.0
+  'Bryan'                               0.0
+  'Suddenly'                            0.0
+  'a'                                   0.0
+  'r'                                   0.0
+  'Thing'                               0.0
+  'Wait!'                               0.0
+  'Charles'                             0.0
+  'h'                                   0.0
+  '37'                                  0.0
+  'Elven'                               0.0
+  '46'                                  0.0
+  '35'                                  0.0
+  'All'                                 0.0
+  "Uruwi's"                             0.0
+  '51'                                  0.0
+  '82'                                  0.0
+  'Ghost'                               0.0
+  '29'                                  0.0
+  '16'                                  0.0
+  '126'                                 0.0
+  '139'                                 0.0
+  'Water'                               0.0
+  'Air'                                 0.0
+  'THUD! | You fill your quiver'        0.0
+  'Pattern'                             0.0
+  'Dumb'                                0.0
+  '243'                                 0.0
+  '39'                                  0.0
+  '11'                                  0.0
+  '10'                                  0.0
+  '734'                                 0.0
+  'KABOOM!!'                            0.0
+  '20'                                  0.0
+  '251'                                 0.0
+  '18'                                  0.0
+  '76'                                  0.0
+  '23'                                  0.0
+  '45'                                  0.0
+  'Gravel'                              0.0
+  'Spot'                                0.0
+  'Velkommen'                           0.0
+  '31'                                  0.0
+  "You're"                              0.0
+  'Meow'                                0.0
+  '57'                                  0.0
+  'peaceful'                            0.0
+  'b'                                   0.0
+  '9'                                   0.0
+  'Galois'                              0.0
+  '81'                                  0.0
+  '5'                                   0.0
+  '88'                                  0.0
+  '69'                                  0.0
+  '22'                                  0.0
+  'Dog'                                 0.0
+  'Wow!'                                0.0
+  'e'                                   0.0
+  'Val-Dwa-Cha-Mal'                     0.0
+  'g'                                   0.0
+  '6'                                   0.0
+  'monkey'                              0.0
+question ttd (2437 rows): instructions 11, options 74 + markers 18
+      3  at most 160
+      3  161-360
+      3  361-550
+      3  551-740
+      4  741-1000
+      3  1001-1200
+      5  1201-1400
+      4  1401-1600
+      4  1601-1900
+      5  1901-2300
+      5  2301-2700
+      5  2701-3400
+      4  3401-5000
+      5  5001-6400
+      5  6401-12000
+      5  12001-20000
+      5  20001-40000
+      3  over 40000
+question depth (2465 rows): instructions 14, options 22 + markers 12
+      2  no deeper
+      1  43
+      1  44
+      1  45
+      1  46
+      1  47
+      1  48
+      3  49-51
+      3  52-56
+      3  57-62
+      3  63-72
+      2  73+
+question end (2465 rows): instructions 10, options 343 + markers 39
+     11  ant or other insect, e.g. soldier ant
+     10  human or elf, e.g. watch captain
+     10  dog or other canine, e.g. wolf
+     10  quadruped, e.g. rothe
+     12  cat or other feline, e.g. kitten
+      9  orc, e.g. hill orc
+     10  unicorn or horse, e.g. pony
+     10  bat or bird, e.g. giant bat
+     10  rodent, e.g. rabid rat
+     12  snake, e.g. water moccasin
+      9  major demon, e.g. water demon
+     10  humanoid, e.g. mind flayer
+     10  zombie, e.g. elf zombie
+     11  apelike creature, e.g. owlbear
+     10  lizard, e.g. iguana
+     12  imp or minor demon, e.g. homunculus
+     15  arachnid or centipede, e.g. giant spider
+     11  golem, e.g. rope golem
+     11  mummy, e.g. ettin mummy
+      8  troll, e.g. troll
+     10  mimic, e.g. small mimic
+     12  giant humanoid, e.g. minotaur
+     10  centaur, e.g. plains centaur
+     10  gremlin, e.g. gargoyle
+      9  elemental, e.g. air elemental
+     12  kobold, e.g. kobold lord
+     14  pudding or ooze, e.g. black pudding
+      9  jelly, e.g. spotted jelly
+      9  ogre, e.g. ogre
+      8  gnome, e.g. gnome lord
+      6  a wand, ray or spell
+      2  poison
+      3  turned to stone
+      5  starvation or choking
+      2  drowning
+      5  a trap or a fall
+      2  another monster
+      2  something else
+      2  ascension
+question ascends (2465 rows): instructions 10, options 2 + markers 2
+      1  no
+      1  yes

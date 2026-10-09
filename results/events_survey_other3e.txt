@@ -1,0 +1,188 @@
+nao/other_states3e.jsonl: 291843 games read (291843 kept), 285084 died; NEAR 100 turns
+prompts 26560839, with the answer in the log 5034782 (19.0 %)
+
+== most common (games with it; near death: died games with it in the last 100 turns)
+  281241  96.4 %  near death  149916  In what direction?
+  274870  94.2 %  near death   58469  The door opens.
+  263253  90.2 %  near death   27503  The door resists!
+  254144  87.1 %  near death   35514  Welcome to experience level #.
+  250270  85.8 %  near death   22458  This door is locked.
+  244449  83.8 %  near death    9576  You kill the newt!
+  233829  80.1 %  near death   22129  With great effort you move the boulder.
+  232279  79.6 %  near death   45052  Never mind.
+  227473  77.9 %  near death    6264  You kill the lichen!
+  224012  76.8 %  near death    8594  You kill the jackal!
+  222928  76.4 %  near death   28920  You are beginning to feel hungry.
+  218589  74.9 %  near death    7121  You kill the grid bug!
+  213537  73.2 %  near death   19785  You stop.
+  211667  72.5 %  near death   27494  You hear a door open.
+  210842  72.2 %  near death    8494  The jackal bites!
+  207619  71.1 %  near death   28467  You hear some noises in the distance.
+  206884  70.9 %  near death   25272  You see here # gold pieces.
+  205437  70.4 %  near death    5970  The newt bites!
+  204366  70.0 %  near death   11589  You try to move the boulder, but in vain.
+  202610  69.4 %  near death   13986  As you kick the door, it crashes open!
+  197043  67.5 %  near death   33541  You hear some noises.
+  195014  66.8 %  near death    5379  The grid bug bites!
+  188479  64.6 %  near death   66694  Unknown command ' '.
+  181794  62.3 %  near death    3528  You see here a lichen corpse.
+  181086  62.0 %  near death   15128  That door is closed.
+  179383  61.5 %  near death   12434  You finish your dressing maneuver.
+  179304  61.4 %  near death    4439  You kill the goblin!
+  173087  59.3 %  near death   25141  # gold pieces.
+  172838  59.2 %  near death   12555  You hear the chime of a cash register.
+  172770  59.2 %  near death    8822  You kill the gecko!
+  172251  59.0 %  near death   12596  You hear someone cursing shoplifters.
+  171726  58.8 %  near death    9190  You hear the footsteps of a guard on patrol.
+  171160  58.6 %  near death    6706  You see here a large box.
+  170199  58.3 %  near death    8669  You hear someone counting money.
+  168104  57.6 %  near death    3198  You miss the newt.
+  165514  56.7 %  near death    8314  WHAMMM!!!
+  164658  56.4 %  near death   22584  Your movements are now unencumbered.
+  163125  55.9 %  near death    3760  You see here a jackal corpse.
+  162477  55.7 %  near death    5660  There is a large box here, loot it? [ynq]
+  161046  55.2 %  near death   11049  Blecch!
+  161038  55.2 %  near death   11048  Rotten food!
+  157405  53.9 %  near death   10076  There is a doorway here.
+  154111  52.8 %  near death    7754  You see here a food ration.
+  154038  52.8 %  near death    5336  You carefully open the large box...
+  153296  52.5 %  near death    3660  You miss the jackal.
+  152199  52.2 %  near death    7878  You hear water falling on coins.
+  152169  52.1 %  near death   19274  Your movements are slowed slightly because of your load.
+  152168  52.1 %  near death   10388  You finish eating the food ration.
+  152118  52.1 %  near death    7901  You hear the splashing of a naiad.
+  151584  51.9 %  near death    7891  You hear bubbling water.
+  150620  51.6 %  near death   35566  You kill the gnome!
+  148939  51.0 %  near death   29707  Count: #
+  148781  51.0 %  near death    2672  You see here a newt corpse.
+  147555  50.6 %  near death   28109  There are several objects here.
+  146624  50.2 %  near death    8448  There is nothing here to pick up.
+  142203  48.7 %  near death   10097  There is an open door here.
+  141378  48.4 %  near death   31431  Pick an object.
+  138519  47.5 %  near death    4575  You kill the sewer rat!
+  137543  47.1 %  near death    3829  You finish eating the lichen corpse.
+  135389  46.4 %  near death    8216  That food really hit the spot!
+
+== before deaths: share of the died games with it in the last 100 turns over the share of all games with it in a random 100-turn window (>= 100 died games with it), top 60
+  659.3x  near death    644  random window      0  seen    1182  Your limbs are stiffening.
+  646.0x  near death    631  random window      0  seen     727  You turn to stone...
+  501.6x  near death    490  random window      0  seen     531  You have turned to stone.
+  475.0x  near death    464  random window      0  seen     488  You die from starvation.
+  399.9x  near death   1172  random window      2  seen    1261  You die from your illness.
+  396.2x  near death    387  random window      0  seen     427  You are a statue.
+  275.4x  near death    538  random window      1  seen     588  Your limbs have turned to stone.
+  227.3x  near death    222  random window      0  seen     446  The guard hits!
+  210.5x  near death    617  random window      2  seen     719  You choke over your food.
+  203.7x  near death    199  random window      0  seen     242  You are frozen in place!
+  195.5x  near death    191  random window      0  seen     204  Suddenly, a bolt of lightning strikes you!
+  157.7x  near death    154  random window      0  seen     158  You fry to a crisp.
+  148.4x  near death    145  random window      0  seen     309  You hear a horn being played.
+  148.4x  near death    145  random window      0  seen     200  "Then die, mortal!"
+  143.3x  near death    140  random window      0  seen     151  Touching the cockatrice corpse is a fatal mistake...
+  140.2x  near death    137  random window      0  seen     283  You feel confused!
+  137.2x  near death    134  random window      0  seen     517  The electric eel swings itself around you!
+  125.9x  near death    123  random window      0  seen     125  Your last thought fades away.
+  123.9x  near death    121  random window      0  seen     149  "Thou durst call upon me?"
+  107.5x  near death    105  random window      0  seen     649  You feel here a cockatrice corpse.
+   72.9x  near death    712  random window      9  seen    2308  You are slowing down.
+   63.3x  near death    309  random window      4  seen    1726  Yeenoghu hits!
+   62.4x  near death    183  random window      2  seen    1632  "Thou dost profane my shrine!"
+   61.9x  near death    121  random window      1  seen     428  The dwarf king swings his mace.
+   59.6x  near death    291  random window      4  seen     729  The watch captain swings his silver saber.
+   56.8x  near death    111  random window      1  seen     320  The guard gets angry!
+   56.1x  near death    274  random window      4  seen    1507  Yeenoghu swings his flail.
+   54.3x  near death    106  random window      1  seen     140  The giant eel drowns you...
+   52.9x  near death    155  random window      2  seen    1667  "Thou shalt suffer!"
+   52.7x  near death    206  random window      3  seen    1287  You suddenly feel weaker!
+   50.7x  near death    347  random window      6  seen     789  The watch captain swings his long sword.
+   49.8x  near death    146  random window      2  seen    1020  Yeenoghu wields a flail!
+   47.9x  near death   1356  random window     28  seen    4666  The soldier ant's sting was poisoned!
+   46.5x  near death    545  random window     11  seen    2152  Your cloak smoulders further!
+   45.9x  near death    314  random window      6  seen     602  The werewolf starts to attack you, but pulls back.
+   45.8x  near death    179  random window      3  seen    1590  "How darest thou harm my servant!"
+   45.6x  near death    178  random window      3  seen     295  Besides, you don't have enough to interest him.
+   45.3x  near death    177  random window      3  seen     997  Your cloak smoulders completely!
+   44.6x  near death    305  random window      6  seen     847  It butts!
+   44.0x  near death    215  random window      4  seen    1407  Yeenoghu casts a spell at you!
+   43.0x  near death    126  random window      2  seen     972  Yeenoghu points at you, then curses.
+   41.1x  near death   1285  random window     31  seen    2983  The watch captain hits!
+   40.7x  near death    199  random window      4  seen     454  Its sting was poisoned!
+   39.2x  near death    115  random window      2  seen     784  The dwarf king swings his broad pick.
+   38.2x  near death    485  random window     12  seen    2057  You cannot escape from the owlbear!
+   37.9x  near death   1519  random window     40  seen    6006  The werewolf summons help!
+   37.0x  near death   2531  random window     69  seen   10540  The bolt of lightning hits you!
+   36.0x  near death    176  random window      4  seen    1678  Scales cover your eyes!
+   36.0x  near death    281  random window      7  seen    1678  The master mind flayer hits!
+   35.2x  near death    172  random window      4  seen     977  Your wand of digging breaks apart and explodes!
+   35.1x  near death    103  random window      2  seen     276  You are being held, and cannot go up.
+   34.8x  near death    102  random window      2  seen    1083  Your boots smoulder further!
+   34.7x  near death   2642  random window     77  seen   10836  The mumak butts!
+   34.0x  near death    266  random window      7  seen    1047  The watchman thrusts her short sword.
+   33.6x  near death    164  random window      4  seen     859  The giant eel swings itself around you!
+   33.0x  near death    129  random window      3  seen    1074  You are getting confused.
+   33.0x  near death    806  random window     24  seen    2445  The soldier ant starts to attack you, but pulls back.
+   32.9x  near death    289  random window      8  seen     535  The water demon starts to attack you, but pulls back.
+   32.8x  near death    128  random window      3  seen     328  The winter wolf starts to attack you, but pulls back.
+   32.4x  near death    412  random window     12  seen    1497  You feel stupid!
+
+== actions (extended commands, item prompts): games with it, died games with it in the last 100 turns, all games with it in a random 100-turn window, the ratio as above
+  133197  45.6 %  near death  30375  random window   6318     4.9x  # pray
+  122507  42.0 %  near death   7367  random window  11724     0.6x  # loot
+  111229  38.1 %  near death  11068  random window   5161     2.2x  # enhance
+  107359  36.8 %  near death   7797  random window   9060     0.9x  # name
+  100192  34.3 %  near death  11774  random window  11901     1.0x  What do you want to drop?
+   91943  31.5 %  near death   7312  random window   6556     1.1x  What do you want to eat?
+   88576  30.4 %  near death   4684  random window   5465     0.9x  # adjust
+   83324  28.6 %  near death  15750  random window  11605     1.4x  What do you want to use or apply?
+   76976  26.4 %  near death   5379  random window   5541     1.0x  What do you want to wear?
+   71708  24.6 %  near death   2325  random window   4718     0.5x  # force
+   71600  24.5 %  near death   6911  random window   4866     1.5x  What do you want to read?
+   68029  23.3 %  near death   8149  random window   5750     1.5x  What do you want to wield?
+   66206  22.7 %  near death   4384  random window   3742     1.2x  # dip
+   65830  22.6 %  near death   4231  random window   3564     1.2x  # chat
+   64670  22.2 %  near death   6018  random window   5012     1.2x  # offer
+   53320  18.3 %  near death   1964  random window   2869     0.7x  # untrap
+   49760  17.1 %  near death   9582  random window   2544     3.9x  What do you want to zap?
+   48017  16.5 %  near death   7177  random window   3889     1.9x  What do you want to throw?
+   46791  16.0 %  near death   3527  random window   2538     1.4x  What do you want to put on?
+   45488  15.6 %  near death   2667  random window   2560     1.1x  What do you want to take off?
+   45410  15.6 %  near death   5079  random window   2491     2.1x  What do you want to drink?
+   42954  14.7 %  near death   8272  random window   3436     2.5x  What do you want to write in the dust here?
+   41544  14.2 %  near death   8189  random window   3347     2.5x  What do you want to write with?
+   36626  12.5 %  near death   2006  random window   2389     0.9x  What do you want to call?
+   28445   9.7 %  near death   1235  random window   1570     0.8x  What do you want to adjust?
+   27632   9.5 %  near death   4170  random window   1919     2.2x  What do you want to add to the writing in the dust here?
+   23456   8.0 %  near death    971  random window    534     1.9x  # sit
+   22159   7.6 %  near death   1006  random window    726     1.4x  # rub
+   21368   7.3 %  near death   1528  random window   1315     1.2x  What do you want to sacrifice?
+   20936   7.2 %  near death   1692  random window   1126     1.5x  What do you want to remove?
+   18978   6.5 %  near death    709  random window    921     0.8x  What do you want to name?
+   18343   6.3 %  near death   1044  random window    853     1.3x  What do you want to dip?
+   17348   5.9 %  near death    690  random window    515     1.4x  # jump
+   17342   5.9 %  near death   1150  random window    714     1.6x  What do you want to ready?
+   10863   3.7 %  near death    313  random window    244     1.3x  # invoke
+   10590   3.6 %  near death    121  random window    174     0.7x  What do you want to call the kitten?
+   10425   3.6 %  near death   1027  random window    313     3.3x  What do you want to engrave in the floor here?
+   10197   3.5 %  near death    502  random window    686     0.7x  What do you want to call this dungeon level?
+    9468   3.2 %  near death    573  random window    661     0.9x  What do you want to rub on the stone?
+    9431   3.2 %  near death    519  random window    738     0.7x  # annotate
+    8386   2.9 %  near death    458  random window    516     0.9x  # overview
+    7941   2.7 %  near death   1019  random window    955     1.1x  # ride
+    7739   2.7 %  near death    204  random window    188     1.1x  # c
+    7521   2.6 %  near death    305  random window    295     1.1x  # conduct
+    7120   2.4 %  near death    315  random window    155     2.1x  What do you want to burn into the floor here?
+    7058   2.4 %  near death    311  random window    209     1.5x  What do you want to rub?
+    6759   2.3 %  near death    249  random window    191     1.3x  # o
+    6563   2.2 %  near death    255  random window    170     1.5x  # r
+    6148   2.1 %  near death    503  random window    176     2.9x  # monster
+    5947   2.0 %  near death    144  random window    164     0.9x  # a
+    5715   2.0 %  near death     83  random window    121     0.7x  What do you want to call the little dog?
+    5676   1.9 %  near death    393  random window    245     1.6x  # twoweapon
+    5407   1.9 %  near death    367  random window    178     2.1x  # wipe
+    4280   1.5 %  near death    287  random window     98     3.0x  # e
+    4257   1.5 %  near death    240  random window    165     1.5x  # quit
+    3296   1.1 %  near death     74  random window     69     1.1x  # h
+    3259   1.1 %  near death     70  random window     50     1.4x  What do you want to write on?
+    3184   1.1 %  near death     52  random window     94     0.6x  # ly
+    3146   1.1 %  near death     73  random window     96     0.8x  # k
+    2854   1.0 %  near death     83  random window     64     1.3x  # d

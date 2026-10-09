@@ -1,0 +1,17 @@
+human questions: train 92862 states, val  2471 states (324 players); features: hp, maxhp, hp_frac, dlvl, deepest, xl, ac, turn, turn_known, v34, chaotic, male, inv_known, n_items, gold, wand, ring, amulet, potion, scroll, spellbook, bag, worn, blessed, cursed, unihorn, reflection, mr, lifesave, speed, excalibur, dragon, mithril, marker, digging
+
+== fate: 2471 test rows, labels [743, 1167, 424, 137] (gains vs gbm / vs the first laya model: positive = better)
+  prior                  log loss 1.1947 [1.1372, 1.2740]  accuracy 0.472 [0.446, 0.493]  RPS 0.1472 [0.1371, 0.1608]
+  logit                  log loss 0.9664 [0.9296, 1.0126]  accuracy 0.581 [0.556, 0.599]  RPS 0.1148 [0.1083, 0.1219]
+  gbm                    log loss 0.8831 [0.8470, 0.9239]  accuracy 0.592 [0.566, 0.612]  RPS 0.1053 [0.0998, 0.1114]
+  eff-a-human_data5d-val log loss 0.9005 [0.8645, 0.9527]  accuracy 0.597 [0.574, 0.614]  RPS 0.1064 [0.1009, 0.1137]  vs gbm -0.0174 [-0.0297, -0.0085]
+  eff-a16-human_data5d-val log loss 0.8864 [0.8496, 0.9322]  accuracy 0.602 [0.580, 0.621]  RPS 0.1049 [0.0998, 0.1116]  vs gbm -0.0033 [-0.0131, +0.0054]  vs eff-a-human_data5d-val: log loss +0.0141 [+0.0085, +0.0196], RPS +0.0015 [+0.0007, +0.0023]
+
+== ttd: 2445 test rows, labels [773, 1199, 473] (gains vs gbm / vs the first laya model: positive = better)
+  prior                  log loss 1.0345 [1.0082, 1.0624]  accuracy 0.490 [0.465, 0.514]  RPS 0.1866 [0.1795, 0.1951]
+  logit                  log loss 0.8638 [0.8361, 0.8978]  accuracy 0.591 [0.570, 0.612]  RPS 0.1492 [0.1431, 0.1571]
+  gbm                    log loss 0.8423 [0.8145, 0.8797]  accuracy 0.605 [0.582, 0.625]  RPS 0.1442 [0.1380, 0.1519]
+  eff-a-human_data5d-val log loss 0.8495 [0.8176, 0.8924]  accuracy 0.612 [0.589, 0.633]  RPS 0.1445 [0.1380, 0.1535]  vs gbm -0.0071 [-0.0185, +0.0032]
+  eff-a16-human_data5d-val log loss 0.8456 [0.8149, 0.8876]  accuracy 0.606 [0.582, 0.627]  RPS 0.1445 [0.1382, 0.1535]  vs gbm -0.0033 [-0.0129, +0.0059]  vs eff-a-human_data5d-val: log loss +0.0038 [-0.0018, +0.0099], RPS -0.0001 [-0.0010, +0.0009]
+eff-a: saved ckpt/eff-a after 23130 steps, 2693s
+eff-a16: saved ckpt/eff-a16 after 11565 steps, 1131s

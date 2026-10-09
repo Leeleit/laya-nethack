@@ -1,0 +1,37 @@
+nao/val_dwa_states3e.jsonl: 51505 games ({'other': 48350, 'deep': 1893, 'ascended': 1262}); players with >= 100 games: 55, their games {'other': 14417, 'deep': 408, 'ascended': 47}
+
+== games with it: all / ascended / deep (maxlvl >= 25, not ascended) / other (share of the group)
+descend         51027 (99.1 %)  asc  99.2 %  deep  99.2 %  other  99.1 %
+AC better       39094 (75.9 %)  asc  99.1 %  deep  99.1 %  other  74.4 %
+telepathy       13551 (26.3 %)  asc  56.8 %  deep  65.1 %  other  24.0 %
+wear            13321 (25.9 %)  asc  38.5 %  deep  43.7 %  other  24.8 %
+excalibur       13094 (25.4 %)  asc  57.6 %  deep  70.6 %  other  22.8 %
+poison res       7945 (15.4 %)  asc  53.2 %  deep  56.6 %  other  12.8 %
+enchant armor    4673 ( 9.1 %)  asc  65.5 %  deep  50.6 %  other   6.0 %
+fire res         3312 ( 6.4 %)  asc  55.5 %  deep  51.2 %  other   3.4 %
+sleep res        3045 ( 5.9 %)  asc  48.7 %  deep  41.3 %  other   3.4 %
+dragon armor     2240 ( 4.3 %)  asc  63.3 %  deep  37.0 %  other   1.5 %
+magic res id     2026 ( 3.9 %)  asc  61.1 %  deep  35.4 %  other   1.2 %
+reflection id    1877 ( 3.6 %)  asc  51.8 %  deep  36.8 %  other   1.1 %
+put on           1727 ( 3.4 %)  asc  21.9 %  deep  20.5 %  other   2.2 %
+shock res        1559 ( 3.0 %)  asc  43.3 %  deep  25.9 %  other   1.1 %
+disint res        716 ( 1.4 %)  asc  35.6 %  deep  13.2 %  other   0.0 %
+tele control      381 ( 0.7 %)  asc  12.6 %  deep   5.1 %  other   0.3 %
+
+== events: count, by Dlvl band (%), median turn / XL / AC at it, AC gained (wear / put on), share by players with >= 100 games
+AC better        561861  1-4  25 5-12  46 13-20  12 21-24   5 25-29   7 30+   5  turn   10508  XL   10  AC    0  AC gained median 2, > 0 in 100 %  many-games players 20 %
+descend          405663  1-4  37 5-12  41 13-20   9 21-24   3 25-29   3 30+   7  turn    2076  XL    5  AC    3  many-games players 26 %
+wear              95222  1-4  34 5-12  43 13-20  12 21-24   5 25-29   4 30+   3  turn    7195  XL    8  AC   -1  AC gained median 1, > 0 in 60 %  many-games players 26 %
+put on            28204  1-4  11 5-12  32 13-20  21 21-24  10 25-29  12 30+  14  turn   22436  XL   13  AC  -10  AC gained median 0, > 0 in 5 %  many-games players 9 %
+enchant armor     14558  1-4  23 5-12  40 13-20  18 21-24   6 25-29  10 30+   4  turn   22938  XL   14  AC   -1  many-games players 21 %
+telepathy         14505  1-4  59 5-12  38 13-20   2 21-24   0 25-29   0 30+   0  turn    2354  XL    5  AC    2  many-games players 31 %
+excalibur         13094  1-4  51 5-12  49 13-20   0 21-24   0 25-29   0 30+   0  turn    2737  XL    6  AC    2  many-games players 35 %
+poison res         8382  1-4  27 5-12  69 13-20   3 21-24   1 25-29   0 30+   0  turn    4216  XL    7  AC    0  many-games players 31 %
+fire res           3516  1-4  12 5-12  55 13-20  28 21-24   3 25-29   2 30+   0  turn   11130  XL   10  AC   -4  many-games players 28 %
+sleep res          3277  1-4  11 5-12  64 13-20  16 21-24   4 25-29   4 30+   1  turn    9770  XL   10  AC   -4  many-games players 31 %
+dragon armor       2240  1-4  19 5-12  48 13-20  18 21-24   6 25-29   9 30+   2  turn   13684  XL   11  AC   -3  many-games players 18 %
+magic res id       2026  1-4  17 5-12  45 13-20  19 21-24   7 25-29   9 30+   3  turn   15718  XL   12  AC   -5  many-games players 15 %
+reflection id      1877  1-4  14 5-12  42 13-20  22 21-24   9 25-29   9 30+   4  turn   18023  XL   12  AC   -6  many-games players 16 %
+shock res          1677  1-4   9 5-12  41 13-20  21 21-24   7 25-29  15 30+   8  turn   16193  XL   12  AC   -6  many-games players 22 %
+disint res          728  1-4   0 5-12   5 13-20  10 21-24  12 25-29  47 30+  27  turn   29382  XL   15  AC  -17  many-games players 12 %
+tele control        381  1-4   8 5-12  57 13-20  20 21-24   6 25-29   7 30+   3  turn   19779  XL   13  AC   -9  many-games players 19 %
