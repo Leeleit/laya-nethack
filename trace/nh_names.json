@@ -1,0 +1,2652 @@
+{
+"objects": [
+{
+"name": "strange object",
+"descr": null,
+"cls": null
+},
+{
+"name": "arrow",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven arrow",
+"descr": "runed arrow",
+"cls": "weapon"
+},
+{
+"name": "orcish arrow",
+"descr": "crude arrow",
+"cls": "weapon"
+},
+{
+"name": "silver arrow",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "ya",
+"descr": "bamboo arrow",
+"cls": "weapon"
+},
+{
+"name": "crossbow bolt",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "dart",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "shuriken",
+"descr": "throwing star",
+"cls": "weapon"
+},
+{
+"name": "boomerang",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "spear",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven spear",
+"descr": "runed spear",
+"cls": "weapon"
+},
+{
+"name": "orcish spear",
+"descr": "crude spear",
+"cls": "weapon"
+},
+{
+"name": "dwarvish spear",
+"descr": "stout spear",
+"cls": "weapon"
+},
+{
+"name": "silver spear",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "javelin",
+"descr": "throwing spear",
+"cls": "weapon"
+},
+{
+"name": "trident",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "dagger",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven dagger",
+"descr": "runed dagger",
+"cls": "weapon"
+},
+{
+"name": "orcish dagger",
+"descr": "crude dagger",
+"cls": "weapon"
+},
+{
+"name": "silver dagger",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "athame",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "scalpel",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "knife",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "stiletto",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "worm tooth",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "crysknife",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "axe",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "battle-axe",
+"descr": "double-headed axe",
+"cls": "weapon"
+},
+{
+"name": "short sword",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven short sword",
+"descr": "runed short sword",
+"cls": "weapon"
+},
+{
+"name": "orcish short sword",
+"descr": "crude short sword",
+"cls": "weapon"
+},
+{
+"name": "dwarvish short sword",
+"descr": "broad short sword",
+"cls": "weapon"
+},
+{
+"name": "scimitar",
+"descr": "curved sword",
+"cls": "weapon"
+},
+{
+"name": "silver saber",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "broadsword",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven broadsword",
+"descr": "runed broadsword",
+"cls": "weapon"
+},
+{
+"name": "long sword",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "two-handed sword",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "katana",
+"descr": "samurai sword",
+"cls": "weapon"
+},
+{
+"name": "tsurugi",
+"descr": "long samurai sword",
+"cls": "weapon"
+},
+{
+"name": "runesword",
+"descr": "runed broadsword",
+"cls": "weapon"
+},
+{
+"name": "partisan",
+"descr": "vulgar polearm",
+"cls": "weapon"
+},
+{
+"name": "ranseur",
+"descr": "hilted polearm",
+"cls": "weapon"
+},
+{
+"name": "spetum",
+"descr": "forked polearm",
+"cls": "weapon"
+},
+{
+"name": "glaive",
+"descr": "single-edged polearm",
+"cls": "weapon"
+},
+{
+"name": "lance",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "halberd",
+"descr": "angled poleaxe",
+"cls": "weapon"
+},
+{
+"name": "bardiche",
+"descr": "long poleaxe",
+"cls": "weapon"
+},
+{
+"name": "voulge",
+"descr": "pole cleaver",
+"cls": "weapon"
+},
+{
+"name": "dwarvish mattock",
+"descr": "broad pick",
+"cls": "weapon"
+},
+{
+"name": "fauchard",
+"descr": "pole sickle",
+"cls": "weapon"
+},
+{
+"name": "guisarme",
+"descr": "pruning hook",
+"cls": "weapon"
+},
+{
+"name": "bill-guisarme",
+"descr": "hooked polearm",
+"cls": "weapon"
+},
+{
+"name": "lucern hammer",
+"descr": "pronged polearm",
+"cls": "weapon"
+},
+{
+"name": "bec de corbin",
+"descr": "beaked polearm",
+"cls": "weapon"
+},
+{
+"name": "mace",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "morning star",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "war hammer",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "club",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "rubber hose",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "quarterstaff",
+"descr": "staff",
+"cls": "weapon"
+},
+{
+"name": "aklys",
+"descr": "thonged club",
+"cls": "weapon"
+},
+{
+"name": "flail",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "bullwhip",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "bow",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven bow",
+"descr": "runed bow",
+"cls": "weapon"
+},
+{
+"name": "orcish bow",
+"descr": "crude bow",
+"cls": "weapon"
+},
+{
+"name": "yumi",
+"descr": "long bow",
+"cls": "weapon"
+},
+{
+"name": "sling",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "crossbow",
+"descr": null,
+"cls": "weapon"
+},
+{
+"name": "elven leather helm",
+"descr": "leather hat",
+"cls": "armor"
+},
+{
+"name": "orcish helm",
+"descr": "iron skull cap",
+"cls": "armor"
+},
+{
+"name": "dwarvish iron helm",
+"descr": "hard hat",
+"cls": "armor"
+},
+{
+"name": "fedora",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "cornuthaum",
+"descr": "conical hat",
+"cls": "armor"
+},
+{
+"name": "dunce cap",
+"descr": "conical hat",
+"cls": "armor"
+},
+{
+"name": "dented pot",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "helmet",
+"descr": "plumed helmet",
+"cls": "armor"
+},
+{
+"name": "helm of brilliance",
+"descr": "etched helmet",
+"cls": "armor"
+},
+{
+"name": "helm of opposite alignment",
+"descr": "crested helmet",
+"cls": "armor"
+},
+{
+"name": "helm of telepathy",
+"descr": "visored helmet",
+"cls": "armor"
+},
+{
+"name": "gray dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "silver dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "red dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "white dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "orange dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "black dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "blue dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "green dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "yellow dragon scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "gray dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "silver dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "red dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "white dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "orange dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "black dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "blue dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "green dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "yellow dragon scales",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "plate mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "crystal plate mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "bronze plate mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "splint mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "banded mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "dwarvish mithril-coat",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "elven mithril-coat",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "chain mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "orcish chain mail",
+"descr": "crude chain mail",
+"cls": "armor"
+},
+{
+"name": "scale mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "studded leather armor",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "ring mail",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "orcish ring mail",
+"descr": "crude ring mail",
+"cls": "armor"
+},
+{
+"name": "leather armor",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "leather jacket",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "Hawaiian shirt",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "T-shirt",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "mummy wrapping",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "elven cloak",
+"descr": "faded pall",
+"cls": "armor"
+},
+{
+"name": "orcish cloak",
+"descr": "coarse mantelet",
+"cls": "armor"
+},
+{
+"name": "dwarvish cloak",
+"descr": "hooded cloak",
+"cls": "armor"
+},
+{
+"name": "oilskin cloak",
+"descr": "slippery cloak",
+"cls": "armor"
+},
+{
+"name": "robe",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "alchemy smock",
+"descr": "apron",
+"cls": "armor"
+},
+{
+"name": "leather cloak",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "cloak of protection",
+"descr": "tattered cape",
+"cls": "armor"
+},
+{
+"name": "cloak of invisibility",
+"descr": "opera cloak",
+"cls": "armor"
+},
+{
+"name": "cloak of magic resistance",
+"descr": "ornamental cope",
+"cls": "armor"
+},
+{
+"name": "cloak of displacement",
+"descr": "piece of cloth",
+"cls": "armor"
+},
+{
+"name": "small shield",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "elven shield",
+"descr": "blue and green shield",
+"cls": "armor"
+},
+{
+"name": "Uruk-hai shield",
+"descr": "white-handed shield",
+"cls": "armor"
+},
+{
+"name": "orcish shield",
+"descr": "red-eyed shield",
+"cls": "armor"
+},
+{
+"name": "large shield",
+"descr": null,
+"cls": "armor"
+},
+{
+"name": "dwarvish roundshield",
+"descr": "large round shield",
+"cls": "armor"
+},
+{
+"name": "shield of reflection",
+"descr": "polished silver shield",
+"cls": "armor"
+},
+{
+"name": "leather gloves",
+"descr": "old gloves",
+"cls": "armor"
+},
+{
+"name": "gauntlets of fumbling",
+"descr": "padded gloves",
+"cls": "armor"
+},
+{
+"name": "gauntlets of power",
+"descr": "riding gloves",
+"cls": "armor"
+},
+{
+"name": "gauntlets of dexterity",
+"descr": "fencing gloves",
+"cls": "armor"
+},
+{
+"name": "low boots",
+"descr": "walking shoes",
+"cls": "armor"
+},
+{
+"name": "iron shoes",
+"descr": "hard shoes",
+"cls": "armor"
+},
+{
+"name": "high boots",
+"descr": "jackboots",
+"cls": "armor"
+},
+{
+"name": "speed boots",
+"descr": "combat boots",
+"cls": "armor"
+},
+{
+"name": "water walking boots",
+"descr": "jungle boots",
+"cls": "armor"
+},
+{
+"name": "jumping boots",
+"descr": "hiking boots",
+"cls": "armor"
+},
+{
+"name": "elven boots",
+"descr": "mud boots",
+"cls": "armor"
+},
+{
+"name": "kicking boots",
+"descr": "buckled boots",
+"cls": "armor"
+},
+{
+"name": "fumble boots",
+"descr": "riding boots",
+"cls": "armor"
+},
+{
+"name": "levitation boots",
+"descr": "snow boots",
+"cls": "armor"
+},
+{
+"name": "adornment",
+"descr": "wooden",
+"cls": "ring"
+},
+{
+"name": "gain strength",
+"descr": "granite",
+"cls": "ring"
+},
+{
+"name": "gain constitution",
+"descr": "opal",
+"cls": "ring"
+},
+{
+"name": "increase accuracy",
+"descr": "clay",
+"cls": "ring"
+},
+{
+"name": "increase damage",
+"descr": "coral",
+"cls": "ring"
+},
+{
+"name": "protection",
+"descr": "black onyx",
+"cls": "ring"
+},
+{
+"name": "regeneration",
+"descr": "moonstone",
+"cls": "ring"
+},
+{
+"name": "searching",
+"descr": "tiger eye",
+"cls": "ring"
+},
+{
+"name": "stealth",
+"descr": "jade",
+"cls": "ring"
+},
+{
+"name": "sustain ability",
+"descr": "bronze",
+"cls": "ring"
+},
+{
+"name": "levitation",
+"descr": "agate",
+"cls": "ring"
+},
+{
+"name": "hunger",
+"descr": "topaz",
+"cls": "ring"
+},
+{
+"name": "aggravate monster",
+"descr": "sapphire",
+"cls": "ring"
+},
+{
+"name": "conflict",
+"descr": "ruby",
+"cls": "ring"
+},
+{
+"name": "warning",
+"descr": "diamond",
+"cls": "ring"
+},
+{
+"name": "poison resistance",
+"descr": "pearl",
+"cls": "ring"
+},
+{
+"name": "fire resistance",
+"descr": "iron",
+"cls": "ring"
+},
+{
+"name": "cold resistance",
+"descr": "brass",
+"cls": "ring"
+},
+{
+"name": "shock resistance",
+"descr": "copper",
+"cls": "ring"
+},
+{
+"name": "free action",
+"descr": "twisted",
+"cls": "ring"
+},
+{
+"name": "slow digestion",
+"descr": "steel",
+"cls": "ring"
+},
+{
+"name": "teleportation",
+"descr": "silver",
+"cls": "ring"
+},
+{
+"name": "teleport control",
+"descr": "gold",
+"cls": "ring"
+},
+{
+"name": "polymorph",
+"descr": "ivory",
+"cls": "ring"
+},
+{
+"name": "polymorph control",
+"descr": "emerald",
+"cls": "ring"
+},
+{
+"name": "invisibility",
+"descr": "wire",
+"cls": "ring"
+},
+{
+"name": "see invisible",
+"descr": "engagement",
+"cls": "ring"
+},
+{
+"name": "protection from shape changers",
+"descr": "shiny",
+"cls": "ring"
+},
+{
+"name": "amulet of ESP",
+"descr": "circular",
+"cls": "amulet"
+},
+{
+"name": "amulet of life saving",
+"descr": "spherical",
+"cls": "amulet"
+},
+{
+"name": "amulet of strangulation",
+"descr": "oval",
+"cls": "amulet"
+},
+{
+"name": "amulet of restful sleep",
+"descr": "triangular",
+"cls": "amulet"
+},
+{
+"name": "amulet versus poison",
+"descr": "pyramidal",
+"cls": "amulet"
+},
+{
+"name": "amulet of change",
+"descr": "square",
+"cls": "amulet"
+},
+{
+"name": "amulet of unchanging",
+"descr": "concave",
+"cls": "amulet"
+},
+{
+"name": "amulet of reflection",
+"descr": "hexagonal",
+"cls": "amulet"
+},
+{
+"name": "amulet of magical breathing",
+"descr": "octagonal",
+"cls": "amulet"
+},
+{
+"name": "cheap plastic imitation of the Amulet of Yendor",
+"descr": "Amulet of Yendor",
+"cls": "amulet"
+},
+{
+"name": "Amulet of Yendor",
+"descr": "Amulet of Yendor",
+"cls": "amulet"
+},
+{
+"name": "large box",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "chest",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "ice box",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "sack",
+"descr": "bag",
+"cls": "tool"
+},
+{
+"name": "oilskin sack",
+"descr": "bag",
+"cls": "tool"
+},
+{
+"name": "bag of holding",
+"descr": "bag",
+"cls": "tool"
+},
+{
+"name": "bag of tricks",
+"descr": "bag",
+"cls": "tool"
+},
+{
+"name": "skeleton key",
+"descr": "key",
+"cls": "tool"
+},
+{
+"name": "lock pick",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "credit card",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "tallow candle",
+"descr": "candle",
+"cls": "tool"
+},
+{
+"name": "wax candle",
+"descr": "candle",
+"cls": "tool"
+},
+{
+"name": "brass lantern",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "oil lamp",
+"descr": "lamp",
+"cls": "tool"
+},
+{
+"name": "magic lamp",
+"descr": "lamp",
+"cls": "tool"
+},
+{
+"name": "expensive camera",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "mirror",
+"descr": "looking glass",
+"cls": "tool"
+},
+{
+"name": "crystal ball",
+"descr": "glass orb",
+"cls": "tool"
+},
+{
+"name": "lenses",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "blindfold",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "towel",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "saddle",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "leash",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "stethoscope",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "tinning kit",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "tin opener",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "can of grease",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "figurine",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "magic marker",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "land mine",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "beartrap",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "tin whistle",
+"descr": "whistle",
+"cls": "tool"
+},
+{
+"name": "magic whistle",
+"descr": "whistle",
+"cls": "tool"
+},
+{
+"name": "wooden flute",
+"descr": "flute",
+"cls": "tool"
+},
+{
+"name": "magic flute",
+"descr": "flute",
+"cls": "tool"
+},
+{
+"name": "tooled horn",
+"descr": "horn",
+"cls": "tool"
+},
+{
+"name": "frost horn",
+"descr": "horn",
+"cls": "tool"
+},
+{
+"name": "fire horn",
+"descr": "horn",
+"cls": "tool"
+},
+{
+"name": "horn of plenty",
+"descr": "horn",
+"cls": "tool"
+},
+{
+"name": "wooden harp",
+"descr": "harp",
+"cls": "tool"
+},
+{
+"name": "magic harp",
+"descr": "harp",
+"cls": "tool"
+},
+{
+"name": "bell",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "bugle",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "leather drum",
+"descr": "drum",
+"cls": "tool"
+},
+{
+"name": "drum of earthquake",
+"descr": "drum",
+"cls": "tool"
+},
+{
+"name": "pick-axe",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "grappling hook",
+"descr": "iron hook",
+"cls": "tool"
+},
+{
+"name": "unicorn horn",
+"descr": null,
+"cls": "tool"
+},
+{
+"name": "Candelabrum of Invocation",
+"descr": "candelabrum",
+"cls": "tool"
+},
+{
+"name": "Bell of Opening",
+"descr": "silver bell",
+"cls": "tool"
+},
+{
+"name": "tripe ration",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "corpse",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "egg",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "meatball",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "meat stick",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "huge chunk of meat",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "meat ring",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "glob of gray ooze",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "glob of brown pudding",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "glob of green slime",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "glob of black pudding",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "kelp frond",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "eucalyptus leaf",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "apple",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "orange",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "pear",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "melon",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "banana",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "carrot",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "sprig of wolfsbane",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "clove of garlic",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "slime mold",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "lump of royal jelly",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "cream pie",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "candy bar",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "fortune cookie",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "pancake",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "lembas wafer",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "cram ration",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "food ration",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "K-ration",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "C-ration",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "tin",
+"descr": null,
+"cls": "food"
+},
+{
+"name": "gain ability",
+"descr": "ruby",
+"cls": "potion"
+},
+{
+"name": "restore ability",
+"descr": "pink",
+"cls": "potion"
+},
+{
+"name": "confusion",
+"descr": "orange",
+"cls": "potion"
+},
+{
+"name": "blindness",
+"descr": "yellow",
+"cls": "potion"
+},
+{
+"name": "paralysis",
+"descr": "emerald",
+"cls": "potion"
+},
+{
+"name": "speed",
+"descr": "dark green",
+"cls": "potion"
+},
+{
+"name": "levitation",
+"descr": "cyan",
+"cls": "potion"
+},
+{
+"name": "hallucination",
+"descr": "sky blue",
+"cls": "potion"
+},
+{
+"name": "invisibility",
+"descr": "brilliant blue",
+"cls": "potion"
+},
+{
+"name": "see invisible",
+"descr": "magenta",
+"cls": "potion"
+},
+{
+"name": "healing",
+"descr": "purple-red",
+"cls": "potion"
+},
+{
+"name": "extra healing",
+"descr": "puce",
+"cls": "potion"
+},
+{
+"name": "gain level",
+"descr": "milky",
+"cls": "potion"
+},
+{
+"name": "enlightenment",
+"descr": "swirly",
+"cls": "potion"
+},
+{
+"name": "monster detection",
+"descr": "bubbly",
+"cls": "potion"
+},
+{
+"name": "object detection",
+"descr": "smoky",
+"cls": "potion"
+},
+{
+"name": "gain energy",
+"descr": "cloudy",
+"cls": "potion"
+},
+{
+"name": "sleeping",
+"descr": "effervescent",
+"cls": "potion"
+},
+{
+"name": "full healing",
+"descr": "black",
+"cls": "potion"
+},
+{
+"name": "polymorph",
+"descr": "golden",
+"cls": "potion"
+},
+{
+"name": "booze",
+"descr": "brown",
+"cls": "potion"
+},
+{
+"name": "sickness",
+"descr": "fizzy",
+"cls": "potion"
+},
+{
+"name": "fruit juice",
+"descr": "dark",
+"cls": "potion"
+},
+{
+"name": "acid",
+"descr": "white",
+"cls": "potion"
+},
+{
+"name": "oil",
+"descr": "murky",
+"cls": "potion"
+},
+{
+"name": "water",
+"descr": "clear",
+"cls": "potion"
+},
+{
+"name": "enchant armor",
+"descr": "ZELGO MER",
+"cls": "scroll"
+},
+{
+"name": "destroy armor",
+"descr": "JUYED AWK YACC",
+"cls": "scroll"
+},
+{
+"name": "confuse monster",
+"descr": "NR 9",
+"cls": "scroll"
+},
+{
+"name": "scare monster",
+"descr": "XIXAXA XOXAXA XUXAXA",
+"cls": "scroll"
+},
+{
+"name": "remove curse",
+"descr": "PRATYAVAYAH",
+"cls": "scroll"
+},
+{
+"name": "enchant weapon",
+"descr": "DAIYEN FOOELS",
+"cls": "scroll"
+},
+{
+"name": "create monster",
+"descr": "LEP GEX VEN ZEA",
+"cls": "scroll"
+},
+{
+"name": "taming",
+"descr": "PRIRUTSENIE",
+"cls": "scroll"
+},
+{
+"name": "genocide",
+"descr": "ELBIB YLOH",
+"cls": "scroll"
+},
+{
+"name": "light",
+"descr": "VERR YED HORRE",
+"cls": "scroll"
+},
+{
+"name": "teleportation",
+"descr": "VENZAR BORGAVVE",
+"cls": "scroll"
+},
+{
+"name": "gold detection",
+"descr": "THARR",
+"cls": "scroll"
+},
+{
+"name": "food detection",
+"descr": "YUM YUM",
+"cls": "scroll"
+},
+{
+"name": "identify",
+"descr": "KERNOD WEL",
+"cls": "scroll"
+},
+{
+"name": "magic mapping",
+"descr": "ELAM EBOW",
+"cls": "scroll"
+},
+{
+"name": "amnesia",
+"descr": "DUAM XNAHT",
+"cls": "scroll"
+},
+{
+"name": "fire",
+"descr": "ANDOVA BEGARIN",
+"cls": "scroll"
+},
+{
+"name": "earth",
+"descr": "KIRJE",
+"cls": "scroll"
+},
+{
+"name": "punishment",
+"descr": "VE FORBRYDERNE",
+"cls": "scroll"
+},
+{
+"name": "charging",
+"descr": "HACKEM MUCHE",
+"cls": "scroll"
+},
+{
+"name": "stinking cloud",
+"descr": "VELOX NEB",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "FOOBIE BLETCH",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "TEMOV",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "GARVEN DEH",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "READ ME",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "ETAOIN SHRDLU",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "LOREM IPSUM",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "FNORD",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "KO BATE",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "ABRA KA DABRA",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "ASHPD SODALG",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "ZLORFIK",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "GNIK SISI VLE",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "HAPAX LEGOMENON",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "EIRIS SAZUN IDISI",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "PHOL ENDE WODAN",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "GHOTI",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "MAPIRO MAHAMA DIROMAT",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "VAS CORP BET MANI",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "XOR OTA",
+"cls": "scroll"
+},
+{
+"name": null,
+"descr": "STRC PRST SKRZ KRK",
+"cls": "scroll"
+},
+{
+"name": "blank paper",
+"descr": "unlabeled",
+"cls": "scroll"
+},
+{
+"name": "dig",
+"descr": "parchment",
+"cls": "spellbook"
+},
+{
+"name": "magic missile",
+"descr": "vellum",
+"cls": "spellbook"
+},
+{
+"name": "fireball",
+"descr": "ragged",
+"cls": "spellbook"
+},
+{
+"name": "cone of cold",
+"descr": "dog eared",
+"cls": "spellbook"
+},
+{
+"name": "sleep",
+"descr": "mottled",
+"cls": "spellbook"
+},
+{
+"name": "finger of death",
+"descr": "stained",
+"cls": "spellbook"
+},
+{
+"name": "light",
+"descr": "cloth",
+"cls": "spellbook"
+},
+{
+"name": "detect monsters",
+"descr": "leathery",
+"cls": "spellbook"
+},
+{
+"name": "healing",
+"descr": "white",
+"cls": "spellbook"
+},
+{
+"name": "knock",
+"descr": "pink",
+"cls": "spellbook"
+},
+{
+"name": "force bolt",
+"descr": "red",
+"cls": "spellbook"
+},
+{
+"name": "confuse monster",
+"descr": "orange",
+"cls": "spellbook"
+},
+{
+"name": "cure blindness",
+"descr": "yellow",
+"cls": "spellbook"
+},
+{
+"name": "drain life",
+"descr": "velvet",
+"cls": "spellbook"
+},
+{
+"name": "slow monster",
+"descr": "light green",
+"cls": "spellbook"
+},
+{
+"name": "wizard lock",
+"descr": "dark green",
+"cls": "spellbook"
+},
+{
+"name": "create monster",
+"descr": "turquoise",
+"cls": "spellbook"
+},
+{
+"name": "detect food",
+"descr": "cyan",
+"cls": "spellbook"
+},
+{
+"name": "cause fear",
+"descr": "light blue",
+"cls": "spellbook"
+},
+{
+"name": "clairvoyance",
+"descr": "dark blue",
+"cls": "spellbook"
+},
+{
+"name": "cure sickness",
+"descr": "indigo",
+"cls": "spellbook"
+},
+{
+"name": "charm monster",
+"descr": "magenta",
+"cls": "spellbook"
+},
+{
+"name": "haste self",
+"descr": "purple",
+"cls": "spellbook"
+},
+{
+"name": "detect unseen",
+"descr": "violet",
+"cls": "spellbook"
+},
+{
+"name": "levitation",
+"descr": "tan",
+"cls": "spellbook"
+},
+{
+"name": "extra healing",
+"descr": "plaid",
+"cls": "spellbook"
+},
+{
+"name": "restore ability",
+"descr": "light brown",
+"cls": "spellbook"
+},
+{
+"name": "invisibility",
+"descr": "dark brown",
+"cls": "spellbook"
+},
+{
+"name": "detect treasure",
+"descr": "gray",
+"cls": "spellbook"
+},
+{
+"name": "remove curse",
+"descr": "wrinkled",
+"cls": "spellbook"
+},
+{
+"name": "magic mapping",
+"descr": "dusty",
+"cls": "spellbook"
+},
+{
+"name": "identify",
+"descr": "bronze",
+"cls": "spellbook"
+},
+{
+"name": "turn undead",
+"descr": "copper",
+"cls": "spellbook"
+},
+{
+"name": "polymorph",
+"descr": "silver",
+"cls": "spellbook"
+},
+{
+"name": "teleport away",
+"descr": "gold",
+"cls": "spellbook"
+},
+{
+"name": "create familiar",
+"descr": "glittering",
+"cls": "spellbook"
+},
+{
+"name": "cancellation",
+"descr": "shining",
+"cls": "spellbook"
+},
+{
+"name": "protection",
+"descr": "dull",
+"cls": "spellbook"
+},
+{
+"name": "jumping",
+"descr": "thin",
+"cls": "spellbook"
+},
+{
+"name": "stone to flesh",
+"descr": "thick",
+"cls": "spellbook"
+},
+{
+"name": "blank paper",
+"descr": "plain",
+"cls": "spellbook"
+},
+{
+"name": "novel",
+"descr": "paperback",
+"cls": "spellbook"
+},
+{
+"name": "Book of the Dead",
+"descr": "papyrus",
+"cls": "spellbook"
+},
+{
+"name": "light",
+"descr": "glass",
+"cls": "wand"
+},
+{
+"name": "secret door detection",
+"descr": "balsa",
+"cls": "wand"
+},
+{
+"name": "enlightenment",
+"descr": "crystal",
+"cls": "wand"
+},
+{
+"name": "create monster",
+"descr": "maple",
+"cls": "wand"
+},
+{
+"name": "wishing",
+"descr": "pine",
+"cls": "wand"
+},
+{
+"name": "nothing",
+"descr": "oak",
+"cls": "wand"
+},
+{
+"name": "striking",
+"descr": "ebony",
+"cls": "wand"
+},
+{
+"name": "make invisible",
+"descr": "marble",
+"cls": "wand"
+},
+{
+"name": "slow monster",
+"descr": "tin",
+"cls": "wand"
+},
+{
+"name": "speed monster",
+"descr": "brass",
+"cls": "wand"
+},
+{
+"name": "undead turning",
+"descr": "copper",
+"cls": "wand"
+},
+{
+"name": "polymorph",
+"descr": "silver",
+"cls": "wand"
+},
+{
+"name": "cancellation",
+"descr": "platinum",
+"cls": "wand"
+},
+{
+"name": "teleportation",
+"descr": "iridium",
+"cls": "wand"
+},
+{
+"name": "opening",
+"descr": "zinc",
+"cls": "wand"
+},
+{
+"name": "locking",
+"descr": "aluminum",
+"cls": "wand"
+},
+{
+"name": "probing",
+"descr": "uranium",
+"cls": "wand"
+},
+{
+"name": "digging",
+"descr": "iron",
+"cls": "wand"
+},
+{
+"name": "magic missile",
+"descr": "steel",
+"cls": "wand"
+},
+{
+"name": "fire",
+"descr": "hexagonal",
+"cls": "wand"
+},
+{
+"name": "cold",
+"descr": "short",
+"cls": "wand"
+},
+{
+"name": "sleep",
+"descr": "runed",
+"cls": "wand"
+},
+{
+"name": "death",
+"descr": "long",
+"cls": "wand"
+},
+{
+"name": "lightning",
+"descr": "curved",
+"cls": "wand"
+},
+{
+"name": null,
+"descr": "forked",
+"cls": "wand"
+},
+{
+"name": null,
+"descr": "spiked",
+"cls": "wand"
+},
+{
+"name": null,
+"descr": "jeweled",
+"cls": "wand"
+},
+{
+"name": "gold piece",
+"descr": null,
+"cls": "coin"
+},
+{
+"name": "dilithium crystal",
+"descr": "white",
+"cls": "gem"
+},
+{
+"name": "diamond",
+"descr": "white",
+"cls": "gem"
+},
+{
+"name": "ruby",
+"descr": "red",
+"cls": "gem"
+},
+{
+"name": "jacinth",
+"descr": "orange",
+"cls": "gem"
+},
+{
+"name": "sapphire",
+"descr": "blue",
+"cls": "gem"
+},
+{
+"name": "black opal",
+"descr": "black",
+"cls": "gem"
+},
+{
+"name": "emerald",
+"descr": "green",
+"cls": "gem"
+},
+{
+"name": "turquoise",
+"descr": "green",
+"cls": "gem"
+},
+{
+"name": "citrine",
+"descr": "yellow",
+"cls": "gem"
+},
+{
+"name": "aquamarine",
+"descr": "green",
+"cls": "gem"
+},
+{
+"name": "amber",
+"descr": "yellowish brown",
+"cls": "gem"
+},
+{
+"name": "topaz",
+"descr": "yellowish brown",
+"cls": "gem"
+},
+{
+"name": "jet",
+"descr": "black",
+"cls": "gem"
+},
+{
+"name": "opal",
+"descr": "white",
+"cls": "gem"
+},
+{
+"name": "chrysoberyl",
+"descr": "yellow",
+"cls": "gem"
+},
+{
+"name": "garnet",
+"descr": "red",
+"cls": "gem"
+},
+{
+"name": "amethyst",
+"descr": "violet",
+"cls": "gem"
+},
+{
+"name": "jasper",
+"descr": "red",
+"cls": "gem"
+},
+{
+"name": "fluorite",
+"descr": "violet",
+"cls": "gem"
+},
+{
+"name": "obsidian",
+"descr": "black",
+"cls": "gem"
+},
+{
+"name": "agate",
+"descr": "orange",
+"cls": "gem"
+},
+{
+"name": "jade",
+"descr": "green",
+"cls": "gem"
+},
+{
+"name": "worthless piece of white glass",
+"descr": "white",
+"cls": "gem"
+},
+{
+"name": "worthless piece of blue glass",
+"descr": "blue",
+"cls": "gem"
+},
+{
+"name": "worthless piece of red glass",
+"descr": "red",
+"cls": "gem"
+},
+{
+"name": "worthless piece of yellowish brown glass",
+"descr": "yellowish brown",
+"cls": "gem"
+},
+{
+"name": "worthless piece of orange glass",
+"descr": "orange",
+"cls": "gem"
+},
+{
+"name": "worthless piece of yellow glass",
+"descr": "yellow",
+"cls": "gem"
+},
+{
+"name": "worthless piece of black glass",
+"descr": "black",
+"cls": "gem"
+},
+{
+"name": "worthless piece of green glass",
+"descr": "green",
+"cls": "gem"
+},
+{
+"name": "worthless piece of violet glass",
+"descr": "violet",
+"cls": "gem"
+},
+{
+"name": "luckstone",
+"descr": "gray",
+"cls": "gem"
+},
+{
+"name": "loadstone",
+"descr": "gray",
+"cls": "gem"
+},
+{
+"name": "touchstone",
+"descr": "gray",
+"cls": "gem"
+},
+{
+"name": "flint",
+"descr": "gray",
+"cls": "gem"
+},
+{
+"name": "rock",
+"descr": null,
+"cls": "gem"
+},
+{
+"name": "boulder",
+"descr": null,
+"cls": "rock"
+},
+{
+"name": "statue",
+"descr": null,
+"cls": "rock"
+},
+{
+"name": "heavy iron ball",
+"descr": null,
+"cls": "ball"
+},
+{
+"name": "iron chain",
+"descr": null,
+"cls": "chain"
+},
+{
+"name": "blinding venom",
+"descr": "splash of venom",
+"cls": "venom"
+},
+{
+"name": "acid venom",
+"descr": "splash of venom",
+"cls": "venom"
+}
+],
+"monsters": [
+"giant ant",
+"killer bee",
+"soldier ant",
+"fire ant",
+"giant beetle",
+"queen bee",
+"acid blob",
+"quivering blob",
+"gelatinous cube",
+"chickatrice",
+"cockatrice",
+"pyrolisk",
+"jackal",
+"fox",
+"coyote",
+"werejackal",
+"little dog",
+"dingo",
+"dog",
+"large dog",
+"wolf",
+"werewolf",
+"winter wolf cub",
+"warg",
+"winter wolf",
+"hell hound pup",
+"hell hound",
+"gas spore",
+"floating eye",
+"freezing sphere",
+"flaming sphere",
+"shocking sphere",
+"kitten",
+"housecat",
+"jaguar",
+"lynx",
+"panther",
+"large cat",
+"tiger",
+"gremlin",
+"gargoyle",
+"winged gargoyle",
+"hobbit",
+"dwarf",
+"bugbear",
+"dwarf lord",
+"dwarf king",
+"mind flayer",
+"master mind flayer",
+"manes",
+"homunculus",
+"imp",
+"lemure",
+"quasit",
+"tengu",
+"blue jelly",
+"spotted jelly",
+"ochre jelly",
+"kobold",
+"large kobold",
+"kobold lord",
+"kobold shaman",
+"leprechaun",
+"small mimic",
+"large mimic",
+"giant mimic",
+"wood nymph",
+"water nymph",
+"mountain nymph",
+"goblin",
+"hobgoblin",
+"orc",
+"hill orc",
+"Mordor orc",
+"Uruk-hai",
+"orc shaman",
+"orc-captain",
+"rock piercer",
+"iron piercer",
+"glass piercer",
+"rothe",
+"mumak",
+"leocrotta",
+"wumpus",
+"titanothere",
+"baluchitherium",
+"mastodon",
+"sewer rat",
+"giant rat",
+"rabid rat",
+"wererat",
+"rock mole",
+"woodchuck",
+"cave spider",
+"centipede",
+"giant spider",
+"scorpion",
+"lurker above",
+"trapper",
+"pony",
+"white unicorn",
+"gray unicorn",
+"black unicorn",
+"horse",
+"warhorse",
+"fog cloud",
+"dust vortex",
+"ice vortex",
+"energy vortex",
+"steam vortex",
+"fire vortex",
+"baby long worm",
+"baby purple worm",
+"long worm",
+"purple worm",
+"grid bug",
+"xan",
+"yellow light",
+"black light",
+"zruty",
+"couatl",
+"Aleax",
+"Angel",
+"ki-rin",
+"Archon",
+"bat",
+"giant bat",
+"raven",
+"vampire bat",
+"plains centaur",
+"forest centaur",
+"mountain centaur",
+"baby gray dragon",
+"baby silver dragon",
+"baby red dragon",
+"baby white dragon",
+"baby orange dragon",
+"baby black dragon",
+"baby blue dragon",
+"baby green dragon",
+"baby yellow dragon",
+"gray dragon",
+"silver dragon",
+"red dragon",
+"white dragon",
+"orange dragon",
+"black dragon",
+"blue dragon",
+"green dragon",
+"yellow dragon",
+"stalker",
+"air elemental",
+"fire elemental",
+"earth elemental",
+"water elemental",
+"lichen",
+"brown mold",
+"yellow mold",
+"green mold",
+"red mold",
+"shrieker",
+"violet fungus",
+"gnome",
+"gnome lord",
+"gnomish wizard",
+"gnome king",
+"giant",
+"stone giant",
+"hill giant",
+"fire giant",
+"frost giant",
+"ettin",
+"storm giant",
+"titan",
+"minotaur",
+"jabberwock",
+"Keystone Kop",
+"Kop Sergeant",
+"Kop Lieutenant",
+"Kop Kaptain",
+"lich",
+"demilich",
+"master lich",
+"arch-lich",
+"kobold mummy",
+"gnome mummy",
+"orc mummy",
+"dwarf mummy",
+"elf mummy",
+"human mummy",
+"ettin mummy",
+"giant mummy",
+"red naga hatchling",
+"black naga hatchling",
+"golden naga hatchling",
+"guardian naga hatchling",
+"red naga",
+"black naga",
+"golden naga",
+"guardian naga",
+"ogre",
+"ogre lord",
+"ogre king",
+"gray ooze",
+"brown pudding",
+"green slime",
+"black pudding",
+"quantum mechanic",
+"rust monster",
+"disenchanter",
+"garter snake",
+"snake",
+"water moccasin",
+"python",
+"pit viper",
+"cobra",
+"troll",
+"ice troll",
+"rock troll",
+"water troll",
+"Olog-hai",
+"umber hulk",
+"vampire",
+"vampire lord",
+"Vlad the Impaler",
+"barrow wight",
+"wraith",
+"Nazgul",
+"xorn",
+"monkey",
+"ape",
+"owlbear",
+"yeti",
+"carnivorous ape",
+"sasquatch",
+"kobold zombie",
+"gnome zombie",
+"orc zombie",
+"dwarf zombie",
+"elf zombie",
+"human zombie",
+"ettin zombie",
+"ghoul",
+"giant zombie",
+"skeleton",
+"straw golem",
+"paper golem",
+"rope golem",
+"gold golem",
+"leather golem",
+"wood golem",
+"flesh golem",
+"clay golem",
+"stone golem",
+"glass golem",
+"iron golem",
+"human",
+"wererat",
+"werejackal",
+"werewolf",
+"elf",
+"Woodland-elf",
+"Green-elf",
+"Grey-elf",
+"elf-lord",
+"Elvenking",
+"doppelganger",
+"shopkeeper",
+"guard",
+"prisoner",
+"Oracle",
+"aligned priest",
+"high priest",
+"soldier",
+"sergeant",
+"nurse",
+"lieutenant",
+"captain",
+"watchman",
+"watch captain",
+"Medusa",
+"Wizard of Yendor",
+"Croesus",
+"ghost",
+"shade",
+"water demon",
+"succubus",
+"horned devil",
+"incubus",
+"erinys",
+"barbed devil",
+"marilith",
+"vrock",
+"hezrou",
+"bone devil",
+"ice devil",
+"nalfeshnee",
+"pit fiend",
+"sandestin",
+"balrog",
+"Juiblex",
+"Yeenoghu",
+"Orcus",
+"Geryon",
+"Dispater",
+"Baalzebub",
+"Asmodeus",
+"Demogorgon",
+"Death",
+"Pestilence",
+"Famine",
+"djinni",
+"jellyfish",
+"piranha",
+"shark",
+"giant eel",
+"electric eel",
+"kraken",
+"newt",
+"gecko",
+"iguana",
+"baby crocodile",
+"lizard",
+"chameleon",
+"crocodile",
+"salamander",
+"long worm tail",
+"archeologist",
+"barbarian",
+"caveman",
+"cavewoman",
+"healer",
+"knight",
+"monk",
+"priest",
+"priestess",
+"ranger",
+"rogue",
+"samurai",
+"tourist",
+"valkyrie",
+"wizard",
+"Lord Carnarvon",
+"Pelias",
+"Shaman Karnov",
+"Hippocrates",
+"King Arthur",
+"Grand Master",
+"Arch Priest",
+"Orion",
+"Master of Thieves",
+"Lord Sato",
+"Twoflower",
+"Norn",
+"Neferet the Green",
+"Minion of Huhetotl",
+"Thoth Amon",
+"Chromatic Dragon",
+"Cyclops",
+"Ixoth",
+"Master Kaen",
+"Nalzok",
+"Scorpius",
+"Master Assassin",
+"Ashikaga Takauji",
+"Lord Surtur",
+"Dark One",
+"student",
+"chieftain",
+"neanderthal",
+"attendant",
+"page",
+"abbot",
+"acolyte",
+"hunter",
+"thug",
+"ninja",
+"roshi",
+"guide",
+"warrior",
+"apprentice"
+]
+}
