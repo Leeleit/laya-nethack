@@ -1,0 +1,69 @@
+bot_data2: 3906482 feature rows (every 5th risk state); train rows thinned by bucket [1.0, 0.5, 0.333, 0.333, 0.03] from every risk state -> 535216 (the set laya learns from); buckets ['at most 2', '3-7', '8-30', '31-100', 'over 100']
+
+== 1. rows, games, bucket shares by band (train = all rows of the train games; 'thinned' = laya's)
+  train: 2825277 rows, 5726 games
+    Dlvl 1-4   1621549 rows  5726 games  buckets 0.0003 0.0004 0.0013 0.0033 0.9948  deaths in band 478  | thinned 258000 rows, per game median 35, buckets 0.009 0.006 0.014 0.035 0.936
+    Dlvl 5-12   655255 rows  4787 games  buckets 0.0004 0.0006 0.0024 0.0078 0.9888  deaths in band 279  | thinned 110369 rows, per game median 4, buckets 0.013 0.009 0.023 0.077 0.879
+    Dlvl 13-20   74811 rows  4211 games  buckets 0.0010 0.0014 0.0071 0.1259 0.8646  deaths in band 73  | thinned 26936 rows, per game median 5, buckets 0.014 0.010 0.032 0.587 0.358
+    Dlvl 21-24   49779 rows  4068 games  buckets 0.0071 0.0113 0.0636 0.1602 0.7579  deaths in band 351  | thinned 27329 rows, per game median 5, buckets 0.064 0.053 0.192 0.485 0.206
+    Dlvl 25-29  422263 rows  3431 games  buckets 0.0044 0.0061 0.0206 0.0308 0.9382  deaths in band 1845  | thinned 111501 rows, per game median 17, buckets 0.083 0.056 0.130 0.197 0.533
+    Dlvl 30+      1620 rows    58 games  buckets 0.0259 0.0327 0.0932 0.1475 0.7006  deaths in band 42  | thinned 1081 rows, per game median 15, buckets 0.155 0.128 0.231 0.345 0.141
+  val: 310170 rows, 654 games
+    Dlvl 1-4    182141 rows   654 games  buckets 0.0003 0.0003 0.0012 0.0027 0.9955  deaths in band 50
+    Dlvl 5-12    68382 rows   557 games  buckets 0.0006 0.0008 0.0026 0.0088 0.9872  deaths in band 38
+    Dlvl 13-20    5541 rows   480 games  buckets 0.0020 0.0023 0.0121 0.1926 0.7910  deaths in band 11
+    Dlvl 21-24    2781 rows   460 games  buckets 0.0137 0.0245 0.1341 0.3528 0.4750  deaths in band 38
+    Dlvl 25-29   50583 rows   390 games  buckets 0.0043 0.0057 0.0202 0.0288 0.9411  deaths in band 216
+    Dlvl 30+       742 rows     6 games  buckets 0.0067 0.0067 0.0229 0.0553 0.9084  deaths in band 5
+  test: 771035 rows, 1608 games
+    Dlvl 1-4    448495 rows  1608 games  buckets 0.0003 0.0004 0.0013 0.0030 0.9950  deaths in band 116
+    Dlvl 5-12   170185 rows  1349 games  buckets 0.0006 0.0008 0.0028 0.0089 0.9870  deaths in band 95
+    Dlvl 13-20   17410 rows  1162 games  buckets 0.0013 0.0014 0.0088 0.1604 0.8281  deaths in band 22
+    Dlvl 21-24    7940 rows  1129 games  buckets 0.0139 0.0222 0.1180 0.2754 0.5705  deaths in band 110
+    Dlvl 25-29  126839 rows   935 games  buckets 0.0041 0.0054 0.0189 0.0270 0.9446  deaths in band 518
+    Dlvl 30+       166 rows    20 games  buckets 0.0602 0.0964 0.3614 0.4157 0.0663  deaths in band 10
+  thinned train rows per game: median 67, p90 177, max 2625
+
+== 2. gradient boosting (compare_v2 features), fitted on 340545 train rows (bucket 4 at 1/10, weighted back), best iteration 115 on val; test by band
+    all  Dlvl 1-4    448495 rows  1608 games  prior 0.0364  raw 0.0264 [0.0235, 0.0296]  T-band 0.0264 [0.0234, 0.0297] (T 0.98)
+    all  Dlvl 5-12   170185 rows  1349 games  prior 0.0811  raw 0.0611 [0.0517, 0.0715]  T-band 0.0611 [0.0517, 0.0715] (T 1.01)
+    all  Dlvl 13-20   17410 rows  1162 games  prior 0.5146  raw 0.3754 [0.2932, 0.4923]  T-band 0.3754 [0.2936, 0.4922] (T 1.01)
+    all  Dlvl 21-24    7940 rows  1129 games  prior 1.1558  raw 0.8923 [0.7442, 1.0856]  T-band 0.8834 [0.7513, 1.0623] (T 1.21)
+    all  Dlvl 25-29  126839 rows   935 games  prior 0.2777  raw 0.1960 [0.1524, 0.2506]  T-band 0.1958 [0.1515, 0.2511] (T 0.95)
+    all  Dlvl 30+       166 rows    20 games  prior 2.2264  raw 1.6961 [1.5538, 1.8605]  T-band 1.4964 [1.4550, 1.5554] (T 2.73)
+
+== 3. the same on a share of the test rows (crc32 of the id): the interval half-widths against all rows
+    1/5  Dlvl 1-4     89537 rows  1606 games  prior 0.0358  raw 0.0264 [0.0225, 0.0303]  T-band 0.0264 [0.0225, 0.0304] (T 0.98)
+    1/5  Dlvl 5-12    34143 rows  1140 games  prior 0.0835  raw 0.0630 [0.0531, 0.0745]  T-band 0.0630 [0.0532, 0.0742] (T 1.02)
+    1/5  Dlvl 13-20    3578 rows   853 games  prior 0.4996  raw 0.3572 [0.2728, 0.4722]  T-band 0.3575 [0.2728, 0.4737] (T 0.98)
+    1/5  Dlvl 21-24    1522 rows   626 games  prior 1.1659  raw 0.8856 [0.7361, 1.0761]  T-band 0.8771 [0.7391, 1.0526] (T 1.20)
+    1/5  Dlvl 25-29   25302 rows   740 games  prior 0.2830  raw 0.1950 [0.1541, 0.2519]  T-band 0.1945 [0.1529, 0.2522] (T 0.95)
+    1/5  Dlvl 30+        42 rows    16 games  prior 2.4020  raw 1.9847 [1.7262, 2.2592]  T-band 1.5727 [1.5151, 1.6383] (T 4.66)
+      Dlvl 1-4: half-width x1.25
+      Dlvl 5-12: half-width x1.06
+      Dlvl 13-20: half-width x1.01
+      Dlvl 21-24: half-width x1.01
+      Dlvl 25-29: half-width x1.00
+      Dlvl 30+: half-width x1.23
+    1/10 Dlvl 1-4     44843 rows  1603 games  prior 0.0367  raw 0.0274 [0.0235, 0.0322]  T-band 0.0275 [0.0236, 0.0324] (T 0.99)
+    1/10 Dlvl 5-12    17163 rows   884 games  prior 0.0829  raw 0.0613 [0.0512, 0.0746]  T-band 0.0613 [0.0513, 0.0745] (T 1.01)
+    1/10 Dlvl 13-20    1829 rows   606 games  prior 0.5113  raw 0.3649 [0.2744, 0.4883]  T-band 0.3654 [0.2744, 0.4889] (T 0.99)
+    1/10 Dlvl 21-24     760 rows   400 games  prior 1.2054  raw 0.9300 [0.7885, 1.1090]  T-band 0.9157 [0.7847, 1.0814] (T 1.27)
+    1/10 Dlvl 25-29   12607 rows   607 games  prior 0.2866  raw 0.1984 [0.1572, 0.2567]  T-band 0.1980 [0.1564, 0.2569] (T 0.96)
+    1/10 Dlvl 30+        22 rows    13 games  prior 2.1738  raw 1.6416 [1.3844, 1.9731]  T-band 1.4804 [1.3934, 1.6077] (T 2.43)
+      Dlvl 1-4: half-width x1.40
+      Dlvl 5-12: half-width x1.17
+      Dlvl 13-20: half-width x1.08
+      Dlvl 21-24: half-width x0.95
+      Dlvl 25-29: half-width x1.01
+      Dlvl 30+: half-width x2.13
+    1/25 Dlvl 1-4     17890 rows  1594 games  prior 0.0402  raw 0.0278 [0.0221, 0.0340]  T-band 0.0280 [0.0222, 0.0343] (T 0.99)
+    1/25 Dlvl 5-12     6920 rows   634 games  prior 0.0761  raw 0.0603 [0.0473, 0.0748]  T-band 0.0605 [0.0476, 0.0749] (T 1.01)
+    1/25 Dlvl 13-20     686 rows   307 games  prior 0.5535  raw 0.3949 [0.2993, 0.5479]  T-band 0.3948 [0.3006, 0.5466] (T 1.04)
+    1/25 Dlvl 21-24     310 rows   183 games  prior 1.1556  raw 0.8352 [0.6684, 1.0513]  T-band 0.8345 [0.6733, 1.0391] (T 1.10)
+    1/25 Dlvl 25-29    5084 rows   438 games  prior 0.2937  raw 0.2001 [0.1537, 0.2652]  T-band 0.2003 [0.1533, 0.2666] (T 0.96)
+      Dlvl 1-4: half-width x1.92
+      Dlvl 5-12: half-width x1.38
+      Dlvl 13-20: half-width x1.24
+      Dlvl 21-24: half-width x1.18
+      Dlvl 25-29: half-width x1.14

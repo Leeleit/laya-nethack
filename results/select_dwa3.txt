@@ -1,0 +1,27 @@
+nao/val_dwa_states3.jsonl: 46258 games (bots left out: 49 names); per band, label means of the states each selection takes (weight: all 1, per-band 1/n of the game's states in the band, first = the band's first state, first/n = the first states weighted 1/n as per-band weighs them)
+band   selection   weight sum   ascended  depth gain  log(1+turns left)  dies within 1000
+1-4    all             252886   0.0374      6.954        7.875          0.1767
+1-4    perband          45138   0.0240      6.021        7.651          0.2078
+1-4    first            45138   0.0240      8.080        8.075          0.0509
+1-4    first/n           9301   0.0257      7.543        7.910          0.0772
+5-12   all             236338   0.0890      8.052        7.942          0.2787
+5-12   perband          38758   0.0316      3.448        6.712          0.5411
+5-12   first            38758   0.0316      5.142        7.305          0.3745
+5-12   first/n          14451   0.0123      1.962        6.248          0.6429
+13-20  all              53102   0.2637     13.947        9.068          0.0751
+13-20  perband           5507   0.2154     11.167        8.351          0.1867
+13-20  first             5507   0.2154     14.708        8.791          0.1177
+13-20  first/n           1392   0.1668      8.724        7.661          0.3205
+21-24  all              18232   0.3482     12.622        8.986          0.0930
+21-24  perband           3382   0.3282     11.689        8.607          0.1473
+21-24  first             3382   0.3282     13.695        8.934          0.0863
+21-24  first/n            964   0.3169     11.558        8.378          0.1772
+25-29  all              17278   0.5204     13.795        9.055          0.0926
+25-29  perband           2816   0.4244     11.117        8.323          0.2040
+25-29  first             2816   0.4244     13.251        8.745          0.1445
+25-29  first/n            902   0.3090      8.766        7.708          0.3156
+30+    all              34449   0.7655      7.895        8.975          0.0190
+30+    perband           1611   0.7169      6.895        8.562          0.0542
+30+    first             1611   0.7169     15.112        9.148          0.0223
+30+    first/n            243   0.6377      7.751        8.200          0.1046
+games / states by band (human_build --band-rates for as many rows as --per-band): 0.1785 0.1640 0.1037 0.1855 0.1630 0.0468

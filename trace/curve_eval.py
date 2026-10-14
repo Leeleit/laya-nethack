@@ -75,10 +75,12 @@ def load_rows(data):
             m = re.search(r"experience (\d)/\d, result (\d)/\d", ins)
             xl = re.search(r"\bXL (\d+)", r["state"])
             dl = re.search(r"\bDlvl (\d+)", r["state"])
+            dp = re.search(r"\bdeepest (\d+)", r["state"])
             rows.append({"id": r["id"], "player": r["id"].split("@")[0].lower(), "split": split,
                          "q": r["questions"], "gold": r["gold"], "exp": int(m.group(1)) if m else 0,
                          "res": int(m.group(2)) if m else 0, "asc": r["gold"]["ascends"]["label"] == "true",
-                         "xl": int(xl.group(1)) if xl else -1, "dlvl": int(dl.group(1)) if dl else -1})
+                         "xl": int(xl.group(1)) if xl else -1, "dlvl": int(dl.group(1)) if dl else -1,
+                         "deepest": int(dp.group(1)) if dp else -1})
     return rows
 
 

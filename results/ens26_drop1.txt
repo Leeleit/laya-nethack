@@ -1,0 +1,166 @@
+human_dwa20t: 23201 rows; models c17ens3=c17ens3, m20ens3=m20ens3
+left out: the 1 player(s) with the most ascended rows -- 1875 rows, 1821 ascended, splits {'val': 1875}
+
+==== ttd: 23140 rows; T on all rows c17ens3 0.92  m20ens3 0.93
+  Dlvl 1-4: 5837 rows, 668 players (the top one 0.18 of rows), ascended 0.03 (val 0.04, test 0.01)
+    c17ens3 raw 2.6643  T-all 2.6654  T-band 2.6648 (T 1.00)
+    m20ens3 raw 2.6632  T-all 2.6644  T-band 2.6637 (T 1.01)
+    m20ens3 - c17ens3: raw -0.0011 [-0.0079, +0.0050]  T-all -0.0009 [-0.0083, +0.0056]  T-band -0.0011 [-0.0077, +0.0050]  | val -0.0046 [-0.0099, +0.0003]  | test +0.0016 [-0.0096, +0.0086]
+    P(ttd <= 1000) mean: observed 0.232  c17ens3 0.238  m20ens3 0.244
+  Dlvl 5-12: 5138 rows, 482 players (the top one 0.23 of rows), ascended 0.07 (val 0.11, test 0.04)
+    c17ens3 raw 2.5175  T-all 2.5177  T-band 2.5177 (T 0.96)
+    m20ens3 raw 2.5143  T-all 2.5146  T-band 2.5145 (T 0.96)
+    m20ens3 - c17ens3: raw -0.0031 [-0.0094, +0.0016]  T-all -0.0031 [-0.0098, +0.0019]  T-band -0.0032 [-0.0096, +0.0017]  | val -0.0054 [-0.0137, +0.0034]  | test -0.0015 [-0.0118, +0.0038]
+    P(ttd <= 1000) mean: observed 0.252  c17ens3 0.250  m20ens3 0.257
+  Dlvl 13-20: 5821 rows, 204 players (the top one 0.28 of rows), ascended 0.21 (val 0.31, test 0.13)
+    c17ens3 raw 2.1637  T-all 2.1637  T-band 2.1664 (T 0.94)
+    m20ens3 raw 2.1555  T-all 2.1551  T-band 2.1585 (T 0.93)
+    m20ens3 - c17ens3: raw -0.0082 [-0.0179, +0.0071]  T-all -0.0086 [-0.0187, +0.0078]  T-band -0.0080 [-0.0185, +0.0086]  | val -0.0086 [-0.0236, +0.0074]  | test -0.0075 [-0.0207, +0.0250]
+    P(ttd <= 1000) mean: observed 0.070  c17ens3 0.065  m20ens3 0.070
+  Dlvl 21-24: 1802 rows, 150 players (the top one 0.19 of rows), ascended 0.31 (val 0.40, test 0.21)
+    c17ens3 raw 2.2530  T-all 2.2562  T-band 2.2577 (T 1.01)
+    m20ens3 raw 2.2312  T-all 2.2331  T-band 2.2363 (T 0.99)
+    m20ens3 - c17ens3: raw -0.0218 [-0.0415, -0.0012]  T-all -0.0231 [-0.0441, -0.0007]  T-band -0.0214 [-0.0414, +0.0010]  | val -0.0314 [-0.0570, -0.0027]  | test -0.0118 [-0.0374, +0.0297]
+    P(ttd <= 1000) mean: observed 0.113  c17ens3 0.091  m20ens3 0.100
+  Dlvl 25-29: 1578 rows, 135 players (the top one 0.11 of rows), ascended 0.49 (val 0.56, test 0.40)
+    c17ens3 raw 2.0662  T-all 2.0691  T-band 2.0684 (T 1.00)
+    m20ens3 raw 2.0089  T-all 2.0095  T-band 2.0094 (T 0.96)
+    m20ens3 - c17ens3: raw -0.0573 [-0.0889, -0.0275]  T-all -0.0597 [-0.0923, -0.0287]  T-band -0.0590 [-0.0912, -0.0280]  | val -0.0435 [-0.0716, -0.0173]  | test -0.0791 [-0.1305, -0.0145]
+    P(ttd <= 1000) mean: observed 0.102  c17ens3 0.059  m20ens3 0.068
+  Dlvl 30+: 2964 rows, 88 players (the top one 0.05 of rows), ascended 0.77 (val 0.77, test 0.78)
+    c17ens3 raw 1.7322  T-all 1.7166  T-band 1.6930 (T 0.72)
+    m20ens3 raw 1.6868  T-all 1.6753  T-band 1.6652 (T 0.76)
+    m20ens3 - c17ens3: raw -0.0454 [-0.0840, -0.0080]  T-all -0.0412 [-0.0829, -0.0013]  T-band -0.0278 [-0.0793, +0.0216]  | val -0.0214 [-0.0869, +0.0361]  | test -0.0385 [-0.1260, +0.0461]
+    P(ttd <= 1000) mean: observed 0.015  c17ens3 0.008  m20ens3 0.009
+
+==== depth: 23201 rows; T on all rows c17ens3 0.96  m20ens3 0.95
+  Dlvl 1-4: 5854 rows, 673 players (the top one 0.18 of rows), ascended 0.03 (val 0.04, test 0.01)
+    c17ens3 raw 2.1759  T-all 2.1772  T-band 2.1763 (T 1.03)
+    m20ens3 raw 2.1703  T-all 2.1716  T-band 2.1706 (T 1.02)
+    m20ens3 - c17ens3: raw -0.0056 [-0.0101, -0.0018]  T-all -0.0056 [-0.0105, -0.0017]  T-band -0.0057 [-0.0099, -0.0019]  | val -0.0017 [-0.0076, +0.0040]  | test -0.0089 [-0.0162, -0.0051]
+    P(no deeper) mean: observed 0.108  c17ens3 0.113  m20ens3 0.115
+    P(no deeper) - E (E 0.113, observed 0.108; val / test after each): c17ens3 -0.000 [-0.008, +0.005] val -0.000 [-0.005, +0.005] test -0.000 [-0.012, +0.007]; m20ens3 +0.003 [-0.006, +0.008] val +0.002 [-0.003, +0.007] test +0.003 [-0.009, +0.011]
+  Dlvl 5-12: 5149 rows, 485 players (the top one 0.23 of rows), ascended 0.07 (val 0.11, test 0.04)
+    c17ens3 raw 2.0417  T-all 2.0436  T-band 2.0431 (T 1.00)
+    m20ens3 raw 2.0339  T-all 2.0352  T-band 2.0350 (T 0.99)
+    m20ens3 - c17ens3: raw -0.0078 [-0.0136, +0.0006]  T-all -0.0084 [-0.0143, +0.0002]  T-band -0.0080 [-0.0138, +0.0004]  | val -0.0023 [-0.0121, +0.0086]  | test -0.0122 [-0.0192, +0.0006]
+    P(no deeper) mean: observed 0.221  c17ens3 0.211  m20ens3 0.209
+    P(no deeper) - E (E 0.236, observed 0.221; val / test after each): c17ens3 -0.025 [-0.044, -0.005] val -0.020 [-0.033, -0.006] test -0.028 [-0.050, +0.002]; m20ens3 -0.027 [-0.043, -0.010] val -0.025 [-0.038, -0.010] test -0.029 [-0.048, -0.004]
+  Dlvl 13-20: 5829 rows, 204 players (the top one 0.28 of rows), ascended 0.21 (val 0.31, test 0.13)
+    c17ens3 raw 1.8697  T-all 1.8719  T-band 1.8732 (T 0.98)
+    m20ens3 raw 1.8567  T-all 1.8583  T-band 1.8597 (T 0.97)
+    m20ens3 - c17ens3: raw -0.0130 [-0.0263, +0.0065]  T-all -0.0136 [-0.0279, +0.0074]  T-band -0.0135 [-0.0275, +0.0072]  | val -0.0178 [-0.0383, +0.0039]  | test -0.0103 [-0.0266, +0.0294]
+    P(no deeper) mean: observed 0.088  c17ens3 0.092  m20ens3 0.085
+    P(no deeper) - E (E 0.089, observed 0.088; val / test after each): c17ens3 +0.003 [-0.015, +0.019] val +0.001 [-0.016, +0.019] test +0.004 [-0.018, +0.025]; m20ens3 -0.004 [-0.022, +0.010] val -0.008 [-0.025, +0.009] test -0.001 [-0.024, +0.020]
+  Dlvl 21-24: 1805 rows, 150 players (the top one 0.19 of rows), ascended 0.31 (val 0.40, test 0.21)
+    c17ens3 raw 1.7535  T-all 1.7497  T-band 1.7465 (T 0.84)
+    m20ens3 raw 1.7365  T-all 1.7328  T-band 1.7314 (T 0.86)
+    m20ens3 - c17ens3: raw -0.0170 [-0.0361, +0.0036]  T-all -0.0169 [-0.0370, +0.0042]  T-band -0.0151 [-0.0366, +0.0084]  | val -0.0271 [-0.0623, +0.0082]  | test -0.0035 [-0.0301, +0.0394]
+    P(no deeper) mean: observed 0.101  c17ens3 0.109  m20ens3 0.103
+    P(no deeper) - E (E 0.101, observed 0.101; val / test after each): c17ens3 +0.008 [-0.012, +0.034] val +0.009 [-0.016, +0.034] test +0.007 [-0.018, +0.046]; m20ens3 +0.002 [-0.017, +0.028] val +0.000 [-0.023, +0.024] test +0.003 [-0.021, +0.042]
+  Dlvl 25-29: 1583 rows, 135 players (the top one 0.11 of rows), ascended 0.49 (val 0.56, test 0.40)
+    c17ens3 raw 1.5440  T-all 1.5419  T-band 1.5431 (T 0.89)
+    m20ens3 raw 1.5058  T-all 1.5044  T-band 1.5075 (T 0.92)
+    m20ens3 - c17ens3: raw -0.0382 [-0.0643, -0.0126]  T-all -0.0375 [-0.0655, -0.0094]  T-band -0.0356 [-0.0643, -0.0068]  | val -0.0631 [-0.0987, -0.0279]  | test +0.0005 [-0.0405, +0.0378]
+    P(no deeper) mean: observed 0.146  c17ens3 0.137  m20ens3 0.132
+    P(no deeper) - E (E 0.130, observed 0.146; val / test after each): c17ens3 +0.007 [-0.020, +0.036] val -0.000 [-0.032, +0.030] test +0.017 [-0.016, +0.059]; m20ens3 +0.002 [-0.024, +0.030] val -0.005 [-0.036, +0.025] test +0.012 [-0.022, +0.053]
+  Dlvl 30+: 2981 rows, 88 players (the top one 0.05 of rows), ascended 0.77 (val 0.77, test 0.78)
+    c17ens3 raw 1.2770  T-all 1.2746  T-band 1.2749 (T 0.91)
+    m20ens3 raw 1.2264  T-all 1.2229  T-band 1.2224 (T 0.88)
+    m20ens3 - c17ens3: raw -0.0506 [-0.0703, -0.0317]  T-all -0.0517 [-0.0726, -0.0320]  T-band -0.0525 [-0.0751, -0.0314]  | val -0.0517 [-0.0817, -0.0235]  | test -0.0539 [-0.0911, -0.0167]
+    P(no deeper) mean: observed 0.089  c17ens3 0.127  m20ens3 0.105
+    P(no deeper) - E (E 0.118, observed 0.089; val / test after each): c17ens3 +0.010 [-0.022, +0.039] val +0.003 [-0.035, +0.037] test +0.021 [-0.019, +0.060]; m20ens3 -0.013 [-0.044, +0.015] val -0.019 [-0.054, +0.012] test -0.002 [-0.039, +0.035]
+
+==== end: 23201 rows; T on all rows c17ens3 0.98  m20ens3 0.99
+  Dlvl 1-4: 5854 rows, 673 players (the top one 0.18 of rows), ascended 0.03 (val 0.04, test 0.01)
+    c17ens3 raw 3.2592  T-all 3.2602  T-band 3.2595 (T 1.02)
+    m20ens3 raw 3.2498  T-all 3.2504  T-band 3.2502 (T 1.01)
+    m20ens3 - c17ens3: raw -0.0094 [-0.0135, -0.0047]  T-all -0.0098 [-0.0140, -0.0051]  T-band -0.0093 [-0.0134, -0.0045]  | val -0.0077 [-0.0146, -0.0012]  | test -0.0105 [-0.0153, -0.0034]
+    end, games that did not ascend (5705 rows): T-band c17ens3 3.2882  m20ens3 3.2791; cause given death c17ens3 3.2714  m20ens3 3.2631
+      m20ens3 - c17ens3: T-band -0.0091 [-0.0127, -0.0049]  cause given death -0.0083 [-0.0118, -0.0043]
+    P(ascend) mean: observed 0.025  c17ens3 0.021  m20ens3 0.020
+    P(ascend) - E (E 0.023, observed 0.025; val / test after each): c17ens3 -0.002 [-0.007, +0.001] val -0.001 [-0.009, +0.005] test -0.003 [-0.008, +0.000]; m20ens3 -0.003 [-0.007, +0.001] val -0.001 [-0.008, +0.005] test -0.004 [-0.009, -0.000]
+  Dlvl 5-12: 5149 rows, 485 players (the top one 0.23 of rows), ascended 0.07 (val 0.11, test 0.04)
+    c17ens3 raw 3.0922  T-all 3.0944  T-band 3.0919 (T 1.05)
+    m20ens3 raw 3.0875  T-all 3.0892  T-band 3.0877 (T 1.05)
+    m20ens3 - c17ens3: raw -0.0048 [-0.0119, +0.0059]  T-all -0.0053 [-0.0126, +0.0057]  T-band -0.0042 [-0.0112, +0.0062]  | val -0.0062 [-0.0169, +0.0057]  | test -0.0028 [-0.0120, +0.0184]
+    end, games that did not ascend (4786 rows): T-band c17ens3 3.2151  m20ens3 3.2078; cause given death c17ens3 3.1717  m20ens3 3.1638
+      m20ens3 - c17ens3: T-band -0.0073 [-0.0138, +0.0025]  cause given death -0.0079 [-0.0133, -0.0010]
+    P(ascend) mean: observed 0.070  c17ens3 0.060  m20ens3 0.058
+    P(ascend) - E (E 0.062, observed 0.070; val / test after each): c17ens3 -0.003 [-0.014, +0.005] val +0.000 [-0.014, +0.016] test -0.005 [-0.019, +0.003]; m20ens3 -0.004 [-0.015, +0.004] val +0.000 [-0.014, +0.015] test -0.007 [-0.020, +0.001]
+  Dlvl 13-20: 5829 rows, 204 players (the top one 0.28 of rows), ascended 0.21 (val 0.31, test 0.13)
+    c17ens3 raw 2.4297  T-all 2.4295  T-band 2.4315 (T 0.93)
+    m20ens3 raw 2.4114  T-all 2.4121  T-band 2.4138 (T 0.96)
+    m20ens3 - c17ens3: raw -0.0183 [-0.0465, +0.0229]  T-all -0.0174 [-0.0468, +0.0249]  T-band -0.0177 [-0.0497, +0.0283]  | val -0.0021 [-0.0295, +0.0228]  | test -0.0293 [-0.0676, +0.0579]
+    end, games that did not ascend (4614 rows): T-band c17ens3 2.8765  m20ens3 2.8573; cause given death c17ens3 2.7503  m20ens3 2.7274
+      m20ens3 - c17ens3: T-band -0.0193 [-0.0555, +0.0416]  cause given death -0.0229 [-0.0517, +0.0247]
+    P(ascend) mean: observed 0.208  c17ens3 0.193  m20ens3 0.192
+    P(ascend) - E (E 0.177, observed 0.208; val / test after each): c17ens3 +0.016 [-0.020, +0.049] val +0.029 [-0.018, +0.076] test +0.006 [-0.048, +0.048]; m20ens3 +0.015 [-0.022, +0.053] val +0.030 [-0.017, +0.074] test +0.004 [-0.051, +0.053]
+  Dlvl 21-24: 1805 rows, 150 players (the top one 0.19 of rows), ascended 0.31 (val 0.40, test 0.21)
+    c17ens3 raw 2.1438  T-all 2.1413  T-band 2.1392 (T 0.89)
+    m20ens3 raw 2.1249  T-all 2.1241  T-band 2.1252 (T 0.93)
+    m20ens3 - c17ens3: raw -0.0188 [-0.0558, +0.0265]  T-all -0.0172 [-0.0547, +0.0284]  T-band -0.0140 [-0.0525, +0.0345]  | val -0.0087 [-0.0507, +0.0338]  | test -0.0192 [-0.0710, +0.0814]
+    end, games that did not ascend (1249 rows): T-band c17ens3 2.8370  m20ens3 2.8091; cause given death c17ens3 2.6226  m20ens3 2.5931
+      m20ens3 - c17ens3: T-band -0.0279 [-0.0706, +0.0408]  cause given death -0.0295 [-0.0659, +0.0228]
+    P(ascend) mean: observed 0.308  c17ens3 0.293  m20ens3 0.288
+    P(ascend) - E (E 0.279, observed 0.308; val / test after each): c17ens3 +0.014 [-0.031, +0.061] val +0.035 [-0.026, +0.094] test -0.006 [-0.058, +0.044]; m20ens3 +0.009 [-0.033, +0.055] val +0.032 [-0.023, +0.088] test -0.014 [-0.066, +0.035]
+  Dlvl 25-29: 1583 rows, 135 players (the top one 0.11 of rows), ascended 0.49 (val 0.56, test 0.40)
+    c17ens3 raw 1.7205  T-all 1.7207  T-band 1.7232 (T 0.93)
+    m20ens3 raw 1.6974  T-all 1.6992  T-band 1.7022 (T 0.98)
+    m20ens3 - c17ens3: raw -0.0231 [-0.0711, +0.0285]  T-all -0.0215 [-0.0699, +0.0304]  T-band -0.0209 [-0.0700, +0.0334]  | val -0.0179 [-0.0734, +0.0354]  | test -0.0249 [-0.1018, +0.0738]
+    end, games that did not ascend (807 rows): T-band c17ens3 2.9900  m20ens3 2.9484; cause given death c17ens3 2.5787  m20ens3 2.5580
+      m20ens3 - c17ens3: T-band -0.0416 [-0.1146, +0.0547]  cause given death -0.0207 [-0.0659, +0.0463]
+    P(ascend) mean: observed 0.490  c17ens3 0.479  m20ens3 0.469
+    P(ascend) - E (E 0.438, observed 0.490; val / test after each): c17ens3 +0.040 [-0.008, +0.086] val +0.063 [-0.008, +0.126] test +0.011 [-0.061, +0.070]; m20ens3 +0.030 [-0.019, +0.079] val +0.057 [-0.011, +0.118] test -0.006 [-0.070, +0.061]
+  Dlvl 30+: 2981 rows, 88 players (the top one 0.05 of rows), ascended 0.77 (val 0.77, test 0.78)
+    c17ens3 raw 0.8761  T-all 0.8793  T-band 0.8898 (T 1.00)
+    m20ens3 raw 0.8654  T-all 0.8678  T-band 0.8816 (T 0.97)
+    m20ens3 - c17ens3: raw -0.0106 [-0.0419, +0.0261]  T-all -0.0115 [-0.0445, +0.0268]  T-band -0.0082 [-0.0436, +0.0324]  | val -0.0065 [-0.0562, +0.0422]  | test -0.0112 [-0.0634, +0.0507]
+    end, games that did not ascend (675 rows): T-band c17ens3 3.4465  m20ens3 3.4058; cause given death c17ens3 2.5818  m20ens3 2.5392
+      m20ens3 - c17ens3: T-band -0.0407 [-0.1732, +0.1316]  cause given death -0.0426 [-0.1194, +0.0307]
+    P(ascend) mean: observed 0.774  c17ens3 0.780  m20ens3 0.772
+    P(ascend) - E (E 0.734, observed 0.774; val / test after each): c17ens3 +0.046 [-0.018, +0.103] val +0.045 [-0.032, +0.110] test +0.048 [-0.056, +0.138]; m20ens3 +0.038 [-0.032, +0.099] val +0.040 [-0.038, +0.107] test +0.034 [-0.098, +0.139]
+
+==== ascends: 23201 rows; T on all rows c17ens3 1.06  m20ens3 1.06
+  Dlvl 1-4: 5854 rows, 673 players (the top one 0.18 of rows), ascended 0.03 (val 0.04, test 0.01)
+    c17ens3 raw 0.0739  T-all 0.0732  T-band 0.0720 (T 1.20)
+    m20ens3 raw 0.0716  T-all 0.0706  T-band 0.0698 (T 1.19)
+    m20ens3 - c17ens3: raw -0.0023 [-0.0049, +0.0002]  T-all -0.0025 [-0.0050, -0.0002]  T-band -0.0022 [-0.0043, -0.0001]  | val -0.0017 [-0.0055, +0.0016]  | test -0.0026 [-0.0046, -0.0002]
+    P(yes) mean: observed 0.025  c17ens3 0.023  m20ens3 0.023
+    P(yes) - E (E 0.023, observed 0.025; val / test after each): c17ens3 +0.000 [-0.005, +0.004] val +0.001 [-0.006, +0.007] test -0.001 [-0.006, +0.003]; m20ens3 +0.000 [-0.004, +0.004] val +0.002 [-0.005, +0.009] test -0.001 [-0.006, +0.002]
+    ascended rows 149, players 57; top 5 14, 11, 7, 6, 5 = 0.29
+  Dlvl 5-12: 5149 rows, 485 players (the top one 0.23 of rows), ascended 0.07 (val 0.11, test 0.04)
+    c17ens3 raw 0.1482  T-all 0.1473  T-band 0.1455 (T 1.21)
+    m20ens3 raw 0.1486  T-all 0.1468  T-band 0.1442 (T 1.25)
+    m20ens3 - c17ens3: raw +0.0004 [-0.0040, +0.0062]  T-all -0.0005 [-0.0048, +0.0051]  T-band -0.0013 [-0.0053, +0.0043]  | val +0.0006 [-0.0057, +0.0069]  | test -0.0026 [-0.0068, +0.0063]
+    P(yes) mean: observed 0.070  c17ens3 0.064  m20ens3 0.065
+    P(yes) - E (E 0.062, observed 0.070; val / test after each): c17ens3 +0.002 [-0.009, +0.009] val +0.005 [-0.009, +0.020] test -0.001 [-0.014, +0.007]; m20ens3 +0.003 [-0.007, +0.012] val +0.010 [-0.005, +0.024] test -0.002 [-0.012, +0.007]
+    ascended rows 363, players 68; top 5 24, 18, 16, 14, 12 = 0.23
+  Dlvl 13-20: 5829 rows, 204 players (the top one 0.28 of rows), ascended 0.21 (val 0.31, test 0.13)
+    c17ens3 raw 0.2641  T-all 0.2654  T-band 0.2667 (T 1.05)
+    m20ens3 raw 0.2549  T-all 0.2552  T-band 0.2557 (T 1.05)
+    m20ens3 - c17ens3: raw -0.0092 [-0.0222, +0.0071]  T-all -0.0103 [-0.0229, +0.0062]  T-band -0.0110 [-0.0239, +0.0062]  | val -0.0189 [-0.0433, +0.0031]  | test -0.0052 [-0.0185, +0.0288]
+    P(yes) mean: observed 0.208  c17ens3 0.176  m20ens3 0.180
+    P(yes) - E (E 0.177, observed 0.208; val / test after each): c17ens3 -0.001 [-0.035, +0.026] val +0.002 [-0.042, +0.043] test -0.003 [-0.053, +0.027]; m20ens3 +0.003 [-0.033, +0.037] val +0.014 [-0.030, +0.055] test -0.006 [-0.060, +0.036]
+    ascended rows 1215, players 71; top 5 89, 64, 51, 41, 40 = 0.23
+  Dlvl 21-24: 1805 rows, 150 players (the top one 0.19 of rows), ascended 0.31 (val 0.40, test 0.21)
+    c17ens3 raw 0.3366  T-all 0.3375  T-band 0.3389 (T 1.08)
+    m20ens3 raw 0.3266  T-all 0.3267  T-band 0.3274 (T 1.06)
+    m20ens3 - c17ens3: raw -0.0100 [-0.0298, +0.0104]  T-all -0.0108 [-0.0294, +0.0090]  T-band -0.0115 [-0.0302, +0.0086]  | val -0.0192 [-0.0491, +0.0084]  | test -0.0041 [-0.0277, +0.0341]
+    P(yes) mean: observed 0.308  c17ens3 0.262  m20ens3 0.264
+    P(yes) - E (E 0.279, observed 0.308; val / test after each): c17ens3 -0.017 [-0.056, +0.020] val -0.008 [-0.062, +0.043] test -0.026 [-0.079, +0.012]; m20ens3 -0.015 [-0.054, +0.023] val +0.002 [-0.048, +0.053] test -0.032 [-0.083, +0.008]
+    ascended rows 556, players 68; top 5 42, 41, 20, 19, 19 = 0.25
+  Dlvl 25-29: 1583 rows, 135 players (the top one 0.11 of rows), ascended 0.49 (val 0.56, test 0.40)
+    c17ens3 raw 0.4238  T-all 0.4252  T-band 0.4262 (T 1.02)
+    m20ens3 raw 0.3936  T-all 0.3941  T-band 0.3953 (T 1.03)
+    m20ens3 - c17ens3: raw -0.0301 [-0.0627, +0.0012]  T-all -0.0312 [-0.0633, +0.0006]  T-band -0.0309 [-0.0635, +0.0009]  | val -0.0378 [-0.0804, -0.0008]  | test -0.0218 [-0.0689, +0.0360]
+    P(yes) mean: observed 0.490  c17ens3 0.449  m20ens3 0.444
+    P(yes) - E (E 0.438, observed 0.490; val / test after each): c17ens3 +0.010 [-0.037, +0.053] val +0.027 [-0.041, +0.088] test -0.011 [-0.086, +0.043]; m20ens3 +0.006 [-0.041, +0.054] val +0.034 [-0.031, +0.093] test -0.030 [-0.094, +0.029]
+    ascended rows 776, players 72; top 5 49, 47, 42, 28, 21 = 0.24
+  Dlvl 30+: 2981 rows, 88 players (the top one 0.05 of rows), ascended 0.77 (val 0.77, test 0.78)
+    c17ens3 raw 0.3020  T-all 0.3072  T-band 0.3065 (T 0.76)
+    m20ens3 raw 0.2913  T-all 0.2962  T-band 0.2850 (T 0.70)
+    m20ens3 - c17ens3: raw -0.0107 [-0.0442, +0.0204]  T-all -0.0110 [-0.0451, +0.0205]  T-band -0.0215 [-0.0597, +0.0146]  | val -0.0269 [-0.0782, +0.0169]  | test -0.0124 [-0.0769, +0.0530]
+    P(yes) mean: observed 0.774  c17ens3 0.784  m20ens3 0.763
+    P(yes) - E (E 0.734, observed 0.774; val / test after each): c17ens3 +0.049 [-0.017, +0.108] val +0.049 [-0.034, +0.119] test +0.050 [-0.060, +0.144]; m20ens3 +0.029 [-0.048, +0.095] val +0.033 [-0.051, +0.102] test +0.022 [-0.125, +0.138]
+    ascended rows 2306, players 70; top 5 122, 116, 114, 94, 73 = 0.23

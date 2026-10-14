@@ -1,0 +1,78 @@
+91432 train rows; recovered log(1 + left): |orig(x) - stored target| median 1.25e-04, p99 0.001, max 0.002; label of the recovered value = stored label in 0.9999; log sigma 0.75 / 0.375 x median inner width: 0.206 / 0.103; orig sigma per bin 0.67 0.67 0.38 0.29 0.23 0.21 0.14 0.17 0.18 0.14 0.17 0.20 0.21 0.45 0.59 0.52 0.52; 5 folds by player, scored on train
+  hard   : mean mass per bin over train 0.027 0.034 0.037 0.043 0.046 0.053 0.041 0.056 0.065 0.053 0.063 0.067 0.055 0.103 0.119 0.088 0.050
+  orig   : mean mass per bin over train 0.031 0.030 0.035 0.043 0.046 0.052 0.046 0.056 0.062 0.058 0.066 0.071 0.063 0.091 0.105 0.080 0.064
+  log75  : mean mass per bin over train 0.028 0.035 0.038 0.044 0.046 0.053 0.041 0.055 0.063 0.052 0.061 0.065 0.057 0.104 0.119 0.086 0.052
+  log375 : mean mass per bin over train 0.028 0.035 0.037 0.043 0.046 0.053 0.041 0.056 0.064 0.053 0.062 0.066 0.056 0.104 0.119 0.088 0.050
+
+Dlvl 1-4: 45619 rows, 5658 players; observed mass in the first / last two bins: 0.021 / 0.031 / 0.043 / 0.030
+  hard    raw 2.6801  T-band 2.6794 (T 1.09)  first / last two bins 0.022 / 0.032 / 0.043 / 0.028
+  orig    raw 2.6699  T-band 2.6689 (T 0.91)  first / last two bins 0.025 / 0.028 / 0.043 / 0.035
+           orig - hard: raw -0.0103 [-0.0130, -0.0079]  T-band -0.0105 [-0.0131, -0.0079]  fold SE 0.0015
+  log75   raw 2.6676  T-band 2.6675 (T 0.95)  first / last two bins 0.022 / 0.033 / 0.043 / 0.029
+           log75 - hard: raw -0.0125 [-0.0145, -0.0107]  T-band -0.0118 [-0.0138, -0.0099]  fold SE 0.0012
+           log75 - orig: raw -0.0022 [-0.0039, -0.0003]  T-band -0.0013 [-0.0031, +0.0007]  fold SE 0.0011
+  log375  raw 2.6726  T-band 2.6727 (T 1.03)  first / last two bins 0.021 / 0.032 / 0.043 / 0.029
+           log375 - hard: raw -0.0076 [-0.0096, -0.0057]  T-band -0.0067 [-0.0086, -0.0050]  fold SE 0.0016
+           log375 - orig: raw 0.0027 [0.0008, 0.0047]  T-band 0.0038 [0.0018, 0.0057]  fold SE 0.0011
+
+Dlvl 5-12: 34065 rows, 3870 players; observed mass in the first / last two bins: 0.042 / 0.047 / 0.103 / 0.062
+  hard    raw 2.5653  T-band 2.5624 (T 1.12)  first / last two bins 0.040 / 0.046 / 0.103 / 0.060
+  orig    raw 2.5464  T-band 2.5443 (T 0.90)  first / last two bins 0.045 / 0.040 / 0.094 / 0.077
+           orig - hard: raw -0.0189 [-0.0231, -0.0148]  T-band -0.0182 [-0.0219, -0.0144]  fold SE 0.0029
+  log75   raw 2.5435  T-band 2.5435 (T 1.00)  first / last two bins 0.041 / 0.046 / 0.102 / 0.063
+           log75 - hard: raw -0.0218 [-0.0248, -0.0191]  T-band -0.0189 [-0.0217, -0.0163]  fold SE 0.0017
+           log75 - orig: raw -0.0029 [-0.0061, -0.0000]  T-band -0.0008 [-0.0040, +0.0024]  fold SE 0.0020
+  log375  raw 2.5523  T-band 2.5516 (T 1.06)  first / last two bins 0.040 / 0.046 / 0.102 / 0.061
+           log375 - hard: raw -0.0130 [-0.0161, -0.0097]  T-band -0.0108 [-0.0137, -0.0078]  fold SE 0.0018
+           log375 - orig: raw 0.0059 [0.0020, 0.0097]  T-band 0.0073 [0.0037, 0.0108]  fold SE 0.0020
+
+Dlvl 13-20: 4872 rows, 1211 players; observed mass in the first / last two bins: 0.007 / 0.009 / 0.219 / 0.109
+  hard    raw 2.1660  T-band 2.1626 (T 1.09)  first / last two bins 0.008 / 0.009 / 0.229 / 0.103
+  orig    raw 2.1447  T-band 2.1399 (T 0.89)  first / last two bins 0.009 / 0.008 / 0.188 / 0.145
+           orig - hard: raw -0.0213 [-0.0360, -0.0066]  T-band -0.0226 [-0.0353, -0.0104]  fold SE 0.0066
+  log75   raw 2.1349  T-band 2.1352 (T 0.99)  first / last two bins 0.008 / 0.009 / 0.217 / 0.112
+           log75 - hard: raw -0.0310 [-0.0399, -0.0216]  T-band -0.0273 [-0.0353, -0.0185]  fold SE 0.0011
+           log75 - orig: raw -0.0098 [-0.0202, +0.0013]  T-band -0.0047 [-0.0142, +0.0057]  fold SE 0.0070
+  log375  raw 2.1509  T-band 2.1504 (T 1.04)  first / last two bins 0.008 / 0.009 / 0.224 / 0.107
+           log375 - hard: raw -0.0151 [-0.0245, -0.0061]  T-band -0.0122 [-0.0209, -0.0036]  fold SE 0.0033
+           log375 - orig: raw +0.0062 [-0.0060, +0.0186]  T-band +0.0105 [-0.0000, +0.0208]  fold SE 0.0078
+
+Dlvl 21-24: 2964 rows, 1008 players; observed mass in the first / last two bins: 0.008 / 0.013 / 0.241 / 0.093
+  hard    raw 2.2401  T-band 2.2245 (T 1.20)  first / last two bins 0.007 / 0.010 / 0.249 / 0.092
+  orig    raw 2.2171  T-band 2.2174 (T 0.98)  first / last two bins 0.009 / 0.010 / 0.195 / 0.142
+           orig - hard: raw -0.0231 [-0.0424, -0.0028]  T-band -0.0071 [-0.0230, +0.0075]  fold SE 0.0094
+  log75   raw 2.2006  T-band 2.1997 (T 1.06)  first / last two bins 0.007 / 0.011 / 0.230 / 0.102
+           log75 - hard: raw -0.0395 [-0.0528, -0.0249]  T-band -0.0248 [-0.0369, -0.0119]  fold SE 0.0043
+           log75 - orig: raw -0.0164 [-0.0291, -0.0032]  T-band -0.0177 [-0.0289, -0.0059]  fold SE 0.0058
+  log375  raw 2.2282  T-band 2.2208 (T 1.14)  first / last two bins 0.007 / 0.011 / 0.241 / 0.095
+           log375 - hard: raw -0.0119 [-0.0258, +0.0025]  T-band -0.0037 [-0.0147, +0.0087]  fold SE 0.0040
+           log375 - orig: raw +0.0112 [-0.0062, +0.0277]  T-band +0.0034 [-0.0105, +0.0171]  fold SE 0.0095
+
+Dlvl 25-29: 2509 rows, 849 players; observed mass in the first / last two bins: 0.016 / 0.016 / 0.253 / 0.094
+  hard    raw 2.1176  T-band 2.0980 (T 1.20)  first / last two bins 0.011 / 0.010 / 0.266 / 0.086
+  orig    raw 2.0807  T-band 2.0800 (T 0.96)  first / last two bins 0.013 / 0.009 / 0.216 / 0.138
+           orig - hard: raw -0.0369 [-0.0620, -0.0132]  T-band -0.0180 [-0.0380, +0.0002]  fold SE 0.0072
+  log75   raw 2.0593  T-band 2.0578 (T 1.06)  first / last two bins 0.012 / 0.011 / 0.250 / 0.096
+           log75 - hard: raw -0.0583 [-0.0736, -0.0425]  T-band -0.0402 [-0.0530, -0.0266]  fold SE 0.0055
+           log75 - orig: raw -0.0214 [-0.0398, -0.0011]  T-band -0.0222 [-0.0373, -0.0048]  fold SE 0.0085
+  log375  raw 2.0740  T-band 2.0674 (T 1.12)  first / last two bins 0.011 / 0.010 / 0.257 / 0.087
+           log375 - hard: raw -0.0436 [-0.0571, -0.0290]  T-band -0.0306 [-0.0425, -0.0183]  fold SE 0.0027
+           log375 - orig: raw -0.0066 [-0.0301, +0.0178]  T-band -0.0126 [-0.0323, +0.0080]  fold SE 0.0049
+
+Dlvl 30-99: 1403 rows, 498 players; observed mass in the first / last two bins: 0.004 / 0.004 / 0.123 / 0.029
+  hard    raw 1.7484  T-band 1.7450 (T 1.08)  first / last two bins 0.003 / 0.004 / 0.133 / 0.025
+  orig    raw 1.7499  T-band 1.7118 (T 0.73)  first / last two bins 0.004 / 0.003 / 0.144 / 0.071
+           orig - hard: raw +0.0015 [-0.0355, +0.0408]  T-band -0.0332 [-0.0621, -0.0044]  fold SE 0.0093
+  log75   raw 1.7053  T-band 1.7025 (T 0.92)  first / last two bins 0.003 / 0.004 / 0.135 / 0.038
+           log75 - hard: raw -0.0432 [-0.0648, -0.0211]  T-band -0.0425 [-0.0639, -0.0214]  fold SE 0.0102
+           log75 - orig: raw -0.0447 [-0.0725, -0.0189]  T-band -0.0092 [-0.0330, +0.0153]  fold SE 0.0099
+  log375  raw 1.7098  T-band 1.7112 (T 0.99)  first / last two bins 0.003 / 0.003 / 0.134 / 0.030
+           log375 - hard: raw -0.0387 [-0.0574, -0.0183]  T-band -0.0338 [-0.0520, -0.0148]  fold SE 0.0094
+           log375 - orig: raw -0.0402 [-0.0714, -0.0095]  T-band -0.0006 [-0.0261, +0.0238]  fold SE 0.0081
+
+mean over the bands from Dlvl 5 on, equal weights, T-band (SE over the folds); per band in brackets:
+  orig    - hard  -0.0202 (SE 0.0065)   [-0.0188(0.0029) -0.0238(0.0066) -0.0080(0.0094) -0.0177(0.0072) -0.0325(0.0093)]
+  log75   - hard  -0.0310 (SE 0.0025)   [-0.0193(0.0017) -0.0274(0.0011) -0.0249(0.0043) -0.0402(0.0055) -0.0433(0.0102)]
+  log75   - orig  -0.0109 (SE 0.0051)   [-0.0005(0.0020) -0.0036(0.0070) -0.0170(0.0058) -0.0224(0.0085) -0.0108(0.0099)]
+  log375  - hard  -0.0182 (SE 0.0022)   [-0.0114(0.0018) -0.0117(0.0033) -0.0030(0.0040) -0.0305(0.0027) -0.0342(0.0094)]
+  log375  - orig  +0.0020 (SE 0.0046)   [+0.0074(0.0020) +0.0120(0.0078) +0.0049(0.0095) -0.0128(0.0049) -0.0017(0.0081)]

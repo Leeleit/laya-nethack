@@ -1,0 +1,8 @@
+c17a fam13: 1200 rows x questions, max |logit difference| 2.15e-02
+c17a new13: 1200 rows x questions, max |logit difference| 7.81e-03
+c17a fam12: 1199 rows x questions, max |logit difference| 7.81e-03
+c17a new12: 1199 rows x questions, max |logit difference| 7.81e-03
+c17r fam13: 1200 rows x questions, max |logit difference| 7.81e-03
+c17r new13: 1200 rows x questions, max |logit difference| 7.81e-03
+c17r fam12: 1199 rows x questions, max |logit difference| 7.81e-03
+c17r new12: 1199 rows x questions, max |logit difference| 7.81e-03

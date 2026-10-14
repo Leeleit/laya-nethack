@@ -1,0 +1,3 @@
+held-out: 945 players, 31170 rows; of the old val/test players: 0
+human_dwa30/train.jsonl: 89394 rows; rows of held-out players 0; in the old train 78163 (identical 78163, different 0); questions unlike the old set 0
+OK

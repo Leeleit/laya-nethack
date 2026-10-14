@@ -1,0 +1,4 @@
+human_oth24n -> human_oth28n: ttd sigma 0.2058
+  train: 198179 rows, other fields differ in 0, ttd label differs in 0; |new target - formula| L1 median 1.29e-04, max 0.0042 (recovery error max 0.0017); mass on the last bin base 0.0679 new 0.0601
+  val: 5162 rows, other fields differ in 0, ttd label differs in 0; |new target - formula| L1 median 1.29e-04, max 0.0038 (recovery error max 0.0016); mass on the last bin base 0.0407 new 0.0351
+  test: 5165 rows, other fields differ in 0, ttd label differs in 0; |new target - formula| L1 median 1.27e-04, max 0.0039 (recovery error max 0.0016); mass on the last bin base 0.0393 new 0.0318

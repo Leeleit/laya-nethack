@@ -1,0 +1,26 @@
+human_fam23m: models c17r, c17a; triple difference [(new13 - fam13) - (new12 - fam12)], model - c17r; per game all, left out the top player(s); one bootstrap of players over the four groups (1000), paired by model
+  rows: fam13 5000 (2992 games, 1287 players)  new13 3704 (518 games, 206 players)  fam12 5000 (4258 games, 1640 players)  new12 3960 (2125 games, 479 players)
+
+==== mean of the four
+  raw  c17r -0.0578  c17a +0.1537  | c17a - c17r: +0.2115 [+0.1480, +0.2771]
+  Tnew c17r -0.0615  c17a +0.0788  | c17a - c17r: +0.1404 [+0.1070, +0.1738]
+
+==== end + ascends
+  raw  c17r -0.0811  c17a +0.2304  | c17a - c17r: +0.3115 [+0.2216, +0.4089]
+  Tnew c17r -0.1003  c17a +0.0927  | c17a - c17r: +0.1930 [+0.1502, +0.2366]
+
+==== ttd
+  raw  c17r -0.0085  c17a +0.0906  | c17a - c17r: +0.0991 [+0.0648, +0.1356]
+  Tnew c17r -0.0296  c17a +0.0718  | c17a - c17r: +0.1014 [+0.0639, +0.1355]
+
+==== depth
+  raw  c17r -0.0603  c17a +0.0634  | c17a - c17r: +0.1237 [+0.0648, +0.1847]
+  Tnew c17r -0.0159  c17a +0.0581  | c17a - c17r: +0.0740 [+0.0326, +0.1179]
+
+==== end
+  raw  c17r -0.2313  c17a +0.2009  | c17a - c17r: +0.4322 [+0.3215, +0.5447]
+  Tnew c17r -0.2431  c17a +0.0955  | c17a - c17r: +0.3385 [+0.2734, +0.4060]
+
+==== ascends
+  raw  c17r +0.0691  c17a +0.2598  | c17a - c17r: +0.1908 [+0.1062, +0.2898]
+  Tnew c17r +0.0425  c17a +0.0900  | c17a - c17r: +0.0475 [+0.0110, +0.0818]

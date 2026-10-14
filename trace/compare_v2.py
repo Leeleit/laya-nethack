@@ -73,18 +73,20 @@ def bucket_probs(logits, T, bias):
 def fit_bcts(logits, y, w):
     """Bias-corrected temperature scaling (Alexandari et al., ICML 2020): one temperature plus a bias
     per bucket, by log loss on held-out games -- the label-shift fix for a model trained at other
-    bucket rates. Starts from the sampling correction log(w); bucket 0's bias is fixed at log(w[0])."""
+    bucket rates. A model fitted on rows kept at rate w learns p * w, so the sampling correction is -log(w): the fit
+    starts there, bucket 0's bias is fixed at -log(w[0])."""
 
     def unpack(v):
-        return np.exp(v[0]), np.concatenate([[np.log(w[0])], v[1:]])
+        return np.exp(v[0]), np.concatenate([[-np.log(w[0])], v[1:]])
 
     def nll(v):
         T, b = unpack(v)
         return -np.mean(np.log(bucket_probs(logits, T, b)[np.arange(len(y)), y] + 1e-12))
 
-    v = minimize(nll, np.concatenate([[0.0], np.log(w[1:])]), method="L-BFGS-B").x
+    start = np.concatenate([[0.0], -np.log(w[1:])])
+    v = minimize(nll, start, method="L-BFGS-B").x
     T, b = unpack(v)
-    return T, b, nll(v), nll(np.concatenate([[0.0], np.log(w[1:])]))
+    return T, b, nll(v), nll(start)
 
 
 def main():

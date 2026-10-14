@@ -1,0 +1,26 @@
+nao/val_dwa_states3e.jsonl nao/val_dwa_early.jsonl: 59468 games (bots left out: 49 names); per band, label means of the states each selection takes (weight: all 1, per-band 1/n of the game's states in the band, first = the band's first state, first/n = the first states weighted 1/n as per-band weighs them)
+band   selection   weight sum   ascended  depth gain  log(1+turns left)  dies within 1000
+1-4    all             287070   0.0330      6.205        7.658          0.2447
+1-4    perband          58348   0.0186      4.784        7.236          0.3494
+1-4    first            58348   0.0186      6.520        7.692          0.1861
+1-4    first/n          16044   0.0150      4.708        7.096          0.3830
+5-12   all             236367   0.0889      8.048        7.943          0.2786
+5-12   perband          38762   0.0317      3.449        6.713          0.5410
+5-12   first            38762   0.0317      5.143        7.305          0.3744
+5-12   first/n          14455   0.0124      1.963        6.249          0.6430
+13-20  all              53088   0.2636     13.954        9.072          0.0751
+13-20  perband           5507   0.2155     11.183        8.355          0.1868
+13-20  first             5507   0.2155     14.727        8.796          0.1179
+13-20  first/n           1391   0.1668      8.739        7.660          0.3213
+21-24  all              18220   0.3476     12.616        8.994          0.0931
+21-24  perband           3382   0.3282     11.704        8.625          0.1471
+21-24  first             3382   0.3282     13.711        8.952          0.0860
+21-24  first/n            962   0.3178     11.628        8.412          0.1751
+25-29  all              17277   0.5194     13.780        9.065          0.0930
+25-29  perband           2817   0.4242     11.116        8.342          0.2038
+25-29  first             2817   0.4242     13.252        8.766          0.1441
+25-29  first/n            901   0.3104      8.802        7.734          0.3141
+30+    all              34390   0.7649      7.894        9.017          0.0191
+30+    perband           1611   0.7163      6.890        8.609          0.0548
+30+    first             1611   0.7163     15.105        9.183          0.0230
+30+    first/n            244   0.6351      7.720        8.212          0.1083

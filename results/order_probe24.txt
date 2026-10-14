@@ -1,0 +1,6 @@
+human_dwa24/train.jsonl: 367054 items, 22941 steps of 16; G-cell items 21952
+pooled: residual loss on position slope -0.0371 per epoch; by tenth of the epoch +0.025 +0.021 +0.016 +0.001 -0.007 -0.014 -0.024 -0.018 -0.002 +0.003
+  c17e     mean position 0.4995  in last tenth 0.097  fit (raw loss) 1.5257  residual +0.0312  from position alone +0.00001
+  c17es1   mean position 0.4988  in last tenth 0.101  fit (raw loss) 1.5127  residual +0.0182  from position alone +0.00004
+  c17es2   mean position 0.4996  in last tenth 0.099  fit (raw loss) 1.4498  residual -0.0447  from position alone +0.00001
+  c17es3   mean position 0.5013  in last tenth 0.099  fit (raw loss) 1.4898  residual -0.0047  from position alone -0.00005

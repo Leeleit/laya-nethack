@@ -1,0 +1,34 @@
+bot_data2: 3906482 feature rows, 7988 games
+
+== 1. games the BC model trained on (bc_build: val1 only, test = crc32 of the trace path % 20 == 0)
+  train: 5726 games, val1 747 (bc-train 747, bc-test 0), val2-3 4979
+  val: 654 games, val1 75 (bc-train 75, bc-test 0), val2-3 579
+  test: 1608 games, val1 177 (bc-train 128, bc-test 49), val2-3 1431
+
+== 2. deaths by band: band of the game's last row (its ttd = turns to death) against games with a bucket-0 row in the band
+  val: last row ttd median 2, p90 7
+    Dlvl 1-4   deaths   102 (val1   10)  games with a bucket-0 row    50
+    Dlvl 5-12  deaths    66 (val1   10)  games with a bucket-0 row    38
+    Dlvl 13-20 deaths    20 (val1    1)  games with a bucket-0 row    11
+    Dlvl 21-24 deaths    74 (val1   13)  games with a bucket-0 row    38
+    Dlvl 25-29 deaths   386 (val1   41)  games with a bucket-0 row   216
+    Dlvl 30+   deaths     6 (val1    0)  games with a bucket-0 row     5
+  test: last row ttd median 2, p90 6
+    Dlvl 1-4   deaths   261 (val1   36)  games with a bucket-0 row   116
+    Dlvl 5-12  deaths   167 (val1   21)  games with a bucket-0 row    95
+    Dlvl 13-20 deaths    35 (val1    3)  games with a bucket-0 row    22
+    Dlvl 21-24 deaths   199 (val1   15)  games with a bucket-0 row   110
+    Dlvl 25-29 deaths   928 (val1  100)  games with a bucket-0 row   518
+    Dlvl 30+   deaths    18 (val1    2)  games with a bucket-0 row    10
+
+  seed 0: 340545 fitted rows, best iteration 115
+
+  seed 1: 340858 fitted rows, best iteration 190
+
+== 3. paired difference seed 1 - seed 0 by band (T-band, cross-fitted over games; raw beside); all test rows and 1/5 of them (crc32 of the id)
+  Dlvl 1-4    all: 448495 rows T-band +0.0001 [-0.0000, +0.0003] raw +0.0001 [-0.0000, +0.0003]  1/5:  89537 rows T-band +0.0002 [-0.0000, +0.0004] raw +0.0002 [-0.0001, +0.0004]
+  Dlvl 5-12   all: 170185 rows T-band +0.0001 [-0.0003, +0.0005] raw +0.0001 [-0.0003, +0.0005]  1/5:  34143 rows T-band -0.0000 [-0.0006, +0.0005] raw -0.0000 [-0.0006, +0.0005]
+  Dlvl 13-20  all:  17410 rows T-band -0.0003 [-0.0036, +0.0028] raw -0.0004 [-0.0039, +0.0026]  1/5:   3578 rows T-band -0.0011 [-0.0066, +0.0040] raw -0.0010 [-0.0065, +0.0039]
+  Dlvl 21-24  all:   7940 rows T-band +0.0027 [-0.0059, +0.0097] raw +0.0000 [-0.0111, +0.0098]  1/5:   1522 rows T-band +0.0016 [-0.0129, +0.0144] raw -0.0011 [-0.0190, +0.0146]
+  Dlvl 25-29  all: 126839 rows T-band +0.0003 [-0.0008, +0.0015] raw +0.0004 [-0.0007, +0.0016]  1/5:  25302 rows T-band +0.0008 [-0.0005, +0.0025] raw +0.0008 [-0.0006, +0.0024]
+  Dlvl 30+    all:    166 rows T-band -0.0074 [-0.0437, +0.0328] raw -0.0304 [-0.1655, +0.0924]  1/5:     42 rows T-band -0.0311 [-0.0732, +0.0103] raw -0.1264 [-0.2995, +0.0250]

@@ -1,0 +1,4 @@
+human_oth20n: depth_target narrow, depth_cap 56
+  train: 174715 rows, 0 differ outside gold.depth; worst |new - expected| 3.33e-16; mean mass on the last 3 bins [0.023 0.032 0.089] -> [0.018 0.05  0.078]
+  val: 4667 rows, 0 differ outside gold.depth; worst |new - expected| 2.22e-16; mean mass on the last 3 bins [0.018 0.021 0.056] -> [0.014 0.032 0.049]
+  test: 4718 rows, 0 differ outside gold.depth; worst |new - expected| 2.22e-16; mean mass on the last 3 bins [0.02  0.026 0.066] -> [0.016 0.038 0.058]

@@ -1,0 +1,53 @@
+human_fam23 -> human_fam23m: appearances permuted within class per row, called / named replaced from the pools (item names 21581, 2922 distinct; message names 293, 191 distinct)
+  fam13: 5000 rows; changed 0.966; with a permuted appearance 0.890 (appearances per row 6.2); with a replaced name 0.706; with an item item_names does not know 0.064; pet-like names left 2
+  new13: 5000 rows; changed 0.974; with a permuted appearance 0.889 (appearances per row 5.3); with a replaced name 0.757; with an item item_names does not know 0.101; pet-like names left 0
+  fam12: 5000 rows; changed 0.978; with a permuted appearance 0.963 (appearances per row 6.7); with a replaced name 0.432; with an item item_names does not know 0.043; pet-like names left 0
+  new12: 5000 rows; changed 0.966; with a permuted appearance 0.951 (appearances per row 5.7); with a replaced name 0.426; with an item item_names does not know 0.069; pet-like names left 0
+
+== not caught: inventory items item_names does not know (player's fruit and the like), top 40
+      86  chayote
+      85  calabash
+      79  cactus
+      55  persimmon
+      43  fruit
+      41  kiwi
+      33  chayotes
+      32  persimmons
+      28  unknown
+      28  haskap
+      25  mango
+      23  potato
+      22  cacti
+      20  pomegranate
+      19  taco
+      18  kiwis
+      17  strawberry
+      16  calabashes
+      13  pomegranite
+      13  fruits of knowledge
+      11  pineapple
+      11  avocados
+      11  potatoes
+      11  mangos
+      11  haskaps
+      10  pomegranates
+      10  mumak
+       9  tacos
+       9  peach
+       9  grapefruit
+       9  pomegranites
+       8  grapefruits
+       8  pizza. you die
+       8  pot brownie
+       7  lime
+       7  passion fruits
+       7  slime mold of yendor
+       7  babycakes
+       7  berri
+       7  pack of smokes
+
+== not caught: bare capitalized names in pet messages after the mask, top 20
+       2  Mr
+
+== not caught: scroll labels not in the table, top 20
+       1  R 

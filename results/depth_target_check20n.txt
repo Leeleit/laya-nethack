@@ -1,0 +1,4 @@
+human_dwa20n: depth_target narrow, depth_cap 56
+  train: 86452 rows, 0 differ outside gold.depth; worst |new - expected| 3.33e-16; mean mass on the last 3 bins [0.035 0.042 0.077] -> [0.029 0.062 0.064]
+  val: 2469 rows, 0 differ outside gold.depth; worst |new - expected| 2.22e-16; mean mass on the last 3 bins [0.032 0.048 0.101] -> [0.022 0.076 0.084]
+  test: 2242 rows, 0 differ outside gold.depth; worst |new - expected| 2.22e-16; mean mass on the last 3 bins [0.034 0.042 0.064] -> [0.027 0.063 0.051]

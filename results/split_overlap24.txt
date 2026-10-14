@@ -1,0 +1,17 @@
+human_dwa24/train.jsonl: 91874 rows, 5926 players, 37522 games
+
+human_dwa20t/val: 12748 rows, 350 players, 2154 games; players in train 0, games in train 0
+  1-4    rows   2659  same state in train    22 (0.8%)  same with numbers masked   490 (18.4%)
+  5-12   rows   2298  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  13-20  rows   2951  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  21-24  rows   1083  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  25-29  rows   1145  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  30+    rows   2612  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+
+human_dwa20t/test: 12328 rows, 349 players, 2615 games; players in train 0, games in train 0
+  1-4    rows   3287  same state in train    22 (0.7%)  same with numbers masked   533 (16.2%)
+  5-12   rows   2994  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  13-20  rows   3331  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  21-24  rows    918  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  25-29  rows    685  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)
+  30+    rows   1113  same state in train     0 (0.0%)  same with numbers masked     0 (0.0%)

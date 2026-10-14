@@ -263,12 +263,13 @@ def _cache_write(d, groups, cached):
     os.replace(base + ".meta.pkl.tmp", base + ".meta.pkl")
 
 
-def load_items(model_dir, data, max_len=0, workers=1, multi=False, head_max_len=0, cache=""):
+def load_items(model_dir, data, max_len=0, workers=1, multi=False, head_max_len=0, cache="", chunk=32 << 20):
     """preprocess() of a JSONL file in `workers` processes, in file order, token ids as int32 arrays (a million
     ~1000-token items as lists of Python ints would not fit in memory). multi: one build_multi_item per state.
     cache: a directory of tokenised lines keyed by their md5; when every line of `data` is there
     (the file itself or any subset of files tokenised before, e.g. train_g4 of train) nothing is tokenised,
-    else the whole file is and its new lines are added. -> (items, "hit" | "miss" | "off")."""
+    else the whole file is and its new lines are added. chunk: bytes of the file per pool job.
+    -> (items, "hit" | "miss" | "off")."""
     _fix_tokenizer_config(model_dir)
     cached, d = {}, ""
     if cache:
@@ -278,7 +279,7 @@ def load_items(model_dir, data, max_len=0, workers=1, multi=False, head_max_len=
             hashes = [hashlib.md5(line).hexdigest() for line in f.read().splitlines()]
         if all(h in cached for h in hashes):
             return [it for h in hashes for it in cached[h]], "hit"
-    size, chunk, jobs, start = os.path.getsize(data), 32 << 20, [], 0
+    size, jobs, start = os.path.getsize(data), [], 0
     with open(data, "rb") as f:
         while start < size:
             end = size

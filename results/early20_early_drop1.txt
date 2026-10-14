@@ -1,0 +1,36 @@
+human_dwa20t: 677 rows; models narrow=c17n, early=c17e
+left out: the 1 player(s) with the most ascended rows -- 1875 rows, 1821 ascended, splits {'val': 1875}
+only the games of nao/val_dwa_early.json: 677 rows
+
+==== ttd: 674 rows; T on all rows narrow 5.00  early 5.00
+  Dlvl 1-4: 674 rows, 265 players (the top one 0.11 of rows), ascended 0.00 (val 0.00, test 0.00)
+    narrow  raw 4.2082  T-all 3.0191  T-band 3.0191 (T 5.00)
+    early   raw 3.1025  T-all 2.8570  T-band 2.8570 (T 5.00)
+    early - narrow: raw -1.1057 [-1.2671, -0.9584]  T-all -0.1621 [-0.1936, -0.1335]  T-band -0.1621 [-0.1936, -0.1335]  | val -0.1594 [-0.1857, -0.1368]  | test -0.1647 [-0.2225, -0.1173]
+    P(ttd <= 1000) mean: observed 0.760  narrow 0.264  early 0.330
+
+==== depth: 677 rows; T on all rows narrow 5.00  early 1.39
+  Dlvl 1-4: 677 rows, 266 players (the top one 0.11 of rows), ascended 0.00 (val 0.00, test 0.00)
+    narrow  raw 4.3982  T-all 2.7436  T-band 2.7436 (T 5.00)
+    early   raw 2.2665  T-all 2.2519  T-band 2.2519 (T 1.39)
+    early - narrow: raw -2.1317 [-2.3059, -1.9603]  T-all -0.4916 [-0.5395, -0.4472]  T-band -0.4916 [-0.5395, -0.4472]  | val -0.5103 [-0.5493, -0.4811]  | test -0.4733 [-0.5630, -0.4113]
+    P(no deeper) mean: observed 0.462  narrow 0.050  early 0.102
+
+==== end: 677 rows; T on all rows narrow 1.49  early 0.96
+  Dlvl 1-4: 677 rows, 266 players (the top one 0.11 of rows), ascended 0.00 (val 0.00, test 0.00)
+    narrow  raw 3.5013  T-all 3.4612  T-band 3.4612 (T 1.49)
+    early   raw 3.2702  T-all 3.2722  T-band 3.2722 (T 0.96)
+    early - narrow: raw -0.2312 [-0.2680, -0.2055]  T-all -0.1890 [-0.2300, -0.1539]  T-band -0.1890 [-0.2300, -0.1539]  | val -0.2210 [-0.2713, -0.1774]  | test -0.1577 [-0.2123, -0.1165]
+    end, games that did not ascend (677 rows): T-band narrow 3.4612  early 3.2722; cause given death narrow 3.4479  early 3.2654
+      early - narrow: T-band -0.1890 [-0.2300, -0.1539]  cause given death -0.1825 [-0.2221, -0.1476]
+    P(ascend) mean: observed 0.000  narrow 0.013  early 0.007
+    P(ascend) - E (E 0.018, observed 0.000; val / test after each): narrow -0.005 [-0.009, -0.002] val -0.007 [-0.012, -0.003] test -0.002 [-0.006, +0.001]; early -0.011 [-0.015, -0.008] val -0.014 [-0.020, -0.010] test -0.008 [-0.012, -0.005]
+
+==== ascends: 677 rows; T on all rows narrow 0.30  early 0.30
+  Dlvl 1-4: 677 rows, 266 players (the top one 0.11 of rows), ascended 0.00 (val 0.00, test 0.00)
+    narrow  raw 0.0055  T-all 0.0000  T-band 0.0000 (T 0.30)
+    early   raw 0.0045  T-all 0.0000  T-band 0.0000 (T 0.30)
+    early - narrow: raw -0.0009 [-0.0016, -0.0004]  T-all -0.0000 [-0.0000, -0.0000]  T-band -0.0000 [-0.0000, -0.0000]  | val -0.0000 [-0.0000, +0.0000]  | test -0.0000 [-0.0000, +0.0000]
+    P(yes) mean: observed 0.000  narrow 0.000  early 0.000
+    P(yes) - E (E 0.018, observed 0.000; val / test after each): narrow -0.018 [-0.023, -0.013] val -0.022 [-0.029, -0.018] test -0.013 [-0.019, -0.009]; early -0.018 [-0.023, -0.013] val -0.022 [-0.029, -0.018] test -0.013 [-0.019, -0.009]
+    ascended rows 0, players 0; top 5  = 0.00

@@ -1,0 +1,79 @@
+human_dwa20t: G = mean T-band log loss over ttd, depth, end, ascends x Dlvl 21-24, 25-29; D = mean(m20e, m20es1, m20es2) - mean(c17e, c17es1, c17es2, c17es3)
+25076 rows
+
+==== main: G (8 cells ttd, depth, end, ascends x 21-24, 25-29)
+  T-band G per seed A 1.4572 1.4543 1.4566 1.4548  B 1.4205 1.4480 1.4142
+         D -0.0282  test bootstrap [-0.0465, -0.0070]  val -0.0302 test -0.0259  SD seeds A 0.0014 B 0.0180  SE_train 0.0087 SE_test 0.0101  D + 2 SE_total -0.0015  passes
+         newest pair m20es2 - c17es3: -0.0406;  c17es1 - c17e: -0.0029  c17es2 - c17e: -0.0006  c17es3 - c17e: -0.0024  m20es1 - m20e: +0.0275  m20es2 - m20e: -0.0063
+         extra c17k01: G 1.4447  minus mean A -0.0111  minus mean B +0.0171
+         extra c17k02: G 1.4389  minus mean A -0.0169  minus mean B +0.0113
+         extra c17k12: G 1.4374  minus mean A -0.0183  minus mean B +0.0098
+         extra c17k012: G 1.4349  minus mean A -0.0209  minus mean B +0.0073
+         extra c17k03: G 1.4412  minus mean A -0.0145  minus mean B +0.0136
+         extra c17k13: G 1.4399  minus mean A -0.0159  minus mean B +0.0123
+         extra c17k013: G 1.4374  minus mean A -0.0183  minus mean B +0.0099
+         extra c17k23: G 1.4373  minus mean A -0.0184  minus mean B +0.0098
+         extra c17k023: G 1.4335  minus mean A -0.0223  minus mean B +0.0059
+         extra c17k123: G 1.4324  minus mean A -0.0234  minus mean B +0.0048
+         extra c17k0123: G 1.4318  minus mean A -0.0239  minus mean B +0.0042
+         extra m20k01: G 1.4185  minus mean A -0.0373  minus mean B -0.0091
+         extra m20k02: G 1.4045  minus mean A -0.0513  minus mean B -0.0231
+         extra m20k12: G 1.4174  minus mean A -0.0384  minus mean B -0.0102
+         extra m20k012: G 1.4085  minus mean A -0.0473  minus mean B -0.0191
+  raw    G per seed A 1.4595 1.4502 1.4532 1.4533  B 1.4176 1.4446 1.4113
+         D -0.0296  test bootstrap [-0.0468, -0.0096]  val -0.0322 test -0.0263  SD seeds A 0.0039 B 0.0177  SE_train 0.0089 SE_test 0.0096  D + 2 SE_total -0.0035  passes
+         newest pair m20es2 - c17es3: -0.0420;  c17es1 - c17e: -0.0093  c17es2 - c17e: -0.0063  c17es3 - c17e: -0.0063  m20es1 - m20e: +0.0269  m20es2 - m20e: -0.0064
+         extra c17k01: G 1.4452  minus mean A -0.0089  minus mean B +0.0207
+         extra c17k02: G 1.4390  minus mean A -0.0150  minus mean B +0.0145
+         extra c17k12: G 1.4347  minus mean A -0.0194  minus mean B +0.0102
+         extra c17k012: G 1.4349  minus mean A -0.0191  minus mean B +0.0104
+         extra c17k03: G 1.4429  minus mean A -0.0112  minus mean B +0.0184
+         extra c17k13: G 1.4383  minus mean A -0.0158  minus mean B +0.0138
+         extra c17k013: G 1.4383  minus mean A -0.0157  minus mean B +0.0138
+         extra c17k23: G 1.4352  minus mean A -0.0189  minus mean B +0.0107
+         extra c17k023: G 1.4340  minus mean A -0.0201  minus mean B +0.0095
+         extra c17k123: G 1.4309  minus mean A -0.0232  minus mean B +0.0064
+         extra c17k0123: G 1.4322  minus mean A -0.0218  minus mean B +0.0077
+         extra m20k01: G 1.4166  minus mean A -0.0374  minus mean B -0.0079
+         extra m20k02: G 1.4025  minus mean A -0.0516  minus mean B -0.0220
+         extra m20k12: G 1.4156  minus mean A -0.0384  minus mean B -0.0089
+         extra m20k012: G 1.4072  minus mean A -0.0468  minus mean B -0.0172
+  G counts: yes (T-band passes, raw passes)
+
+==== cells (exploration): threshold 2 sqrt(sigma_c^2 (1/nA + 1/nB)), sigma_c^2 pooled over the arms' seeds; pooled over 13+ and over 1-4 / 5-12; sign in val / test; pairwise differences with D's sign. Better needs T-band and raw; worse counts on T-band alone, and worse on raw only is settled by the same thresholds on one T per model and question (D glob)
+
+  ttd
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    m20es2 - c17es3    D glob  verdict
+  1-4      -0.0028  -0.0084  +0.0017  0.0033  0.0065  -0.0031  0.0033  0.0061  10/12     0.0014  0.0030  -0.0044   -0.0027  
+  5-12     -0.0058  -0.0103  -0.0023  0.0085  0.0065  -0.0062  0.0081  0.0061  9/12     0.0072  0.0009  -0.0056   -0.0063  
+  13-20    -0.0100  -0.0156  -0.0051  0.0179  0.0220  -0.0106  0.0173  0.0237  6/12     0.0124  0.0107  +0.0025   -0.0109  
+  21-24    -0.0291  -0.0433  -0.0124  0.0132  0.0220  -0.0303  0.0128  0.0237  12/12     0.0083  0.0090  -0.0242   -0.0304  counts (better)
+  25-29    -0.0670  -0.0516  -0.0927  0.0305  0.0220  -0.0625  0.0272  0.0237  12/12     0.0195  0.0206  -0.1010   -0.0636  counts (better)
+  30+      -0.0273  -0.0187  -0.0476  0.0226  0.0220  -0.0488  0.0323  0.0237  11/12     0.0153  0.0141  -0.0523   -0.0438  counts (better)
+
+  depth
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    m20es2 - c17es3    D glob  verdict
+  1-4      -0.0078  -0.0051  -0.0100  0.0032  0.0051  -0.0078  0.0032  0.0052  12/12     0.0008  0.0031  -0.0121   -0.0076  counts (better)
+  5-12     -0.0104  -0.0047  -0.0148  0.0065  0.0051  -0.0105  0.0066  0.0052  12/12     0.0026  0.0059  -0.0183   -0.0105  counts (better)
+  13-20    -0.0211  -0.0284  -0.0147  0.0049  0.0184  -0.0202  0.0053  0.0156  12/12     0.0017  0.0046  -0.0259   -0.0210  counts (better)
+  21-24    -0.0286  -0.0386  -0.0167  0.0177  0.0184  -0.0297  0.0152  0.0156  12/12     0.0117  0.0115  -0.0453   -0.0300  counts (better)
+  25-29    -0.0391  -0.0490  -0.0225  0.0285  0.0184  -0.0419  0.0233  0.0156  11/12     0.0145  0.0236  -0.0446   -0.0409  counts (better)
+  30+      -0.0535  -0.0522  -0.0564  0.0143  0.0184  -0.0524  0.0130  0.0156  12/12     0.0072  0.0119  -0.0537   -0.0529  counts (better)
+
+  end
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    m20es2 - c17es3    D glob  verdict
+  1-4      -0.0085  -0.0078  -0.0090  0.0037  0.0070  -0.0087  0.0038  0.0071  12/12     0.0031  0.0009  -0.0063   -0.0087  counts (better)
+  5-12     -0.0049  -0.0072  -0.0032  0.0092  0.0070  -0.0059  0.0093  0.0071  9/12     0.0043  0.0079  -0.0104   -0.0057  
+  13-20    -0.0181  -0.0079  -0.0272  0.0221  0.0281  -0.0191  0.0185  0.0280  10/12     0.0107  0.0188  -0.0319   -0.0181  
+  21-24    -0.0100  +0.0023  -0.0245  0.0248  0.0281  -0.0139  0.0264  0.0280  8/12     0.0046  0.0250  -0.0323   -0.0126  
+  25-29    -0.0127  -0.0110  -0.0154  0.0332  0.0281  -0.0132  0.0340  0.0280  7/12     0.0124  0.0308  -0.0317   -0.0123  
+  30+      +0.0013  -0.0017  +0.0084  0.0309  0.0281  -0.0004  0.0308  0.0280  6/12     0.0182  0.0229  +0.0065   -0.0000  
+
+  ascends
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    m20es2 - c17es3    D glob  verdict
+  1-4      -0.0022  -0.0020  -0.0024  0.0009  0.0016  -0.0019  0.0020  0.0029  12/12     0.0007  0.0005  -0.0017   -0.0017  T-band only
+  5-12     -0.0018  +0.0012  -0.0042  0.0021  0.0016  -0.0002  0.0035  0.0029  10/12     0.0015  0.0011  -0.0032   -0.0001  
+  13-20    -0.0155  -0.0222  -0.0096  0.0092  0.0212  -0.0151  0.0095  0.0194  12/12     0.0041  0.0081  -0.0272   -0.0146  cell only
+  21-24    -0.0157  -0.0218  -0.0086  0.0211  0.0212  -0.0177  0.0229  0.0194  10/12     0.0110  0.0171  -0.0306   -0.0158  
+  25-29    -0.0232  -0.0284  -0.0143  0.0230  0.0212  -0.0272  0.0196  0.0194  11/12     0.0136  0.0171  -0.0154   -0.0247  counts (better)
+  30+      -0.0152  -0.0166  -0.0118  0.0272  0.0212  -0.0061  0.0227  0.0194  9/12     0.0183  0.0169  -0.0274   -0.0038  

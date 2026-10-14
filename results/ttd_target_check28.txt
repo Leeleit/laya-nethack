@@ -1,0 +1,4 @@
+human_dwa24 -> human_dwa28: ttd sigma 0.2058
+  train: 91874 rows, other fields differ in 0, ttd label differs in 0; |new target - formula| L1 median 1.32e-04, max 0.0042 (recovery error max 0.0017); mass on the last bin base 0.0639 new 0.0521
+  val: 2606 rows, other fields differ in 0, ttd label differs in 0; |new target - formula| L1 median 1.43e-04, max 0.0037 (recovery error max 0.0015); mass on the last bin base 0.0838 new 0.0742
+  test: 2369 rows, other fields differ in 0, ttd label differs in 0; |new target - formula| L1 median 1.32e-04, max 0.0037 (recovery error max 0.0015); mass on the last bin base 0.0482 new 0.0388

@@ -61,11 +61,13 @@ extracts the state of a game at chosen moments and asks the model how a human's 
 how deep it will go, what will kill the hero, whether it will ascend. Getting this data clean took more work than any
 model. [Data](docs/human-data.md) · [Questions](docs/questions.md)
 
-**Training data: new games beat repeated ones; other roles help on the deepest levels.** One epoch over the
-Valkyrie games was the best schedule tried; several epochs over fewer games were worse in every test. Mixing in games
-of other roles improves the turns-left prediction on Dlvl 25-29 and the depth prediction on Dlvl 25 and deeper, where
-most of the bot's games end, at a small cost on Dlvl 5-20. Other roles without Valkyrie games get the cause of death
-wrong. [More](docs/data-scaling.md)
+**Training data: new games, few states per game.** One epoch over the Valkyrie games was the best schedule tried;
+several epochs over fewer games, or every state of the deep games, make the model memorise games instead of
+situations. Which states are taken matters too: one per depth band per game looks fair but skews the answers toward
+early deaths. Mixing in games of other roles looked better on the deepest levels on one test set and was not
+confirmed on a second split of players; other roles without Valkyrie games get the cause of death wrong. Averaging
+several training runs helps, and one model trained to match the average keeps most of the gain.
+[More](docs/data-scaling.md)
 
 **Training got 3× faster with no loss in quality.** Packed sequences instead of padded batches, a map described in
 words instead of drawn in ASCII, shorter wording. [More](docs/training.md)
@@ -80,7 +82,7 @@ words instead of drawn in ASCII, shorter wording. [More](docs/training.md)
 | [Behaviour cloning](docs/behaviour-cloning.md) | imitating the bot keypress by keypress, and why it was dropped |
 | [Human games](docs/human-data.md) | extracting game states from terminal recordings, pitfalls, bots among the "humans" |
 | [What the model is asked](docs/questions.md) | the state as text, the questions, the token budget |
-| [How much data, and which](docs/data-scaling.md) | learning curves, repeats, other roles, evaluating where it matters |
+| [How much data, and which](docs/data-scaling.md) | learning curves, repeats, which states, other roles, ensembles, evaluating where it matters |
 | [Training speed](docs/training.md) | from 45 to 14 minutes an epoch |
 
 ## Repository layout
@@ -105,6 +107,7 @@ Main entry points in `trace/`:
 | Branches | `plan_branches.py`, `forkrun.py`, `build_fork.py`, `eval_fork.py`, `rspi_sim.py` |
 | Human data | `nao_corridor.py` (extraction), `human_build.py` (datasets), `state_fmt.py` (state text), `human_q6.py` (questions), `data_checks.py`, `junk_scan.py`, `rank_check.py`, `bot_list.py` |
 | Model on humans | `finetune_fast.py`, `packed.py`, `predict.py`, `curve_eval.py`, `human_tab.py` (tabular baseline) |
+| Evaluation | `deep_checks.py` (by band), `seed_g.py` and `accept_g.py` (the rule over seeds), `ens_preds.py`, `distill_build.py`, `band_recal.py`, `seed_games.py` |
 | Screensaver | `laya_serve.py`, `../screensaver/saver.py` |
 
 ## Running it

@@ -1,0 +1,13 @@
+file  band  rows  games  games-not-ascended  ascended-rows
+human_mix17v/train.jsonl  1-4      40516   40516   39565     951
+human_mix17v/train.jsonl  5-12     34795   34795   33716    1079
+human_mix17v/train.jsonl  13-20     4886    4886    3845    1041
+human_mix17v/train.jsonl  21-24     3001    3001    2028     973
+human_mix17v/train.jsonl  25-29     2504    2504    1453    1051
+human_mix17v/train.jsonl  30+       1430    1430     417    1013
+human_dwa20/train.jsonl  1-4      40472   29281   28559    1452
+human_dwa20/train.jsonl  5-12     34198   19892   18978    3023
+human_dwa20/train.jsonl  13-20     4882    2617    1977    1245
+human_dwa20/train.jsonl  21-24     2975    2023    1353    1036
+human_dwa20/train.jsonl  25-29     2518    1535     811    1286
+human_dwa20/train.jsonl  30+       1407     736     186    1062

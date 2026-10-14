@@ -1,0 +1,96 @@
+human_dwa20t: seeds m20e, m20es1, m20es2, m20es3
+left out: the 1 player(s) with the most ascended rows
+23201 rows, 698 players
+
+==== cells: T-band loss per seed; SD over seeds; test noise of one seed pair (bootstrap SD of the pair difference, mean over pairs); ratio; raw SD over seeds
+  q       band      rows      m20e   m20es1   m20es2   m20es3    SD seeds  SE pair   ratio   SD raw
+  ttd     1-4       5837    2.6697   2.6654   2.6642   2.6664    0.0024    0.0019    1.24   0.0024
+  ttd     5-12      5138    2.5208   2.5204   2.5202   2.5107    0.0049    0.0040    1.23   0.0051
+  ttd     13-20     5821    2.1548   2.1719   2.1792   2.1658    0.0103    0.0119    0.87   0.0111
+  ttd     21-24     1802    2.2371   2.2512   2.2587   2.2477    0.0090    0.0129    0.69   0.0093
+  ttd     25-29     1578    2.0150   2.0447   2.0145   2.0179    0.0145    0.0146    0.99   0.0137
+  ttd     30+       2964    1.6849   1.7018   1.6816   1.7021    0.0109    0.0185    0.59   0.0074
+  depth   1-4       5854    2.1769   2.1731   2.1712   2.1687    0.0035    0.0020    1.71   0.0037
+  depth   5-12      5149    2.0431   2.0473   2.0372   2.0369    0.0050    0.0042    1.20   0.0050
+  depth   13-20     5829    1.8713   1.8776   1.8710   1.8715    0.0032    0.0094    0.34   0.0029
+  depth   21-24     1805    1.7403   1.7614   1.7485   1.7440    0.0092    0.0151    0.61   0.0087
+  depth   25-29     1583    1.5200   1.5595   1.5103   1.5209    0.0217    0.0203    1.07   0.0187
+  depth   30+       2981    1.2234   1.2444   1.2418   1.2419    0.0097    0.0103    0.94   0.0099
+  end     1-4       5854    3.2556   3.2535   3.2557   3.2519    0.0019    0.0023    0.79   0.0015
+  end     5-12      5149    3.0967   3.1018   3.0901   3.0923    0.0052    0.0045    1.13   0.0049
+  end     13-20     5829    2.4426   2.4458   2.4152   2.4452    0.0147    0.0115    1.28   0.0136
+  end     21-24     1805    2.1571   2.1781   2.1397   2.1611    0.0158    0.0221    0.71   0.0152
+  end     25-29     1583    1.7402   1.7624   1.6975   1.7531    0.0287    0.0252    1.14   0.0292
+  end     30+       2981    0.8949   0.9372   0.8821   0.9363    0.0284    0.0276    1.03   0.0271
+  ascends 1-4       5854    0.0711   0.0698   0.0705   0.0706    0.0005    0.0011    0.49   0.0010
+  ascends 5-12      5149    0.1458   0.1462   0.1450   0.1458    0.0005    0.0021    0.23   0.0023
+  ascends 13-20     5829    0.2646   0.2650   0.2539   0.2658    0.0056    0.0063    0.90   0.0060
+  ascends 21-24     1805    0.3326   0.3519   0.3291   0.3361    0.0101    0.0122    0.83   0.0122
+  ascends 25-29     1583    0.4030   0.4231   0.3956   0.4052    0.0117    0.0135    0.87   0.0126
+  ascends 30+       2981    0.3100   0.3219   0.2803   0.3040    0.0175    0.0216    0.81   0.0155
+
+==== G seed pairs: difference, its test noise (bootstrap over players of the 8 cells together), players carrying half of the sum of |per-player contributions| and their share of the G rows
+  T-band m20es1 - m20e: +0.0234  SE_test 0.0093  half of |contrib| in 23 players (23.1% of rows)  top-5 players +0.0078  rest +0.0156
+  T-band m20es2 - m20e: -0.0064  SE_test 0.0081  half of |contrib| in 24 players (38.1% of rows)  top-5 players -0.0000  rest -0.0064
+  T-band m20es3 - m20e: +0.0051  SE_test 0.0086  half of |contrib| in 27 players (44.1% of rows)  top-5 players +0.0003  rest +0.0048
+  T-band m20es2 - m20es1: -0.0298  SE_test 0.0102  half of |contrib| in 25 players (39.5% of rows)  top-5 players -0.0132  rest -0.0167
+  T-band m20es3 - m20es1: -0.0183  SE_test 0.0093  half of |contrib| in 24 players (23.8% of rows)  top-5 players -0.0080  rest -0.0102
+  T-band m20es3 - m20es2: +0.0115  SE_test 0.0078  half of |contrib| in 25 players (42.2% of rows)  top-5 players +0.0015  rest +0.0101
+  raw    m20es1 - m20e: +0.0223  SE_test 0.0095  half of |contrib| in 23 players (23.0% of rows)  top-5 players +0.0078  rest +0.0146
+  raw    m20es2 - m20e: -0.0075  SE_test 0.0086  half of |contrib| in 22 players (35.0% of rows)  top-5 players -0.0008  rest -0.0067
+  raw    m20es3 - m20e: +0.0050  SE_test 0.0088  half of |contrib| in 27 players (43.7% of rows)  top-5 players -0.0002  rest +0.0052
+  raw    m20es2 - m20es1: -0.0298  SE_test 0.0104  half of |contrib| in 24 players (37.0% of rows)  top-5 players -0.0133  rest -0.0165
+  raw    m20es3 - m20es1: -0.0174  SE_test 0.0100  half of |contrib| in 24 players (39.9% of rows)  top-5 players -0.0082  rest -0.0091
+  raw    m20es3 - m20es2: +0.0124  SE_test 0.0077  half of |contrib| in 25 players (27.3% of rows)  top-5 players +0.0048  rest +0.0077
+
+==== disagreement per cell, mean over seed pairs: rows -- mean JS between the two seeds' raw distributions; band -- JS between their band-mean distributions; mean |dlog p of the true option|
+  ttd     1-4     rows 0.00212  band 0.00007  band/rows 0.031  |dlog p| 0.0909
+  ttd     5-12    rows 0.00386  band 0.00016  band/rows 0.041  |dlog p| 0.1277
+  ttd     13-20   rows 0.00668  band 0.00064  band/rows 0.096  |dlog p| 0.1610
+  ttd     21-24   rows 0.00921  band 0.00118  band/rows 0.129  |dlog p| 0.1930
+  ttd     25-29   rows 0.01029  band 0.00118  band/rows 0.114  |dlog p| 0.2033
+  ttd     30+     rows 0.01444  band 0.00128  band/rows 0.088  |dlog p| 0.2095
+  depth   1-4     rows 0.00259  band 0.00014  band/rows 0.054  |dlog p| 0.0973
+  depth   5-12    rows 0.00517  band 0.00028  band/rows 0.054  |dlog p| 0.1468
+  depth   13-20   rows 0.00987  band 0.00102  band/rows 0.103  |dlog p| 0.2030
+  depth   21-24   rows 0.01078  band 0.00084  band/rows 0.078  |dlog p| 0.2006
+  depth   25-29   rows 0.01162  band 0.00045  band/rows 0.038  |dlog p| 0.2199
+  depth   30+     rows 0.00917  band 0.00060  band/rows 0.065  |dlog p| 0.1762
+  end     1-4     rows 0.00332  band 0.00043  band/rows 0.128  |dlog p| 0.1181
+  end     5-12    rows 0.00630  band 0.00064  band/rows 0.102  |dlog p| 0.1682
+  end     13-20   rows 0.01307  band 0.00211  band/rows 0.162  |dlog p| 0.2361
+  end     21-24   rows 0.01690  band 0.00258  band/rows 0.153  |dlog p| 0.2692
+  end     25-29   rows 0.01850  band 0.00190  band/rows 0.103  |dlog p| 0.2744
+  end     30+     rows 0.01498  band 0.00134  band/rows 0.090  |dlog p| 0.1826
+  ascends 1-4     rows 0.00046  band 0.00001  band/rows 0.023  |dlog p| 0.0136
+  ascends 5-12    rows 0.00126  band 0.00004  band/rows 0.031  |dlog p| 0.0333
+  ascends 13-20   rows 0.00393  band 0.00007  band/rows 0.018  |dlog p| 0.0811
+  ascends 21-24   rows 0.00643  band 0.00022  band/rows 0.035  |dlog p| 0.1216
+  ascends 25-29   rows 0.00867  band 0.00033  band/rows 0.038  |dlog p| 0.1496
+  ascends 30+     rows 0.00895  band 0.00030  band/rows 0.033  |dlog p| 0.1264
+
+==== own train rows (91874): raw loss per seed; held-out raw loss minus train raw loss per seed
+  ttd     1-4      45619  train 2.6290 2.6316 2.6299 2.6311  gap +0.0403 +0.0336 +0.0339 +0.0350  SD train 0.0011  SD gap 0.0031
+  ttd     5-12     34065  train 2.4842 2.4889 2.4864 2.4887  gap +0.0361 +0.0311 +0.0333 +0.0210  SD train 0.0022  SD gap 0.0066
+  ttd     13-20     4872  train 2.0773 2.0876 2.0821 2.0942  gap +0.0733 +0.0822 +0.0931 +0.0643  SD train 0.0072  SD gap 0.0123
+  ttd     21-24     2964  train 2.1193 2.1375 2.1318 2.1514  gap +0.1132 +0.1098 +0.1228 +0.0907  SD train 0.0133  SD gap 0.0134
+  ttd     25-29     2509  train 1.9868 2.0012 1.9951 2.0246  gap +0.0274 +0.0417 +0.0201 -0.0069  SD train 0.0162  SD gap 0.0204
+  ttd     30+       1403  train 1.6639 1.6723 1.6625 1.6939  gap +0.0350 +0.0392 +0.0343 +0.0156  SD train 0.0145  SD gap 0.0105
+  depth   1-4      45894  train 2.1414 2.1442 2.1405 2.1401  gap +0.0357 +0.0287 +0.0306 +0.0282  SD train 0.0018  SD gap 0.0034
+  depth   5-12     34198  train 1.9690 1.9757 1.9724 1.9755  gap +0.0731 +0.0705 +0.0637 +0.0603  SD train 0.0032  SD gap 0.0059
+  depth   13-20     4882  train 1.7404 1.7588 1.7594 1.7725  gap +0.1288 +0.1156 +0.1085 +0.0974  SD train 0.0132  SD gap 0.0132
+  depth   21-24     2975  train 1.6782 1.7034 1.6984 1.7221  gap +0.0648 +0.0595 +0.0482 +0.0262  SD train 0.0180  SD gap 0.0171
+  depth   25-29     2518  train 1.5057 1.5345 1.5254 1.5443  gap +0.0109 +0.0156 -0.0189 -0.0243  SD train 0.0164  SD gap 0.0203
+  depth   30+       1407  train 1.2510 1.2861 1.2697 1.2806  gap -0.0263 -0.0382 -0.0285 -0.0381  SD train 0.0155  SD gap 0.0063
+  end     1-4      45894  train 3.2247 3.2254 3.2247 3.2284  gap +0.0307 +0.0280 +0.0309 +0.0240  SD train 0.0018  SD gap 0.0032
+  end     5-12     34198  train 3.0180 3.0223 3.0189 3.0281  gap +0.0788 +0.0805 +0.0720 +0.0676  SD train 0.0046  SD gap 0.0060
+  end     13-20     4882  train 2.3270 2.3408 2.3463 2.3743  gap +0.1129 +0.0987 +0.0669 +0.0672  SD train 0.0199  SD gap 0.0231
+  end     21-24     2975  train 2.0694 2.1022 2.0973 2.1213  gap +0.0850 +0.0721 +0.0399 +0.0357  SD train 0.0214  SD gap 0.0242
+  end     25-29     2518  train 1.6722 1.6818 1.6942 1.7328  gap +0.0649 +0.0739 -0.0023 +0.0188  SD train 0.0266  SD gap 0.0365
+  end     30+       1407  train 1.0172 1.0355 1.0574 1.0810  gap -0.1364 -0.1231 -0.1913 -0.1565  SD train 0.0276  SD gap 0.0297
+  ascends 1-4      45894  train 0.0788 0.0793 0.0793 0.0800  gap -0.0053 -0.0080 -0.0061 -0.0078  SD train 0.0005  SD gap 0.0013
+  ascends 5-12     34198  train 0.1654 0.1693 0.1686 0.1694  gap -0.0128 -0.0184 -0.0188 -0.0224  SD train 0.0019  SD gap 0.0040
+  ascends 13-20     4882  train 0.3313 0.3499 0.3539 0.3635  gap -0.0666 -0.0842 -0.1009 -0.0992  SD train 0.0135  SD gap 0.0160
+  ascends 21-24     2975  train 0.3572 0.3865 0.3929 0.4029  gap -0.0241 -0.0308 -0.0646 -0.0685  SD train 0.0197  SD gap 0.0228
+  ascends 25-29     2518  train 0.4120 0.4307 0.4407 0.4623  gap -0.0089 -0.0069 -0.0466 -0.0593  SD train 0.0209  SD gap 0.0265
+  ascends 30+       1407  train 0.3621 0.3756 0.3991 0.4095  gap -0.0605 -0.0552 -0.1167 -0.1078  SD train 0.0216  SD gap 0.0317

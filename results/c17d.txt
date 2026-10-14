@@ -1,0 +1,69 @@
+human_dwa20t: G = mean T-band log loss over ttd, depth, end, ascends x Dlvl 21-24, 25-29; D = mean(c17d, c17ds1) - mean(c17e, c17es1, c17es2, c17es3)
+25076 rows
+
+==== main: G (8 cells ttd, depth, end, ascends x 21-24, 25-29)
+  T-band G per seed A 1.4572 1.4543 1.4566 1.4548  B 1.4360 1.4340
+         D -0.0208  test bootstrap [-0.0271, -0.0137]  val -0.0204 test -0.0208  SD seeds A 0.0014 B 0.0014  SE_train 0.0012 SE_test 0.0034  D + 2 SE_total -0.0136  passes
+         newest pair c17ds1 - c17es3: -0.0208;  c17es1 - c17e: -0.0029  c17es2 - c17e: -0.0006  c17es3 - c17e: -0.0024  c17ds1 - c17d: -0.0020
+         extra c17k0123: G 1.4318  minus mean A -0.0239  minus mean B -0.0032
+  raw    G per seed A 1.4595 1.4502 1.4532 1.4533  B 1.4356 1.4319
+         D -0.0203  test bootstrap [-0.0274, -0.0138]  val -0.0194 test -0.0212  SD seeds A 0.0039 B 0.0026  SE_train 0.0032 SE_test 0.0034  D + 2 SE_total -0.0110  passes
+         newest pair c17ds1 - c17es3: -0.0214;  c17es1 - c17e: -0.0093  c17es2 - c17e: -0.0063  c17es3 - c17e: -0.0063  c17ds1 - c17d: -0.0037
+         extra c17k0123: G 1.4322  minus mean A -0.0218  minus mean B -0.0015
+  G counts: yes (T-band passes, raw passes)
+
+==== band guard: each question of G, mean over its bands outside 21-24, 25-29 under G's thresholds, the same rule as the guard above
+  ttd      T-band D -0.0177  test bootstrap [-0.0209, -0.0131]  val -0.0160 test -0.0203  SD seeds A 0.0016 B 0.0023  SE_train 0.0015 SE_test 0.0020  2 SE_total 0.0051  better
+  ttd      raw    D -0.0147  test bootstrap [-0.0177, -0.0111]  val -0.0127 test -0.0177  SD seeds A 0.0029 B 0.0022  SE_train 0.0024 SE_test 0.0017  2 SE_total 0.0059  better
+  ttd      glob T D -0.0166  test bootstrap [-0.0197, -0.0123]  val -0.0152 test -0.0187  SD seeds A 0.0038 B 0.0013  SE_train 0.0029 SE_test 0.0019  2 SE_total 0.0069  better
+  ttd      counts: better (4 bands)
+  depth    T-band D -0.0137  test bootstrap [-0.0173, -0.0103]  val -0.0168 test -0.0103  SD seeds A 0.0027 B 0.0006  SE_train 0.0021 SE_test 0.0018  2 SE_total 0.0055  better
+  depth    raw    D -0.0137  test bootstrap [-0.0170, -0.0104]  val -0.0167 test -0.0102  SD seeds A 0.0022 B 0.0005  SE_train 0.0017 SE_test 0.0017  2 SE_total 0.0048  better
+  depth    glob T D -0.0137  test bootstrap [-0.0173, -0.0102]  val -0.0169 test -0.0102  SD seeds A 0.0026 B 0.0005  SE_train 0.0019 SE_test 0.0018  2 SE_total 0.0053  better
+  depth    counts: better (4 bands)
+  end      T-band D -0.0136  test bootstrap [-0.0182, -0.0096]  val -0.0132 test -0.0166  SD seeds A 0.0076 B 0.0030  SE_train 0.0059 SE_test 0.0022  2 SE_total 0.0125  better
+  end      raw    D -0.0135  test bootstrap [-0.0180, -0.0100]  val -0.0136 test -0.0150  SD seeds A 0.0072 B 0.0027  SE_train 0.0055 SE_test 0.0020  2 SE_total 0.0117  better
+  end      glob T D -0.0135  test bootstrap [-0.0177, -0.0100]  val -0.0138 test -0.0154  SD seeds A 0.0076 B 0.0027  SE_train 0.0058 SE_test 0.0020  2 SE_total 0.0123  better
+  end      counts: better (4 bands)
+  ascends  T-band D -0.0066  test bootstrap [-0.0118, -0.0017]  val -0.0064 test -0.0080  SD seeds A 0.0038 B 0.0013  SE_train 0.0029 SE_test 0.0025  2 SE_total 0.0077  -
+  ascends  raw    D -0.0061  test bootstrap [-0.0109, -0.0021]  val -0.0075 test -0.0049  SD seeds A 0.0027 B 0.0005  SE_train 0.0021 SE_test 0.0022  2 SE_total 0.0060  better
+  ascends  glob T D -0.0050  test bootstrap [-0.0095, -0.0009]  val -0.0051 test -0.0054  SD seeds A 0.0033 B 0.0005  SE_train 0.0025 SE_test 0.0022  2 SE_total 0.0067  -
+  ascends  counts: no (4 bands)
+
+==== cells (exploration): threshold 2 sqrt(sigma_c^2 (1/nA + 1/nB)), sigma_c^2 pooled over the arms' seeds; pooled over 13+ and over 1-4 / 5-12; sign in val / test; pairwise differences with D's sign. Better needs T-band and raw; worse counts on T-band alone, and worse on raw only is settled by the same thresholds on one T per model and question (D glob)
+
+  ttd
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    c17ds1 - c17es3    D glob  verdict
+  1-4      -0.0057  -0.0051  -0.0062  0.0021  0.0077  -0.0059  0.0021  0.0073  8/8     0.0014  0.0003  -0.0042   -0.0053  cell only
+  5-12     -0.0128  -0.0111  -0.0141  0.0107  0.0077  -0.0131  0.0102  0.0073  8/8     0.0072  0.0003  -0.0118   -0.0121  counts (better)
+  13-20    -0.0170  -0.0155  -0.0183  0.0186  0.0220  -0.0171  0.0177  0.0259  8/8     0.0124  0.0019  -0.0126   -0.0171  
+  21-24    -0.0200  -0.0215  -0.0181  0.0126  0.0220  -0.0216  0.0118  0.0259  8/8     0.0083  0.0020  -0.0225   -0.0217  cell only
+  25-29    -0.0281  -0.0321  -0.0213  0.0295  0.0220  -0.0251  0.0270  0.0259  7/8     0.0195  0.0041  -0.0479   -0.0279  
+  30+      -0.0354  -0.0323  -0.0428  0.0237  0.0220  -0.0229  0.0387  0.0259  8/8     0.0153  0.0071  -0.0505   -0.0318  T-band only
+
+  depth
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    c17ds1 - c17es3    D glob  verdict
+  1-4      -0.0063  -0.0077  -0.0052  0.0014  0.0031  -0.0065  0.0014  0.0032  8/8     0.0008  0.0008  -0.0069   -0.0064  counts (better)
+  5-12     -0.0115  -0.0144  -0.0093  0.0042  0.0031  -0.0118  0.0044  0.0032  8/8     0.0026  0.0017  -0.0119   -0.0116  counts (better)
+  13-20    -0.0181  -0.0241  -0.0128  0.0030  0.0152  -0.0180  0.0022  0.0100  8/8     0.0017  0.0017  -0.0211   -0.0180  counts (better)
+  21-24    -0.0211  -0.0184  -0.0244  0.0178  0.0152  -0.0191  0.0118  0.0100  8/8     0.0117  0.0032  -0.0374   -0.0208  counts (better)
+  25-29    -0.0183  -0.0209  -0.0139  0.0219  0.0152  -0.0168  0.0140  0.0100  8/8     0.0145  0.0020  -0.0037   -0.0181  
+  30+      -0.0190  -0.0212  -0.0139  0.0112  0.0152  -0.0185  0.0075  0.0100  8/8     0.0072  0.0032  -0.0266   -0.0189  counts (better)
+
+  end
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    c17ds1 - c17es3    D glob  verdict
+  1-4      -0.0061  -0.0063  -0.0059  0.0046  0.0058  -0.0060  0.0047  0.0065  8/8     0.0031  0.0000  -0.0035   -0.0057  T-band only
+  5-12     -0.0124  -0.0144  -0.0108  0.0067  0.0058  -0.0128  0.0079  0.0065  8/8     0.0043  0.0024  -0.0083   -0.0121  counts (better)
+  13-20    -0.0200  -0.0231  -0.0172  0.0165  0.0198  -0.0193  0.0117  0.0214  8/8     0.0107  0.0044  -0.0163   -0.0198  T-band only
+  21-24    -0.0224  -0.0132  -0.0333  0.0071  0.0198  -0.0217  0.0151  0.0214  8/8     0.0046  0.0012  -0.0223   -0.0231  counts (better)
+  25-29    -0.0270  -0.0254  -0.0297  0.0189  0.0198  -0.0242  0.0213  0.0214  8/8     0.0124  0.0037  -0.0118   -0.0258  counts (better)
+  30+      -0.0160  -0.0089  -0.0326  0.0298  0.0198  -0.0160  0.0318  0.0214  7/8     0.0182  0.0137  +0.0164   -0.0163  
+
+  ascends
+  band    D T-band      val     test    cell  pooled    D raw    cell  pooled  pairwise  SD A    SD B    c17ds1 - c17es3    D glob  verdict
+  1-4      -0.0006  -0.0009  -0.0004  0.0011  0.0021  -0.0008  0.0023  0.0035  6/8     0.0007  0.0006  -0.0002   -0.0001  
+  5-12     -0.0032  -0.0049  -0.0019  0.0027  0.0021  -0.0041  0.0045  0.0035  8/8     0.0015  0.0017  -0.0025   -0.0025  T-band only
+  13-20    -0.0074  -0.0084  -0.0065  0.0064  0.0196  -0.0080  0.0070  0.0163  8/8     0.0041  0.0017  -0.0118   -0.0073  cell only
+  21-24    -0.0074  -0.0094  -0.0049  0.0171  0.0196  -0.0091  0.0189  0.0163  6/8     0.0110  0.0053  -0.0158   -0.0073  
+  25-29    -0.0220  -0.0226  -0.0209  0.0206  0.0196  -0.0247  0.0153  0.0163  8/8     0.0136  0.0036  -0.0054   -0.0217  counts (better)
+  30+      -0.0150  -0.0116  -0.0232  0.0280  0.0196  -0.0112  0.0206  0.0163  6/8     0.0183  0.0059  -0.0043   -0.0103  

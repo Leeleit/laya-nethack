@@ -9,6 +9,7 @@ which were three or four classes with hand-picked bounds (fate 1.6 bits a row) a
              something else, ascension
   ascends -- yes / no
 ttd and depth targets are soft: a Gaussian over the bins around the true value, sigma 0.75 of the true bin's width
+(depth with --depth-target narrow in human_build.py: sigma 0.75 of a level, no mass past the deepest train level)
 (HL-Gauss, 2403.03950; equal-mass bins and smoothing scaled by bin width: 2603.07448, 2606.04564).
 Bin bounds and categories come from the train rows only and are written to meta.json.
 """
@@ -122,7 +123,7 @@ def upper_bounds(values, k, forced, transform=None, rounder=round):
 def soft(lo_edges, hi_edges, x, sigma):
     """mass of N(x, sigma) on each bin [lo, hi) (outer bins open)"""
     cdf = lambda z: 0.5 * (1 + math.erf(z / (sigma * math.sqrt(2))))
-    p = [cdf(hi - x) - cdf(lo - x) for lo, hi in zip(lo_edges, hi_edges)]
+    p = [max(0.0, cdf(hi - x) - cdf(lo - x)) for lo, hi in zip(lo_edges, hi_edges)]
     s = sum(p)
     return [v / s for v in p]
 
@@ -132,6 +133,16 @@ def gold_soft(p, label):
 
 
 class Builder:
+    # depth's target (human_build.py --depth-target): orig -- sigma 0.75 of the true bin's width; on Dlvl 21+ the
+    # 21-30 bin's sigma of 7.5 levels pours mass into the open last bin, which is out of reach there, and laya learns
+    # that mass (soft_cost.py); trunc / half / narrow cut it at depth_cap (the deepest Dlvl of any train game), half
+    # with sigma 0.375 of the width, narrow 0.75 of one level; hard -- the bin itself
+    depth_target, depth_cap = "orig", math.inf
+    # ttd's target (--ttd-target): orig -- sigma 0.75 of the true bin's width in log(1 + turns left); the outer bins
+    # are 2-4x wider than the inner ones and spill mass into the open last bin (soft_ttd.py); flat -- one sigma for
+    # every bin, 0.75 of the median inner width
+    ttd_target = "orig"
+
     def __init__(self, train_outcomes, k_ttd=16, k_depth=12, n_classes=12, terse=False):
         self.terse = terse
         lefts = [o["left"] for o in train_outcomes if o["left"] is not None]
@@ -169,8 +180,17 @@ class Builder:
         return b
 
     def meta(self):
-        return {"ttd_bounds": self.ttd, "depth_gain_bounds": self.depth, "end": self.end,
-                "end_train_share": {k: round(v, 4) for k, v in sorted(self.shares.items(), key=lambda t: -t[1])}}
+        m = {"ttd_bounds": self.ttd, "depth_gain_bounds": self.depth, "end": self.end,
+             "end_train_share": {k: round(v, 4) for k, v in sorted(self.shares.items(), key=lambda t: -t[1])}}
+        if self.ttd_target != "orig":
+            m["ttd_target"], m["ttd_sigma"] = self.ttd_target, self.ttd_sigma()
+        if self.depth_target != "orig":
+            m["depth_target"] = self.depth_target
+            m["depth_cap"] = None if math.isinf(self.depth_cap) else self.depth_cap
+        return m
+
+    def ttd_sigma(self):
+        return 0.75 * float(np.median(np.diff([math.log1p(x) for x in self.ttd])))
 
     def end_key(self, kind):
         return kind if kind in self.end else "monster"
@@ -192,7 +212,8 @@ class Builder:
             qs["ttd"] = {"type": "score", "criteria": texts,
                          "instructions": ins + ("Turns until the game ends?" if self.terse else
                                                 "How many more turns until the game ends (the hero dies or ascends)?")}
-            gd["ttd"] = gold_soft(soft(lo, hi, math.log1p(o["left"]), 0.75 * w), k)
+            s = 0.75 * w if self.ttd_target == "orig" else self.ttd_sigma()
+            gd["ttd"] = gold_soft(soft(lo, hi, math.log1p(o["left"]), s), k)
         b, d = self.depth, o["deepest"]  # depth: bins of added levels, written as absolute Dlvl
         ranges = [(0 if i == 0 else b[i - 1] + 1, b[i]) for i in range(len(b))]
         texts = []
@@ -212,7 +233,15 @@ class Builder:
         qs["depth"] = {"type": "score", "criteria": texts,
                        "instructions": ins + ("Deepest Dlvl this game will reach?" if self.terse else
                                               "What is the deepest dungeon level this game will reach?")}
-        gd["depth"] = gold_soft(soft(lo, hi, o["gain"], 0.75 * w), k)
+        t = self.depth_target
+        if t == "hard":
+            gd["depth"] = gold_soft([float(i == k) for i in range(len(texts))], k)
+        else:
+            if t != "orig":
+                cap = max(self.depth_cap, d + o["gain"]) - d + 0.5
+                hi = [min(h, cap) for h in hi]
+            sigma = {"orig": 0.75 * w, "trunc": 0.75 * w, "half": 0.375 * w, "narrow": 0.75}[t]
+            gd["depth"] = gold_soft(soft(lo, hi, o["gain"], sigma), k)
         key = self.end_key(o["end"])
         qs["end"] = {"type": "choice", "criteria": dict(self.end), "instructions": ins + "What will end this game?"}
         gd["end"] = {"probabilities": {c: float(c == key) for c in self.end}, "label": key}

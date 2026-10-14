@@ -1,0 +1,62 @@
+86452 train rows; recovered gain: |orig(g) - stored target| median 3.92e-16, max 0.000 (open bin aside); reachable cap (deepest Dlvl of any train game) 56, rows ending deeper than 50 / 53: 1383 / 1; log sigma 0.195 (0.75 x median inner width 0.260); 5 folds by player, scored on train
+  hard    : mean mass per bin over train 0.132 0.109 0.105 0.105 0.088 0.071 0.091 0.115 0.029 0.029 0.063 0.064
+  orig    : mean mass per bin over train 0.134 0.113 0.109 0.106 0.098 0.079 0.076 0.090 0.040 0.035 0.058 0.061
+  trunc   : mean mass per bin over train 0.134 0.113 0.109 0.106 0.098 0.079 0.076 0.091 0.041 0.036 0.060 0.056
+  log     : mean mass per bin over train 0.137 0.109 0.106 0.100 0.084 0.067 0.090 0.124 0.031 0.028 0.080 0.044
+  logtrunc: mean mass per bin over train 0.137 0.109 0.106 0.100 0.084 0.067 0.090 0.124 0.031 0.029 0.083 0.040
+  half    : mean mass per bin over train 0.130 0.111 0.106 0.104 0.092 0.083 0.088 0.095 0.039 0.035 0.055 0.063
+  narrow  : mean mass per bin over train 0.129 0.111 0.106 0.100 0.088 0.071 0.093 0.118 0.030 0.029 0.078 0.048
+
+Dlvl 1-4: 40472 rows, 4988 players; observed mass in bins 9 / 10 / 11: 0.016 / 0.035 / 0.041
+  hard     raw 2.0527  T-band 2.0519 (T 1.07)  bins 9 / 10 / 11 0.016 / 0.034 / 0.040
+  orig     raw 2.0943  T-band 2.0849 (T 0.81)  bins 9 / 10 / 11 0.022 / 0.033 / 0.037  | orig - hard: raw 0.0417 [0.0385, 0.0449]  T-band 0.0331 [0.0292, 0.0371]
+  trunc    raw 2.0938  T-band 2.0842 (T 0.81)  bins 9 / 10 / 11 0.022 / 0.034 / 0.036  | trunc - hard: raw 0.0411 [0.0380, 0.0442]  T-band 0.0323 [0.0285, 0.0362]
+  log      raw 2.0707  T-band 2.0689 (T 0.91)  bins 9 / 10 / 11 0.016 / 0.046 / 0.026  | log - hard: raw 0.0180 [0.0141, 0.0219]  T-band 0.0170 [0.0134, 0.0205]
+  logtrunc raw 2.0700  T-band 2.0681 (T 0.91)  bins 9 / 10 / 11 0.016 / 0.046 / 0.025  | logtrunc - hard: raw 0.0173 [0.0134, 0.0211]  T-band 0.0163 [0.0128, 0.0197]
+  half     raw 2.0604  T-band 2.0590 (T 0.92)  bins 9 / 10 / 11 0.020 / 0.030 / 0.039  | half - hard: raw 0.0077 [0.0053, 0.0101]  T-band 0.0071 [0.0043, 0.0097]
+  narrow   raw 2.0787  T-band 2.0758 (T 0.89)  bins 9 / 10 / 11 0.016 / 0.044 / 0.030  | narrow - hard: raw 0.0260 [0.0228, 0.0293]  T-band 0.0239 [0.0208, 0.0267]
+
+Dlvl 5-12: 34198 rows, 3893 players; observed mass in bins 9 / 10 / 11: 0.032 / 0.037 / 0.088
+  hard     raw 2.0629  T-band 2.0613 (T 1.07)  bins 9 / 10 / 11 0.031 / 0.038 / 0.089
+  orig     raw 2.0754  T-band 2.0701 (T 0.87)  bins 9 / 10 / 11 0.037 / 0.054 / 0.074  | orig - hard: raw 0.0125 [0.0067, 0.0182]  T-band 0.0089 [0.0041, 0.0136]
+  trunc    raw 2.0733  T-band 2.0677 (T 0.87)  bins 9 / 10 / 11 0.037 / 0.055 / 0.072  | trunc - hard: raw 0.0104 [0.0048, 0.0159]  T-band 0.0064 [0.0013, 0.0110]
+  log      raw 2.0873  T-band 2.0873 (T 0.98)  bins 9 / 10 / 11 0.029 / 0.079 / 0.053  | log - hard: raw 0.0243 [0.0166, 0.0327]  T-band 0.0260 [0.0190, 0.0342]
+  logtrunc raw 2.0876  T-band 2.0876 (T 0.98)  bins 9 / 10 / 11 0.030 / 0.081 / 0.050  | logtrunc - hard: raw 0.0247 [0.0171, 0.0333]  T-band 0.0263 [0.0194, 0.0346]
+  half     raw 2.0546  T-band 2.0537 (T 0.95)  bins 9 / 10 / 11 0.036 / 0.038 / 0.083  | half - hard: raw -0.0084 [-0.0119, -0.0049]  T-band -0.0076 [-0.0105, -0.0046]
+  narrow   raw 2.0645  T-band 2.0631 (T 0.93)  bins 9 / 10 / 11 0.031 / 0.060 / 0.066  | narrow - hard: raw +0.0016 [-0.0029, +0.0067]  T-band +0.0019 [-0.0019, +0.0063]
+
+Dlvl 13-20: 4882 rows, 1214 players; observed mass in bins 9 / 10 / 11: 0.023 / 0.149 / 0.162
+  hard     raw 1.9244  T-band 1.9213 (T 1.09)  bins 9 / 10 / 11 0.025 / 0.154 / 0.164
+  orig     raw 2.0125  T-band 1.9764 (T 0.71)  bins 9 / 10 / 11 0.052 / 0.128 / 0.167  | orig - hard: raw 0.0882 [0.0685, 0.1099]  T-band 0.0551 [0.0352, 0.0749]
+  trunc    raw 1.9992  T-band 1.9614 (T 0.70)  bins 9 / 10 / 11 0.054 / 0.136 / 0.153  | trunc - hard: raw 0.0749 [0.0572, 0.0947]  T-band 0.0401 [0.0202, 0.0598]
+  log      raw 1.9699  T-band 1.9637 (T 0.88)  bins 9 / 10 / 11 0.040 / 0.177 / 0.125  | log - hard: raw 0.0455 [0.0285, 0.0653]  T-band 0.0424 [0.0271, 0.0600]
+  logtrunc raw 1.9649  T-band 1.9596 (T 0.89)  bins 9 / 10 / 11 0.042 / 0.193 / 0.108  | logtrunc - hard: raw 0.0405 [0.0221, 0.0613]  T-band 0.0383 [0.0217, 0.0559]
+  half     raw 1.9326  T-band 1.9259 (T 0.88)  bins 9 / 10 / 11 0.040 / 0.124 / 0.177  | half - hard: raw +0.0083 [-0.0045, +0.0225]  T-band +0.0046 [-0.0078, +0.0180]
+  narrow   raw 1.9186  T-band 1.9186 (T 0.97)  bins 9 / 10 / 11 0.027 / 0.186 / 0.129  | narrow - hard: raw -0.0058 [-0.0177, +0.0071]  T-band -0.0027 [-0.0130, +0.0090]
+
+Dlvl 21-24: 2975 rows, 1014 players; observed mass in bins 9 / 10 / 11: 0.030 / 0.363 / 0.012
+  hard     raw 1.8831  T-band 1.8798 (T 1.09)  bins 9 / 10 / 11 0.036 / 0.370 / 0.013
+  orig     raw 2.0448  T-band 1.9969 (T 0.66)  bins 9 / 10 / 11 0.064 / 0.188 / 0.107  | orig - hard: raw 0.1617 [0.1327, 0.1920]  T-band 0.1170 [0.0959, 0.1400]
+  trunc    raw 1.9813  T-band 1.9273 (T 0.67)  bins 9 / 10 / 11 0.069 / 0.218 / 0.062  | trunc - hard: raw 0.0982 [0.0733, 0.1246]  T-band 0.0475 [0.0270, 0.0683]
+  log      raw 1.9628  T-band 1.9377 (T 0.77)  bins 9 / 10 / 11 0.059 / 0.247 / 0.085  | log - hard: raw 0.0797 [0.0598, 0.1022]  T-band 0.0579 [0.0400, 0.0764]
+  logtrunc raw 1.9212  T-band 1.9010 (T 0.80)  bins 9 / 10 / 11 0.062 / 0.276 / 0.051  | logtrunc - hard: raw 0.0381 [0.0188, 0.0580]  T-band 0.0212 [0.0029, 0.0386]
+  half     raw 1.9236  T-band 1.9131 (T 0.85)  bins 9 / 10 / 11 0.061 / 0.283 / 0.054  | half - hard: raw 0.0405 [0.0242, 0.0577]  T-band 0.0333 [0.0177, 0.0488]
+  narrow   raw 1.8627  T-band 1.8629 (T 0.98)  bins 9 / 10 / 11 0.036 / 0.359 / 0.016  | narrow - hard: raw -0.0204 [-0.0320, -0.0074]  T-band -0.0169 [-0.0285, -0.0052]
+
+Dlvl 25-29: 2518 rows, 854 players; observed mass in bins 9 / 10 / 11: 0.167 / 0.367 / 0.000
+  hard     raw 1.6691  T-band 1.6673 (T 1.08)  bins 9 / 10 / 11 0.164 / 0.375 / 0.000
+  orig     raw 1.8203  T-band 1.7574 (T 0.66)  bins 9 / 10 / 11 0.140 / 0.227 / 0.067  | orig - hard: raw 0.1512 [0.1198, 0.1791]  T-band 0.0901 [0.0667, 0.1124]
+  trunc    raw 1.7453  T-band 1.7011 (T 0.71)  bins 9 / 10 / 11 0.153 / 0.253 / 0.005  | trunc - hard: raw 0.0763 [0.0477, 0.1028]  T-band 0.0337 [0.0131, 0.0534]
+  log      raw 1.7430  T-band 1.7211 (T 0.80)  bins 9 / 10 / 11 0.134 / 0.293 / 0.040  | log - hard: raw 0.0739 [0.0510, 0.0968]  T-band 0.0538 [0.0330, 0.0745]
+  logtrunc raw 1.6986  T-band 1.6873 (T 0.84)  bins 9 / 10 / 11 0.144 / 0.312 / 0.004  | logtrunc - hard: raw 0.0295 [0.0071, 0.0501]  T-band 0.0200 [0.0010, 0.0388]
+  half     raw 1.6812  T-band 1.6746 (T 0.88)  bins 9 / 10 / 11 0.197 / 0.296 / 0.004  | half - hard: raw +0.0121 [-0.0078, +0.0313]  T-band +0.0073 [-0.0125, +0.0253]
+  narrow   raw 1.6483  T-band 1.6496 (T 0.97)  bins 9 / 10 / 11 0.158 / 0.374 / 0.001  | narrow - hard: raw -0.0207 [-0.0356, -0.0063]  T-band -0.0178 [-0.0316, -0.0038]
+
+Dlvl 30-99: 1407 rows, 499 players; observed mass in bins 9 / 10 / 11: 0.066 / 0.016 / 0.000
+  hard     raw 1.4255  T-band 1.4191 (T 1.12)  bins 9 / 10 / 11 0.066 / 0.018 / 0.000
+  orig     raw 1.5120  T-band 1.4269 (T 0.61)  bins 9 / 10 / 11 0.078 / 0.042 / 0.005  | orig - hard: raw 0.0864 [0.0498, 0.1233]  T-band +0.0078 [-0.0196, +0.0381]
+  trunc    raw 1.4780  T-band 1.4114 (T 0.64)  bins 9 / 10 / 11 0.072 / 0.030 / 0.001  | trunc - hard: raw 0.0524 [0.0168, 0.0885]  T-band -0.0077 [-0.0356, +0.0211]
+  log      raw 1.4369  T-band 1.4247 (T 0.84)  bins 9 / 10 / 11 0.053 / 0.050 / 0.003  | log - hard: raw +0.0114 [-0.0203, +0.0432]  T-band +0.0057 [-0.0198, +0.0342]
+  logtrunc raw 1.4144  T-band 1.4053 (T 0.85)  bins 9 / 10 / 11 0.055 / 0.041 / 0.000  | logtrunc - hard: raw -0.0111 [-0.0414, +0.0206]  T-band -0.0138 [-0.0392, +0.0135]
+  half     raw 1.4012  T-band 1.3924 (T 0.86)  bins 9 / 10 / 11 0.071 / 0.020 / 0.001  | half - hard: raw -0.0243 [-0.0515, +0.0027]  T-band -0.0267 [-0.0496, -0.0034]
+  narrow   raw 1.3873  T-band 1.3854 (T 0.91)  bins 9 / 10 / 11 0.065 / 0.022 / 0.001  | narrow - hard: raw -0.0383 [-0.0624, -0.0127]  T-band -0.0337 [-0.0550, -0.0118]

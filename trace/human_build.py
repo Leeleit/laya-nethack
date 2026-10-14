@@ -1,4 +1,4 @@
-"""laya's dataset from human games (NLD-NAO): the states of nao_corridor.py states (screen, status, inventory last
+"""laya's dataset from human games (NLD-NAO): the states from nao_corridor.py (screen, status, inventory last
 shown, recent messages; at each new deepest Dlvl and every 1000 turns) with the game's outcome from its xlogfile
 record. The reference is the humans, not the bot: what a player in this state goes on to do.
 
@@ -9,6 +9,8 @@ ascends), otherwise the first two ordinal ones:
   ttd  -- turns left: dies within 1000 / in 1000-5000 / later or ascends (only states with a turn counter)
 --map, --compact and --terse choose the wording of the state (state_fmt.py).
 Split by player (crc32 of the name): test 1 in 20, with --val val 1 in 20, the rest train -- no player in two splits.
+--resplit SALT SHARE: a fresh held-out set -- SHARE of the players of that train by crc32 of SALT:name (halves val /
+test), the old val and test players go to train.
   python human_build.py --states nao/val_dwa_states.jsonl [more.jsonl ...] --out human_data [--v6] [--per-band]
       [--per-game K] [--held-per-player K] [--val] [--exclude F ...] [--exclude-players F ...] [--workers N]
 -> <out>/{train,val,test}.jsonl, meta.json
@@ -137,7 +139,21 @@ def rows_of(g, keep=None):
                "_o": outcome(g, s)}
 
 
-SKIP, PER_GAME, VAL, PER_BAND = set(), 0, False, False  # --workers: main() sets them before the pool forks
+SKIP, PER_GAME, VAL, PER_BAND, RATES, FIRST = set(), 0, False, False, [], False  # --workers: main() sets them
+FIRST_FROM = -1
+RESPLIT = ("", 0.0)
+
+
+def split_of(name, val):
+    c = zlib.crc32(name.lower().encode()) % 20
+    if RESPLIT[0]:
+        if c in (0, 1):
+            return "train"
+        h = zlib.crc32(f"{RESPLIT[0]}:{name.lower()}".encode())
+        if h % 10000 >= RESPLIT[1] * 10000:
+            return "train"
+        return "val" if val and h // 10000 % 2 else "test"
+    return "test" if c == 0 else "val" if val and c == 1 else "train"
 # --per-band: Dlvl bands of the bot's losses (bot_bottlenecks.py: grind 1-4, 5-12, 13-20, Medusa 21-24,
 # castle 25-29, Gehennom 30+) -- a game gives one random state of each band it was in, not 2 of all (2 random states of
 # a game are mostly early ones: the deep levels, where the bot dies, came out thin)
@@ -157,9 +173,22 @@ def game_rows(line):
     key = f"{g['name']}@{g['start']}"
     if key in SKIP:
         return key, None, None
-    c = zlib.crc32(g["name"].lower().encode()) % 20
-    split = "test" if c == 0 else "val" if VAL and c == 1 else "train"
-    if PER_BAND:
+    split = split_of(g["name"], VAL)
+    if RATES:  # each state on its own, by a hash of its id: nothing about the rest of the game decides
+        keep = {i for i, s in enumerate(g["states"])
+                if zlib.crc32(f"{key}#{i}".encode()) < RATES[bisect.bisect_left(BANDS, s["dlvl"])] * 2 ** 32}
+        if FIRST_FROM >= 0:
+            first = {}
+            for i, s in enumerate(g["states"]):
+                first.setdefault(bisect.bisect_left(BANDS, s["dlvl"]), i)
+            keep |= {i for b, i in first.items() if b >= FIRST_FROM}
+        rs = list(rows_of(g, keep))
+    elif FIRST:  # whether a state is its band's first is settled by the game's past
+        first = {}
+        for i, s in enumerate(g["states"]):
+            first.setdefault(bisect.bisect_left(BANDS, s["dlvl"]), i)
+        rs = list(rows_of(g, set(first.values())))
+    elif PER_BAND:
         by = collections.defaultdict(list)
         for i, s in enumerate(g["states"]):
             by[bisect.bisect_left(BANDS, s["dlvl"])].append(i)
@@ -171,6 +200,24 @@ def game_rows(line):
     else:
         rs = list(rows_of(g))
     return key, split, rs
+
+
+def _finish_init(q6):
+    global Q6
+    Q6 = q6
+
+
+def _finish(chunk):
+    labels, out = collections.Counter(), []
+    for r in chunk:
+        o = r.pop("_o")
+        if Q6:
+            r["questions"], r["gold"] = Q6.questions(o)
+        for q, g in r["gold"].items():
+            if q != "ttd" or not Q6:  # v6 ttd: 17 bins, its labels in meta would be noise
+                labels[f"{q}:{g['label']}"] += 1
+        out.append(json.dumps(r) + "\n")
+    return "".join(out), labels
 
 
 def main():
@@ -198,26 +245,50 @@ def main():
     ap.add_argument("--compact", action="store_true",
                     help="the inventory without articles, '(worn)' / '(wielded)' (compact_inv)")
     ap.add_argument("--terse", action="store_true", help="the state's head lines and the questions in fewer words")
+    ap.add_argument("--depth-target", choices=["orig", "trunc", "half", "narrow", "hard"], default="orig",
+                    help="v6 depth's target (Builder.depth_target); trunc / half / narrow are cut at the deepest Dlvl "
+                         "of any train game")
+    ap.add_argument("--ttd-target", choices=["orig", "flat"], default="orig",
+                    help="v6 ttd's target (Builder.ttd_target): sigma by the true bin's width, or one for all bins")
+    ap.add_argument("--depth-cap", type=int, default=0,
+                    help="that deepest Dlvl given (a set to be mixed with another must share its cap)")
     ap.add_argument("--end-classes", type=int, default=12,
                     help="v6 end: the commonest monster classes named (v7: 30 -- 463 tokens, needs head_max_len 512)")
     ap.add_argument("--workers", type=int, default=1,
                     help="parse and make the rows in this many processes (--per-game picks: game_rows)")
     ap.add_argument("--per-band", action="store_true",
                     help="one random state of each Dlvl band a game was in (BANDS) instead of --per-game, every split")
+    ap.add_argument("--band-rates", type=float, nargs="*", default=[],
+                    help="instead of --per-band: keep each state with its band's rate (6 numbers, BANDS order). "
+                         "--per-band weighs a state 1 / the game's states in the band, a number set by the game's "
+                         "future, and so shifts P(label | state); a fixed rate does not")
+    ap.add_argument("--band-first", action="store_true",
+                    help="instead of --per-band: the first state of each band a game was in (as many rows, no shift)")
+    ap.add_argument("--band-first-from", type=int, default=-1,
+                    help="with --band-rates: also the first state of each band from this one on (BANDS index; 2 = Dlvl "
+                         "13+), so every game that reached a deep band is in it")
     ap.add_argument("--games-cap", type=int, nargs="*", default=[],
                     help="at most this many games (all splits) from each --states file, in file order; 0 = all")
+    ap.add_argument("--resplit", nargs=2, default=["", "0"], metavar=("SALT", "SHARE"),
+                    help="held out: SHARE of the old train's players by crc32 of SALT:name; old val/test -> train")
     a = ap.parse_args()
-    global MAP, COMPACT, TERSE
+    global MAP, COMPACT, TERSE, RESPLIT
     MAP, COMPACT, TERSE = a.map, a.compact, a.terse
+    RESPLIT = (a.resplit[0], float(a.resplit[1]))
     skip = {line.strip() for path in a.exclude for line in open(path, encoding="utf-8") if line.strip()}
     seen, left_out = set(), collections.Counter()
     rows = {"train": [], "val": [], "test": []} if a.val else {"train": [], "test": []}
     games, labels = collections.Counter(), collections.Counter()
     pick = random.Random(2)
-    assert a.workers > 1 or not (a.per_band or a.games_cap), "--per-band / --games-cap: with --workers"
+    assert a.workers > 1 or not (a.per_band or a.games_cap or a.band_rates or a.band_first), \
+        "--per-band / --band-rates / --band-first / --games-cap: with --workers"
+    assert not a.band_rates or (len(a.band_rates) == len(BANDS) + 1 and not a.per_band), "--band-rates: 6 numbers"
+    assert sum(map(bool, (a.per_band, a.band_rates, a.band_first))) <= 1, "one of --per-band / --band-rates / --band-first"
+    assert a.band_first_from < 0 or a.band_rates, "--band-first-from: with --band-rates"
     if a.workers > 1:
-        global SKIP, PER_GAME, VAL, PER_BAND
-        SKIP, PER_GAME, VAL, PER_BAND = skip, a.per_game, a.val, a.per_band
+        global SKIP, PER_GAME, VAL, PER_BAND, RATES, FIRST, FIRST_FROM
+        SKIP, PER_GAME, VAL, PER_BAND, RATES, FIRST = skip, a.per_game, a.val, a.per_band, a.band_rates, a.band_first
+        FIRST_FROM = a.band_first_from
         caps = a.games_cap or [0] * len(a.states)
         assert len(caps) == len(a.states), "--games-cap: a number per --states file"
         with Pool(a.workers) as pool:
@@ -251,8 +322,7 @@ def main():
                 left_out["excluded" if key in skip else "duplicate"] += 1
                 continue
             seen.add(key)
-            c = zlib.crc32(g["name"].lower().encode()) % 20
-            split = "test" if c == 0 else "val" if a.val and c == 1 else "train"
+            split = split_of(g["name"], a.val)
             games[split] += 1
             rs = list(rows_of(g))
             if a.per_game and len(rs) > a.per_game:
@@ -280,24 +350,26 @@ def main():
                                [r["_o"] for r in rows["train"]], terse=TERSE)
     else:
         q6 = Builder([r["_o"] for r in rows["train"]], n_classes=a.end_classes, terse=TERSE) if a.v6 else None
-    for split, rs in rows.items():
-        for r in rs:
-            o = r.pop("_o")
-            if q6:
-                r["questions"], r["gold"] = q6.questions(o)
-            for q, g in r["gold"].items():
-                if q != "ttd" or not q6:  # v6 ttd: 17 bins, its labels in meta would be noise
-                    labels[f"{split}:{q}:{g['label']}"] += 1
+    if q6:
+        q6.ttd_target = a.ttd_target
+    if q6 and a.depth_target != "orig":
+        q6.depth_target = a.depth_target
+        q6.depth_cap = a.depth_cap or max(r["_o"]["deepest"] + r["_o"]["gain"] for r in rows["train"])
     if a.max_train and len(rows["train"]) > a.max_train:
         rows["train"] = random.Random(0).sample(rows["train"], a.max_train)
     random.Random(1).shuffle(rows["train"])
     Path(a.out).mkdir(parents=True, exist_ok=True)
-    for split, rs in rows.items():
-        with open(Path(a.out, f"{split}.jsonl"), "w", encoding="utf-8", newline="\n") as f:
-            for r in rs:
-                f.write(json.dumps(r) + "\n")
+    with Pool(max(a.workers, 1), _finish_init, (q6,)) as pool:
+        for split, rs in rows.items():
+            with open(Path(a.out, f"{split}.jsonl"), "w", encoding="utf-8", newline="\n") as f:
+                for text, lab in pool.imap(_finish, (rs[i:i + 2000] for i in range(0, len(rs), 2000))):
+                    f.write(text)
+                    for k, v in lab.items():
+                        labels[f"{split}:{k}"] += v
     meta = {"games": games, "left_out": dict(left_out), **({"v6": q6.meta()} if q6 else {"fate": FATE, "ttd": TTD}),
             "rows": {k: len(v) for k, v in rows.items()}, "labels": dict(sorted(labels.items()))}
+    if RESPLIT[0]:
+        meta["resplit"] = list(RESPLIT)
     Path(a.out, "meta.json").write_text(json.dumps(meta, indent=1))
     print(json.dumps(meta, indent=1))
 

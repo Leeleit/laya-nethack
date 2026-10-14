@@ -1,0 +1,13 @@
+human_fam23: rows with a set of >= 2 unidentified appearances found in the same game's train rows and in no row of another train game (13+: the same game's rows of Dlvl 13+; any: all its rows)
+
+  c17a (human_dwa21/train.jsonl): 183271 rows, 32537 games, 189 appearance tokens
+    fam13: 5000 rows; >= 2 appearances 0.791; shared with own 13+ rows 0.421, unique 0.206; shared with own rows 0.577, unique 0.329
+    new13: 5000 rows; >= 2 appearances 0.772; shared with own 13+ rows 0.000, unique 0.000; shared with own rows 0.000, unique 0.000
+    fam12: 5000 rows; >= 2 appearances 0.896; shared with own 13+ rows 0.000, unique 0.000; shared with own rows 0.616, unique 0.314
+    new12: 5000 rows; >= 2 appearances 0.864; shared with own 13+ rows 0.000, unique 0.000; shared with own rows 0.000, unique 0.000
+
+  c17r (human_dwa20/train.jsonl): 86452 rows, 32253 games, 189 appearance tokens
+    fam13: 5000 rows; >= 2 appearances 0.791; shared with own 13+ rows 0.183, unique 0.079; shared with own rows 0.489, unique 0.275
+    new13: 5000 rows; >= 2 appearances 0.772; shared with own 13+ rows 0.000, unique 0.000; shared with own rows 0.000, unique 0.000
+    fam12: 5000 rows; >= 2 appearances 0.896; shared with own 13+ rows 0.000, unique 0.000; shared with own rows 0.616, unique 0.325
+    new12: 5000 rows; >= 2 appearances 0.864; shared with own 13+ rows 0.000, unique 0.000; shared with own rows 0.000, unique 0.000

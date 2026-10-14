@@ -1,0 +1,428 @@
+end: 11209 held-out rows, 802 players; reference dwa; models dwa=c17v, mix=m17, staged=s17, others=o17
+
+== Dlvl 1-4: 5849 rows, 786 players; mean loss dwa 3.2766  mix 3.2720  staged 3.2694  others 3.3298
+  mix - dwa: -0.0046 [-0.0090, +0.0008]; by true class (share of the difference, its rows' loss dwa / mix):
+    poison n  293  -0.0034 [-0.0043, -0.0027]  3.006 / 2.939  poison
+    &   n  198  -0.0028 [-0.0047, -0.0007]  3.628 / 3.545  major demon, e.g. water demon
+    @   n  389  0.0026 [0.0015, 0.0036]  2.580 / 2.619  human or elf, e.g. watch captain
+    h   n  102  -0.0023 [-0.0032, -0.0017]  4.023 / 3.888  humanoid, e.g. dwarf
+    f   n  201  -0.0018 [-0.0029, -0.0007]  3.256 / 3.203  cat or other feline, e.g. kitten
+    Z   n   95  -0.0016 [-0.0020, -0.0010]  3.963 / 3.867  zombie, e.g. elf zombie
+    a   n  505  -0.0015 [-0.0023, -0.0006]  2.150 / 2.132  ant or other insect, e.g. soldier ant
+    food n   91  -0.0015 [-0.0023, -0.0005]  4.160 / 4.064  starvation or choking
+    d   n  491  0.0015 [0.0007, 0.0021]  2.601 / 2.619  dog or other canine, e.g. wolf
+    monster n  385  -0.0014 [-0.0026, -0.0004]  2.999 / 2.979  another monster
+    T   n   56  +0.0013 [-0.0001, +0.0024]  4.288 / 4.423  troll, e.g. troll
+    g   n   52  +0.0013 [-0.0002, +0.0028]  4.532 / 4.673  gremlin, e.g. gargoyle
+  staged - dwa: -0.0072 [-0.0127, -0.0024]; by true class (share of the difference, its rows' loss dwa / staged):
+    d   n  491  0.0030 [0.0022, 0.0039]  2.601 / 2.637  dog or other canine, e.g. wolf
+    food n   91  -0.0028 [-0.0043, -0.0014]  4.160 / 3.978  starvation or choking
+    a   n  505  0.0026 [0.0014, 0.0036]  2.150 / 2.180  ant or other insect, e.g. soldier ant
+    S   n  224  -0.0023 [-0.0034, -0.0012]  3.514 / 3.456  snake, e.g. water moccasin
+    poison n  293  -0.0022 [-0.0034, -0.0012]  3.006 / 2.963  poison
+    &   n  198  -0.0021 [-0.0042, -0.0005]  3.628 / 3.566  major demon, e.g. water demon
+    trap n   70  -0.0013 [-0.0019, -0.0007]  4.621 / 4.515  a trap or a fall
+    :   n  126  -0.0011 [-0.0018, -0.0003]  3.990 / 3.938  lizard, e.g. iguana
+    s   n   84  0.0010 [0.0005, 0.0016]  3.842 / 3.914  arachnid or centipede, e.g. giant spider
+    i   n  112  -0.0009 [-0.0014, -0.0003]  3.978 / 3.931  imp or minor demon, e.g. homunculus
+    m   n  139  -0.0009 [-0.0019, +0.0000]  4.113 / 4.076  mimic, e.g. small mimic
+    stone n  116  -0.0009 [-0.0022, +0.0005]  3.552 / 3.508  turned to stone
+  others - dwa: 0.0532 [0.0399, 0.0651]; by true class (share of the difference, its rows' loss dwa / others):
+    @   n  389  0.0435 [0.0390, 0.0489]  2.580 / 3.234  human or elf, e.g. watch captain
+    poison n  293  0.0290 [0.0231, 0.0368]  3.006 / 3.585  poison
+    monster n  385  -0.0199 [-0.0238, -0.0168]  2.999 / 2.696  another monster
+    &   n  198  0.0190 [0.0157, 0.0217]  3.628 / 4.188  major demon, e.g. water demon
+    m   n  139  -0.0169 [-0.0218, -0.0124]  4.113 / 3.402  mimic, e.g. small mimic
+    a   n  505  0.0140 [0.0115, 0.0158]  2.150 / 2.311  ant or other insect, e.g. soldier ant
+    S   n  224  0.0132 [0.0104, 0.0159]  3.514 / 3.858  snake, e.g. water moccasin
+    stone n  116  0.0124 [0.0059, 0.0196]  3.552 / 4.176  turned to stone
+    B   n  176  -0.0098 [-0.0123, -0.0071]  3.360 / 3.035  bat or bird, e.g. giant bat
+    d   n  491  0.0079 [0.0056, 0.0104]  2.601 / 2.696  dog or other canine, e.g. wolf
+    i   n  112  -0.0075 [-0.0092, -0.0055]  3.978 / 3.584  imp or minor demon, e.g. homunculus
+    r   n  162  -0.0065 [-0.0081, -0.0048]  3.433 / 3.197  rodent, e.g. rabid rat
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    a    0.086 | 0.113 | 0.114 | 0.109 | 0.095 | 0.117 | 0.097  ant or other insect, e.g. soldier ant
+    d    0.084 | 0.070 | 0.069 | 0.068 | 0.064 | 0.069 | 0.061  dog or other canine, e.g. wolf
+    ray  0.068 | 0.053 | 0.053 | 0.053 | 0.057 | 0.052 | 0.060  a wand, ray or spell
+    @    0.067 | 0.074 | 0.070 | 0.074 | 0.038 | 0.074 | 0.038  human or elf, e.g. watch captain
+    monster  0.066 | 0.050 | 0.051 | 0.050 | 0.067 | 0.050 | 0.069  another monster
+    poison  0.050 | 0.047 | 0.050 | 0.048 | 0.028 | 0.047 | 0.020  poison
+    q    0.042 | 0.049 | 0.051 | 0.049 | 0.054 | 0.049 | 0.052  quadruped, e.g. rothe
+    o    0.039 | 0.038 | 0.037 | 0.037 | 0.040 | 0.036 | 0.034  orc, e.g. hill orc
+    S    0.038 | 0.028 | 0.028 | 0.030 | 0.020 | 0.028 | 0.012  snake, e.g. water moccasin
+    f    0.034 | 0.038 | 0.040 | 0.037 | 0.037 | 0.038 | 0.036  cat or other feline, e.g. kitten
+    &    0.034 | 0.026 | 0.027 | 0.027 | 0.015 | 0.025 | 0.011  major demon, e.g. water demon
+    B    0.030 | 0.033 | 0.033 | 0.033 | 0.045 | 0.033 | 0.041  bat or bird, e.g. giant bat
+    r    0.028 | 0.031 | 0.029 | 0.031 | 0.038 | 0.030 | 0.032  rodent, e.g. rabid rat
+    u    0.028 | 0.036 | 0.036 | 0.036 | 0.037 | 0.034 | 0.035  unicorn or horse, e.g. pony
+    m    0.024 | 0.013 | 0.013 | 0.014 | 0.028 | 0.013 | 0.019  mimic, e.g. small mimic
+    :    0.022 | 0.018 | 0.018 | 0.019 | 0.023 | 0.018 | 0.018  lizard, e.g. iguana
+    ascend  0.021 | 0.016 | 0.016 | 0.016 | 0.019 | 0.023 | 0.022  ascension
+    stone  0.020 | 0.024 | 0.023 | 0.025 | 0.014 | 0.024 | 0.009  turned to stone
+    train rows: Val-Dwa 40516, other roles 88703
+
+== Dlvl 5-12: 3922 rows, 612 players; mean loss dwa 3.1068  mix 3.0846  staged 3.0833  others 3.1596
+  mix - dwa: -0.0221 [-0.0315, -0.0097]; by true class (share of the difference, its rows' loss dwa / mix):
+    @   n  362  0.0055 [0.0037, 0.0070]  2.392 / 2.452  human or elf, e.g. watch captain
+    s   n   74  -0.0040 [-0.0069, -0.0018]  3.828 / 3.615  arachnid or centipede, e.g. giant spider
+    poison n  167  -0.0035 [-0.0054, -0.0017]  3.096 / 3.014  poison
+    a   n  454  -0.0035 [-0.0054, -0.0010]  2.026 / 1.996  ant or other insect, e.g. soldier ant
+    H   n   58  0.0029 [0.0014, 0.0043]  3.360 / 3.556  giant humanoid, e.g. minotaur
+    h   n   69  -0.0029 [-0.0046, -0.0014]  4.042 / 3.877  humanoid, e.g. dwarf
+    Y   n   81  -0.0023 [-0.0042, -0.0007]  3.802 / 3.692  apelike creature, e.g. owlbear
+    f   n  152  -0.0022 [-0.0035, -0.0007]  3.243 / 3.185  cat or other feline, e.g. kitten
+    B   n   88  -0.0021 [-0.0038, -0.0004]  3.568 / 3.473  bat or bird, e.g. giant bat
+    o   n  159  -0.0020 [-0.0039, +0.0004]  3.417 / 3.369  orc, e.g. hill orc
+    T   n   61  0.0019 [0.0006, 0.0033]  3.442 / 3.566  troll, e.g. troll
+    ascend n  138  +0.0017 [-0.0006, +0.0048]  1.280 / 1.329  ascension
+  staged - dwa: -0.0234 [-0.0334, -0.0116]; by true class (share of the difference, its rows' loss dwa / staged):
+    ascend n  138  -0.0037 [-0.0097, -0.0000]  1.280 / 1.176  ascension
+    o   n  159  -0.0035 [-0.0056, -0.0010]  3.417 / 3.330  orc, e.g. hill orc
+    S   n   92  -0.0033 [-0.0046, -0.0018]  3.574 / 3.434  snake, e.g. water moccasin
+    a   n  454  0.0030 [0.0010, 0.0050]  2.026 / 2.051  ant or other insect, e.g. soldier ant
+    Y   n   81  -0.0030 [-0.0051, -0.0010]  3.802 / 3.658  apelike creature, e.g. owlbear
+    monster n  217  0.0029 [0.0018, 0.0040]  2.851 / 2.903  another monster
+    s   n   74  -0.0028 [-0.0053, -0.0009]  3.828 / 3.678  arachnid or centipede, e.g. giant spider
+    other n   79  -0.0021 [-0.0032, -0.0008]  3.798 / 3.692  something else
+    d   n  220  0.0017 [0.0003, 0.0028]  2.742 / 2.773  dog or other canine, e.g. wolf
+    &   n   81  -0.0017 [-0.0044, +0.0013]  3.657 / 3.574  major demon, e.g. water demon
+    h   n   69  -0.0014 [-0.0027, +0.0000]  4.042 / 3.960  humanoid, e.g. dwarf
+    q   n  203  -0.0013 [-0.0026, -0.0001]  2.892 / 2.867  quadruped, e.g. rothe
+  others - dwa: 0.0528 [0.0403, 0.0685]; by true class (share of the difference, its rows' loss dwa / others):
+    @   n  362  0.0520 [0.0462, 0.0602]  2.392 / 2.956  human or elf, e.g. watch captain
+    poison n  167  0.0174 [0.0134, 0.0223]  3.096 / 3.504  poison
+    a   n  454  0.0169 [0.0141, 0.0195]  2.026 / 2.171  ant or other insect, e.g. soldier ant
+    stone n  121  0.0124 [0.0066, 0.0181]  2.877 / 3.280  turned to stone
+    monster n  217  -0.0120 [-0.0139, -0.0097]  2.851 / 2.635  another monster
+    Y   n   81  -0.0097 [-0.0125, -0.0073]  3.802 / 3.334  apelike creature, e.g. owlbear
+    S   n   92  0.0096 [0.0071, 0.0118]  3.574 / 3.985  snake, e.g. water moccasin
+    &   n   81  0.0094 [0.0065, 0.0133]  3.657 / 4.114  major demon, e.g. water demon
+    d   n  220  0.0067 [0.0053, 0.0088]  2.742 / 2.862  dog or other canine, e.g. wolf
+    o   n  159  -0.0058 [-0.0086, -0.0022]  3.417 / 3.275  orc, e.g. hill orc
+    other n   79  0.0057 [0.0032, 0.0093]  3.798 / 4.083  something else
+    m   n   30  -0.0053 [-0.0084, -0.0031]  4.563 / 3.868  mimic, e.g. small mimic
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    a    0.116 | 0.116 | 0.119 | 0.112 | 0.100 | 0.126 | 0.112  ant or other insect, e.g. soldier ant
+    @    0.092 | 0.086 | 0.081 | 0.087 | 0.052 | 0.085 | 0.045  human or elf, e.g. watch captain
+    d    0.056 | 0.059 | 0.061 | 0.058 | 0.053 | 0.062 | 0.056  dog or other canine, e.g. wolf
+    monster  0.055 | 0.055 | 0.055 | 0.051 | 0.069 | 0.050 | 0.066  another monster
+    q    0.052 | 0.053 | 0.053 | 0.054 | 0.058 | 0.051 | 0.056  quadruped, e.g. rothe
+    ray  0.051 | 0.054 | 0.054 | 0.054 | 0.058 | 0.050 | 0.060  a wand, ray or spell
+    poison  0.043 | 0.043 | 0.048 | 0.044 | 0.030 | 0.045 | 0.020  poison
+    o    0.041 | 0.030 | 0.030 | 0.030 | 0.032 | 0.033 | 0.033  orc, e.g. hill orc
+    f    0.039 | 0.035 | 0.038 | 0.036 | 0.038 | 0.038 | 0.038  cat or other feline, e.g. kitten
+    ascend  0.035 | 0.030 | 0.029 | 0.033 | 0.036 | 0.031 | 0.029  ascension
+    u    0.033 | 0.035 | 0.035 | 0.035 | 0.040 | 0.035 | 0.039  unicorn or horse, e.g. pony
+    stone  0.031 | 0.033 | 0.034 | 0.034 | 0.023 | 0.030 | 0.012  turned to stone
+    S    0.023 | 0.022 | 0.021 | 0.023 | 0.014 | 0.024 | 0.011  snake, e.g. water moccasin
+    B    0.022 | 0.022 | 0.023 | 0.022 | 0.027 | 0.025 | 0.031  bat or bird, e.g. giant bat
+    &    0.021 | 0.024 | 0.022 | 0.023 | 0.018 | 0.023 | 0.010  major demon, e.g. water demon
+    Y    0.021 | 0.021 | 0.022 | 0.022 | 0.033 | 0.021 | 0.028  apelike creature, e.g. owlbear
+    other  0.020 | 0.019 | 0.019 | 0.020 | 0.014 | 0.018 | 0.010  something else
+    s    0.019 | 0.018 | 0.019 | 0.018 | 0.021 | 0.020 | 0.017  arachnid or centipede, e.g. giant spider
+    train rows: Val-Dwa 34795, other roles 69468
+
+== Dlvl 13-20: 604 rows, 205 players; mean loss dwa 2.4435  mix 2.4476  staged 2.4535  others 2.5282
+  mix - dwa: +0.0041 [-0.0246, +0.0341]; by true class (share of the difference, its rows' loss dwa / mix):
+    ascend n  136  0.0330 [0.0143, 0.0569]  0.641 / 0.787  ascension
+    other n   28  0.0096 [0.0030, 0.0186]  2.556 / 2.764  something else
+    water n   38  -0.0087 [-0.0190, +0.0002]  2.846 / 2.707  drowning
+    @   n   52  -0.0068 [-0.0123, -0.0020]  2.381 / 2.303  human or elf, e.g. watch captain
+    q   n   19  -0.0057 [-0.0142, +0.0008]  3.370 / 3.188  quadruped, e.g. rothe
+    monster n   42  -0.0054 [-0.0111, -0.0011]  2.510 / 2.433  another monster
+    ray n   34  0.0045 [0.0004, 0.0078]  2.603 / 2.683  a wand, ray or spell
+    stone n   45  -0.0041 [-0.0070, -0.0013]  2.270 / 2.215  turned to stone
+    a   n    8  -0.0037 [-0.0116, +0.0019]  3.578 / 3.301  ant or other insect, e.g. soldier ant
+    E   n   10  -0.0036 [-0.0093, +0.0001]  3.807 / 3.590  elemental, e.g. air elemental
+    d   n    6  0.0033 [0.0001, 0.0061]  4.419 / 4.751  dog or other canine, e.g. wolf
+    g   n   11  -0.0029 [-0.0082, +0.0017]  3.593 / 3.433  gremlin, e.g. gargoyle
+  staged - dwa: +0.0100 [-0.0227, +0.0470]; by true class (share of the difference, its rows' loss dwa / staged):
+    ascend n  136  +0.0136 [-0.0078, +0.0393]  0.641 / 0.701  ascension
+    poison n   12  +0.0055 [-0.0008, +0.0142]  3.555 / 3.832  poison
+    g   n   11  -0.0051 [-0.0117, -0.0011]  3.593 / 3.315  gremlin, e.g. gargoyle
+    water n   38  +0.0046 [-0.0044, +0.0163]  2.846 / 2.920  drowning
+    @   n   52  +0.0029 [-0.0012, +0.0082]  2.381 / 2.415  human or elf, e.g. watch captain
+    H   n   39  -0.0028 [-0.0095, +0.0030]  2.499 / 2.456  giant humanoid, e.g. minotaur
+    monster n   42  +0.0027 [-0.0010, +0.0058]  2.510 / 2.549  another monster
+    food n   27  +0.0027 [-0.0056, +0.0122]  3.072 / 3.131  starvation or choking
+    u   n    4  +0.0026 [-0.0009, +0.0085]  4.237 / 4.635  unicorn or horse, e.g. pony
+    M   n    4  -0.0021 [-0.0045, +0.0000]  4.167 / 3.845  mummy, e.g. human mummy
+    d   n    6  +0.0020 [-0.0008, +0.0046]  4.419 / 4.616  dog or other canine, e.g. wolf
+    q   n   19  -0.0019 [-0.0083, +0.0048]  3.370 / 3.309  quadruped, e.g. rothe
+  others - dwa: 0.0847 [0.0441, 0.1297]; by true class (share of the difference, its rows' loss dwa / others):
+    other n   28  0.0368 [0.0214, 0.0569]  2.556 / 3.350  something else
+    T   n   39  0.0245 [0.0137, 0.0412]  2.709 / 3.088  troll, e.g. troll
+    ray n   34  0.0227 [0.0142, 0.0335]  2.603 / 3.006  a wand, ray or spell
+    monster n   42  -0.0209 [-0.0276, -0.0132]  2.510 / 2.210  another monster
+    h   n   11  0.0195 [0.0074, 0.0366]  3.598 / 4.671  humanoid, e.g. dwarf
+    H   n   39  0.0155 [0.0031, 0.0253]  2.499 / 2.740  giant humanoid, e.g. minotaur
+    water n   38  0.0118 [0.0032, 0.0221]  2.846 / 3.033  drowning
+    stone n   45  0.0112 [0.0050, 0.0159]  2.270 / 2.420  turned to stone
+    f   n    6  -0.0080 [-0.0136, -0.0014]  4.845 / 4.038  cat or other feline, e.g. kitten
+    ascend n  136  -0.0078 [-0.0266, +0.0098]  0.641 / 0.606  ascension
+    &   n    5  -0.0071 [-0.0163, -0.0010]  4.239 / 3.384  major demon, e.g. water demon
+    E   n   10  -0.0064 [-0.0124, -0.0019]  3.807 / 3.423  elemental, e.g. air elemental
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    ascend  0.225 | 0.208 | 0.182 | 0.203 | 0.234 | 0.213 | 0.324  ascension
+    @    0.086 | 0.074 | 0.083 | 0.073 | 0.083 | 0.078 | 0.077  human or elf, e.g. watch captain
+    stone  0.075 | 0.091 | 0.100 | 0.096 | 0.079 | 0.089 | 0.053  turned to stone
+    monster  0.070 | 0.069 | 0.075 | 0.065 | 0.096 | 0.064 | 0.099  another monster
+    H    0.065 | 0.071 | 0.071 | 0.072 | 0.053 | 0.062 | 0.044  giant humanoid, e.g. minotaur
+    T    0.065 | 0.050 | 0.053 | 0.054 | 0.039 | 0.055 | 0.040  troll, e.g. troll
+    water  0.063 | 0.049 | 0.054 | 0.047 | 0.041 | 0.052 | 0.029  drowning
+    ray  0.056 | 0.071 | 0.068 | 0.074 | 0.052 | 0.070 | 0.051  a wand, ray or spell
+    other  0.046 | 0.053 | 0.048 | 0.051 | 0.026 | 0.052 | 0.014  something else
+    food  0.045 | 0.041 | 0.042 | 0.039 | 0.038 | 0.040 | 0.023  starvation or choking
+    q    0.031 | 0.026 | 0.030 | 0.028 | 0.025 | 0.024 | 0.029  quadruped, e.g. rothe
+    poison  0.020 | 0.022 | 0.023 | 0.021 | 0.025 | 0.023 | 0.013  poison
+    h    0.018 | 0.025 | 0.022 | 0.025 | 0.010 | 0.022 | 0.011  humanoid, e.g. dwarf
+    g    0.018 | 0.022 | 0.022 | 0.023 | 0.017 | 0.023 | 0.021  gremlin, e.g. gargoyle
+    E    0.017 | 0.014 | 0.017 | 0.014 | 0.025 | 0.018 | 0.028  elemental, e.g. air elemental
+    a    0.013 | 0.016 | 0.016 | 0.015 | 0.012 | 0.016 | 0.013  ant or other insect, e.g. soldier ant
+    '    0.012 | 0.006 | 0.006 | 0.006 | 0.008 | 0.008 | 0.007  golem, e.g. rope golem
+    d    0.010 | 0.009 | 0.008 | 0.008 | 0.007 | 0.008 | 0.008  dog or other canine, e.g. wolf
+    train rows: Val-Dwa 4886, other roles 6206
+
+== Dlvl 21-24: 368 rows, 151 players; mean loss dwa 2.0454  mix 2.0741  staged 2.0866  others 2.1499
+  mix - dwa: +0.0288 [-0.0133, +0.0670]; by true class (share of the difference, its rows' loss dwa / mix):
+    ascend n  129  0.0508 [0.0279, 0.0786]  0.543 / 0.687  ascension
+    water n   27  -0.0167 [-0.0254, -0.0088]  2.686 / 2.459  drowning
+    stone n   31  -0.0090 [-0.0186, -0.0016]  2.350 / 2.243  turned to stone
+    other n   23  0.0089 [0.0016, 0.0193]  2.382 / 2.524  something else
+    @   n   15  -0.0071 [-0.0157, -0.0021]  2.555 / 2.380  human or elf, e.g. watch captain
+    C   n    2  0.0055 [0.0000, 0.0153]  5.529 / 6.542  centaur, e.g. plains centaur
+    H   n   26  -0.0053 [-0.0133, +0.0034]  2.311 / 2.235  giant humanoid, e.g. minotaur
+    food n   18  -0.0049 [-0.0110, -0.0001]  3.000 / 2.900  starvation or choking
+    monster n   21  -0.0044 [-0.0105, -0.0005]  2.466 / 2.390  another monster
+    g   n    6  +0.0042 [-0.0010, +0.0121]  3.811 / 4.071  gremlin, e.g. gargoyle
+    ray n   20  +0.0040 [-0.0012, +0.0093]  2.536 / 2.609  a wand, ray or spell
+    s   n    1  0.0029 [0.0000, 0.0081]  7.416 / 8.496  arachnid or centipede, e.g. giant spider
+  staged - dwa: 0.0413 [0.0031, 0.0778]; by true class (share of the difference, its rows' loss dwa / staged):
+    ascend n  129  0.0302 [0.0076, 0.0599]  0.543 / 0.629  ascension
+    water n   27  -0.0114 [-0.0240, -0.0018]  2.686 / 2.530  drowning
+    H   n   26  -0.0069 [-0.0145, +0.0015]  2.311 / 2.213  giant humanoid, e.g. minotaur
+    other n   23  +0.0067 [-0.0035, +0.0173]  2.382 / 2.489  something else
+    g   n    6  0.0060 [0.0004, 0.0149]  3.811 / 4.180  gremlin, e.g. gargoyle
+    T   n   20  +0.0043 [-0.0041, +0.0114]  2.862 / 2.942  troll, e.g. troll
+    poison n    6  -0.0043 [-0.0114, +0.0007]  3.791 / 3.527  poison
+    C   n    2  0.0043 [0.0000, 0.0119]  5.529 / 6.319  centaur, e.g. plains centaur
+    monster n   21  +0.0037 [-0.0005, +0.0076]  2.466 / 2.531  another monster
+    f   n    2  0.0024 [0.0000, 0.0068]  5.607 / 6.054  cat or other feline, e.g. kitten
+    food n   18  +0.0020 [-0.0072, +0.0136]  3.000 / 3.041  starvation or choking
+    ray n   20  +0.0019 [-0.0031, +0.0101]  2.536 / 2.572  a wand, ray or spell
+  others - dwa: 0.1046 [0.0501, 0.1605]; by true class (share of the difference, its rows' loss dwa / others):
+    other n   23  0.0466 [0.0260, 0.0780]  2.382 / 3.127  something else
+    ascend n  129  -0.0288 [-0.0506, -0.0092]  0.543 / 0.460  ascension
+    h   n    7  0.0257 [0.0048, 0.0561]  3.743 / 5.095  humanoid, e.g. dwarf
+    T   n   20  0.0240 [0.0100, 0.0410]  2.862 / 3.304  troll, e.g. troll
+    ray n   20  0.0225 [0.0109, 0.0368]  2.536 / 2.950  a wand, ray or spell
+    monster n   21  -0.0179 [-0.0271, -0.0097]  2.466 / 2.153  another monster
+    water n   27  0.0164 [0.0060, 0.0307]  2.686 / 2.910  drowning
+    H   n   26  0.0142 [0.0010, 0.0278]  2.311 / 2.512  giant humanoid, e.g. minotaur
+    g   n    6  0.0088 [0.0009, 0.0208]  3.811 / 4.354  gremlin, e.g. gargoyle
+    @   n   15  -0.0087 [-0.0166, -0.0029]  2.555 / 2.342  human or elf, e.g. watch captain
+    poison n    6  -0.0080 [-0.0163, -0.0017]  3.791 / 3.303  poison
+    food n   18  +0.0049 [-0.0012, +0.0122]  3.000 / 3.101  starvation or choking
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    ascend  0.351 | 0.315 | 0.283 | 0.304 | 0.367 | 0.324 | 0.480  ascension
+    stone  0.084 | 0.089 | 0.101 | 0.091 | 0.084 | 0.086 | 0.055  turned to stone
+    water  0.073 | 0.053 | 0.065 | 0.061 | 0.045 | 0.068 | 0.032  drowning
+    H    0.071 | 0.068 | 0.076 | 0.081 | 0.055 | 0.077 | 0.052  giant humanoid, e.g. minotaur
+    other  0.062 | 0.067 | 0.062 | 0.064 | 0.032 | 0.066 | 0.017  something else
+    monster  0.057 | 0.062 | 0.067 | 0.059 | 0.082 | 0.054 | 0.080  another monster
+    ray  0.054 | 0.068 | 0.063 | 0.070 | 0.042 | 0.064 | 0.042  a wand, ray or spell
+    T    0.054 | 0.035 | 0.035 | 0.032 | 0.023 | 0.036 | 0.023  troll, e.g. troll
+    food  0.049 | 0.041 | 0.046 | 0.041 | 0.040 | 0.037 | 0.024  starvation or choking
+    @    0.041 | 0.057 | 0.071 | 0.058 | 0.076 | 0.052 | 0.061  human or elf, e.g. watch captain
+    h    0.019 | 0.028 | 0.025 | 0.031 | 0.008 | 0.028 | 0.009  humanoid, e.g. dwarf
+    g    0.016 | 0.014 | 0.008 | 0.012 | 0.006 | 0.012 | 0.011  gremlin, e.g. gargoyle
+    q    0.016 | 0.013 | 0.016 | 0.013 | 0.010 | 0.012 | 0.013  quadruped, e.g. rothe
+    poison  0.016 | 0.021 | 0.024 | 0.021 | 0.026 | 0.020 | 0.015  poison
+    '    0.005 | 0.003 | 0.003 | 0.003 | 0.005 | 0.005 | 0.006  golem, e.g. rope golem
+    f    0.005 | 0.002 | 0.002 | 0.001 | 0.002 | 0.001 | 0.002  cat or other feline, e.g. kitten
+    C    0.005 | 0.002 | 0.001 | 0.001 | 0.003 | 0.001 | 0.001  centaur, e.g. plains centaur
+    trap  0.003 | 0.004 | 0.002 | 0.004 | 0.002 | 0.005 | 0.002  a trap or a fall
+    train rows: Val-Dwa 3001, other roles 4038
+
+== Dlvl 25-29: 298 rows, 136 players; mean loss dwa 1.7538  mix 1.7835  staged 1.7830  others 1.8563
+  mix - dwa: +0.0297 [-0.0129, +0.0763]; by true class (share of the difference, its rows' loss dwa / mix):
+    ascend n  135  0.0414 [0.0179, 0.0674]  0.392 / 0.483  ascension
+    water n   18  -0.0159 [-0.0261, -0.0065]  2.908 / 2.644  drowning
+    other n   22  0.0153 [0.0052, 0.0275]  2.472 / 2.679  something else
+    stone n   15  -0.0105 [-0.0238, -0.0030]  2.484 / 2.275  turned to stone
+    H   n   21  -0.0095 [-0.0208, +0.0029]  2.262 / 2.127  giant humanoid, e.g. minotaur
+    @   n   11  -0.0089 [-0.0204, -0.0013]  2.726 / 2.484  human or elf, e.g. watch captain
+    food n   13  -0.0059 [-0.0108, -0.0012]  3.083 / 2.948  starvation or choking
+    B   n    1  0.0057 [0.0000, 0.0198]  5.575 / 7.264  bat or bird, e.g. giant bat
+    T   n   10  +0.0052 [-0.0005, +0.0116]  2.782 / 2.936  troll, e.g. troll
+    ray n   15  +0.0045 [-0.0086, +0.0167]  2.513 / 2.603  a wand, ray or spell
+    '   n    2  0.0039 [0.0000, 0.0105]  4.812 / 5.389  golem, e.g. rope golem
+    g   n    2  0.0038 [0.0000, 0.0111]  3.549 / 4.122  gremlin, e.g. gargoyle
+  staged - dwa: +0.0293 [-0.0135, +0.0683]; by true class (share of the difference, its rows' loss dwa / staged):
+    ascend n  135  0.0432 [0.0199, 0.0705]  0.392 / 0.487  ascension
+    H   n   21  -0.0156 [-0.0270, -0.0059]  2.262 / 2.041  giant humanoid, e.g. minotaur
+    T   n   10  0.0138 [0.0050, 0.0253]  2.782 / 3.192  troll, e.g. troll
+    water n   18  -0.0124 [-0.0247, -0.0030]  2.908 / 2.703  drowning
+    stone n   15  -0.0080 [-0.0192, -0.0010]  2.484 / 2.325  turned to stone
+    other n   22  +0.0072 [-0.0023, +0.0214]  2.472 / 2.569  something else
+    ray n   15  -0.0050 [-0.0140, +0.0028]  2.513 / 2.413  a wand, ray or spell
+    '   n    2  0.0049 [0.0000, 0.0129]  4.812 / 5.545  golem, e.g. rope golem
+    g   n    2  -0.0041 [-0.0191, +0.0038]  3.549 / 2.942  gremlin, e.g. gargoyle
+    q   n    2  +0.0025 [-0.0058, +0.0109]  6.354 / 6.721  quadruped, e.g. rothe
+    monster n   12  +0.0024 [-0.0010, +0.0070]  2.401 / 2.461  another monster
+    poison n    4  -0.0024 [-0.0077, +0.0016]  3.676 / 3.500  poison
+  others - dwa: 0.1025 [0.0436, 0.1832]; by true class (share of the difference, its rows' loss dwa / others):
+    other n   22  0.0537 [0.0265, 0.0886]  2.472 / 3.198  something else
+    h   n    7  0.0385 [0.0096, 0.0776]  3.494 / 5.133  humanoid, e.g. dwarf
+    ray n   15  0.0191 [0.0048, 0.0410]  2.513 / 2.892  a wand, ray or spell
+    T   n   10  0.0178 [0.0075, 0.0335]  2.782 / 3.314  troll, e.g. troll
+    ascend n  135  -0.0118 [-0.0320, +0.0076]  0.392 / 0.366  ascension
+    water n   18  0.0110 [0.0028, 0.0225]  2.908 / 3.089  drowning
+    monster n   12  -0.0106 [-0.0176, -0.0041]  2.401 / 2.138  another monster
+    @   n   11  -0.0100 [-0.0253, +0.0009]  2.726 / 2.456  human or elf, e.g. watch captain
+    H   n   21  +0.0086 [-0.0031, +0.0196]  2.262 / 2.384  giant humanoid, e.g. minotaur
+    food n   13  0.0077 [0.0022, 0.0152]  3.083 / 3.260  starvation or choking
+    &   n    3  -0.0074 [-0.0178, +0.0000]  3.884 / 3.150  major demon, e.g. water demon
+    q   n    2  -0.0064 [-0.0151, +0.0000]  6.354 / 5.397  quadruped, e.g. rothe
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    ascend  0.453 | 0.424 | 0.395 | 0.410 | 0.449 | 0.420 | 0.563  ascension
+    other  0.074 | 0.062 | 0.054 | 0.062 | 0.030 | 0.063 | 0.020  something else
+    H    0.070 | 0.055 | 0.066 | 0.065 | 0.049 | 0.065 | 0.044  giant humanoid, e.g. minotaur
+    water  0.060 | 0.040 | 0.052 | 0.047 | 0.035 | 0.051 | 0.025  drowning
+    stone  0.050 | 0.074 | 0.087 | 0.077 | 0.070 | 0.072 | 0.051  turned to stone
+    ray  0.050 | 0.057 | 0.053 | 0.062 | 0.039 | 0.058 | 0.033  a wand, ray or spell
+    food  0.044 | 0.034 | 0.039 | 0.035 | 0.033 | 0.034 | 0.021  starvation or choking
+    monster  0.040 | 0.056 | 0.061 | 0.058 | 0.076 | 0.056 | 0.072  another monster
+    @    0.037 | 0.048 | 0.060 | 0.044 | 0.066 | 0.040 | 0.051  human or elf, e.g. watch captain
+    T    0.034 | 0.025 | 0.020 | 0.019 | 0.017 | 0.016 | 0.014  troll, e.g. troll
+    h    0.023 | 0.026 | 0.021 | 0.029 | 0.007 | 0.029 | 0.006  humanoid, e.g. dwarf
+    poison  0.013 | 0.021 | 0.025 | 0.023 | 0.026 | 0.023 | 0.016  poison
+    &    0.010 | 0.022 | 0.025 | 0.023 | 0.040 | 0.024 | 0.029  major demon, e.g. water demon
+    g    0.007 | 0.011 | 0.004 | 0.010 | 0.006 | 0.010 | 0.006  gremlin, e.g. gargoyle
+    '    0.007 | 0.003 | 0.002 | 0.002 | 0.004 | 0.003 | 0.005  golem, e.g. rope golem
+    q    0.007 | 0.009 | 0.011 | 0.007 | 0.008 | 0.007 | 0.008  quadruped, e.g. rothe
+    f    0.003 | 0.001 | 0.001 | 0.001 | 0.002 | 0.001 | 0.001  cat or other feline, e.g. kitten
+    trap  0.003 | 0.003 | 0.002 | 0.003 | 0.002 | 0.005 | 0.001  a trap or a fall
+    train rows: Val-Dwa 2504, other roles 3548
+
+== Dlvl 30-99: 168 rows, 89 players; mean loss dwa 0.8784  mix 0.8821  staged 0.8908  others 0.9116
+  mix - dwa: +0.0037 [-0.0536, +0.0659]; by true class (share of the difference, its rows' loss dwa / mix):
+    ascend n  133  0.0793 [0.0496, 0.1228]  0.154 / 0.254  ascension
+    H   n    1  -0.0147 [-0.0504, +0.0000]  5.952 / 3.485  giant humanoid, e.g. minotaur
+    q   n    1  -0.0142 [-0.0330, +0.0000]  9.123 / 6.740  quadruped, e.g. rothe
+    water n    4  -0.0105 [-0.0273, +0.0000]  3.495 / 3.054  drowning
+    stone n    3  -0.0095 [-0.0310, +0.0000]  3.035 / 2.503  turned to stone
+    food n    3  -0.0092 [-0.0219, +0.0000]  4.058 / 3.545  starvation or choking
+    ray n    5  0.0088 [0.0006, 0.0224]  2.665 / 2.961  a wand, ray or spell
+    &   n    2  -0.0072 [-0.0206, +0.0000]  3.170 / 2.562  major demon, e.g. water demon
+    h   n    3  -0.0072 [-0.0211, +0.0011]  4.321 / 3.918  humanoid, e.g. dwarf
+    poison n    3  -0.0052 [-0.0183, +0.0028]  3.117 / 2.825  poison
+    other n    3  -0.0021 [-0.0134, +0.0057]  3.285 / 3.165  something else
+    trap n    1  -0.0020 [-0.0072, +0.0000]  5.906 / 5.574  a trap or a fall
+  staged - dwa: +0.0124 [-0.0387, +0.0790]; by true class (share of the difference, its rows' loss dwa / staged):
+    ascend n  133  +0.0292 [-0.0080, +0.0705]  0.154 / 0.191  ascension
+    poison n    3  -0.0084 [-0.0262, +0.0004]  3.117 / 2.648  poison
+    q   n    1  -0.0079 [-0.0184, +0.0000]  9.123 / 7.793  quadruped, e.g. rothe
+    h   n    3  -0.0072 [-0.0228, +0.0017]  4.321 / 3.920  humanoid, e.g. dwarf
+    H   n    1  0.0059 [0.0000, 0.0202]  5.952 / 6.941  giant humanoid, e.g. minotaur
+    trap n    1  -0.0044 [-0.0160, +0.0000]  5.906 / 5.167  a trap or a fall
+    @   n    3  +0.0041 [-0.0049, +0.0184]  3.807 / 4.039  human or elf, e.g. watch captain
+    &   n    2  -0.0036 [-0.0113, +0.0000]  3.170 / 2.867  major demon, e.g. water demon
+    other n    3  +0.0031 [-0.0020, +0.0105]  3.285 / 3.458  something else
+    stone n    3  +0.0018 [-0.0192, +0.0263]  3.035 / 3.136  turned to stone
+    ray n    5  +0.0014 [-0.0207, +0.0265]  2.665 / 2.713  a wand, ray or spell
+    food n    3  -0.0008 [-0.0086, +0.0067]  4.058 / 4.012  starvation or choking
+  others - dwa: +0.0332 [-0.0167, +0.1012]; by true class (share of the difference, its rows' loss dwa / others):
+    ascend n  133  0.0540 [0.0238, 0.0792]  0.154 / 0.222  ascension
+    ray n    5  0.0189 [0.0007, 0.0541]  2.665 / 3.300  a wand, ray or spell
+    h   n    3  0.0173 [0.0000, 0.0455]  4.321 / 5.288  humanoid, e.g. dwarf
+    q   n    1  -0.0165 [-0.0383, +0.0000]  9.123 / 6.350  quadruped, e.g. rothe
+    H   n    1  -0.0140 [-0.0481, +0.0000]  5.952 / 3.596  giant humanoid, e.g. minotaur
+    poison n    3  -0.0080 [-0.0248, +0.0013]  3.117 / 2.668  poison
+    &   n    2  -0.0068 [-0.0199, +0.0000]  3.170 / 2.600  major demon, e.g. water demon
+    @   n    3  -0.0062 [-0.0171, +0.0008]  3.807 / 3.462  human or elf, e.g. watch captain
+    other n    3  0.0053 [0.0000, 0.0161]  3.285 / 3.582  something else
+    food n    3  -0.0039 [-0.0119, +0.0014]  4.058 / 3.843  starvation or choking
+    water n    4  -0.0027 [-0.0158, +0.0091]  3.495 / 3.382  drowning
+    stone n    3  -0.0023 [-0.0176, +0.0092]  3.035 / 2.908  turned to stone
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    ascend  0.792 | 0.788 | 0.714 | 0.763 | 0.738 | 0.708 | 0.797  ascension
+    ray  0.030 | 0.019 | 0.022 | 0.020 | 0.019 | 0.019 | 0.011  a wand, ray or spell
+    water  0.024 | 0.013 | 0.022 | 0.014 | 0.016 | 0.013 | 0.006  drowning
+    @    0.018 | 0.014 | 0.022 | 0.017 | 0.030 | 0.022 | 0.023  human or elf, e.g. watch captain
+    stone  0.018 | 0.037 | 0.050 | 0.036 | 0.038 | 0.047 | 0.029  turned to stone
+    food  0.018 | 0.014 | 0.021 | 0.015 | 0.018 | 0.014 | 0.013  starvation or choking
+    poison  0.018 | 0.015 | 0.021 | 0.018 | 0.022 | 0.033 | 0.019  poison
+    h    0.018 | 0.010 | 0.011 | 0.016 | 0.003 | 0.018 | 0.004  humanoid, e.g. dwarf
+    monster  0.018 | 0.020 | 0.026 | 0.023 | 0.028 | 0.028 | 0.026  another monster
+    other  0.018 | 0.030 | 0.035 | 0.036 | 0.021 | 0.033 | 0.012  something else
+    &    0.012 | 0.015 | 0.026 | 0.016 | 0.034 | 0.032 | 0.035  major demon, e.g. water demon
+    trap  0.006 | 0.001 | 0.001 | 0.001 | 0.001 | 0.003 | 0.001  a trap or a fall
+    q    0.006 | 0.001 | 0.002 | 0.001 | 0.002 | 0.002 | 0.002  quadruped, e.g. rothe
+    H    0.006 | 0.013 | 0.016 | 0.013 | 0.014 | 0.014 | 0.011  giant humanoid, e.g. minotaur
+    u    0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000  unicorn or horse, e.g. pony
+    a    0.000 | 0.000 | 0.000 | 0.001 | 0.001 | 0.000 | 0.001  ant or other insect, e.g. soldier ant
+    s    0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000 | 0.000  arachnid or centipede, e.g. giant spider
+    Z    0.000 | 0.000 | 0.000 | 0.001 | 0.001 | 0.001 | 0.000  zombie, e.g. elf zombie
+    train rows: Val-Dwa 1430, other roles 2481
+
+== Dlvl 21-29: 666 rows, 155 players; mean loss dwa 1.9149  mix 1.9441  staged 1.9508  others 2.0185
+  mix - dwa: +0.0292 [-0.0015, +0.0632]; by true class (share of the difference, its rows' loss dwa / mix):
+    ascend n  264  0.0466 [0.0241, 0.0703]  0.465 / 0.583  ascension
+    water n   45  -0.0163 [-0.0243, -0.0089]  2.775 / 2.533  drowning
+    other n   45  0.0118 [0.0040, 0.0215]  2.426 / 2.600  something else
+    stone n   46  -0.0097 [-0.0199, -0.0029]  2.394 / 2.254  turned to stone
+    @   n   26  -0.0079 [-0.0145, -0.0027]  2.627 / 2.424  human or elf, e.g. watch captain
+    H   n   47  -0.0072 [-0.0147, +0.0010]  2.289 / 2.187  giant humanoid, e.g. minotaur
+    food n   31  -0.0053 [-0.0104, -0.0014]  3.035 / 2.920  starvation or choking
+    ray n   35  +0.0042 [-0.0034, +0.0120]  2.526 / 2.606  a wand, ray or spell
+    C   n    3  0.0042 [0.0000, 0.0116]  5.583 / 6.511  centaur, e.g. plains centaur
+    g   n    8  +0.0041 [-0.0000, +0.0105]  3.746 / 4.083  gremlin, e.g. gargoyle
+    B   n    2  0.0030 [0.0000, 0.0107]  6.514 / 7.527  bat or bird, e.g. giant bat
+    monster n   33  -0.0027 [-0.0065, +0.0003]  2.442 / 2.387  another monster
+  staged - dwa: 0.0359 [0.0063, 0.0630]; by true class (share of the difference, its rows' loss dwa / staged):
+    ascend n  264  0.0360 [0.0154, 0.0596]  0.465 / 0.556  ascension
+    water n   45  -0.0118 [-0.0226, -0.0032]  2.775 / 2.600  drowning
+    H   n   47  -0.0108 [-0.0184, -0.0031]  2.289 / 2.136  giant humanoid, e.g. minotaur
+    T   n   30  0.0086 [0.0019, 0.0157]  2.835 / 3.025  troll, e.g. troll
+    other n   45  +0.0069 [-0.0004, +0.0148]  2.426 / 2.528  something else
+    stone n   46  -0.0046 [-0.0112, +0.0015]  2.394 / 2.327  turned to stone
+    poison n   10  -0.0034 [-0.0088, +0.0002]  3.745 / 3.516  poison
+    monster n   33  +0.0031 [-0.0002, +0.0069]  2.442 / 2.506  another monster
+    C   n    3  0.0026 [0.0000, 0.0072]  5.583 / 6.155  centaur, e.g. plains centaur
+    '   n    4  0.0023 [0.0000, 0.0071]  5.091 / 5.466  golem, e.g. rope golem
+    f   n    3  0.0021 [0.0000, 0.0068]  5.884 / 6.355  cat or other feline, e.g. kitten
+    q   n    8  +0.0017 [-0.0039, +0.0068]  4.746 / 4.887  quadruped, e.g. rothe
+  others - dwa: 0.1036 [0.0498, 0.1664]; by true class (share of the difference, its rows' loss dwa / others):
+    other n   45  0.0497 [0.0266, 0.0796]  2.426 / 3.162  something else
+    h   n   14  0.0314 [0.0081, 0.0670]  3.618 / 5.114  humanoid, e.g. dwarf
+    T   n   30  0.0212 [0.0094, 0.0375]  2.835 / 3.307  troll, e.g. troll
+    ascend n  264  -0.0212 [-0.0398, -0.0044]  0.465 / 0.412  ascension
+    ray n   35  0.0210 [0.0098, 0.0389]  2.526 / 2.925  a wand, ray or spell
+    monster n   33  -0.0146 [-0.0224, -0.0078]  2.442 / 2.147  another monster
+    water n   45  0.0140 [0.0052, 0.0265]  2.775 / 2.982  drowning
+    H   n   47  0.0117 [0.0013, 0.0232]  2.289 / 2.455  giant humanoid, e.g. minotaur
+    @   n   26  -0.0092 [-0.0168, -0.0028]  2.627 / 2.390  human or elf, e.g. watch captain
+    poison n   10  -0.0068 [-0.0133, -0.0020]  3.745 / 3.295  poison
+    food n   31  0.0062 [0.0011, 0.0117]  3.035 / 3.168  starvation or choking
+    g   n    8  +0.0058 [-0.0029, +0.0193]  3.746 / 4.225  gremlin, e.g. gargoyle
+  share of each class: observed | predicted dwa | mix | staged | others | train Val-Dwa | train other roles
+    ascend  0.396 | 0.364 | 0.333 | 0.351 | 0.404 | 0.368 | 0.519  ascension
+    H    0.071 | 0.062 | 0.072 | 0.074 | 0.052 | 0.071 | 0.048  giant humanoid, e.g. minotaur
+    stone  0.069 | 0.082 | 0.095 | 0.085 | 0.077 | 0.080 | 0.054  turned to stone
+    other  0.068 | 0.065 | 0.058 | 0.063 | 0.031 | 0.064 | 0.018  something else
+    water  0.068 | 0.048 | 0.059 | 0.054 | 0.041 | 0.060 | 0.029  drowning
+    ray  0.053 | 0.063 | 0.058 | 0.066 | 0.041 | 0.061 | 0.038  a wand, ray or spell
+    monster  0.050 | 0.059 | 0.064 | 0.058 | 0.080 | 0.055 | 0.076  another monster
+    food  0.047 | 0.038 | 0.043 | 0.038 | 0.037 | 0.036 | 0.023  starvation or choking
+    T    0.045 | 0.030 | 0.028 | 0.026 | 0.020 | 0.027 | 0.019  troll, e.g. troll
+    @    0.039 | 0.053 | 0.066 | 0.052 | 0.071 | 0.047 | 0.057  human or elf, e.g. watch captain
+    h    0.021 | 0.027 | 0.023 | 0.030 | 0.008 | 0.029 | 0.007  humanoid, e.g. dwarf
+    poison  0.015 | 0.021 | 0.024 | 0.022 | 0.026 | 0.022 | 0.015  poison
+    q    0.012 | 0.011 | 0.014 | 0.010 | 0.009 | 0.010 | 0.011  quadruped, e.g. rothe
+    g    0.012 | 0.013 | 0.006 | 0.011 | 0.006 | 0.011 | 0.009  gremlin, e.g. gargoyle
+    '    0.006 | 0.003 | 0.002 | 0.003 | 0.004 | 0.004 | 0.005  golem, e.g. rope golem
+    &    0.006 | 0.022 | 0.024 | 0.022 | 0.041 | 0.022 | 0.029  major demon, e.g. water demon
+    C    0.005 | 0.002 | 0.001 | 0.001 | 0.002 | 0.001 | 0.001  centaur, e.g. plains centaur
+    f    0.005 | 0.002 | 0.002 | 0.001 | 0.002 | 0.001 | 0.002  cat or other feline, e.g. kitten
+    train rows: Val-Dwa 5505, other roles 7586

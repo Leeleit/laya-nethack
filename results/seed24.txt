@@ -1,0 +1,165 @@
+human_dwa20t: 25076 rows; models early=c17e, early1=c17es1
+
+==== ttd: 25015 rows; T on all rows early 0.85  early1 0.90
+  Dlvl 1-4: 5929 rows, 669 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    early   raw 2.6522  T-all 2.6543  T-band 2.6524 (T 0.96)
+    early1  raw 2.6545  T-all 2.6564  T-band 2.6549 (T 1.01)
+    early1 - early: raw +0.0023 [-0.0030, +0.0067]  T-all +0.0021 [-0.0045, +0.0075]  T-band +0.0026 [-0.0035, +0.0074]  | val +0.0011 [-0.0055, +0.0081]  | test +0.0037 [-0.0062, +0.0098]
+    P(ttd <= 1000) mean: observed 0.229  early 0.231  early1 0.244
+  Dlvl 5-12: 5281 rows, 483 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    early   raw 2.4918  T-all 2.4916  T-band 2.4902 (T 0.91)
+    early1  raw 2.4984  T-all 2.4997  T-band 2.4986 (T 0.96)
+    early1 - early: raw +0.0066 [-0.0028, +0.0130]  T-all +0.0081 [-0.0023, +0.0155]  T-band +0.0085 [-0.0021, +0.0160]  | val +0.0038 [-0.0071, +0.0142]  | test +0.0120 [-0.0039, +0.0200]
+    P(ttd <= 1000) mean: observed 0.246  early 0.239  early1 0.254
+  Dlvl 13-20: 6274 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    early   raw 2.1094  T-all 2.1037  T-band 2.1061 (T 0.85)
+    early1  raw 2.0998  T-all 2.1016  T-band 2.1032 (T 0.94)
+    early1 - early: raw -0.0097 [-0.0184, +0.0042]  T-all -0.0021 [-0.0116, +0.0099]  T-band -0.0029 [-0.0151, +0.0084]  | val +0.0068 [-0.0096, +0.0215]  | test -0.0115 [-0.0344, -0.0004]
+    P(ttd <= 1000) mean: observed 0.066  early 0.059  early1 0.058
+  Dlvl 21-24: 1998 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    early   raw 2.1822  T-all 2.1815  T-band 2.1884 (T 0.88)
+    early1  raw 2.1800  T-all 2.1836  T-band 2.1896 (T 0.96)
+    early1 - early: raw -0.0022 [-0.0206, +0.0208]  T-all +0.0021 [-0.0180, +0.0265]  T-band +0.0011 [-0.0181, +0.0239]  | val +0.0115 [-0.0143, +0.0331]  | test -0.0110 [-0.0345, +0.0297]
+    P(ttd <= 1000) mean: observed 0.103  early 0.081  early1 0.086
+  Dlvl 25-29: 1825 rows, 136 players (the top one 0.14 of rows), ascended 0.55 (val 0.65, test 0.40)
+    early   raw 1.9870  T-all 1.9881  T-band 1.9931 (T 0.90)
+    early1  raw 1.9659  T-all 1.9660  T-band 1.9724 (T 0.91)
+    early1 - early: raw -0.0210 [-0.0461, +0.0026]  T-all -0.0221 [-0.0532, +0.0066]  T-band -0.0206 [-0.0466, +0.0038]  | val +0.0005 [-0.0316, +0.0223]  | test -0.0557 [-0.0953, -0.0207]
+    P(ttd <= 1000) mean: observed 0.090  early 0.046  early1 0.055
+  Dlvl 30+: 3708 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    early   raw 1.7212  T-all 1.6937  T-band 1.6759 (T 0.70)
+    early1  raw 1.7051  T-all 1.6879  T-band 1.6624 (T 0.70)
+    early1 - early: raw -0.0161 [-0.0524, +0.0167]  T-all -0.0058 [-0.0485, +0.0302]  T-band -0.0135 [-0.0647, +0.0372]  | val -0.0009 [-0.0513, +0.0562]  | test -0.0428 [-0.1301, +0.0465]
+    P(ttd <= 1000) mean: observed 0.012  early 0.010  early1 0.006
+
+==== depth: 25076 rows; T on all rows early 0.93  early1 1.00
+  Dlvl 1-4: 5946 rows, 674 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    early   raw 2.1624  T-all 2.1640  T-band 2.1629 (T 1.00)
+    early1  raw 2.1627  T-all 2.1632  T-band 2.1629 (T 1.05)
+    early1 - early: raw +0.0004 [-0.0048, +0.0047]  T-all -0.0008 [-0.0054, +0.0035]  T-band -0.0000 [-0.0045, +0.0039]  | val -0.0000 [-0.0068, +0.0066]  | test -0.0000 [-0.0068, +0.0044]
+    P(no deeper) mean: observed 0.107  early 0.113  early1 0.113
+    P(no deeper) - E (E 0.112, observed 0.107; val / test after each): early +0.001 [-0.007, +0.006] val +0.002 [-0.003, +0.007] test +0.000 [-0.013, +0.007]; early1 +0.001 [-0.007, +0.006] val +0.001 [-0.004, +0.006] test +0.001 [-0.011, +0.008]
+  Dlvl 5-12: 5292 rows, 486 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    early   raw 2.0154  T-all 2.0173  T-band 2.0161 (T 0.97)
+    early1  raw 2.0193  T-all 2.0202  T-band 2.0201 (T 1.02)
+    early1 - early: raw +0.0039 [-0.0055, +0.0107]  T-all +0.0029 [-0.0057, +0.0090]  T-band +0.0039 [-0.0046, +0.0103]  | val +0.0019 [-0.0079, +0.0122]  | test +0.0055 [-0.0088, +0.0119]
+    P(no deeper) mean: observed 0.215  early 0.208  early1 0.204
+    P(no deeper) - E (E 0.233, observed 0.215; val / test after each): early -0.025 [-0.041, -0.006] val -0.023 [-0.037, -0.009] test -0.027 [-0.049, +0.003]; early1 -0.028 [-0.045, -0.009] val -0.024 [-0.038, -0.010] test -0.031 [-0.055, -0.001]
+  Dlvl 13-20: 6282 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    early   raw 1.8043  T-all 1.8065  T-band 1.8083 (T 0.95)
+    early1  raw 1.8061  T-all 1.8083  T-band 1.8100 (T 1.02)
+    early1 - early: raw +0.0018 [-0.0227, +0.0197]  T-all +0.0018 [-0.0159, +0.0175]  T-band +0.0017 [-0.0161, +0.0170]  | val -0.0053 [-0.0270, +0.0234]  | test +0.0080 [-0.0157, +0.0236]
+    P(no deeper) mean: observed 0.083  early 0.089  early1 0.082
+    P(no deeper) - E (E 0.086, observed 0.083; val / test after each): early +0.003 [-0.012, +0.019] val -0.000 [-0.018, +0.018] test +0.007 [-0.016, +0.028]; early1 -0.004 [-0.021, +0.014] val -0.003 [-0.020, +0.015] test -0.005 [-0.029, +0.022]
+  Dlvl 21-24: 2001 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    early   raw 1.6587  T-all 1.6480  T-band 1.6410 (T 0.79)
+    early1  raw 1.6596  T-all 1.6609  T-band 1.6581 (T 0.88)
+    early1 - early: raw +0.0010 [-0.0258, +0.0290]  T-all +0.0129 [-0.0098, +0.0380]  T-band +0.0171 [-0.0067, +0.0466]  | val +0.0162 [-0.0220, +0.0641]  | test +0.0181 [-0.0102, +0.0612]
+    P(no deeper) mean: observed 0.095  early 0.109  early1 0.100
+    P(no deeper) - E (E 0.097, observed 0.095; val / test after each): early +0.011 [-0.008, +0.037] val +0.006 [-0.015, +0.031] test +0.017 [-0.007, +0.057]; early1 +0.003 [-0.020, +0.030] val +0.005 [-0.018, +0.030] test +0.000 [-0.031, +0.042]
+  Dlvl 25-29: 1830 rows, 136 players (the top one 0.13 of rows), ascended 0.56 (val 0.65, test 0.40)
+    early   raw 1.4641  T-all 1.4573  T-band 1.4585 (T 0.85)
+    early1  raw 1.4787  T-all 1.4811  T-band 1.4867 (T 0.94)
+    early1 - early: raw +0.0146 [-0.0166, +0.0439]  T-all +0.0238 [-0.0024, +0.0480]  T-band 0.0282 [0.0004, 0.0543]  | val +0.0222 [-0.0099, +0.0646]  | test +0.0383 [-0.0133, +0.0733]
+    P(no deeper) mean: observed 0.130  early 0.129  early1 0.123
+    P(no deeper) - E (E 0.124, observed 0.130; val / test after each): early +0.005 [-0.022, +0.036] val -0.008 [-0.033, +0.022] test +0.028 [-0.012, +0.073]; early1 -0.001 [-0.025, +0.026] val -0.008 [-0.034, +0.024] test +0.011 [-0.022, +0.053]
+  Dlvl 30+: 3725 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    early   raw 1.2673  T-all 1.2627  T-band 1.2631 (T 0.89)
+    early1  raw 1.2756  T-all 1.2760  T-band 1.2762 (T 0.99)
+    early1 - early: raw +0.0083 [-0.0082, +0.0324]  T-all +0.0134 [-0.0024, +0.0370]  T-band +0.0131 [-0.0030, +0.0362]  | val +0.0018 [-0.0104, +0.0222]  | test +0.0398 [-0.0054, +0.0776]
+    P(no deeper) mean: observed 0.089  early 0.132  early1 0.127
+    P(no deeper) - E (E 0.118, observed 0.089; val / test after each): early +0.014 [-0.014, +0.040] val +0.009 [-0.024, +0.038] test +0.025 [-0.017, +0.064]; early1 +0.009 [-0.019, +0.034] val +0.004 [-0.030, +0.035] test +0.020 [-0.021, +0.059]
+
+==== end: 25076 rows; T on all rows early 0.94  early1 1.02
+  Dlvl 1-4: 5946 rows, 674 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    early   raw 3.2261  T-all 3.2274  T-band 3.2266 (T 0.99)
+    early1  raw 3.2297  T-all 3.2301  T-band 3.2297 (T 1.04)
+    early1 - early: raw +0.0036 [-0.0023, +0.0082]  T-all +0.0027 [-0.0037, +0.0082]  T-band +0.0031 [-0.0029, +0.0079]  | val +0.0028 [-0.0046, +0.0103]  | test +0.0033 [-0.0068, +0.0087]
+    end, games that did not ascend (5712 rows): T-band early 3.2902  early1 3.2928; cause given death early 3.2731  early1 3.2756
+      early1 - early: T-band +0.0026 [-0.0034, +0.0071]  cause given death +0.0025 [-0.0029, +0.0067]
+    P(ascend) mean: observed 0.039  early 0.028  early1 0.028
+    P(ascend) - E (E 0.026, observed 0.039; val / test after each): early +0.003 [-0.006, +0.015] val +0.010 [-0.007, +0.034] test -0.003 [-0.009, -0.000]; early1 +0.003 [-0.006, +0.015] val +0.009 [-0.007, +0.033] test -0.003 [-0.008, +0.001]
+  Dlvl 5-12: 5292 rows, 486 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    early   raw 3.0362  T-all 3.0398  T-band 3.0380 (T 1.01)
+    early1  raw 3.0470  T-all 3.0480  T-band 3.0472 (T 1.07)
+    early1 - early: raw +0.0108 [-0.0016, +0.0200]  T-all +0.0082 [-0.0044, +0.0168]  T-band +0.0092 [-0.0026, +0.0174]  | val 0.0144 [0.0051, 0.0239]  | test +0.0053 [-0.0188, +0.0178]
+    end, games that did not ascend (4800 rows): T-band early 3.2216  early1 3.2288; cause given death early 3.1759  early1 3.1825
+      early1 - early: T-band +0.0072 [-0.0049, +0.0163]  cause given death +0.0066 [-0.0025, +0.0133]
+    P(ascend) mean: observed 0.093  early 0.074  early1 0.074
+    P(ascend) - E (E 0.071, observed 0.093; val / test after each): early +0.003 [-0.013, +0.021] val +0.016 [-0.011, +0.051] test -0.007 [-0.020, +0.000]; early1 +0.003 [-0.012, +0.020] val +0.014 [-0.012, +0.046] test -0.005 [-0.020, +0.003]
+  Dlvl 13-20: 6282 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    early   raw 2.3061  T-all 2.3035  T-band 2.3053 (T 0.90)
+    early1  raw 2.3180  T-all 2.3218  T-band 2.3274 (T 0.98)
+    early1 - early: raw +0.0119 [-0.0343, +0.0455]  T-all +0.0183 [-0.0231, +0.0484]  T-band +0.0221 [-0.0230, +0.0554]  | val +0.0188 [-0.0117, +0.0570]  | test +0.0250 [-0.0765, +0.0703]
+    end, games that did not ascend (4633 rows): T-band early 2.8969  early1 2.9217; cause given death early 2.7610  early1 2.7848
+      early1 - early: T-band +0.0249 [-0.0406, +0.0631]  cause given death +0.0238 [-0.0193, +0.0490]
+    P(ascend) mean: observed 0.262  early 0.232  early1 0.233
+    P(ascend) - E (E 0.206, observed 0.262; val / test after each): early +0.026 [-0.017, +0.082] val +0.055 [-0.020, +0.123] test -0.000 [-0.052, +0.040]; early1 +0.027 [-0.017, +0.082] val +0.052 [-0.024, +0.120] test +0.004 [-0.049, +0.036]
+  Dlvl 21-24: 2001 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    early   raw 2.0224  T-all 2.0151  T-band 2.0127 (T 0.85)
+    early1  raw 2.0058  T-all 2.0085  T-band 2.0075 (T 0.94)
+    early1 - early: raw -0.0166 [-0.0546, +0.0176]  T-all -0.0067 [-0.0429, +0.0258]  T-band -0.0052 [-0.0442, +0.0296]  | val +0.0068 [-0.0379, +0.0572]  | test -0.0194 [-0.1071, +0.0267]
+    end, games that did not ascend (1255 rows): T-band early 2.8747  early1 2.8912; cause given death early 2.6645  early1 2.6587
+      early1 - early: T-band +0.0164 [-0.0399, +0.0569]  cause given death -0.0057 [-0.0468, +0.0240]
+    P(ascend) mean: observed 0.373  early 0.327  early1 0.344
+    P(ascend) - E (E 0.313, observed 0.373; val / test after each): early +0.014 [-0.040, +0.072] val +0.050 [-0.037, +0.130] test -0.028 [-0.079, +0.012]; early1 +0.031 [-0.022, +0.086] val +0.064 [-0.020, +0.143] test -0.007 [-0.062, +0.041]
+  Dlvl 25-29: 1830 rows, 136 players (the top one 0.13 of rows), ascended 0.56 (val 0.65, test 0.40)
+    early   raw 1.5792  T-all 1.5762  T-band 1.5796 (T 0.91)
+    early1  raw 1.5526  T-all 1.5564  T-band 1.5582 (T 0.97)
+    early1 - early: raw -0.0266 [-0.0653, +0.0118]  T-all -0.0198 [-0.0578, +0.0212]  T-band -0.0213 [-0.0585, +0.0202]  | val +0.0093 [-0.0251, +0.0545]  | test -0.0725 [-0.1222, -0.0017]
+    end, games that did not ascend (813 rows): T-band early 3.0735  early1 3.0535; cause given death early 2.6498  early1 2.5828
+      early1 - early: T-band -0.0200 [-0.0840, +0.0623]  cause given death -0.0670 [-0.1594, +0.0319]
+    P(ascend) mean: observed 0.556  early 0.516  early1 0.536
+    P(ascend) - E (E 0.482, observed 0.556; val / test after each): early +0.034 [-0.021, +0.090] val +0.067 [+0.003, +0.126] test -0.021 [-0.086, +0.038]; early1 +0.054 [-0.000, +0.101] val +0.071 [+0.004, +0.129] test +0.024 [-0.063, +0.080]
+  Dlvl 30+: 3725 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    early   raw 0.7301  T-all 0.7295  T-band 0.7366 (T 0.95)
+    early1  raw 0.7427  T-all 0.7445  T-band 0.7514 (T 1.08)
+    early1 - early: raw +0.0126 [-0.0311, +0.0621]  T-all +0.0150 [-0.0228, +0.0572]  T-band +0.0148 [-0.0229, +0.0542]  | val +0.0176 [-0.0291, +0.0760]  | test +0.0083 [-0.0541, +0.0696]
+    end, games that did not ascend (677 rows): T-band early 3.5253  early1 3.5840; cause given death early 2.6565  early1 2.5382
+      early1 - early: T-band +0.0587 [-0.1509, +0.2327]  cause given death -0.1184 [-0.2364, +0.0198]
+    P(ascend) mean: observed 0.818  early 0.813  early1 0.821
+    P(ascend) - E (E 0.775, observed 0.818; val / test after each): early +0.039 [-0.014, +0.088] val +0.041 [-0.013, +0.092] test +0.034 [-0.098, +0.138]; early1 +0.047 [-0.001, +0.093] val +0.037 [-0.020, +0.095] test +0.070 [-0.012, +0.137]
+
+==== ascends: 25076 rows; T on all rows early 1.05  early1 1.09
+  Dlvl 1-4: 5946 rows, 674 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    early   raw 0.0847  T-all 0.0837  T-band 0.0821 (T 1.22)
+    early1  raw 0.0860  T-all 0.0841  T-band 0.0828 (T 1.24)
+    early1 - early: raw +0.0013 [-0.0004, +0.0033]  T-all +0.0004 [-0.0016, +0.0020]  T-band +0.0007 [-0.0012, +0.0021]  | val +0.0009 [-0.0018, +0.0036]  | test +0.0005 [-0.0022, +0.0019]
+    P(yes) mean: observed 0.039  early 0.031  early1 0.032
+    P(yes) - E (E 0.026, observed 0.039; val / test after each): early +0.005 [-0.003, +0.017] val +0.012 [-0.003, +0.035] test -0.000 [-0.005, +0.003]; early1 +0.006 [-0.002, +0.019] val +0.013 [-0.003, +0.038] test +0.001 [-0.004, +0.004]
+    ascended rows 234, players 58; top 5 85, 14, 11, 7, 6 = 0.53
+  Dlvl 5-12: 5292 rows, 486 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    early   raw 0.1612  T-all 0.1598  T-band 0.1577 (T 1.22)
+    early1  raw 0.1601  T-all 0.1581  T-band 0.1573 (T 1.21)
+    early1 - early: raw -0.0012 [-0.0077, +0.0039]  T-all -0.0017 [-0.0086, +0.0033]  T-band -0.0004 [-0.0069, +0.0039]  | val -0.0030 [-0.0142, +0.0056]  | test +0.0016 [-0.0050, +0.0047]
+    P(yes) mean: observed 0.093  early 0.076  early1 0.081
+    P(yes) - E (E 0.071, observed 0.093; val / test after each): early +0.005 [-0.009, +0.021] val +0.016 [-0.008, +0.047] test -0.003 [-0.016, +0.004]; early1 +0.010 [-0.006, +0.028] val +0.022 [-0.006, +0.058] test +0.000 [-0.013, +0.009]
+    ascended rows 492, players 69; top 5 129, 24, 18, 16, 14 = 0.41
+  Dlvl 13-20: 6282 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    early   raw 0.2805  T-all 0.2814  T-band 0.2828 (T 1.06)
+    early1  raw 0.2722  T-all 0.2730  T-band 0.2744 (T 1.08)
+    early1 - early: raw -0.0083 [-0.0307, +0.0075]  T-all -0.0084 [-0.0309, +0.0066]  T-band -0.0084 [-0.0308, +0.0065]  | val -0.0159 [-0.0442, +0.0144]  | test -0.0017 [-0.0269, +0.0076]
+    P(yes) mean: observed 0.262  early 0.206  early1 0.222
+    P(yes) - E (E 0.206, observed 0.262; val / test after each): early +0.000 [-0.038, +0.037] val +0.012 [-0.045, +0.067] test -0.010 [-0.061, +0.017]; early1 +0.016 [-0.027, +0.063] val +0.035 [-0.035, +0.100] test -0.001 [-0.053, +0.028]
+    ascended rows 1649, players 72; top 5 434, 89, 64, 51, 41 = 0.41
+  Dlvl 21-24: 2001 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    early   raw 0.3641  T-all 0.3635  T-band 0.3638 (T 1.15)
+    early1  raw 0.3488  T-all 0.3479  T-band 0.3495 (T 1.16)
+    early1 - early: raw -0.0153 [-0.0472, +0.0134]  T-all -0.0157 [-0.0474, +0.0117]  T-band -0.0143 [-0.0450, +0.0130]  | val -0.0159 [-0.0515, +0.0306]  | test -0.0123 [-0.0654, +0.0130]
+    P(yes) mean: observed 0.373  early 0.294  early1 0.321
+    P(yes) - E (E 0.313, observed 0.373; val / test after each): early -0.019 [-0.062, +0.021] val -0.002 [-0.063, +0.058] test -0.039 [-0.094, -0.005]; early1 +0.008 [-0.041, +0.055] val +0.030 [-0.043, +0.101] test -0.019 [-0.081, +0.021]
+    ascended rows 746, players 69; top 5 190, 42, 41, 20, 19 = 0.42
+  Dlvl 25-29: 1830 rows, 136 players (the top one 0.13 of rows), ascended 0.56 (val 0.65, test 0.40)
+    early   raw 0.4185  T-all 0.4191  T-band 0.4207 (T 1.06)
+    early1  raw 0.4101  T-all 0.4111  T-band 0.4124 (T 1.06)
+    early1 - early: raw -0.0084 [-0.0407, +0.0233]  T-all -0.0080 [-0.0387, +0.0235]  T-band -0.0083 [-0.0402, +0.0246]  | val -0.0053 [-0.0352, +0.0369]  | test -0.0133 [-0.0860, +0.0378]
+    P(yes) mean: observed 0.556  early 0.488  early1 0.513
+    P(yes) - E (E 0.482, observed 0.556; val / test after each): early +0.006 [-0.042, +0.053] val +0.029 [-0.025, +0.081] test -0.034 [-0.103, +0.017]; early1 +0.031 [-0.022, +0.077] val +0.048 [-0.018, +0.104] test +0.002 [-0.077, +0.056]
+    ascended rows 1017, players 73; top 5 241, 49, 47, 42, 28 = 0.40
+  Dlvl 30+: 3725 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    early   raw 0.2511  T-all 0.2569  T-band 0.2422 (T 0.69)
+    early1  raw 0.2761  T-all 0.2815  T-band 0.2857 (T 0.83)
+    early1 - early: raw +0.0249 [-0.0079, +0.0726]  T-all +0.0246 [-0.0067, +0.0696]  T-band 0.0435 [0.0008, 0.1026]  | val +0.0324 [-0.0054, +0.0939]  | test +0.0696 [-0.0293, +0.1956]
+    P(yes) mean: observed 0.818  early 0.819  early1 0.827
+    P(yes) - E (E 0.775, observed 0.818; val / test after each): early +0.044 [-0.013, +0.097] val +0.047 [-0.011, +0.104] test +0.037 [-0.097, +0.147]; early1 +0.052 [+0.004, +0.097] val +0.050 [-0.008, +0.106] test +0.059 [-0.029, +0.134]
+    ascended rows 3048, players 71; top 5 742, 122, 116, 114, 94 = 0.39

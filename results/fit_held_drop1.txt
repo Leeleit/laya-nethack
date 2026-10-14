@@ -1,0 +1,22 @@
+mean over the 8 cells of G: train raw (own train rows), held raw, held T-band; slope of held on train
+
+seed_var30_drop1.txt
+  c30e       train 1.3952  held raw 1.8024  held T-band 1.7211
+  c30es1     train 1.4280  held raw 1.7190  held T-band 1.6790
+  c30es2     train 1.4979  held raw 1.6867  held T-band 1.6682
+  c30es3     train 1.4603  held raw 1.6896  held T-band 1.6636
+  SD train 0.0440  slope raw -1.09  slope T-band -0.50  corr raw -0.89  corr T-band -0.84
+
+seed_var24_drop1.txt
+  c17e       train 1.5189  held raw 1.5537  held T-band 1.5521
+  c17es1     train 1.5068  held raw 1.5480  held T-band 1.5521
+  c17es2     train 1.4440  held raw 1.5516  held T-band 1.5505
+  c17es3     train 1.4832  held raw 1.5506  held T-band 1.5515
+  SD train 0.0330  slope raw +0.00  slope T-band +0.02  corr raw +0.01  corr T-band +0.99
+
+seed_var25m_drop1.txt
+  m20e       train 1.4751  held raw 1.5167  held T-band 1.5182
+  m20es1     train 1.4972  held raw 1.5391  held T-band 1.5415
+  m20es2     train 1.4970  held raw 1.5093  held T-band 1.5117
+  m20es3     train 1.5202  held raw 1.5218  held T-band 1.5232
+  SD train 0.0184  slope raw +0.11  slope T-band +0.11  corr raw +0.16  corr T-band +0.16

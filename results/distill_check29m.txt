@@ -1,0 +1,3 @@
+human_mix29d against human_mix25: alpha 0.8, teachers preds/m20e-human_mix25-train.parquet, preds/m20es1-human_mix25-train.parquet, preds/m20es2-human_mix25-train.parquet, preds/m20es3-human_mix25-train.parquet
+train rows 290053, rows differing outside gold 0; targets 1158567, label and keys kept 1158567; max |target - formula| 0.00e+00, max |sum - 1| 4.44e-16, mean L1 change 0.8837
+

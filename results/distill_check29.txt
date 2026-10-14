@@ -1,0 +1,3 @@
+human_dwa29d against human_dwa24: alpha 0.8, teachers preds/c17e-human_dwa24-train.parquet, preds/c17es1-human_dwa24-train.parquet, preds/c17es2-human_dwa24-train.parquet, preds/c17es3-human_dwa24-train.parquet
+train rows 91874, rows differing outside gold 0; targets 367054, label and keys kept 367054; max |target - formula| 0.00e+00, max |sum - 1| 5.55e-16, mean L1 change 0.9049
+val.jsonl identical: True, test.jsonl identical: True

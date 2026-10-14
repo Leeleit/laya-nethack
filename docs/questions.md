@@ -55,9 +55,11 @@ plays."), see [human games](human-data.md).
 | What ends the game? | 39 options | the 30 most common monster classes, other monster, ray or wand, poison, petrification, starvation or choking, drowning, trap, other, **ascension** |
 | Does this game ascend? | yes / no | |
 
-The ordered questions are trained on soft targets: a Gaussian over the neighbouring bins with a width of 0.75 bins
-(the HL-Gauss recipe, 2403.03950). On a tabular stand-in, soft targets beat hard labels at this number of bins, and the
-number of bins itself stops mattering beyond 20 to 30 (`bins_proxy.py`).
+The ordered questions are trained on soft targets: a Gaussian over the neighbouring bins (the HL-Gauss recipe,
+2403.03950). On a tabular stand-in, soft targets beat hard labels at this number of bins, and the number of bins
+itself stops mattering beyond 20 to 30 (`bins_proxy.py`). For turns-left the width is 0.75 of the bin. For depth it
+is 0.75 of a level, and no mass goes past the deepest level reached in training (`human_build.py --depth-target
+narrow`): a width of 0.75 of the bin spilled mass into the open last bin, and laya learned that spill (`soft_cost.py`).
 
 Two of the early choices were wrong and were fixed:
 
@@ -82,5 +84,8 @@ states of 664 players, log loss with a fitted temperature, laya minus the table:
 | Does it ascend | 0.066 | 0.068 | equal |
 | How deep | 1.895 | 1.859 | **the table better** by 0.036 [0.026, 0.046] |
 
-(`results/curve_16d_c16_vs_gbm.txt`.) The depth question is lost on Dlvl 1 to 4 and on Dlvl 21 and deeper; on Dlvl 8
-to 20 laya is better. Why is not known yet.
+(`results/curve_16d_c16_vs_gbm.txt`.) The depth question was lost on Dlvl 1 to 4 and on Dlvl 21 and deeper. On
+the deep levels the cause was the wide soft target above: laya learned it, the table was trained on hard labels. On a
+later test set (`human_dwa20t`), the table trained on hard labels led by 0.13 on Dlvl 21-29 and, trained on the same
+soft target as laya, by 0.02-0.03 (`results/soft_gbm20_drop1.txt`); the narrow target improved laya's depth by 0.154
+on Dlvl 21-24 and 0.175 on 25-29 (`results/narrow20_drop1.txt`).

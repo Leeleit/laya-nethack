@@ -1,0 +1,49 @@
+chars median / p90, tokens of state + first question median / p90, share over 1152 tokens, versions
+
+human_dwa24/train.jsonl
+  1-4    rows  45894  chars    619 /   1057  tokens   342 /   478  over   0.0%  3.4.3 53% 3.6.0 23% 3.6.1 12%
+  5-12   rows  34198  chars   1140 /   1817  tokens   513 /   717  over   0.0%  3.4.3 56% 3.6.0 21% 3.6.1 11%
+  13-20  rows   4882  chars   1642 /   2087  tokens   660 /   804  over   0.0%  3.4.3 65% 3.6.0 16% 3.6.1 8%
+  21-24  rows   2975  chars   1678 /   2129  tokens   658 /   802  over   0.0%  3.4.3 65% 3.6.0 16% 3.6.1 9%
+  25-29  rows   2518  chars   1707 /   2142  tokens   685 /   807  over   0.0%  3.4.3 66% 3.6.0 15% 3.6.1 8%
+  30+    rows   1407  chars   1751 /   2137  tokens   665 /   792  over   0.0%  3.4.3 65% 3.6.0 15% 3.6.1 9%
+
+human_dwa20t/val.jsonl
+  1-4    rows   2659  chars    626 /   1157  tokens   349 /   527  over   0.0%  3.4.3 65% 3.6.0 18% 3.6.1 8%
+  5-12   rows   2298  chars   1180 /   1880  tokens   525 /   742  over   0.0%  3.4.3 65% 3.6.0 19% 3.6.1 7%
+  13-20  rows   2951  chars   1676 /   2086  tokens   662 /   780  over   0.0%  3.4.3 74% 3.6.0 15% 3.6.1 5%
+  21-24  rows   1083  chars   1685 /   2111  tokens   658 /   788  over   0.0%  3.4.3 74% 3.6.0 15% 3.6.1 5%
+  25-29  rows   1145  chars   1755 /   2158  tokens   692 /   808  over   0.0%  3.4.3 71% 3.6.0 17% 3.6.1 5%
+  30+    rows   2612  chars   1819 /   2203  tokens   702 /   815  over   0.0%  3.4.3 71% 3.6.0 18% 3.6.1 6%
+
+human_dwa20t/test.jsonl
+  1-4    rows   3287  chars    655 /   1029  tokens   359 /   489  over   0.0%  3.4.3 66% 3.6.0 20% 3.6.3 6%
+  5-12   rows   2994  chars   1274 /   1908  tokens   574 /   762  over   0.0%  3.4.3 71% 3.6.0 17% 3.6.1 5%
+  13-20  rows   3331  chars   1762 /   2063  tokens   706 /   789  over   0.0%  3.4.3 82% 3.6.0 8% 3.6.1 6%
+  21-24  rows    918  chars   1758 /   2083  tokens   688 /   801  over   0.0%  3.4.3 81% 3.6.0 8% 3.6.1 6%
+  25-29  rows    685  chars   1708 /   2087  tokens   665 /   780  over   0.0%  3.4.3 76% 3.6.1 11% 3.6.0 9%
+  30+    rows   1113  chars   1738 /   2103  tokens   664 /   781  over   0.0%  3.4.3 76% 3.6.0 11% 3.6.1 9%
+
+human_dwa30/train.jsonl
+  1-4    rows  44587  chars    623 /   1059  tokens   345 /   474  over   0.0%  3.4.3 55% 3.6.0 23% 3.6.1 10%
+  5-12   rows  33415  chars   1150 /   1835  tokens   516 /   705  over   0.0%  3.4.3 58% 3.6.0 20% 3.6.1 10%
+  13-20  rows   4853  chars   1662 /   2096  tokens   666 /   790  over   0.0%  3.4.3 68% 3.6.0 15% 3.6.1 8%
+  21-24  rows   2851  chars   1692 /   2127  tokens   675 /   802  over   0.0%  3.4.3 68% 3.6.0 15% 3.6.1 9%
+  25-29  rows   2381  chars   1717 /   2147  tokens   661 /   790  over   0.0%  3.4.3 68% 3.6.0 15% 3.6.1 8%
+  30+    rows   1307  chars   1755 /   2154  tokens   691 /   802  over   0.0%  3.4.3 67% 3.6.0 14% 3.6.1 9%
+
+human_dwa30t/val.jsonl
+  1-4    rows   3578  chars    630 /   1078  tokens   340 /   481  over   0.0%  3.4.3 47% 3.6.0 22% 3.6.1 16%
+  5-12   rows   3100  chars   1171 /   1787  tokens   514 /   701  over   0.0%  3.4.3 49% 3.6.0 21% 3.6.1 13%
+  13-20  rows   3617  chars   1576 /   2004  tokens   640 /   769  over   0.0%  3.4.3 57% 3.6.0 18% 3.6.1 9%
+  21-24  rows   1380  chars   1626 /   2060  tokens   652 /   767  over   0.0%  3.4.3 57% 3.6.0 19% 3.6.3 8%
+  25-29  rows   1403  chars   1675 /   2091  tokens   662 /   784  over   0.0%  3.4.3 59% 3.6.0 19% 3.6.1 6%
+  30+    rows   3281  chars   1722 /   2087  tokens   672 /   778  over   0.0%  3.4.3 66% 3.6.0 15% 3.6.1 7%
+
+human_dwa30t/test.jsonl
+  1-4    rows   3800  chars    605 /   1048  tokens   331 /   465  over   0.0%  3.4.3 57% 3.6.0 20% 3.6.1 14%
+  5-12   rows   3082  chars   1117 /   1779  tokens   493 /   706  over   0.0%  3.4.3 62% 3.6.0 19% 3.6.1 12%
+  13-20  rows   3525  chars   1619 /   2050  tokens   656 /   786  over   0.0%  3.4.3 71% 3.6.0 15% 3.6.3 5%
+  21-24  rows   1193  chars   1703 /   2063  tokens   664 /   786  over   0.0%  3.4.3 67% 3.6.0 19% 3.6.3 5%
+  25-29  rows   1129  chars   1729 /   2137  tokens   674 /   792  over   0.0%  3.4.3 66% 3.6.0 21% 3.6.3 5%
+  30+    rows   2082  chars   1808 /   2183  tokens   690 /   807  over   0.0%  3.4.3 59% 3.6.0 25% 3.6.6 6%

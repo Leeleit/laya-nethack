@@ -7,37 +7,55 @@ erases the small death probabilities the calibration has to work with).
 A checkpoint trained with finetune_fast.py --multi (multi_question in its config) gets every question of a case in
 one sequence (build_multi_item), as in its training.
 
-  python predict.py <checkpoint dir> <cases.jsonl> <out.parquet> [single|multi: override the checkpoint's mode]
+--pack: the padding-free encoder of training (packed.py, compiled): the same logits up to fp16 noise, for long files.
+
+  python predict.py <checkpoint dir> <cases.jsonl> <out.parquet> [single|multi: override the checkpoint's mode] [--pack]
   -> id, question, logits (one row per question)
 """
+import argparse
 import json
+import os
 import sys
 import time
 
 import pandas as pd
 import torch
 
-from finetune_fast import build_multi_item, collate_multi, load_model, logits_of
-from finetune_single_device import collate, preprocess
+from finetune_fast import collate_multi, load_items, load_model, logits_of
+from finetune_single_device import collate
 
 TOKENS = 32768
 
 
 def main():
-    ckpt, data, out = sys.argv[1:4]
-    cfg, tok, model = load_model(ckpt, torch.device("cuda", 0))
-    model.eval()
-    multi = cfg.get("multi_question", False) if len(sys.argv) < 5 else sys.argv[4] == "multi"  # override: diagnosis
+    ap = argparse.ArgumentParser()
+    ap.add_argument("ckpt")
+    ap.add_argument("data")
+    ap.add_argument("out")
+    ap.add_argument("mode", nargs="?", choices=("single", "multi"))
+    ap.add_argument("--pack", action="store_true")
+    a = ap.parse_args()
+    ckpt, data, out = a.ckpt, a.data, a.out
+    cfg = json.load(open(os.path.join(ckpt, "rl_agent_config.json")))
+    multi = cfg.get("multi_question", False) if a.mode is None else a.mode == "multi"  # override: diagnosis
+    # tokenised in a process per allowed CPU before CUDA starts (the pool forks); in one process the GPU waited
+    # for it about a third of the run
+    t0, w = time.time(), len(os.sched_getaffinity(0))
+    items, _ = load_items(ckpt, data, workers=w, multi=multi, chunk=max(1 << 20, os.path.getsize(data) // (4 * w) + 1))
+    print(f"{len(items)} items tokenised in {time.time() - t0:.0f}s", flush=True)
+    rows = [json.loads(line) for line in open(data)]
     if multi:  # one item per case; its questions with gold in the case's order
-        rows = [json.loads(line) for line in open(data)]
-        items = [build_multi_item(tok, cfg, r["state"], r["questions"], r["gold"]) for r in rows]
-        assert all(it and len(it["qids"]) == sum(q in r["gold"] for q in r["questions"])
-                   for it, r in zip(items, rows)), "build_multi_item dropped a question"
+        assert len(items) == len(rows) and all(len(it["qids"]) == sum(q in r["gold"] for q in r["questions"])
+                                               for it, r in zip(items, rows)), "build_multi_item dropped a question"
     else:  # one item per (case, question with gold), in preprocess's order
-        keys = [(r["id"], q) for r in map(json.loads, open(data)) for q in r["questions"] if q in r["gold"]]
-        items = preprocess(tok, cfg, data)
+        keys = [(r["id"], q) for r in rows for q in r["questions"] if q in r["gold"]]
         assert len(items) == len(keys), "preprocess dropped a question"
         ids, qids = [k[0] for k in keys], [k[1] for k in keys]
+    cfg, tok, model = load_model(ckpt, torch.device("cuda", 0))
+    model.eval()
+    if a.pack:
+        import packed
+        packed.enable(model, cfg["max_len"] + 64, "default")
     order = sorted(range(len(items)), key=lambda i: len(items[i]["ids"]))
     logits = [None] * len(items)
     t0 = time.time()

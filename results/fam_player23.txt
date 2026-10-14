@@ -1,0 +1,38 @@
+human_fam23: models c17r, c17a; [(fam12P - fam12O) - (new12P - new12O)], P = the player has a game to Dlvl 13+ (2225 players in val_dwa_states3.jsonl); left out []; one bootstrap of players (1000), paired by model
+  rows: fam12P 3742 (3156 games, 821 players)  fam12O 1258 (1102 games, 819 players)  new12P 3707 (1801 games, 159 players)  new12O 1293 (714 games, 321 players)
+
+==== mean of the four
+  quad raw  c17r +0.0417  c17a +0.0307  | c17a - c17r: -0.0110 [-0.0396, +0.0265]
+  quad Tnew c17r +0.0427  c17a +0.0340  | c17a - c17r: -0.0087 [-0.0351, +0.0246]
+  fam12P - fam12O raw  c17r +0.0518  c17a +0.0671  | c17a - c17r: +0.0152 [-0.0016, +0.0304]
+  fam12P - fam12O Tnew c17r +0.0477  c17a +0.0608  | c17a - c17r: +0.0131 [-0.0024, +0.0273]
+
+==== end + ascends
+  quad raw  c17r +0.0620  c17a +0.0418  | c17a - c17r: -0.0202 [-0.0505, +0.0173]
+  quad Tnew c17r +0.0570  c17a +0.0394  | c17a - c17r: -0.0176 [-0.0449, +0.0147]
+  fam12P - fam12O raw  c17r +0.0129  c17a +0.0282  | c17a - c17r: +0.0153 [-0.0017, +0.0310]
+  fam12P - fam12O Tnew c17r +0.0114  c17a +0.0257  | c17a - c17r: +0.0143 [-0.0015, +0.0293]
+
+==== ttd
+  quad raw  c17r +0.0300  c17a +0.0280  | c17a - c17r: -0.0020 [-0.0392, +0.0447]
+  quad Tnew c17r +0.0253  c17a +0.0256  | c17a - c17r: +0.0003 [-0.0201, +0.0235]
+  fam12P - fam12O raw  c17r +0.0525  c17a +0.0695  | c17a - c17r: +0.0169 [-0.0056, +0.0383]
+  fam12P - fam12O Tnew c17r +0.0356  c17a +0.0421  | c17a - c17r: +0.0066 [-0.0066, +0.0195]
+
+==== depth
+  quad raw  c17r +0.0128  c17a +0.0112  | c17a - c17r: -0.0016 [-0.0353, +0.0384]
+  quad Tnew c17r +0.0316  c17a +0.0318  | c17a - c17r: +0.0001 [-0.0474, +0.0554]
+  fam12P - fam12O raw  c17r +0.1290  c17a +0.1424  | c17a - c17r: +0.0134 [-0.0081, +0.0323]
+  fam12P - fam12O Tnew c17r +0.1324  c17a +0.1495  | c17a - c17r: +0.0171 [-0.0132, +0.0437]
+
+==== end
+  quad raw  c17r +0.1073  c17a +0.0609  | c17a - c17r: -0.0463 [-0.1014, +0.0208]
+  quad Tnew c17r +0.0965  c17a +0.0547  | c17a - c17r: -0.0418 [-0.0890, +0.0140]
+  fam12P - fam12O raw  c17r +0.0164  c17a +0.0337  | c17a - c17r: +0.0173 [-0.0089, +0.0446]
+  fam12P - fam12O Tnew c17r +0.0129  c17a +0.0256  | c17a - c17r: +0.0127 [-0.0095, +0.0364]
+
+==== ascends
+  quad raw  c17r +0.0168  c17a +0.0227  | c17a - c17r: +0.0059 [-0.0145, +0.0262]
+  quad Tnew c17r +0.0174  c17a +0.0241  | c17a - c17r: +0.0066 [-0.0190, +0.0311]
+  fam12P - fam12O raw  c17r +0.0094  c17a +0.0227  | c17a - c17r: +0.0133 [+0.0013, +0.0252]
+  fam12P - fam12O Tnew c17r +0.0099  c17a +0.0258  | c17a - c17r: +0.0160 [+0.0020, +0.0310]

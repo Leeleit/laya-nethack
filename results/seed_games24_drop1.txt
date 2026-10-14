@@ -1,0 +1,10 @@
+human_dwa20t: G cells ttd, depth, end, ascends x 21-24, 25-29, T-band, top player dropped
+
+== all seeds: seeds c17e, c17es1, c17es2, c17es3
+  G per seed 1.5521 1.5521 1.5505 1.5515  SD 0.0008
+  364 games, G rows per game median 32, p90 75, max 196; half of |variance share| in 39 games (22.2% of rows)
+  top 10 games: +2.322 (144 rows)  +2.000 (152 rows)  -1.918 (76 rows)  +1.581 (68 rows)  +1.506 (72 rows)  -1.475 (40 rows)  -1.329 (196 rows)  +1.272 (52 rows)  -1.236 (80 rows)  +1.200 (116 rows)
+  top 10 sum +3.923, top 50 sum +2.695
+  equal weight per game: G 1.6682 1.6689 1.6844 1.6749  SD 0.0075
+  at most 2 rows per game and band: SD of G over seeds, mean of 20 draws 0.0054
+  cells: SD per cell 0.0069 0.0214 0.0143 0.0156 0.0086 0.0127 0.0082 0.0126; SD of G 0.0008 against independent cells 0.0047 (ratio 0.16)

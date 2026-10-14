@@ -1,0 +1,4 @@
+human_dwa20/train.jsonl fam13: ids seen 0, games in train 4838  fam12: ids seen 0, games in train 5000  new13: ids seen 0, games in train 0  new12: ids seen 0, games in train 0
+  questions equal: {'ttd': True, 'depth': False, 'end': True, 'ascends': True}
+human_dwa21/train.jsonl fam13: ids seen 0, games in train 5000  fam12: ids seen 0, games in train 5000  new13: ids seen 0, games in train 0  new12: ids seen 0, games in train 0
+  questions equal: {'ttd': True, 'depth': False, 'end': True, 'ascends': True}

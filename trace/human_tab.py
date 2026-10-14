@@ -1,9 +1,11 @@
 """Tabular yardstick for the learning curve (the curve's shares): a gradient-boosted model per question
-(ttd, depth, end, ascends) on features of the terse state (HP now / 10 / 30 turns ago, Dlvl, deepest, XL, AC, turn,
-stats, gold, kinds of items, what is around) and the player's strength in the question (experience / result levels,
-no history), trained on each share of train; predictions on val + test in predict.py's format (id, question,
+(ttd, depth, end, ascends) on features of the terse state (role, race, HP now / 10 / 30 turns ago, Dlvl, deepest,
+XL, AC, turn, stats, gold, kinds of items, what is around) and the player's strength in the question (experience /
+result levels, no history), trained on each share of train; predictions on val + test in predict.py's format (id, question,
 logits = log p over the question's options in their order) -> curve_eval.py takes them as models.
   python human_tab.py human_data16d all=train quarter=train_g4 ... [--workers 7 --threads 4]
+  python human_tab.py human_dwa20 all=train --held human_dwa20t --prefix gbm-c17r
+(--held: val / test of another set built with the same questions)
 """
 import argparse
 import json
@@ -29,6 +31,8 @@ ITEMS = {"wand": r"\bwand\b", "ring": r"\bring\b", "amulet": r"\bamulet\b", "pot
          "digging": r"pick-axe|mattock|wand of digging", "levitation": r"levitation", "lizard": r"lizard corpse"}
 ITEM_RE = {k: re.compile(v, re.I) for k, v in ITEMS.items()}
 AROUND = ("up stairs", "down stairs", "fountain", "altar", "throne", "trap", "water", "lava", "Monsters")
+ROLES = ("Arc", "Bar", "Cav", "Hea", "Kni", "Mon", "Pri", "Ran", "Rog", "Sam", "Tou", "Val", "Wiz")
+RACES = ("Hum", "Elf", "Dwa", "Gno", "Orc")
 
 
 def features(state, ins):
@@ -44,6 +48,9 @@ def features(state, ins):
     f.update(hp=hp, maxhp=mx, hp_frac=hp / max(mx, 1), hp10=hp10 / max(mx, 1), hp30=hp30 / max(mx, 1), dlvl=dl,
              deepest=dp, xl=xl, ac=ac, turn=t, v34=" 3.4" in state[:40], chaotic="-Cha-" in state[:40],
              male="-Mal " in state[:40] or state[:40].split()[0].endswith("-Mal"))
+    who = state[:40].split()[0].split("-")  # Val-Dwa-Law-Fem: a set of several roles needs them
+    f.update({f"role_{r}": who[0] == r for r in ROLES})
+    f.update({f"race_{r}": len(who) > 1 and who[1] == r for r in RACES})
     s = STATS.search(state)
     if s:
         f.update(st=int(s.group(1)) + (0.5 if s.group(2) else 0), dx=int(s.group(3)), co=int(s.group(4)),
@@ -64,7 +71,8 @@ def features(state, ins):
 def label_of(r, q):
     crit = r["questions"][q]["criteria"]
     keys = list(crit) if isinstance(crit, dict) else [str(i) for i in range(len(crit))]
-    return keys.index(r["gold"][q]["label"]), len(keys)
+    soft = [r["gold"][q]["probabilities"].get(k, 0.0) for k in keys] if q in ("ttd", "depth") else None
+    return keys.index(r["gold"][q]["label"]), len(keys), soft
 
 
 def load(path):
@@ -78,14 +86,19 @@ def load(path):
 
 
 def fit_one(job):
-    name, q, ids_tr, threads = job
+    name, q, ids_tr, threads, soft, seed = job
     os.environ["OMP_NUM_THREADS"] = str(threads)
     from sklearn.ensemble import HistGradientBoostingClassifier
     tr = [i for i in ids_tr if q in LABS[i]]
     y = np.array([LABS[i][q][0] for i in tr])
     k = LABS[tr[0]][q][1]
-    m = HistGradientBoostingClassifier(max_iter=400, learning_rate=0.05, early_stopping=True, random_state=0)
-    m.fit(X.loc[tr].to_numpy(), y)
+    m = HistGradientBoostingClassifier(max_iter=400, learning_rate=0.05, early_stopping=True, random_state=seed)
+    xt = X.loc[tr].to_numpy()
+    if soft and LABS[tr[0]][q][2] is not None:  # the soft target as laya gets it: a row per bin, weighted by its mass
+        j, c, w = zip(*[(n, b, pb) for n, i in enumerate(tr) for b, pb in enumerate(LABS[i][q][2]) if pb > 1e-3])
+        m.fit(xt[list(j)], np.array(c), sample_weight=np.array(w))
+    else:
+        m.fit(xt, y)
     out = []
     for split, (Xh, labs) in HELD.items():
         hid = [i for i in Xh.index if q in labs[i]]
@@ -104,9 +117,14 @@ def main():
     ap.add_argument("--workers", type=int, default=7)
     ap.add_argument("--threads", type=int, default=4)
     ap.add_argument("--prefix", default="gbm16")
+    ap.add_argument("--held", default="", help="take val / test from this set (default: data)")
+    ap.add_argument("--soft", action="store_true", help="fit ttd / depth to the soft targets, not the hard labels")
+    ap.add_argument("--questions", nargs="+", default=["ttd", "depth", "end", "ascends"])
+    ap.add_argument("--seed", type=int, default=0, help="the GBM's own seed (its early-stopping split): the fit's noise")
     a = ap.parse_args()
+    held = a.held or a.data
     X, LABS = load(Path(a.data, "train.jsonl"))
-    HELD = {s: load(Path(a.data, f"{s}.jsonl")) for s in ("val", "test")}
+    HELD = {s: load(Path(held, f"{s}.jsonl")) for s in ("val", "test")}
     for split, (Xh, _) in HELD.items():
         HELD[split] = (Xh.reindex(columns=X.columns), HELD[split][1])
     jobs = []
@@ -114,10 +132,10 @@ def main():
         lab, stem = spec.split("=", 1)
         ids = [json.loads(x)["id"] for x in open(Path(a.data, f"{stem}.jsonl"), encoding="utf-8")]
         name = a.prefix + ("" if stem == "train" else stem.replace("train_", ""))
-        if all(Path(f"preds/{name}-{Path(a.data).name}-{s}.parquet").exists() for s in ("val", "test")):
+        if all(Path(f"preds/{name}-{Path(held).name}-{s}.parquet").exists() for s in ("val", "test")):
             print(f"{name}: done before")
             continue
-        jobs += [(name, q, ids, a.threads) for q in ("ttd", "depth", "end", "ascends")]
+        jobs += [(name, q, ids, a.threads, a.soft, a.seed) for q in a.questions]
     res = {}
     with Pool(a.workers) as pool:
         for name, out in pool.imap_unordered(fit_one, jobs):
@@ -126,7 +144,7 @@ def main():
     for name, out in res.items():
         df = pd.DataFrame(out, columns=["split", "id", "question", "logits"])
         for s in ("val", "test"):
-            df[df.split == s].drop(columns="split").to_parquet(f"preds/{name}-{Path(a.data).name}-{s}.parquet")
+            df[df.split == s].drop(columns="split").to_parquet(f"preds/{name}-{Path(held).name}-{s}.parquet")
         print(f"{name}: written")
 
 

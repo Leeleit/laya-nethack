@@ -1,0 +1,201 @@
+human_dwa20t: 25076 rows; models mixe=gbm-m20e, mixe1=gbm-m20es1, cov=gbm-mixc
+
+==== ttd: 25015 rows; T on all rows mixe 1.01  mixe1 1.01  cov 1.03
+  Dlvl 1-4: 5929 rows, 669 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    mixe    raw 2.6693  T-all 2.6697  T-band 2.6697 (T 1.00)
+    mixe1   raw 2.6705  T-all 2.6708  T-band 2.6709 (T 1.01)
+    cov     raw 2.6714  T-all 2.6716  T-band 2.6718 (T 1.04)
+    mixe1 - mixe: raw +0.0012 [-0.0019, +0.0038]  T-all +0.0011 [-0.0019, +0.0037]  T-band +0.0012 [-0.0018, +0.0039]  | val +0.0017 [-0.0032, +0.0061]  | test +0.0008 [-0.0043, +0.0038]
+    cov - mixe: raw +0.0021 [-0.0022, +0.0057]  T-all +0.0019 [-0.0023, +0.0052]  T-band +0.0021 [-0.0021, +0.0056]  | val +0.0019 [-0.0025, +0.0066]  | test +0.0023 [-0.0050, +0.0066]
+    P(ttd <= 1000) mean: observed 0.229  mixe 0.254  mixe1 0.254  cov 0.256
+  Dlvl 5-12: 5281 rows, 483 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    mixe    raw 2.5026  T-all 2.5035  T-band 2.5030 (T 0.99)
+    mixe1   raw 2.4995  T-all 2.5004  T-band 2.4998 (T 0.99)
+    cov     raw 2.5065  T-all 2.5072  T-band 2.5067 (T 1.02)
+    mixe1 - mixe: raw -0.0031 [-0.0076, +0.0024]  T-all -0.0031 [-0.0076, +0.0021]  T-band -0.0032 [-0.0077, +0.0023]  | val +0.0003 [-0.0070, +0.0071]  | test -0.0058 [-0.0109, +0.0025]
+    cov - mixe: raw +0.0039 [-0.0009, +0.0088]  T-all +0.0037 [-0.0011, +0.0083]  T-band +0.0037 [-0.0011, +0.0085]  | val +0.0053 [-0.0023, +0.0130]  | test +0.0025 [-0.0058, +0.0086]
+    P(ttd <= 1000) mean: observed 0.246  mixe 0.252  mixe1 0.249  cov 0.252
+  Dlvl 13-20: 6274 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    mixe    raw 2.0754  T-all 2.0780  T-band 2.0799 (T 1.01)
+    mixe1   raw 2.0694  T-all 2.0721  T-band 2.0743 (T 1.01)
+    cov     raw 2.0801  T-all 2.0824  T-band 2.0845 (T 1.02)
+    mixe1 - mixe: raw -0.0059 [-0.0146, +0.0023]  T-all -0.0059 [-0.0147, +0.0019]  T-band -0.0056 [-0.0144, +0.0025]  | val -0.0058 [-0.0163, +0.0064]  | test -0.0054 [-0.0192, +0.0081]
+    cov - mixe: raw +0.0047 [-0.0084, +0.0142]  T-all +0.0044 [-0.0097, +0.0138]  T-band +0.0046 [-0.0093, +0.0139]  | val +0.0010 [-0.0150, +0.0172]  | test +0.0077 [-0.0149, +0.0193]
+    P(ttd <= 1000) mean: observed 0.066  mixe 0.069  mixe1 0.068  cov 0.070
+  Dlvl 21-24: 1998 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    mixe    raw 2.1597  T-all 2.1626  T-band 2.1668 (T 1.13)
+    mixe1   raw 2.1568  T-all 2.1591  T-band 2.1640 (T 1.12)
+    cov     raw 2.1650  T-all 2.1649  T-band 2.1710 (T 1.14)
+    mixe1 - mixe: raw -0.0030 [-0.0178, +0.0160]  T-all -0.0035 [-0.0182, +0.0153]  T-band -0.0028 [-0.0160, +0.0136]  | val -0.0086 [-0.0278, +0.0113]  | test +0.0040 [-0.0163, +0.0361]
+    cov - mixe: raw +0.0052 [-0.0129, +0.0247]  T-all +0.0023 [-0.0152, +0.0202]  T-band +0.0042 [-0.0118, +0.0208]  | val -0.0082 [-0.0304, +0.0126]  | test +0.0189 [-0.0006, +0.0523]
+    P(ttd <= 1000) mean: observed 0.103  mixe 0.096  mixe1 0.096  cov 0.097
+  Dlvl 25-29: 1825 rows, 136 players (the top one 0.14 of rows), ascended 0.55 (val 0.65, test 0.40)
+    mixe    raw 1.8941  T-all 1.8976  T-band 1.9010 (T 1.02)
+    mixe1   raw 1.8788  T-all 1.8825  T-band 1.8862 (T 1.01)
+    cov     raw 1.8782  T-all 1.8810  T-band 1.8835 (T 1.03)
+    mixe1 - mixe: raw -0.0153 [-0.0341, -0.0007]  T-all -0.0151 [-0.0335, -0.0007]  T-band -0.0149 [-0.0327, -0.0000]  | val -0.0294 [-0.0524, -0.0126]  | test +0.0093 [-0.0211, +0.0342]
+    cov - mixe: raw -0.0159 [-0.0383, +0.0061]  T-all -0.0165 [-0.0373, +0.0038]  T-band -0.0176 [-0.0391, +0.0041]  | val -0.0239 [-0.0579, +0.0074]  | test -0.0071 [-0.0429, +0.0252]
+    P(ttd <= 1000) mean: observed 0.090  mixe 0.074  mixe1 0.076  cov 0.083
+  Dlvl 30+: 3708 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    mixe    raw 1.6307  T-all 1.6347  T-band 1.6322 (T 0.95)
+    mixe1   raw 1.6337  T-all 1.6373  T-band 1.6371 (T 0.97)
+    cov     raw 1.6348  T-all 1.6386  T-band 1.6392 (T 1.00)
+    mixe1 - mixe: raw +0.0030 [-0.0132, +0.0249]  T-all +0.0025 [-0.0132, +0.0239]  T-band +0.0049 [-0.0105, +0.0256]  | val +0.0055 [-0.0127, +0.0310]  | test +0.0036 [-0.0232, +0.0328]
+    cov - mixe: raw +0.0041 [-0.0193, +0.0310]  T-all +0.0038 [-0.0178, +0.0280]  T-band +0.0070 [-0.0153, +0.0321]  | val +0.0036 [-0.0195, +0.0214]  | test +0.0149 [-0.0332, +0.0780]
+    P(ttd <= 1000) mean: observed 0.012  mixe 0.017  mixe1 0.017  cov 0.017
+
+==== depth: 25076 rows; T on all rows mixe 0.96  mixe1 0.96  cov 0.96
+  Dlvl 1-4: 5946 rows, 674 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    mixe    raw 2.1714  T-all 2.1722  T-band 2.1717 (T 1.00)
+    mixe1   raw 2.1721  T-all 2.1728  T-band 2.1725 (T 1.00)
+    cov     raw 2.1698  T-all 2.1702  T-band 2.1700 (T 0.98)
+    mixe1 - mixe: raw +0.0007 [-0.0024, +0.0030]  T-all +0.0007 [-0.0025, +0.0031]  T-band +0.0008 [-0.0023, +0.0030]  | val -0.0016 [-0.0061, +0.0028]  | test +0.0027 [-0.0010, +0.0058]
+    cov - mixe: raw -0.0016 [-0.0047, +0.0016]  T-all -0.0020 [-0.0052, +0.0014]  T-band -0.0017 [-0.0046, +0.0016]  | val -0.0026 [-0.0080, +0.0029]  | test -0.0009 [-0.0037, +0.0036]
+    P(no deeper) mean: observed 0.107  mixe 0.114  mixe1 0.114  cov 0.115
+  Dlvl 5-12: 5292 rows, 486 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    mixe    raw 2.0272  T-all 2.0281  T-band 2.0283 (T 0.98)
+    mixe1   raw 2.0260  T-all 2.0266  T-band 2.0268 (T 0.97)
+    cov     raw 2.0229  T-all 2.0233  T-band 2.0234 (T 0.96)
+    mixe1 - mixe: raw -0.0011 [-0.0049, +0.0045]  T-all -0.0014 [-0.0054, +0.0047]  T-band -0.0015 [-0.0054, +0.0046]  | val -0.0062 [-0.0133, +0.0015]  | test +0.0022 [-0.0035, +0.0152]
+    cov - mixe: raw -0.0043 [-0.0101, +0.0044]  T-all -0.0048 [-0.0111, +0.0045]  T-band -0.0048 [-0.0109, +0.0039]  | val -0.0058 [-0.0146, +0.0020]  | test -0.0041 [-0.0121, +0.0126]
+    P(no deeper) mean: observed 0.215  mixe 0.231  mixe1 0.228  cov 0.228
+  Dlvl 13-20: 6282 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    mixe    raw 1.8220  T-all 1.8220  T-band 1.8229 (T 0.94)
+    mixe1   raw 1.8212  T-all 1.8215  T-band 1.8225 (T 0.95)
+    cov     raw 1.8127  T-all 1.8130  T-band 1.8142 (T 0.95)
+    mixe1 - mixe: raw -0.0008 [-0.0100, +0.0082]  T-all -0.0005 [-0.0101, +0.0089]  T-band -0.0004 [-0.0105, +0.0092]  | val -0.0047 [-0.0187, +0.0111]  | test +0.0034 [-0.0102, +0.0229]
+    cov - mixe: raw -0.0093 [-0.0238, -0.0012]  T-all -0.0090 [-0.0245, -0.0005]  T-band -0.0087 [-0.0248, +0.0003]  | val -0.0136 [-0.0309, +0.0009]  | test -0.0044 [-0.0294, +0.0055]
+    P(no deeper) mean: observed 0.083  mixe 0.087  mixe1 0.084  cov 0.094
+  Dlvl 21-24: 2001 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    mixe    raw 1.6521  T-all 1.6497  T-band 1.6474 (T 0.88)
+    mixe1   raw 1.6669  T-all 1.6655  T-band 1.6654 (T 0.90)
+    cov     raw 1.6516  T-all 1.6497  T-band 1.6490 (T 0.89)
+    mixe1 - mixe: raw 0.0148 [0.0019, 0.0264]  T-all 0.0159 [0.0025, 0.0279]  T-band 0.0180 [0.0044, 0.0299]  | val +0.0086 [-0.0064, +0.0256]  | test 0.0291 [0.0040, 0.0495]
+    cov - mixe: raw -0.0006 [-0.0181, +0.0131]  T-all +0.0000 [-0.0182, +0.0144]  T-band +0.0016 [-0.0179, +0.0171]  | val -0.0116 [-0.0346, +0.0087]  | test +0.0172 [-0.0128, +0.0350]
+    P(no deeper) mean: observed 0.095  mixe 0.096  mixe1 0.090  cov 0.097
+  Dlvl 25-29: 1830 rows, 136 players (the top one 0.13 of rows), ascended 0.56 (val 0.65, test 0.40)
+    mixe    raw 1.4511  T-all 1.4508  T-band 1.4538 (T 0.93)
+    mixe1   raw 1.4501  T-all 1.4501  T-band 1.4537 (T 0.93)
+    cov     raw 1.4504  T-all 1.4509  T-band 1.4564 (T 0.94)
+    mixe1 - mixe: raw -0.0010 [-0.0181, +0.0178]  T-all -0.0007 [-0.0185, +0.0184]  T-band -0.0001 [-0.0182, +0.0191]  | val -0.0125 [-0.0371, +0.0097]  | test +0.0205 [-0.0099, +0.0452]
+    cov - mixe: raw -0.0007 [-0.0302, +0.0272]  T-all +0.0001 [-0.0312, +0.0295]  T-band +0.0026 [-0.0306, +0.0344]  | val -0.0111 [-0.0447, +0.0137]  | test +0.0256 [-0.0474, +0.0758]
+    P(no deeper) mean: observed 0.130  mixe 0.132  mixe1 0.129  cov 0.133
+  Dlvl 30+: 3725 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    mixe    raw 1.2366  T-all 1.2390  T-band 1.2374 (T 1.03)
+    mixe1   raw 1.2308  T-all 1.2330  T-band 1.2315 (T 1.02)
+    cov     raw 1.2265  T-all 1.2293  T-band 1.2273 (T 1.04)
+    mixe1 - mixe: raw -0.0058 [-0.0197, +0.0105]  T-all -0.0059 [-0.0202, +0.0109]  T-band -0.0059 [-0.0196, +0.0104]  | val -0.0141 [-0.0286, +0.0077]  | test 0.0135 [0.0007, 0.0254]
+    cov - mixe: raw -0.0101 [-0.0275, +0.0057]  T-all -0.0097 [-0.0278, +0.0073]  T-band -0.0101 [-0.0273, +0.0057]  | val -0.0126 [-0.0371, +0.0082]  | test -0.0041 [-0.0218, +0.0152]
+    P(no deeper) mean: observed 0.089  mixe 0.113  mixe1 0.108  cov 0.113
+
+==== end: 25076 rows; T on all rows mixe 1.11  mixe1 1.12  cov 1.10
+  Dlvl 1-4: 5946 rows, 674 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    mixe    raw 3.2526  T-all 3.2528  T-band 3.2513 (T 1.08)
+    mixe1   raw 3.2511  T-all 3.2520  T-band 3.2501 (T 1.07)
+    cov     raw 3.2475  T-all 3.2482  T-band 3.2467 (T 1.06)
+    mixe1 - mixe: raw -0.0015 [-0.0065, +0.0047]  T-all -0.0008 [-0.0052, +0.0049]  T-band -0.0012 [-0.0057, +0.0045]  | val -0.0021 [-0.0109, +0.0063]  | test -0.0005 [-0.0060, +0.0089]
+    cov - mixe: raw -0.0051 [-0.0101, +0.0006]  T-all -0.0046 [-0.0090, +0.0006]  T-band -0.0046 [-0.0091, +0.0007]  | val -0.0044 [-0.0123, +0.0042]  | test -0.0047 [-0.0098, +0.0030]
+    end, games that did not ascend (5712 rows): T-band mixe 3.3114  mixe1 3.3097  cov 3.3047; cause given death mixe 3.2919  mixe1 3.2904  cov 3.2860
+      mixe1 - mixe: T-band -0.0017 [-0.0062, +0.0040]  cause given death -0.0016 [-0.0059, +0.0039]
+      cov - mixe: T-band -0.0066 [-0.0111, -0.0012]  cause given death -0.0060 [-0.0102, -0.0007]
+    P(ascend) mean: observed 0.039  mixe 0.029  mixe1 0.029  cov 0.028
+  Dlvl 5-12: 5292 rows, 486 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    mixe    raw 3.1007  T-all 3.0959  T-band 3.0930 (T 1.18)
+    mixe1   raw 3.1107  T-all 3.1055  T-band 3.1016 (T 1.20)
+    cov     raw 3.0991  T-all 3.0951  T-band 3.0921 (T 1.18)
+    mixe1 - mixe: raw 0.0101 [0.0013, 0.0219]  T-all 0.0096 [0.0017, 0.0207]  T-band 0.0086 [0.0009, 0.0191]  | val +0.0075 [-0.0044, +0.0193]  | test +0.0094 [-0.0002, +0.0288]
+    cov - mixe: raw -0.0016 [-0.0111, +0.0069]  T-all -0.0008 [-0.0096, +0.0067]  T-band -0.0009 [-0.0090, +0.0062]  | val -0.0001 [-0.0130, +0.0118]  | test -0.0016 [-0.0130, +0.0080]
+    end, games that did not ascend (4800 rows): T-band mixe 3.2599  mixe1 3.2690  cov 3.2576; cause given death mixe 3.2065  mixe1 3.2160  cov 3.2045
+      mixe1 - mixe: T-band 0.0091 [0.0002, 0.0209]  cause given death 0.0095 [0.0015, 0.0204]
+      cov - mixe: T-band -0.0023 [-0.0122, +0.0047]  cause given death -0.0020 [-0.0106, +0.0043]
+    P(ascend) mean: observed 0.093  mixe 0.071  mixe1 0.071  cov 0.070
+  Dlvl 13-20: 6282 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    mixe    raw 2.4225  T-all 2.4212  T-band 2.4275 (T 1.16)
+    mixe1   raw 2.4298  T-all 2.4298  T-band 2.4374 (T 1.17)
+    cov     raw 2.4001  T-all 2.3997  T-band 2.4052 (T 1.15)
+    mixe1 - mixe: raw +0.0073 [-0.0330, +0.0329]  T-all +0.0086 [-0.0290, +0.0320]  T-band +0.0098 [-0.0277, +0.0341]  | val -0.0089 [-0.0360, +0.0140]  | test +0.0265 [-0.0371, +0.0521]
+    cov - mixe: raw -0.0224 [-0.0437, +0.0000]  T-all -0.0215 [-0.0410, -0.0014]  T-band -0.0224 [-0.0410, -0.0028]  | val -0.0162 [-0.0469, +0.0131]  | test -0.0278 [-0.0487, +0.0040]
+    end, games that did not ascend (4633 rows): T-band mixe 2.9979  mixe1 3.0168  cov 2.9799; cause given death mixe 2.8220  mixe1 2.8384  cov 2.8025
+      mixe1 - mixe: T-band +0.0189 [-0.0225, +0.0446]  cause given death +0.0164 [-0.0186, +0.0376]
+      cov - mixe: T-band -0.0180 [-0.0402, +0.0177]  cause given death -0.0196 [-0.0387, +0.0061]
+    P(ascend) mean: observed 0.262  mixe 0.219  mixe1 0.219  cov 0.225
+  Dlvl 21-24: 2001 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    mixe    raw 2.1049  T-all 2.1057  T-band 2.1094 (T 1.12)
+    mixe1   raw 2.0800  T-all 2.0848  T-band 2.0894 (T 1.11)
+    cov     raw 2.0741  T-all 2.0754  T-band 2.0782 (T 1.11)
+    mixe1 - mixe: raw -0.0248 [-0.0632, +0.0043]  T-all -0.0209 [-0.0550, +0.0052]  T-band -0.0200 [-0.0538, +0.0057]  | val -0.0428 [-0.0936, -0.0073]  | test +0.0070 [-0.0314, +0.0464]
+    cov - mixe: raw -0.0308 [-0.0653, +0.0083]  T-all -0.0303 [-0.0611, +0.0042]  T-band -0.0312 [-0.0616, +0.0026]  | val -0.0201 [-0.0684, +0.0184]  | test -0.0443 [-0.0822, +0.0188]
+    end, games that did not ascend (1255 rows): T-band mixe 2.9563  mixe1 2.9467  cov 2.9272; cause given death mixe 2.6930  mixe1 2.6768  cov 2.6599
+      mixe1 - mixe: T-band -0.0096 [-0.0542, +0.0264]  cause given death -0.0162 [-0.0543, +0.0126]
+      cov - mixe: T-band -0.0291 [-0.0710, +0.0299]  cause given death -0.0331 [-0.0644, +0.0077]
+    P(ascend) mean: observed 0.373  mixe 0.319  mixe1 0.326  cov 0.328
+  Dlvl 25-29: 1830 rows, 136 players (the top one 0.13 of rows), ascended 0.56 (val 0.65, test 0.40)
+    mixe    raw 1.6559  T-all 1.6612  T-band 1.6693 (T 1.10)
+    mixe1   raw 1.6652  T-all 1.6708  T-band 1.6819 (T 1.13)
+    cov     raw 1.6474  T-all 1.6525  T-band 1.6594 (T 1.10)
+    mixe1 - mixe: raw +0.0093 [-0.0326, +0.0560]  T-all +0.0096 [-0.0291, +0.0516]  T-band +0.0126 [-0.0267, +0.0556]  | val -0.0104 [-0.0484, +0.0248]  | test +0.0511 [-0.0303, +0.1180]
+    cov - mixe: raw -0.0085 [-0.0331, +0.0117]  T-all -0.0087 [-0.0301, +0.0092]  T-band -0.0099 [-0.0324, +0.0082]  | val -0.0169 [-0.0508, +0.0100]  | test +0.0019 [-0.0266, +0.0336]
+    end, games that did not ascend (813 rows): T-band mixe 3.1851  mixe1 3.2060  cov 3.1758; cause given death mixe 2.6921  mixe1 2.7046  cov 2.6819
+      mixe1 - mixe: T-band +0.0208 [-0.0756, +0.0961]  cause given death +0.0126 [-0.0459, +0.0576]
+      cov - mixe: T-band -0.0093 [-0.0602, +0.0348]  cause given death -0.0101 [-0.0471, +0.0168]
+    P(ascend) mean: observed 0.556  mixe 0.493  mixe1 0.490  cov 0.496
+  Dlvl 30+: 3725 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    mixe    raw 0.7956  T-all 0.8108  T-band 0.8098 (T 1.01)
+    mixe1   raw 0.8248  T-all 0.8402  T-band 0.8423 (T 1.04)
+    cov     raw 0.7963  T-all 0.8115  T-band 0.8123 (T 1.01)
+    mixe1 - mixe: raw +0.0293 [-0.0239, +0.1069]  T-all +0.0294 [-0.0192, +0.1030]  T-band +0.0326 [-0.0224, +0.1108]  | val +0.0049 [-0.0426, +0.0593]  | test +0.0974 [-0.0120, +0.2751]
+    cov - mixe: raw +0.0007 [-0.0413, +0.0429]  T-all +0.0007 [-0.0385, +0.0408]  T-band +0.0026 [-0.0399, +0.0483]  | val -0.0067 [-0.0579, +0.0387]  | test +0.0243 [-0.0678, +0.1037]
+    end, games that did not ascend (677 rows): T-band mixe 3.6867  mixe1 3.8125  cov 3.7270; cause given death mixe 2.4935  mixe1 2.6048  cov 2.5308
+      mixe1 - mixe: T-band +0.1258 [-0.2272, +0.3636]  cause given death +0.1113 [-0.1004, +0.2518]
+      cov - mixe: T-band +0.0403 [-0.2544, +0.2182]  cause given death +0.0373 [-0.1413, +0.1499]
+    P(ascend) mean: observed 0.818  mixe 0.787  mixe1 0.780  cov 0.785
+
+==== ascends: 25076 rows; T on all rows mixe 0.87  mixe1 0.86  cov 0.86
+  Dlvl 1-4: 5946 rows, 674 players (the top one 0.18 of rows), ascended 0.04 (val 0.07, test 0.01)
+    mixe    raw 0.0874  T-all 0.0906  T-band 0.0880 (T 1.04)
+    mixe1   raw 0.0876  T-all 0.0912  T-band 0.0883 (T 1.05)
+    cov     raw 0.0882  T-all 0.0918  T-band 0.0887 (T 1.04)
+    mixe1 - mixe: raw +0.0003 [-0.0005, +0.0011]  T-all +0.0006 [-0.0002, +0.0017]  T-band +0.0003 [-0.0005, +0.0010]  | val +0.0011 [-0.0001, +0.0027]  | test -0.0003 [-0.0016, +0.0005]
+    cov - mixe: raw +0.0008 [-0.0004, +0.0022]  T-all +0.0012 [-0.0002, +0.0029]  T-band +0.0008 [-0.0003, +0.0022]  | val 0.0026 [0.0004, 0.0050]  | test -0.0007 [-0.0019, +0.0003]
+    P(yes) mean: observed 0.039  mixe 0.031  mixe1 0.031  cov 0.031
+    ascended rows 234, players 58; top 5 85, 14, 11, 7, 6 = 0.53
+  Dlvl 5-12: 5292 rows, 486 players (the top one 0.23 of rows), ascended 0.09 (val 0.16, test 0.04)
+    mixe    raw 0.1707  T-all 0.1745  T-band 0.1719 (T 1.02)
+    mixe1   raw 0.1714  T-all 0.1754  T-band 0.1729 (T 1.02)
+    cov     raw 0.1710  T-all 0.1750  T-band 0.1723 (T 1.01)
+    mixe1 - mixe: raw +0.0007 [-0.0015, +0.0023]  T-all +0.0009 [-0.0014, +0.0028]  T-band +0.0010 [-0.0012, +0.0026]  | val +0.0006 [-0.0023, +0.0035]  | test +0.0013 [-0.0020, +0.0029]
+    cov - mixe: raw +0.0003 [-0.0022, +0.0023]  T-all +0.0005 [-0.0023, +0.0028]  T-band +0.0004 [-0.0021, +0.0024]  | val +0.0013 [-0.0030, +0.0053]  | test -0.0003 [-0.0028, +0.0011]
+    P(yes) mean: observed 0.093  mixe 0.077  mixe1 0.078  cov 0.078
+    ascended rows 492, players 69; top 5 129, 24, 18, 16, 14 = 0.41
+  Dlvl 13-20: 6282 rows, 205 players (the top one 0.26 of rows), ascended 0.26 (val 0.41, test 0.13)
+    mixe    raw 0.2936  T-all 0.2903  T-band 0.2907 (T 0.80)
+    mixe1   raw 0.2926  T-all 0.2889  T-band 0.2891 (T 0.79)
+    cov     raw 0.2930  T-all 0.2890  T-band 0.2892 (T 0.79)
+    mixe1 - mixe: raw -0.0011 [-0.0056, +0.0021]  T-all -0.0013 [-0.0062, +0.0023]  T-band -0.0016 [-0.0062, +0.0025]  | val -0.0040 [-0.0099, +0.0039]  | test +0.0004 [-0.0060, +0.0052]
+    cov - mixe: raw -0.0006 [-0.0069, +0.0051]  T-all -0.0013 [-0.0083, +0.0051]  T-band -0.0015 [-0.0091, +0.0054]  | val -0.0011 [-0.0114, +0.0137]  | test -0.0019 [-0.0138, +0.0041]
+    P(yes) mean: observed 0.262  mixe 0.216  mixe1 0.217  cov 0.221
+    ascended rows 1649, players 72; top 5 434, 89, 64, 51, 41 = 0.41
+  Dlvl 21-24: 2001 rows, 151 players (the top one 0.17 of rows), ascended 0.37 (val 0.51, test 0.21)
+    mixe    raw 0.3706  T-all 0.3676  T-band 0.3689 (T 0.81)
+    mixe1   raw 0.3704  T-all 0.3676  T-band 0.3695 (T 0.81)
+    cov     raw 0.3707  T-all 0.3682  T-band 0.3703 (T 0.83)
+    mixe1 - mixe: raw -0.0002 [-0.0083, +0.0058]  T-all -0.0000 [-0.0092, +0.0071]  T-band +0.0006 [-0.0093, +0.0086]  | val -0.0036 [-0.0210, +0.0104]  | test +0.0055 [-0.0019, +0.0170]
+    cov - mixe: raw +0.0001 [-0.0090, +0.0115]  T-all +0.0006 [-0.0096, +0.0134]  T-band +0.0013 [-0.0105, +0.0140]  | val +0.0009 [-0.0180, +0.0236]  | test +0.0018 [-0.0054, +0.0129]
+    P(yes) mean: observed 0.373  mixe 0.319  mixe1 0.322  cov 0.326
+    ascended rows 746, players 69; top 5 190, 42, 41, 20, 19 = 0.42
+  Dlvl 25-29: 1830 rows, 136 players (the top one 0.13 of rows), ascended 0.56 (val 0.65, test 0.40)
+    mixe    raw 0.4180  T-all 0.4150  T-band 0.4174 (T 0.81)
+    mixe1   raw 0.4180  T-all 0.4152  T-band 0.4184 (T 0.81)
+    cov     raw 0.4168  T-all 0.4141  T-band 0.4172 (T 0.82)
+    mixe1 - mixe: raw -0.0000 [-0.0083, +0.0079]  T-all +0.0002 [-0.0094, +0.0092]  T-band +0.0010 [-0.0097, +0.0108]  | val -0.0020 [-0.0181, +0.0122]  | test +0.0060 [-0.0049, +0.0160]
+    cov - mixe: raw -0.0012 [-0.0095, +0.0094]  T-all -0.0009 [-0.0100, +0.0104]  T-band -0.0002 [-0.0110, +0.0118]  | val -0.0034 [-0.0204, +0.0135]  | test +0.0051 [-0.0078, +0.0234]
+    P(yes) mean: observed 0.556  mixe 0.503  mixe1 0.507  cov 0.508
+    ascended rows 1017, players 73; top 5 241, 49, 47, 42, 28 = 0.40
+  Dlvl 30+: 3725 rows, 89 players (the top one 0.20 of rows), ascended 0.82 (val 0.83, test 0.78)
+    mixe    raw 0.3348  T-all 0.3259  T-band 0.3239 (T 0.70)
+    mixe1   raw 0.3306  T-all 0.3217  T-band 0.3186 (T 0.70)
+    cov     raw 0.3271  T-all 0.3162  T-band 0.3121 (T 0.67)
+    mixe1 - mixe: raw -0.0042 [-0.0137, +0.0048]  T-all -0.0042 [-0.0145, +0.0054]  T-band -0.0054 [-0.0186, +0.0059]  | val -0.0157 [-0.0370, -0.0026]  | test 0.0189 [0.0031, 0.0358]
+    cov - mixe: raw -0.0078 [-0.0222, +0.0043]  T-all -0.0097 [-0.0252, +0.0032]  T-band -0.0119 [-0.0291, +0.0036]  | val -0.0152 [-0.0398, +0.0038]  | test -0.0040 [-0.0286, +0.0194]
+    P(yes) mean: observed 0.818  mixe 0.778  mixe1 0.782  cov 0.788
+    ascended rows 3048, players 71; top 5 742, 122, 116, 114, 94 = 0.39

@@ -1,0 +1,41 @@
+human_fam23: models c17r, c17a; log loss, T fitted within each group (crossfit by player); gap = new - fam at the same maxlvl; 95 % bootstrap over players of both groups
+
+==== ttd
+  fam13   4986 rows, 1280 players: c17r raw 2.0992 T 2.0788  c17a raw 2.0450 T 2.0296
+  new13   4991 rows,  206 players: c17r raw 2.0854 T 2.0571  c17a raw 2.1240 T 2.1246
+  fam12   4987 rows, 1635 players: c17r raw 2.7963 T 2.7555  c17a raw 2.8155 T 2.7642
+  new12   4992 rows,  478 players: c17r raw 2.7402 T 2.7242  c17a raw 2.7635 T 2.7318
+  gap new13 - fam13 (raw): c17r -0.0138  c17a +0.0790  | c17a - c17r: +0.0928 [+0.0331, +0.1707]
+  gap new13 - fam13 (T): c17r -0.0217  c17a +0.0950  | c17a - c17r: +0.1167 [+0.0579, +0.1941]
+  gap new12 - fam12 (raw): c17r -0.0561  c17a -0.0520  | c17a - c17r: +0.0041 [-0.0240, +0.0297]
+  gap new12 - fam12 (T): c17r -0.0313  c17a -0.0325  | c17a - c17r: -0.0011 [-0.0128, +0.0092]
+
+==== depth
+  fam13   5000 rows, 1287 players: c17r raw 2.3220 T 2.2701  c17a raw 2.2720 T 2.1954
+  new13   5000 rows,  207 players: c17r raw 2.2167 T 2.2043  c17a raw 2.3503 T 2.2540
+  fam12   5000 rows, 1640 players: c17r raw 1.9462 T 1.9351  c17a raw 1.9410 T 1.9342
+  new12   5000 rows,  480 players: c17r raw 1.8942 T 1.8623  c17a raw 1.8994 T 1.8781
+  gap new13 - fam13 (raw): c17r -0.1052  c17a +0.0783  | c17a - c17r: +0.1835 [+0.1255, +0.2728]
+  gap new13 - fam13 (T): c17r -0.0658  c17a +0.0586  | c17a - c17r: +0.1244 [+0.0945, +0.1623]
+  gap new12 - fam12 (raw): c17r -0.0520  c17a -0.0416  | c17a - c17r: +0.0104 [-0.0148, +0.0320]
+  gap new12 - fam12 (T): c17r -0.0727  c17a -0.0562  | c17a - c17r: +0.0166 [-0.0143, +0.0431]
+
+==== end
+  fam13   5000 rows, 1287 players: c17r raw 2.7475 T 2.7430  c17a raw 2.4991 T 2.4860
+  new13   5000 rows,  207 players: c17r raw 2.6765 T 2.6828  c17a raw 3.1429 T 2.9611
+  fam12   5000 rows, 1640 players: c17r raw 3.2910 T 3.2817  c17a raw 3.2884 T 3.2783
+  new12   5000 rows,  480 players: c17r raw 3.2555 T 3.2522  c17a raw 3.2869 T 3.2784
+  gap new13 - fam13 (raw): c17r -0.0710  c17a +0.6438  | c17a - c17r: +0.7148 [+0.5746, +0.8166]
+  gap new13 - fam13 (T): c17r -0.0602  c17a +0.4750  | c17a - c17r: +0.5352 [+0.4752, +0.5930]
+  gap new12 - fam12 (raw): c17r -0.0355  c17a -0.0015  | c17a - c17r: +0.0340 [-0.0102, +0.0746]
+  gap new12 - fam12 (T): c17r -0.0295  c17a +0.0002  | c17a - c17r: +0.0297 [-0.0063, +0.0631]
+
+==== ascends
+  fam13   5000 rows, 1287 players: c17r raw 0.4380 T 0.3787  c17a raw 0.3859 T 0.2979
+  new13   5000 rows,  207 players: c17r raw 0.3848 T 0.3372  c17a raw 0.5759 T 0.3665
+  fam12   5000 rows, 1640 players: c17r raw 0.0348 T 0.0257  c17a raw 0.0356 T 0.0337
+  new12   5000 rows,  480 players: c17r raw 0.0256 T 0.0227  c17a raw 0.0290 T 0.0283
+  gap new13 - fam13 (raw): c17r -0.0532  c17a +0.1900  | c17a - c17r: +0.2432 [+0.1493, +0.3947]
+  gap new13 - fam13 (T): c17r -0.0416  c17a +0.0686  | c17a - c17r: +0.1101 [+0.0804, +0.1465]
+  gap new12 - fam12 (raw): c17r -0.0092  c17a -0.0066  | c17a - c17r: +0.0025 [-0.0086, +0.0134]
+  gap new12 - fam12 (T): c17r -0.0030  c17a -0.0054  | c17a - c17r: -0.0024 [-0.0169, +0.0124]

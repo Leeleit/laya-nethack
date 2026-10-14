@@ -1,0 +1,49 @@
+human_dwa24/train.jsonl; mean of c17e c17es1 c17es2 c17es3; cells (band x option), d = mean model - observed share
+
+==== ttd: 102 cells, weighted mean |d| 0.0054
+  pool       R2  0.071   coef +0.086
+  blur       R2  0.939   coef +0.953
+  mode       R2  0.220   coef -0.113
+  all three  R2  0.961   coef +0.015 +1.069 +0.054
+  band 1-4    |d| 0.0037  all three R2  0.995  pool / blur / mode +0.002 +1.078 +0.034
+  band 5-12   |d| 0.0058  all three R2  0.995  pool / blur / mode +0.100 +1.051 +0.062
+  band 13-20  |d| 0.0077  all three R2  0.989  pool / blur / mode -0.094 +0.985 -0.021
+  band 21-24  |d| 0.0118  all three R2  0.978  pool / blur / mode +0.089 +1.138 +0.131
+  band 25-29  |d| 0.0140  all three R2  0.958  pool / blur / mode +0.344 +1.105 +0.335
+  band 30+    |d| 0.0150  all three R2  0.969  pool / blur / mode +0.060 +0.924 +0.025
+
+==== depth: 72 cells, weighted mean |d| 0.0025
+  pool       R2  0.021   coef +0.014
+  blur       R2  0.726   coef +0.766
+  mode       R2  0.012   coef -0.008
+  all three  R2  0.800   coef -0.013 +0.886 +0.014
+  band 1-4    |d| 0.0021  all three R2  0.963  pool / blur / mode -0.092 +1.038 +0.002
+  band 5-12   |d| 0.0029  all three R2  0.994  pool / blur / mode -0.034 +1.033 +0.022
+  band 13-20  |d| 0.0021  all three R2  0.251  pool / blur / mode -0.009 +0.420 -0.010
+  band 21-24  |d| 0.0031  all three R2  0.763  pool / blur / mode +0.048 +0.720 +0.029
+  band 25-29  |d| 0.0027  all three R2  0.574  pool / blur / mode -0.023 +0.664 -0.006
+  band 30+    |d| 0.0089  all three R2  0.908  pool / blur / mode +0.018 +1.010 +0.056
+
+==== end: 234 cells, weighted mean |d| 0.0009
+  pool       R2  0.308   coef -0.049
+  blur       R2  0.000   coef +0.000
+  mode       R2  0.364   coef +0.039
+  all three  R2  0.393   coef -0.022 +0.000 +0.027
+  band 1-4    |d| 0.0006  all three R2  0.157  pool / blur / mode -0.003 +0.000 +0.014
+  band 5-12   |d| 0.0008  all three R2  0.362  pool / blur / mode +0.053 +0.000 +0.028
+  band 13-20  |d| 0.0020  all three R2  0.297  pool / blur / mode +0.031 +0.000 +0.062
+  band 21-24  |d| 0.0021  all three R2  0.239  pool / blur / mode +0.092 +0.000 +0.086
+  band 25-29  |d| 0.0019  all three R2  0.638  pool / blur / mode +0.003 +0.000 +0.049
+  band 30+    |d| 0.0038  all three R2  0.812  pool / blur / mode -0.118 +0.000 -0.024
+
+==== ascends: 12 cells, weighted mean |d| 0.0068
+  pool       R2  0.413   coef -0.043
+  blur       R2  0.000   coef +0.000
+  mode       R2  0.528   coef +0.015
+  all three  R2  0.721   coef -0.031 +0.000 +0.012
+  band 1-4    |d| 0.0051  all three R2  1.000  pool / blur / mode -0.002 +0.000 +0.011
+  band 5-12   |d| 0.0079  all three R2  1.000  pool / blur / mode -0.001 +0.000 +0.019
+  band 13-20  |d| 0.0009  all three R2  1.000  pool / blur / mode +0.002 +0.000 +0.002
+  band 21-24  |d| 0.0083  all three R2  1.000  pool / blur / mode +0.026 +0.000 +0.013
+  band 25-29  |d| 0.0114  all three R2  1.000  pool / blur / mode -0.028 +0.000 +0.001
+  band 30+    |d| 0.0459  all three R2  1.000  pool / blur / mode -0.063 +0.000 +0.019
